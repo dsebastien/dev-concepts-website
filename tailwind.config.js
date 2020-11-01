@@ -34,6 +34,10 @@ module.exports = {
           400: "#213142",
           500: "#1C2B3B",
           600: "#151C24",
+          800: "#00072e",
+        },
+        devConceptsOrange: {
+          500: "#FF9429",
         },
         devConceptsRed: {
           100: "#f8b7bd",
