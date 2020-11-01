@@ -10,8 +10,6 @@ const App = () => (
   <Layout>
     <SEO />
     <Code>{command}</Code>
-    {/*<Link to="/about">About</Link>*/}
-    <div className="mt-3 text-xl text-red-100 bg-red-500">Content goes here</div>
     <DevConceptsIcon />
   </Layout>
 );
