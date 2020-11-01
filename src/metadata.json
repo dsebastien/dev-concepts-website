@@ -3,7 +3,8 @@
   "description": "A book explaining all of the core software development concepts. Discover and understand architecture, analysis, back-end, front-end, tooling, code quality, and much more!",
   "tagline": "Go Full Stack Ahead!",
   "author": "Sébastien Dubois",
-  "siteUrl": "https://www.dev-concepts.dev",
+  "siteUrl": "https://dev-concepts.dev",
+  "develoPassionSiteUrl": "https://developassion.be",
   "keywords": "book,software,development,software development,concepts,ebook,programming,coding",
   "image": "src/assets/images/dev-concepts-logo.png",
   "contact": {

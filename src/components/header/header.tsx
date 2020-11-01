@@ -4,7 +4,7 @@ import {Link} from "../link";
 import {graphql, useStaticQuery} from "gatsby";
 
 const StyledHeader = styled.header.attrs({
-  className: "w-full container mx-auto mt-0 py-2",
+  className: "w-full mx-auto mt-0 py-2",
 })`
 `;
 

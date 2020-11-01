@@ -12,6 +12,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     // reference: https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-fontawesome-css",
     "gatsby-plugin-postcss",
     `gatsby-plugin-offline`,
     {
