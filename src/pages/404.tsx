@@ -3,7 +3,7 @@ import { RouteComponentProps } from "@reach/router";
 import { Layout } from "../components/layout";
 import { SEO } from "../components/seo";
 
-export const NotFoundPage: React.FC<RouteComponentProps> = () => {
+const NotFoundPage: React.FC<RouteComponentProps> = () => {
   return (
     <Layout>
       <SEO title="About gatsby-starter-template-deluxe" description="Page not found" />
@@ -11,3 +11,5 @@ export const NotFoundPage: React.FC<RouteComponentProps> = () => {
     </Layout>
   );
 };
+
+export default NotFoundPage;
