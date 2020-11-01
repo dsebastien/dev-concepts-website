@@ -8,12 +8,6 @@ declare namespace React {
   }
 }
 
-declare module "styled-components" {
-  export interface DefaultTheme {
-    [key: string]: any | DefaultTheme;
-  }
-}
-
 // Allow to import images
 declare module "*.png";
 declare module "*.jpg";

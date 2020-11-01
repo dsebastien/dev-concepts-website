@@ -1,0 +1,83 @@
+@tailwind base;
+
+/*//////////////////////////////////////////////////////////////////////////////////////////
+// Base styles
+//////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*::selection {*/
+/*  @apply bg-devConceptsBlue-500 bg-opacity-50;*/
+/*}*/
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* no blue flashes */
+}
+
+body {
+  @apply font-devConcepts text-base font-normal text-devConceptsWhite p-0 ml-5 mr-5 mt-0 mb-0;
+  letter-spacing: -0.1px;
+  /* Reference for line-height: https://dev.to/lampewebdev/css-line-height-jjp */
+  line-height: 1.5;
+
+  background: linear-gradient(90deg, #263545 0%, #4A6887 100%);
+  /*background-image: url('../images/bg-hexagon.jpg');*/
+}
+
+@screen md {
+  body {
+    @apply ml-32 mr-32;
+  }
+}
+
+@screen lg {
+  body {
+    @apply ml-48 mr-48;
+  }
+}
+
+@screen xl {
+  body {
+    @apply ml-64 mr-64;
+  }
+}
+
+html,
+body {
+  @apply h-full min-h-full;
+}
+
+h1 {
+  @apply text-devConceptsGray-100 text-3xl font-bold tracking-normal;
+  line-height: 44px;
+  padding: 2px 0;
+}
+
+h2 {
+  @apply text-devConceptsGray-300 text-2xl font-bold tracking-normal;
+  line-height: 30px;
+  padding: 9px 0;
+}
+
+h3 {
+  @apply text-devConceptsGray-300 text-2xl font-semibold;
+  line-height: 30px;
+  padding: 9px 0;
+  letter-spacing: -0.5px;
+}
+
+h4 {
+  @apply text-devConceptsGray-300 text-xs font-bold;
+  line-height: 20px;
+  padding: 14px 0;
+  letter-spacing: -0.17px;
+  text-transform: uppercase;
+}
+
+h5 {
+  @apply text-devConceptsGray-400 text-base font-medium;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+
+@tailwind components;
+@tailwind utilities;
