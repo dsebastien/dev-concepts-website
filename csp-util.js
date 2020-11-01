@@ -43,10 +43,7 @@ function getCspContentFrom(inputFile) {
       throw new Error(`Could not find the CSP`);
     }
 
-    // Remove this local development exception from the production CSP
-    retVal = retVal.replace(` 'http://localhost:8000/socket.io/'`, '');
-
-    console.log("CSP content that will be used (after replacements): ", retVal);
+    console.log("CSP content that will be used: ", retVal);
 
     return retVal;
 

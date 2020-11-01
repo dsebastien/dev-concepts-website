@@ -26,6 +26,14 @@ module.exports = {
         path: path.join(__dirname, `src`, `assets/images`),
       },
     },
+    // blog
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: path.join(__dirname, `content`, `blog`),
+      },
+    },
     //references:
     // https://www.gatsbyjs.org/packages/gatsby-plugin-react-svg/
     // https://github.com/jacobmischka/gatsby-plugin-react-svg
@@ -135,6 +143,7 @@ module.exports = {
         generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
       },
     },
+    // Reference: https://www.gatsbyjs.com/plugins/gatsby-plugin-csp/
     {
       resolve: `gatsby-plugin-csp`,
       options: {
@@ -150,7 +159,10 @@ module.exports = {
           "base-uri": "'self'",
           "block-all-mixed-content": "",
           "child-src": "'self'",
-          "connect-src": "'self' 'http://localhost:8000/socket.io/'",
+          // FIXME replace develop script with "develop": "gatsby develop --status-port 8089",
+          // as soon as the --status-port parameter is supported: https://www.gatsbyjs.com/docs/gatsby-cli/
+          // Set a fixed port for the Socket.IO debugging port: https://github.com/gatsbyjs/gatsby/pull/25862/commits/2e3e5bbf1e0eaf3ee462d2f1a3fd2a7c94b57a7c
+          "connect-src": "'self' http://localhost:8000 http://localhost:8089", // WARNING: MUST be aligned with csp-util.js
           "default-src": "'self'",
           "disown-opener": "",
           "font-src": "'self' data: https://fonts.gstatic.com",
@@ -164,7 +176,7 @@ module.exports = {
           "plugin-types": "application/pdf",
           "prefetch-src": "'self'",
           "sandbox": "",
-          "script-src": "'self' www.google-analytics.com",
+          "script-src": "'self' www.google-analytics.com 'sha256-KWO6UOhc/cfhZd4gtXYPu4WkSRPuCQDtCkF/v9OyJB8='",
           "style-src": "'self' 'unsafe-inline' blob: https://fonts.googleapis.com",
           "upgrade-insecure-requests": "",
           "worker-src": "'self'",
@@ -207,14 +219,5 @@ module.exports = {
         },
       },
     },
-    // TODO later if blog needed
-    // // blog
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `blog`,
-    //     path: path.join(__dirname, `content`, `blog`),
-    //   },
-    // },
   ],
 };
