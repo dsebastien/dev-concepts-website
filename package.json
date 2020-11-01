@@ -25,7 +25,9 @@
   },
   "husky": {
     "hooks": {
-      "precommit": "npm run lint-staged"
+      "commit-msg": "commitlint --env HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged",
+      "post-commit": "git update-index --again"
     }
   },
   "scripts": {
@@ -50,7 +52,7 @@
     "lint:ts": "eslint . --ext ts --ext tsx --ext js --ext jsx",
     "lint:watch": "esw -w . --ext ts --ext tsx --ext js --ext jsx",
     "lint-staged": "lint-staged",
-    "postinstall": "npx husky install && rm -rf node_modules/@types/react-native",
+    "postinstall": "node ./node_modules/husky/lib/bin.js install && rm -rf node_modules/@types/react-native",
     "prettier": "npm run format",
     "rimraf": "npx rimraf",
     "serve": "npm run serve:dev",
