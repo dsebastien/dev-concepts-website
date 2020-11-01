@@ -1,6 +1,4 @@
-/// <reference types="react/index.d.ts"/>
-/// <reference types="styled-components/cssprop" />
-
+import "react";
 import "styled-components";
 
 // Add support for css prop
@@ -16,10 +14,13 @@ declare module "styled-components" {
   }
 }
 
-// Add support for svg imports
+// Allow to import images
+declare module "*.png";
+declare module "*.jpg";
 declare module "*.svg" {
-  const content: any;
-  export default content;
+  import { HTMLAttributes, ComponentType } from "react";
+  const value: ComponentType<HTMLAttributes<SVGElement>>;
+  export default value;
 }
 
 // Add support for Jest configuration
