@@ -84,8 +84,9 @@ module.exports = {
     },
     fontFamily: {
       devConcepts: [
-        "Kaushan",
+        "Lato",
         "Source Sans Pro",
+        "Kaushan Script",
         "-apple-system",
         "BlinkMacSystemFont",
         "Segoe UI",
