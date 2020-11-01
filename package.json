@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "dev-concepts-website",
   "description": "Dev Concepts Website",
   "version": "1.0.0",
@@ -49,6 +50,7 @@
     "lint:ts": "eslint . --ext ts --ext tsx --ext js --ext jsx",
     "lint:watch": "esw -w . --ext ts --ext tsx --ext js --ext jsx",
     "lint-staged": "lint-staged",
+    "postinstall": "npx husky install && rm -rf node_modules/@types/react-native",
     "prettier": "npm run format",
     "rimraf": "npx rimraf",
     "serve": "npm run serve:dev",
