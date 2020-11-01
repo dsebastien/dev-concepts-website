@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
-const Code = styled.code`
+export const Code = styled.code.attrs({
+  className: "text-devConceptsBlue-300"
+})`
   display: inline-block;
-  color: ${(props) => props.theme.colors.darkblue};
   font-size: 1.2rem;
   background: #f5f5f5;
   margin-top: 1rem;
@@ -15,5 +16,3 @@ const Code = styled.code`
     content: "$ ";
   }
 `;
-
-export { Code };

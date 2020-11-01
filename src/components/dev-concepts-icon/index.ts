@@ -1,1 +1,1 @@
-export { GithubIcon } from "./dev-concepts-icon";
+export { DevConceptsIcon } from "./dev-concepts-icon";
