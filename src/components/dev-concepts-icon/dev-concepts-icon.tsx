@@ -9,6 +9,11 @@ const Wrapper = styled.div``;
 const DevConceptsIcon: React.FC = () => {
   const data = useStaticQuery(graphql`
     query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
       icon: file(relativePath: { eq: "dev-concepts-logo.png" }) {
         childImageSharp {
           fixed(height: 500, width: 313) {
@@ -20,6 +25,9 @@ const DevConceptsIcon: React.FC = () => {
   `);
 
   const imageData = data.icon.childImageSharp.fixed;
+  const { siteMetadata } = data.site;
+  const title = siteMetadata.title;
+
   return (
     <Wrapper>
       <motion.a
@@ -31,7 +39,7 @@ const DevConceptsIcon: React.FC = () => {
         `}
         whileHover={{ opacity: 0.5 }}
       >
-        <Img fixed={imageData} alt="Software Development Concepts" />
+        <Img fixed={imageData} alt={title} />
       </motion.a>
     </Wrapper>
   );
