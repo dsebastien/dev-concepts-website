@@ -44,6 +44,7 @@
     "develop": "gatsby develop",
     "dev": "npm run develop",
     "format": "prettier --write **/*.{css,js,jsx,json,md,pcss,scss,ts,tsx}",
+    "format:all": "npm run format",
     "gatsby": "gatsby",
     "gh-pages": "gh-pages --dist public --branch gh-pages",
     "lint": "npm run lint:ts && npm run lint:css",

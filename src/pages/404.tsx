@@ -7,9 +7,7 @@ export const NotFoundPage: React.FC<RouteComponentProps> = () => {
   return (
     <Layout>
       <SEO title="About gatsby-starter-template-deluxe" description="Page not found" />
-      <h3>
-        The page you were looking for could not be found, sorry!
-      </h3>
+      <h3>The page you were looking for could not be found, sorry!</h3>
     </Layout>
   );
 };

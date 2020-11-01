@@ -16,7 +16,7 @@ module.exports = {
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-purgecss`,
-      options: { tailwind: true }
+      options: { tailwind: true },
     },
     // images
     {
@@ -175,13 +175,13 @@ module.exports = {
           "object-src": "'self'",
           "plugin-types": "application/pdf",
           "prefetch-src": "'self'",
-          "sandbox": "",
+          sandbox: "",
           "script-src": "'self' www.google-analytics.com 'sha256-KWO6UOhc/cfhZd4gtXYPu4WkSRPuCQDtCkF/v9OyJB8='",
           "style-src": "'self' 'unsafe-inline' blob: https://fonts.googleapis.com",
           "upgrade-insecure-requests": "",
           "worker-src": "'self'",
-        }
-      }
+        },
+      },
     },
 
     // reference: https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/

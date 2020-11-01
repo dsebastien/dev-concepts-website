@@ -111,14 +111,7 @@ const SEO: React.FC<SEOProps> = (props) => {
       href: "icons/apple-touch-icon.png",
     },
   ];
-  return (
-    <Helmet
-      htmlAttributes={{ lang: "en" }}
-      title={siteTitle}
-      meta={metaData}
-      link={linkData}
-    />
-  );
+  return <Helmet htmlAttributes={{ lang: "en" }} title={siteTitle} meta={metaData} link={linkData} />;
 };
 
 export { SEO };

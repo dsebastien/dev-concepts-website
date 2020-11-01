@@ -1,4 +1,4 @@
 // @ts-ignore
-global.___loader = { 
+global.___loader = {
   enqueue: jest.fn(),
 };

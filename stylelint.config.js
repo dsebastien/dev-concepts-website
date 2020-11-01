@@ -1,158 +1,170 @@
 module.exports = {
-	extends: "stylelint-config-prettier",
-	defaultSeverity: "error",
-	rules: {
-		"color-hex-length": [
-			"short",
-			{
-				message: "Use short hex codes when possible to avoid unnecessary code.",
-			},
-		],
-		"color-named": [
-			"never",
-			{
-				message: "No named colors are allowed because of consistency. Always use hex or rgba.",
-			},
-		],
-		"font-family-name-quotes": [
-			"always-where-required",
-			{
-				message: "Quotes are required around font-family names when they are not valid CSS identifiers.",
-			},
-		],
-		"font-family-no-duplicate-names": [
-			true,
-			{
-				message: "Avoid duplicate information.",
-			},
-		],
-		"font-family-no-missing-generic-family-keyword": [
-			true,
-			{
-				message: "Always put at least one generic font family.",
-			},
-		],
-		"function-name-case": [
-			"lower",
-			{
-				message: "Function names should be in lowercase following the CSS specification.",
-			},
-		],
-		"length-zero-no-unit": [
-			true,
-			{
-				message: "Zero value should never have a unit to avoid unnecessary code.",
-			},
-		],
-		"unit-no-unknown": true,
-		"value-keyword-case": [
-			"lower",
-			{
-				message: "Keyword values should always be lowercase for consistency. Lower case is more readable.",
-			},
-		],
-		"value-no-vendor-prefix": [
-			true,
-			{
-				message: "Don't use vendor prefixes: they are added when necessary by Gatsby.",
-			},
-		],
-		"property-no-unknown": true,
-		"property-no-vendor-prefix": [
-			true,
-			{
-				message: "Don't use vendor prefixes: they are added when necessary by Gatsby.",
-			},
-		],
-		"keyframe-declaration-no-important": [
-			true,
-			{
-				message: "!important should only be used as a last resort and never in keyframe animations.",
-			},
-		],
-		"declaration-block-no-duplicate-properties": [
-			true,
-			{
-				message: "All properties should only be defined once.",
-			},
-		],
-		"selector-attribute-operator-space-after": [
-			"never",
-			{
-				message: "Never put spaces inside selector attributes to avoid unnecessary whitespace.",
-			},
-		],
-		"selector-attribute-operator-space-before": [
-			"never",
-			{
-				message: "Never put spaces inside selector attributes to avoid unnecessary whitespace.",
-			},
-		],
-		"selector-max-id": [
-			0,
-			{
-				message:
-					"Never use #id as a selector: it is difficult to ensure ids are unique and because of their weight styles are difficult to override.",
-			},
-		],
-		"selector-pseudo-class-no-unknown": true,
-		"selector-pseudo-element-colon-notation": [
-			"double",
-			{
-				message: "Double colons (::) should be used instead of a single colon to distinguish pseudo-elements from pseudo-classes.",
-			},
-		],
-		"selector-pseudo-element-no-unknown": true,
-		"selector-type-case": [
-			"lower",
-			{
-				message: "Always use lowercase for tag name selectors for consistency and to improve readability.",
-			},
-		],
-		"media-feature-name-no-unknown": true,
-		"media-feature-range-operator-space-after": [
-			"never",
-			{
-				message: "Never put spaces inside media feature parentheses to avoid unnecessary whitespace.",
-			},
-		],
-		"media-feature-range-operator-space-before": [
-			"never",
-			{
-				message: "Never put spaces inside media feature parentheses to avoid unnecessary whitespace.",
-			},
-		],
-		"at-rule-no-unknown": [
-			true,
-			{
-				ignoreAtRules: [
-				  "each", "else", "for", "function", "if", "include", "mixin", "return", // SCSS-specific @-directives
-          "apply", "extend", "responsive", "screen", "tailwind", "use", "variants", // Tailwind/PostCSS @-directives
+  extends: "stylelint-config-prettier",
+  defaultSeverity: "error",
+  rules: {
+    "color-hex-length": [
+      "short",
+      {
+        message: "Use short hex codes when possible to avoid unnecessary code.",
+      },
+    ],
+    "color-named": [
+      "never",
+      {
+        message: "No named colors are allowed because of consistency. Always use hex or rgba.",
+      },
+    ],
+    "font-family-name-quotes": [
+      "always-where-required",
+      {
+        message: "Quotes are required around font-family names when they are not valid CSS identifiers.",
+      },
+    ],
+    "font-family-no-duplicate-names": [
+      true,
+      {
+        message: "Avoid duplicate information.",
+      },
+    ],
+    "font-family-no-missing-generic-family-keyword": [
+      true,
+      {
+        message: "Always put at least one generic font family.",
+      },
+    ],
+    "function-name-case": [
+      "lower",
+      {
+        message: "Function names should be in lowercase following the CSS specification.",
+      },
+    ],
+    "length-zero-no-unit": [
+      true,
+      {
+        message: "Zero value should never have a unit to avoid unnecessary code.",
+      },
+    ],
+    "unit-no-unknown": true,
+    "value-keyword-case": [
+      "lower",
+      {
+        message: "Keyword values should always be lowercase for consistency. Lower case is more readable.",
+      },
+    ],
+    "value-no-vendor-prefix": [
+      true,
+      {
+        message: "Don't use vendor prefixes: they are added when necessary by Gatsby.",
+      },
+    ],
+    "property-no-unknown": true,
+    "property-no-vendor-prefix": [
+      true,
+      {
+        message: "Don't use vendor prefixes: they are added when necessary by Gatsby.",
+      },
+    ],
+    "keyframe-declaration-no-important": [
+      true,
+      {
+        message: "!important should only be used as a last resort and never in keyframe animations.",
+      },
+    ],
+    "declaration-block-no-duplicate-properties": [
+      true,
+      {
+        message: "All properties should only be defined once.",
+      },
+    ],
+    "selector-attribute-operator-space-after": [
+      "never",
+      {
+        message: "Never put spaces inside selector attributes to avoid unnecessary whitespace.",
+      },
+    ],
+    "selector-attribute-operator-space-before": [
+      "never",
+      {
+        message: "Never put spaces inside selector attributes to avoid unnecessary whitespace.",
+      },
+    ],
+    "selector-max-id": [
+      0,
+      {
+        message:
+          "Never use #id as a selector: it is difficult to ensure ids are unique and because of their weight styles are difficult to override.",
+      },
+    ],
+    "selector-pseudo-class-no-unknown": true,
+    "selector-pseudo-element-colon-notation": [
+      "double",
+      {
+        message: "Double colons (::) should be used instead of a single colon to distinguish pseudo-elements from pseudo-classes.",
+      },
+    ],
+    "selector-pseudo-element-no-unknown": true,
+    "selector-type-case": [
+      "lower",
+      {
+        message: "Always use lowercase for tag name selectors for consistency and to improve readability.",
+      },
+    ],
+    "media-feature-name-no-unknown": true,
+    "media-feature-range-operator-space-after": [
+      "never",
+      {
+        message: "Never put spaces inside media feature parentheses to avoid unnecessary whitespace.",
+      },
+    ],
+    "media-feature-range-operator-space-before": [
+      "never",
+      {
+        message: "Never put spaces inside media feature parentheses to avoid unnecessary whitespace.",
+      },
+    ],
+    "at-rule-no-unknown": [
+      true,
+      {
+        ignoreAtRules: [
+          "each",
+          "else",
+          "for",
+          "function",
+          "if",
+          "include",
+          "mixin",
+          "return", // SCSS-specific @-directives
+          "apply",
+          "extend",
+          "responsive",
+          "screen",
+          "tailwind",
+          "use",
+          "variants", // Tailwind/PostCSS @-directives
+        ],
+      },
+    ],
+    "no-duplicate-at-import-rules": [
+      true,
+      {
+        message: "Avoid duplicate @import rule within the same stylesheet.",
+      },
+    ],
+    "no-invalid-double-slash-comments": [
+      true,
+      {
+        message: "In CSS, double slashes do not indicate a single line comment. Use /*  */ instead.",
+      },
+    ],
+    "no-unknown-animations": [
+      true,
+      {
+        message: 'Check your code. The animation name "${animationName}" is not defined.',
+      },
+    ],
+  },
 
-        ] ,
-			},
-		],
-		"no-duplicate-at-import-rules": [
-			true,
-			{
-				message: "Avoid duplicate @import rule within the same stylesheet.",
-			},
-		],
-		"no-invalid-double-slash-comments": [
-			true,
-			{
-				message: "In CSS, double slashes do not indicate a single line comment. Use /*  */ instead.",
-			},
-		],
-		"no-unknown-animations": [
-			true,
-			{
-				message: 'Check your code. The animation name "${animationName}" is not defined.',
-			},
-		],
-	},
-
-	/*These rules are handled by Prettier
+  /*These rules are handled by Prettier
   "function-comma-space-after": [
     "always",
     {

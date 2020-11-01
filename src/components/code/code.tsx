@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Code = styled.code.attrs({
-  className: "text-devConceptsBlue-300"
+  className: "text-devConceptsBlue-300",
 })`
   display: inline-block;
   font-size: 1.2rem;

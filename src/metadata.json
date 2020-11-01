@@ -5,7 +5,7 @@
   "author": "Sébastien Dubois",
   "siteUrl": "https://www.dev-concepts.dev",
   "keywords": "book,software,development,software development,concepts,ebook,programming,coding",
-  "image":  "src/assets/images/dev-concepts-logo.png",
+  "image": "src/assets/images/dev-concepts-logo.png",
   "contact": {
     "mail": "contact@developassion.be"
   },
