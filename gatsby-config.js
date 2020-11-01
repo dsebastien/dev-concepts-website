@@ -16,9 +16,22 @@ module.exports = {
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-purgecss`,
-      options: { tailwind: true },
+      options: {
+        printRejected: false,
+        develop: false,
+        tailwind: true,
+      },
     },
-    // images
+    // reference: https://www.gatsbyjs.com/plugins/gatsby-background-image/
+    // add support for background images + Tailwind
+    {
+      resolve: 'gatsby-background-image',
+      options: {
+        // add your own characters to escape, replacing the default ':/'
+        specialChars: '/:',
+      },
+    },
+    // make images available through GraphQL queries
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -159,10 +172,7 @@ module.exports = {
           "base-uri": "'self'",
           "block-all-mixed-content": "",
           "child-src": "'self'",
-          // FIXME replace develop script with "develop": "gatsby develop --status-port 8089",
-          // as soon as the --status-port parameter is supported: https://www.gatsbyjs.com/docs/gatsby-cli/
-          // Set a fixed port for the Socket.IO debugging port: https://github.com/gatsbyjs/gatsby/pull/25862/commits/2e3e5bbf1e0eaf3ee462d2f1a3fd2a7c94b57a7c
-          "connect-src": "'self' http://localhost:8000 http://localhost:8089", // WARNING: MUST be aligned with csp-util.js
+          "connect-src": "'self' http://localhost:8000 http://localhost:* ws://localhost:*",
           "default-src": "'self'",
           "disown-opener": "",
           "font-src": "'self' data: https://fonts.gstatic.com",
@@ -175,8 +185,8 @@ module.exports = {
           "object-src": "'self'",
           "plugin-types": "application/pdf",
           "prefetch-src": "'self'",
-          sandbox: "",
-          "script-src": "'self' www.google-analytics.com 'sha256-KWO6UOhc/cfhZd4gtXYPu4WkSRPuCQDtCkF/v9OyJB8='",
+          "sandbox": "",
+          "script-src": "'self' www.google-analytics.com 'sha256-KWO6UOhc/cfhZd4gtXYPu4WkSRPuCQDtCkF/v9OyJB8=' 'sha256-QAj9SgqS0tkqFXsMg6gbHzN3KfNnrPW0N0FCdMzN3MI=' 'nonce-fcd8146f-6701-4dca-9165-3ed4c96a3b5a'",
           "style-src": "'self' 'unsafe-inline' blob: https://fonts.googleapis.com",
           "upgrade-insecure-requests": "",
           "worker-src": "'self'",

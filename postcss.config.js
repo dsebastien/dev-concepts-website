@@ -1,4 +1,7 @@
 module.exports = () => ({
+  processors: [
+    require('postcss-strip-inline-comments'),
+  ],
   plugins: [
     // Support imports
     require("postcss-import"),
