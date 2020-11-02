@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import {Link} from "../link";
-import {graphql, useStaticQuery} from "gatsby";
-import {Code} from "../code";
+import { Link } from "../link";
+import { graphql, useStaticQuery } from "gatsby";
+import { Code } from "../code";
 
 const StyledHeader = styled.header.attrs({
   className: "w-full mx-auto mt-0 py-6 flex flex-row justify-between items-center",
-})`
-`;
+})``;
 
 // const Tagline = styled.h2.attrs({
 //   className: "text-right",
@@ -37,8 +36,12 @@ const Header: React.FC = () => {
   return (
     <StyledHeader>
       {/*<Link to="/about">About</Link>*/}
-      <h1><Link to="/">{data.site.siteMetadata.title}</Link></h1>
-      <div className=""><Code>{command}</Code></div>
+      <h1>
+        <Link to="/">{data.site.siteMetadata.title}</Link>
+      </h1>
+      <div className="">
+        <Code>{command}</Code>
+      </div>
 
       {/*<Tagline>{data.site.siteMetadata.tagline}</Tagline>*/}
     </StyledHeader>

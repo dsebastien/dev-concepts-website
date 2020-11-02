@@ -2,18 +2,17 @@ import React from "react";
 import styled from "styled-components";
 
 import metadata from "../../metadata.json";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import {Link} from "../link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "../link";
 
 const StyledFooter = styled.footer.attrs({
   className: "ml-0 mr-0 w-full py-6 text-center bg-gray-900 rounded-t-lg",
-})`
-`;
+})``;
 
 const StyledList = styled.ul.attrs({
-  className: ""
+  className: "",
 })`
 li {
   @apply text-devConceptsRed-700 ml-1;
@@ -34,10 +33,28 @@ const Footer: React.FC = () => {
   return (
     <StyledFooter>
       <StyledList>
-        <li>&copy; {new Date().getFullYear()} <Link to={metadata.social.mediumSebastien} target="_blank" rel="noreferrer noopener" title="Dubois Sébastien @ Medium" aria-label="Dubois Sébastien @ Medium">Dubois Sébastien</Link>
+        <li>
+          &copy; {new Date().getFullYear()}{" "}
+          <Link
+            to={metadata.social.mediumSebastien}
+            target="_blank"
+            rel="noreferrer noopener"
+            title="Dubois Sébastien @ Medium"
+            aria-label="Dubois Sébastien @ Medium"
+          >
+            Dubois Sébastien
+          </Link>
         </li>
         <li>
-          <Link to={metadata.develoPassionSiteUrl} target="_blank" rel="noreferrer noopener" title="DeveloPassion" aria-label="DeveloPassion">DeveloPassion</Link>
+          <Link
+            to={metadata.develoPassionSiteUrl}
+            target="_blank"
+            rel="noreferrer noopener"
+            title="DeveloPassion"
+            aria-label="DeveloPassion"
+          >
+            DeveloPassion
+          </Link>
         </li>
         <li>
           <Link to={metadata.siteSources} target="_blank" rel="noreferrer noopener" title="Website sources" aria-label="Website sources">
@@ -45,7 +62,13 @@ const Footer: React.FC = () => {
           </Link>
         </li>
         <li>
-          <Link to={metadata.social.twitterSebastien} target="_blank" rel="noreferrer noopener" title="Dubois Sébastien @ Twitter" aria-label="Dubois Sébastien @ Twitter">
+          <Link
+            to={metadata.social.twitterSebastien}
+            target="_blank"
+            rel="noreferrer noopener"
+            title="Dubois Sébastien @ Twitter"
+            aria-label="Dubois Sébastien @ Twitter"
+          >
             <FontAwesomeIcon icon={faTwitter} />
           </Link>
         </li>

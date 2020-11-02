@@ -27,10 +27,10 @@ module.exports = {
     // reference: https://www.gatsbyjs.com/plugins/gatsby-background-image/
     // add support for background images + Tailwind
     {
-      resolve: 'gatsby-background-image',
+      resolve: "gatsby-background-image",
       options: {
         // add your own characters to escape, replacing the default ':/'
-        specialChars: '/:',
+        specialChars: "/:",
       },
     },
     // make images available through GraphQL queries
@@ -187,8 +187,9 @@ module.exports = {
           "object-src": "'self'",
           "plugin-types": "application/pdf",
           "prefetch-src": "'self'",
-          "sandbox": "",
-          "script-src": "'self' www.google-analytics.com 'sha256-KWO6UOhc/cfhZd4gtXYPu4WkSRPuCQDtCkF/v9OyJB8=' 'sha256-QAj9SgqS0tkqFXsMg6gbHzN3KfNnrPW0N0FCdMzN3MI=' 'nonce-fcd8146f-6701-4dca-9165-3ed4c96a3b5a'",
+          sandbox: "",
+          "script-src":
+            "'self' www.google-analytics.com 'sha256-KWO6UOhc/cfhZd4gtXYPu4WkSRPuCQDtCkF/v9OyJB8=' 'sha256-QAj9SgqS0tkqFXsMg6gbHzN3KfNnrPW0N0FCdMzN3MI=' 'nonce-fcd8146f-6701-4dca-9165-3ed4c96a3b5a'",
           "style-src": "'self' 'unsafe-inline' blob: https://fonts.googleapis.com",
           "upgrade-insecure-requests": "",
           "worker-src": "'self'",
