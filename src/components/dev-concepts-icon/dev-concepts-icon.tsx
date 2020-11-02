@@ -14,7 +14,7 @@ const DevConceptsIcon: React.FC = () => {
           title
         }
       }
-      icon: file(relativePath: { eq: "dev-concepts-logo.png" }) {
+      icon: file(relativePath: { eq: "DevConcepts.png" }) {
         childImageSharp {
           fixed(height: 500, width: 313) {
             ...GatsbyImageSharpFixed_withWebp
