@@ -8,7 +8,7 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import {Link} from "../link";
 
 const StyledFooter = styled.footer.attrs({
-  className: "ml-0 mr-0 w-full py-6 text-center bg-gray-900 rounded-t",
+  className: "ml-0 mr-0 w-full py-6 text-center bg-gray-900 rounded-t-lg",
 })`
 `;
 

@@ -2,15 +2,18 @@ import React from "react";
 import styled from "styled-components";
 import {Link} from "../link";
 import {graphql, useStaticQuery} from "gatsby";
+import {Code} from "../code";
 
 const StyledHeader = styled.header.attrs({
-  className: "w-full mx-auto mt-0 py-2",
+  className: "w-full mx-auto mt-0 py-6 flex flex-row justify-between items-center",
 })`
 `;
 
-const Tagline = styled.h2.attrs({
-  className: "text-right",
-})``;
+// const Tagline = styled.h2.attrs({
+//   className: "text-right",
+// })``;
+
+const command = "sudo make me a Software Craftsman";
 
 const Header: React.FC = () => {
   const data: {
@@ -34,10 +37,10 @@ const Header: React.FC = () => {
   return (
     <StyledHeader>
       {/*<Link to="/about">About</Link>*/}
-      <Link to="/">
-        <h1>{data.site.siteMetadata.title}</h1>
-      </Link>
-      <Tagline>{data.site.siteMetadata.tagline}</Tagline>
+      <h1><Link to="/">{data.site.siteMetadata.title}</Link></h1>
+      <div className=""><Code>{command}</Code></div>
+
+      {/*<Tagline>{data.site.siteMetadata.tagline}</Tagline>*/}
     </StyledHeader>
   );
 };
