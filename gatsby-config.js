@@ -6,6 +6,8 @@ const siteMetadata = require("./src/metadata.json");
 module.exports = {
   siteMetadata,
   plugins: [
+    // FIXME re-enable offline
+    //`gatsby-plugin-offline`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
@@ -14,7 +16,6 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-fontawesome-css",
     "gatsby-plugin-postcss",
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
