@@ -12,11 +12,12 @@ const DevConceptsIcon: React.FC = () => {
       site {
         siteMetadata {
           title
+          salesPageUrl
         }
       }
-      icon: file(relativePath: { eq: "DevConcepts.png" }) {
+      icon: file(relativePath: { eq: "DevConceptsCover3DTransparentBackground.png" }) {
         childImageSharp {
-          fixed(height: 500, width: 313) {
+          fixed(height: 641, width: 563) {
             ...GatsbyImageSharpFixed_withWebp
           }
         }
@@ -27,13 +28,16 @@ const DevConceptsIcon: React.FC = () => {
   const imageData = data.icon.childImageSharp.fixed;
   const { siteMetadata } = data.site;
   const title = siteMetadata.title;
+  const salesPageUrl = siteMetadata.salesPageUrl;
 
   return (
     <Wrapper>
       <motion.a
-        href="https://dev-concepts.dev"
+        href={salesPageUrl}
         rel="noopener noreferrer"
         target="_blank"
+        aria-label="Pre-order now!"
+        title="Pre-order now!"
         css={`
           cursor: pointer;
         `}
