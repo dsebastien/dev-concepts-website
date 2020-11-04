@@ -4,12 +4,12 @@ import { graphql, useStaticQuery } from "gatsby";
 import { Code } from "../code";
 
 const StyledHeader = styled.header.attrs({
-  className: "w-full mx-auto mt-0 py-6 flex flex-row justify-between items-center",
+  className: "w-full mx-auto mt-0 py-6 flex flex-col md:flex-row md:justify-between items-center",
 })``;
 
-// const Tagline = styled.h2.attrs({
-//   className: "text-right",
-// })``;
+const Tagline = styled.h2.attrs({
+  className: "text-right block md:hidden",
+})``;
 
 const command = "sudo make me a Software Craftsman";
 
@@ -43,11 +43,11 @@ const Header: React.FC = () => {
            aria-label="Pre-order the book now!"
         >{data.site.siteMetadata.title}</a>
       </h1>
-      <div className="">
+      <div className="hidden lg:block">
         <Code>{command}</Code>
       </div>
 
-      {/*<Tagline>{data.site.siteMetadata.tagline}</Tagline>*/}
+      <Tagline>{data.site.siteMetadata.tagline}</Tagline>
     </StyledHeader>
   );
 };
