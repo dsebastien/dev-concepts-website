@@ -5,7 +5,6 @@ import metadata from "../../metadata.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { Link } from "../link";
 
 const StyledFooter = styled.footer.attrs({
   className: "ml-0 mr-0 w-full py-6 text-center bg-gray-900 rounded-t-lg",
@@ -35,42 +34,41 @@ const Footer: React.FC = () => {
       <StyledList>
         <li>
           &copy; {new Date().getFullYear()}{" "}
-          <Link
-            to={metadata.social.mediumSebastien}
-            target="_blank"
             rel="noreferrer noopener"
-            title="Dubois Sébastien @ Medium"
-            aria-label="Dubois Sébastien @ Medium"
+          <a href={metadata.social.mediumSebastien}
+             target="_blank"
+             title="Dubois Sébastien @ Medium"
+             aria-label="Dubois Sébastien @ Medium"
           >
             Dubois Sébastien
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
-            to={metadata.develoPassionSiteUrl}
+          <a
+            href={metadata.develoPassionSiteUrl}
             target="_blank"
             rel="noreferrer noopener"
             title="DeveloPassion"
             aria-label="DeveloPassion"
           >
             DeveloPassion
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to={metadata.siteSources} target="_blank" rel="noreferrer noopener" title="Website sources" aria-label="Website sources">
+          <a href={metadata.siteSources} target="_blank" rel="noreferrer noopener" title="Website sources" aria-label="Website sources">
             <FontAwesomeIcon icon={faGithub} />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
-            to={metadata.social.twitterSebastien}
+          <a
+            href={metadata.social.twitterSebastien}
             target="_blank"
             rel="noreferrer noopener"
             title="Dubois Sébastien @ Twitter"
             aria-label="Dubois Sébastien @ Twitter"
           >
             <FontAwesomeIcon icon={faTwitter} />
-          </Link>
+          </a>
         </li>
       </StyledList>
     </StyledFooter>

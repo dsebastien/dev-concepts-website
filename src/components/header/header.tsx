@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "../link";
 import { graphql, useStaticQuery } from "gatsby";
 import { Code } from "../code";
 
@@ -20,6 +19,7 @@ const Header: React.FC = () => {
       siteMetadata: {
         title: string;
         tagline: string;
+        salesPageUrl: string;
       };
     };
   } = useStaticQuery(graphql`
@@ -28,6 +28,7 @@ const Header: React.FC = () => {
         siteMetadata {
           title
           tagline
+          salesPageUrl
         }
       }
     }
@@ -37,7 +38,10 @@ const Header: React.FC = () => {
     <StyledHeader>
       {/*<Link to="/about">About</Link>*/}
       <h1>
-        <Link to="/">{data.site.siteMetadata.title}</Link>
+        <a href={data.site.siteMetadata.salesPageUrl}
+           title="Pre-order the book now!"
+           aria-label="Pre-order the book now!"
+        >{data.site.siteMetadata.title}</a>
       </h1>
       <div className="">
         <Code>{command}</Code>
