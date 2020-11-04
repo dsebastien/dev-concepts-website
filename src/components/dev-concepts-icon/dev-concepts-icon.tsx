@@ -55,10 +55,14 @@ figure.devConceptsLogoFigure h2 span {
   font-weight: 800;
 }
 figure.devConceptsLogoFigure:hover {
-  opacity: 0.9;
+  opacity: 0.8;
+  // Alternative: block; goes along with the padding below
   //background-color: RGBA(0, 0, 0, 0.35);
   //border-radius: 0.5rem;
 }
+// figure.devConceptsLogoFigure {
+//   padding: 1rem;
+// }
 figure.devConceptsLogoFigure:hover figcaption:hover {
   opacity: 1 !important;
 }
@@ -120,7 +124,7 @@ const DevConceptsIcon: React.FC = () => {
         <figure className="devConceptsLogoFigure">
           <Img fixed={imageData} alt={title} />
           <figcaption>
-            <h2>Pre-order <span>now!</span></h2>
+            <h2>Pre-order&nbsp;&nbsp;<span>now!</span></h2>
           </figcaption>
         </figure>
       </a>
