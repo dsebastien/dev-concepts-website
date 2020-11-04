@@ -38,10 +38,9 @@ const Header: React.FC = () => {
     <StyledHeader>
       {/*<Link to="/about">About</Link>*/}
       <h1>
-        <a href={data.site.siteMetadata.salesPageUrl}
-           title="Pre-order the book now!"
-           aria-label="Pre-order the book now!"
-        >{data.site.siteMetadata.title}</a>
+        <a href={data.site.siteMetadata.salesPageUrl} title="Pre-order the book now!" aria-label="Pre-order the book now!">
+          {data.site.siteMetadata.title}
+        </a>
       </h1>
       <div className="hidden lg:block">
         <Code>{command}</Code>

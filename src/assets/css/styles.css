@@ -13,13 +13,19 @@ html {
 }
 
 body {
-  @apply font-devConcepts text-base font-normal text-devConceptsWhite p-0 ml-5 mr-5 mt-0 mb-0;
+  @apply font-devConcepts text-base font-normal text-devConceptsWhite p-0 ml-0 mr-0 mt-0 mb-0;
   letter-spacing: -0.1px;
   /* Reference for line-height: https://dev.to/lampewebdev/css-line-height-jjp */
   line-height: 1.5;
 
   background: linear-gradient(90deg, #263545 0%, #4a6887 100%); /* blue-700 to blue-500 */
   /*background-image: url('../images/bg-hexagon.jpg');*/
+}
+
+@screen sm {
+  body {
+    @apply ml-5 mr-5;
+  }
 }
 
 @screen md {

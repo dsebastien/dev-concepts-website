@@ -35,9 +35,11 @@ const Layout: React.FC = ({ children }) => {
         `}
         </script>
       </Helmet>
-      <Header />
+      <header className="mx-2 sm:mx-0">
+        <Header />
+      </header>
       <Separator />
-      <main className="flex flex-grow mt-5">
+      <main className="flex flex-grow mt-5 mx-2 sm:mx-0">
         <div>{children}</div>
       </main>
       <Footer />

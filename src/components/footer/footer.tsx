@@ -7,43 +7,45 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const StyledFooter = styled.footer.attrs({
-  className: "ml-0 mr-0 w-full py-6 text-center bg-gray-900 rounded-t-lg",
+  className: "ml-0 mr-0 w-full py-6 text-center bg-gray-900 sm:rounded-t-lg",
 })``;
 
 const StyledList = styled.ul.attrs({
   className: "",
 })`
-li {
-  @apply text-devConceptsRed-700 ml-1;
-      border-left: solid 1px _palette(border);
-      display: inline-block;
-      line-height: 1;
-      margin-left: 1em;
-      padding-left: 1em;
+> li {
+  &:first-child {
+    border-left: 0;
+    margin-left: 0;
+    padding-left: 0;
+  }
+`;
 
-      &:first-child {
-        border-left: 0;
-        margin-left: 0;
-        padding-left: 0;
-      }
+const StyledListElement = styled.li.attrs({
+  className: "border-l-2 border-devConceptsBlue-500 ml-2 pl-2 leading-4 inline-block",
+})`
+  > a:hover {
+    opacity: 0.5;
+  }
 `;
 
 const Footer: React.FC = () => {
   return (
     <StyledFooter>
       <StyledList>
-        <li>
+        <StyledListElement>
           &copy; {new Date().getFullYear()}{" "}
-          <a href={metadata.social.mediumSebastien}
-             target="_blank"
-             rel="noreferrer noopener"
-             title="Dubois Sébastien @ Medium"
-             aria-label="Dubois Sébastien @ Medium"
+          <a
+            href={metadata.social.mediumSebastien}
+            target="_blank"
+            rel="noreferrer noopener"
+            title="Dubois Sébastien @ Medium"
+            aria-label="Dubois Sébastien @ Medium"
           >
             Dubois Sébastien
           </a>
-        </li>
-        <li>
+        </StyledListElement>
+        <StyledListElement>
           <a
             href={metadata.develoPassionSiteUrl}
             target="_blank"
@@ -53,13 +55,13 @@ const Footer: React.FC = () => {
           >
             DeveloPassion
           </a>
-        </li>
-        <li>
+        </StyledListElement>
+        <StyledListElement>
           <a href={metadata.siteSources} target="_blank" rel="noreferrer noopener" title="Website sources" aria-label="Website sources">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-        </li>
-        <li>
+        </StyledListElement>
+        <StyledListElement>
           <a
             href={metadata.social.twitterSebastien}
             target="_blank"
@@ -69,7 +71,7 @@ const Footer: React.FC = () => {
           >
             <FontAwesomeIcon icon={faTwitter} />
           </a>
-        </li>
+        </StyledListElement>
       </StyledList>
     </StyledFooter>
   );
