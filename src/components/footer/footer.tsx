@@ -34,9 +34,9 @@ const Footer: React.FC = () => {
       <StyledList>
         <li>
           &copy; {new Date().getFullYear()}{" "}
-            rel="noreferrer noopener"
           <a href={metadata.social.mediumSebastien}
              target="_blank"
+             rel="noreferrer noopener"
              title="Dubois Sébastien @ Medium"
              aria-label="Dubois Sébastien @ Medium"
           >
