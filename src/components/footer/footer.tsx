@@ -7,7 +7,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const StyledFooter = styled.footer.attrs({
-  className: "ml-0 mr-0 w-full py-6 text-center bg-gray-900 sm:rounded-t-lg",
+  className: "ml-0 mr-0 w-full py-2 sm:py-6 text-center bg-gray-900 sm:rounded-t-lg",
 })``;
 
 const StyledList = styled.ul.attrs({
@@ -22,7 +22,7 @@ const StyledList = styled.ul.attrs({
 `;
 
 const StyledListElement = styled.li.attrs({
-  className: "border-l-2 border-devConceptsBlue-500 ml-2 pl-2 leading-4 inline-block",
+  className: "sm:border-l-2 sm:border-devConceptsBlue-500 ml-2 pl-2 leading-4 block sm:inline-block mt-2 sm:mt-0",
 })`
   > a:hover {
     opacity: 0.5;
