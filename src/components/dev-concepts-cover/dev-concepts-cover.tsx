@@ -110,7 +110,7 @@ const DevConceptsCover: React.FC = () => {
 
   const devConceptsCoverImageData = data.devConceptsCoverImage.childImageSharp.fluid;
   const { siteMetadata } = data.site;
-  const {title, salesPageUrl} = siteMetadata;
+  const { title, salesPageUrl } = siteMetadata;
 
   return (
     <Wrapper>

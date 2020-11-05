@@ -37,7 +37,7 @@ const Header: React.FC = () => {
   return (
     <StyledHeader>
       {/*<Link to="/about">About</Link>*/}
-      <h1 className="w-full">
+      <h1 className="w-full lg:w-auto">
         <a href={data.site.siteMetadata.salesPageUrl} title="Pre-order the book now!" aria-label="Pre-order the book now!">
           {data.site.siteMetadata.title}
         </a>
