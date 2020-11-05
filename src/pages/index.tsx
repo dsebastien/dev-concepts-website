@@ -3,6 +3,7 @@ import { Layout } from "../components/layout";
 import { SEO } from "../components/seo";
 import { DevConceptsCover } from "../components/dev-concepts-cover/dev-concepts-cover";
 import styled from "styled-components";
+import {DevConceptsNewsletterForm} from "../components/dev-concepts-newsletter-form";
 
 const CoverImageWrapper = styled.div.attrs({
   className: "flex w-full sm:w-2/4",
@@ -20,7 +21,9 @@ const App = () => (
         <CoverImageWrapper>
           <DevConceptsCover />
         </CoverImageWrapper>
-        <FormWrapper>Newsletter coming soon...</FormWrapper>
+        <FormWrapper>
+          <DevConceptsNewsletterForm />
+        </FormWrapper>
       </div>
     </div>
   </Layout>

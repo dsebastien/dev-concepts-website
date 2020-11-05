@@ -178,7 +178,7 @@ module.exports = {
           "default-src": "'self'",
           "disown-opener": "",
           "font-src": "'self' data: https://fonts.gstatic.com",
-          "form-action": "'none'", // FIXME to adapt for Hubspot?
+          "form-action": "'none'",
           //"frame-ancestors": "'none'", // cannot be used if CSP defined using a meta tag
           "frame-src": "'self'",
           "img-src": "'self' data: www.google-analytics.com",
