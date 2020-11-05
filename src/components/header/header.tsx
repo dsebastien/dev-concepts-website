@@ -3,12 +3,12 @@ import styled from "styled-components";
 import { graphql, useStaticQuery } from "gatsby";
 import { Code } from "../code";
 
-const StyledHeader = styled.header.attrs({
+const StyledHeader = styled.div.attrs({
   className: "w-full mx-auto mt-0 py-6 flex flex-col md:flex-row md:justify-between items-center",
 })``;
 
 const Tagline = styled.h2.attrs({
-  className: "text-right block md:hidden",
+  className: "w-full text-left sm:text-center block md:hidden",
 })``;
 
 const command = "sudo make me a Software Craftsman";
