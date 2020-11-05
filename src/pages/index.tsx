@@ -1,12 +1,12 @@
 import React from "react";
 import { Layout } from "../components/layout";
 import { SEO } from "../components/seo";
-import { DevConceptsIcon } from "../components/dev-concepts-icon/dev-concepts-icon";
+import { DevConceptsCover } from "../components/dev-concepts-cover/dev-concepts-cover";
 
 const App = () => (
   <Layout>
     <SEO />
-    <DevConceptsIcon />
+    <DevConceptsCover />
   </Layout>
 );
 

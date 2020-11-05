@@ -88,7 +88,7 @@ const Wrapper = styled.div.attrs({
   }
 `;
 
-const DevConceptsIcon: React.FC = () => {
+const DevConceptsCover: React.FC = () => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -128,4 +128,4 @@ const DevConceptsIcon: React.FC = () => {
   );
 };
 
-export { DevConceptsIcon };
+export { DevConceptsCover };
