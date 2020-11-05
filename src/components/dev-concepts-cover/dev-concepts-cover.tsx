@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Img from "gatsby-image";
 
 const Wrapper = styled.div.attrs({
-  className: "relative",
+  className: "relative w-full",
 })`
   figure.devConceptsLogoFigure > div > img {
     transition: opacity 0.35s;
@@ -97,26 +97,26 @@ const DevConceptsCover: React.FC = () => {
           salesPageUrl
         }
       }
-      icon: file(relativePath: { eq: "DevConceptsCover3DTransparentBackground.png" }) {
+      devConceptsCoverImage: file(relativePath: { eq: "DevConceptsCover3DTransparentBackground.png" }) {
         childImageSharp {
-          fixed(height: 641, width: 563) {
-            ...GatsbyImageSharpFixed_withWebp
+          fluid(maxWidth: 1500, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluidLimitPresentationSize
           }
         }
       }
     }
   `);
 
-  const imageData = data.icon.childImageSharp.fixed;
+  const devConceptsCoverImageData = data.devConceptsCoverImage.childImageSharp.fluid;
   const { siteMetadata } = data.site;
-  const title = siteMetadata.title;
-  const salesPageUrl = siteMetadata.salesPageUrl;
+  const {title, salesPageUrl} = siteMetadata;
 
   return (
     <Wrapper>
       <a href={salesPageUrl} rel="noopener noreferrer" aria-label="Pre-order now!" title="Pre-order now!" className="pointer">
         <figure className="devConceptsLogoFigure">
-          <Img fixed={imageData} alt={title} />
+          <Img fluid={devConceptsCoverImageData} alt={title} />
           <figcaption>
             <h2>
               Pre-order&nbsp;&nbsp;<span>now!</span>

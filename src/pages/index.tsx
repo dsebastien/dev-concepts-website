@@ -2,11 +2,29 @@ import React from "react";
 import { Layout } from "../components/layout";
 import { SEO } from "../components/seo";
 import { DevConceptsCover } from "../components/dev-concepts-cover/dev-concepts-cover";
+import styled from "styled-components";
+
+const CoverImageWrapper = styled.div.attrs({
+  className: "flex w-full sm:w-2/4",
+})`
+`;
+
+const FormWrapper = styled.div.attrs({
+  className: "flex w-full sm:w-2/4 mt-2 sm:mt-0",
+})`
+
+`;
 
 const App = () => (
   <Layout>
     <SEO />
-    <DevConceptsCover />
+    <div className="w-full flex flex-col">
+      <div className="w-full flex flex-col sm:flex-row flex-wrap">
+        <CoverImageWrapper><DevConceptsCover /></CoverImageWrapper>
+        <FormWrapper>Newsletter coming soon...</FormWrapper>
+      </div>
+    </div>
+
   </Layout>
 );
 

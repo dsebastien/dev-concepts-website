@@ -39,9 +39,7 @@ const Layout: React.FC = ({ children }) => {
         <Header />
       </header>
       <Separator />
-      <main className="flex flex-grow mt-5 mx-2 sm:mx-0">
-        <div>{children}</div>
-      </main>
+      <main className="flex flex-grow mt-5 mx-2 sm:mx-0">{children}</main>
       <Footer />
     </Container>
   );
