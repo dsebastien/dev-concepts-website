@@ -9,8 +9,12 @@ const CoverImageWrapper = styled.div.attrs({
   className: "flex w-full sm:w-2/4",
 })``;
 
-const FormWrapper = styled.div.attrs({
-  className: "flex w-full sm:w-2/4 mt-2 sm:mt-0",
+const MainIntroAndNewsletter = styled.div.attrs({
+  className: "w-full h-full sm:w-2/4 mt-2 sm:mt-0",
+})``;
+
+const IntroText = styled.div.attrs({
+  className: "",
 })``;
 
 const App = () => (
@@ -21,9 +25,17 @@ const App = () => (
         <CoverImageWrapper>
           <DevConceptsCover />
         </CoverImageWrapper>
-        <FormWrapper>
+        <MainIntroAndNewsletter>
+          <IntroText>
+            <header>
+              <h2>What is it?</h2>
+            </header>
+            <main>
+              <span>Dev Concepts is an upcoming e-book that will teach you everything about Software Development Concepts.</span>
+            </main>
+          </IntroText>
           <DevConceptsNewsletterForm />
-        </FormWrapper>
+        </MainIntroAndNewsletter>
       </div>
     </div>
   </Layout>

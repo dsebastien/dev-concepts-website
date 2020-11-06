@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import {ConvertKitForm} from "../convertkit-form";
 
 const Wrapper = styled.div.attrs({
-  className: "w-full mt-4 sm:mt-0",
+  className: "w-full h-full mt-4 sm:mt-0 flex flex-col object-center",
 })`
 `;
 
@@ -11,6 +12,7 @@ const DevConceptsNewsletterForm: React.FC = () => {
 
   return (
     <Wrapper id="devConceptsNewsletterSubscriptionForm">
+      <ConvertKitForm />
     </Wrapper>
   );
 };

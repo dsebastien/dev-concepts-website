@@ -16,6 +16,9 @@
   TypeScript / ES20xy
   React
   Gatsby
+  Tailwind
+  Tailwind Custom Forms
+  CSP
   GraphQL
   Webpack
   NodeJS

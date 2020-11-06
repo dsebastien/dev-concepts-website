@@ -111,5 +111,10 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    /**
+     * Reference: https://tailwindcss-custom-forms.netlify.app/
+     */
+    require('@tailwindcss/custom-forms'),
+  ],
 };
