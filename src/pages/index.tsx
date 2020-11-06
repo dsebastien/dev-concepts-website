@@ -3,14 +3,14 @@ import { Layout } from "../components/layout";
 import { SEO } from "../components/seo";
 import { DevConceptsCover } from "../components/dev-concepts-cover/dev-concepts-cover";
 import styled from "styled-components";
-import {DevConceptsNewsletterForm} from "../components/dev-concepts-newsletter-form";
+import { DevConceptsNewsletterForm } from "../components/dev-concepts-newsletter-form";
 
 const CoverImageWrapper = styled.div.attrs({
   className: "flex w-full sm:w-2/4",
 })``;
 
 const MainIntroAndNewsletter = styled.div.attrs({
-  className: "w-full h-full sm:w-2/4 mt-2 sm:mt-0",
+  className: "w-full h-full sm:w-2/4 mt-8 sm:mt-0",
 })``;
 
 const IntroText = styled.div.attrs({
@@ -20,23 +20,24 @@ const IntroText = styled.div.attrs({
 const App = () => (
   <Layout>
     <SEO />
-    <div className="w-full flex flex-col">
-      <div className="w-full flex flex-col sm:flex-row flex-wrap">
-        <CoverImageWrapper>
-          <DevConceptsCover />
-        </CoverImageWrapper>
-        <MainIntroAndNewsletter>
-          <IntroText>
-            <header>
-              <h2>What is it?</h2>
-            </header>
-            <main>
-              <span>Dev Concepts is an upcoming e-book that will teach you everything about Software Development Concepts.</span>
-            </main>
-          </IntroText>
-          <DevConceptsNewsletterForm />
-        </MainIntroAndNewsletter>
-      </div>
+    <div className="w-full flex flex-col sm:flex-row">
+      <CoverImageWrapper>
+        <DevConceptsCover />
+      </CoverImageWrapper>
+      <MainIntroAndNewsletter>
+        <IntroText>
+          <header>
+            <h2>The perfect guide towards full stack development</h2>
+          </header>
+          <main>
+            <span>
+              Get a clear view of modern software development: architecture, back-end, front-end, IT security and IT infrastructure. All in
+              one book.
+            </span>
+          </main>
+        </IntroText>
+        <DevConceptsNewsletterForm />
+      </MainIntroAndNewsletter>
     </div>
   </Layout>
 );

@@ -58,20 +58,20 @@ h1 {
 }
 
 h2 {
-  @apply text-devConceptsGray-300 text-2xl font-bold tracking-normal;
+  @apply text-devConceptsGray-100 text-2xl font-bold tracking-normal;
   line-height: 30px;
   padding: 9px 0;
 }
 
 h3 {
-  @apply text-devConceptsGray-300 text-2xl font-semibold;
+  @apply text-devConceptsGray-100 text-2xl font-semibold;
   line-height: 30px;
   padding: 9px 0;
   letter-spacing: -0.5px;
 }
 
 h4 {
-  @apply text-devConceptsGray-300 text-xs font-bold;
+  @apply text-devConceptsGray-100 text-xs font-bold;
   line-height: 20px;
   padding: 14px 0;
   letter-spacing: -0.17px;
@@ -79,7 +79,7 @@ h4 {
 }
 
 h5 {
-  @apply text-devConceptsGray-400 text-base font-medium;
+  @apply text-devConceptsGray-100 text-base font-medium;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////*/

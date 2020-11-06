@@ -115,6 +115,6 @@ module.exports = {
     /**
      * Reference: https://tailwindcss-custom-forms.netlify.app/
      */
-    require('@tailwindcss/custom-forms'),
+    require("@tailwindcss/custom-forms"),
   ],
 };
