@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Header } from "../header";
 import { Footer } from "../footer";
 import { Helmet } from "react-helmet";
+import { Countdown } from "../countdown/countdown";
 
 const Container = styled.div.attrs({
   // Sticky footer
@@ -11,7 +12,7 @@ const Container = styled.div.attrs({
 })``;
 
 const Separator = styled.hr.attrs({
-  className: "border-b border-gray-100 opacity-25 my-0 py-0",
+  className: "border-b-1 border-gray-100 opacity-25 my-0 py-0",
 })``;
 
 const Layout: React.FC = ({ children }) => {
@@ -38,6 +39,8 @@ const Layout: React.FC = ({ children }) => {
       <header className="mx-2 sm:mx-0">
         <Header />
       </header>
+      <Separator />
+      <Countdown date={new Date(2021, 2, 15, 6, 30, 0, 0)} />
       <Separator />
       <main className="flex flex-grow mt-5 mx-2 sm:mx-0">{children}</main>
       <Footer />
