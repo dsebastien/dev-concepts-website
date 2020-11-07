@@ -7,8 +7,10 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
   return (
     <Layout>
       <SEO title="Software Development Concepts - About" description="The Story behind the Software Development Concepts book" />
-      <h1>About</h1>
-      Coming soon...
+      <section className="flex flex-col">
+        <h1>About</h1>
+        <div>Coming soon...</div>
+      </section>
     </Layout>
   );
 };
