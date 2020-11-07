@@ -29,12 +29,12 @@ const App = () => (
           <header>
             <h2>The perfect guide towards full stack development</h2>
           </header>
-          <main>
+          <div>
             <span>
               Get a clear view of modern software development: architecture, back-end, front-end, IT security and IT infrastructure. All in
               one book.
             </span>
-          </main>
+          </div>
         </IntroText>
         <DevConceptsNewsletterForm />
       </MainIntroAndNewsletter>
