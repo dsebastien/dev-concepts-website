@@ -11,10 +11,12 @@
   Thanks to the open source community!
 
 # TECHNOLOGY COLOPHON
-  HTML5
-  CSS3
-  TypeScript / ES20xy
+  HTML
+  CSS
+  TypeScript / EcmaScript
   React
+  React Hook Form
+  React Styled Components
   Gatsby
   Tailwind
   Tailwind Custom Forms

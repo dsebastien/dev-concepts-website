@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { graphql, useStaticQuery } from "gatsby";
+import {graphql, Link, useStaticQuery} from "gatsby";
 import { Code } from "../code";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -45,11 +45,14 @@ const Header: React.FC = () => {
         <a href={data.site.siteMetadata.salesPageUrl} title="Pre-order the book now!" aria-label="Pre-order the book now!">
           {data.site.siteMetadata.title}
         </a>
+        {/* Alternative: internal link first, but it only adds an uninteresting flash */}
+        {/*<Link to="/pre-order" title="Pre-order the book now!" aria-label="Pre-order the book now!">*/}
+        {/*  {data.site.siteMetadata.title}*/}
+        {/*</Link>*/}
       </h1>
       <div className="hidden lg:block">
         <Code>{COMMAND}</Code>
       </div>
-
       <Tagline>{data.site.siteMetadata.tagline}</Tagline>
     </StyledHeader>
   );
