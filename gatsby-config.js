@@ -105,8 +105,8 @@ module.exports = {
         short_name: siteMetadata.title,
         description: siteMetadata.description,
         start_url: `/`,
-        background_color: "#242942",
-        theme_color: "#2a2f4a",
+        background_color: "#263545", // devConceptsBlue-700
+        theme_color: "#4A6887", // devConceptsBlue-500
         display: `minimal-ui`,
         icon: "src/assets/images/svg/developassion-symbol.svg", // This path is relative to the root of the site.
         //theme_color_in_head: false, // This will avoid adding theme-color meta tag.
