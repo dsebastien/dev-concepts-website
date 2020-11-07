@@ -56,12 +56,20 @@ const SEO: React.FC<SEOProps> = (props) => {
       content: siteImage,
     },
     {
+      name: "og:locale",
+      content: "en_US",
+    },
+    {
       name: "og:url",
       content: siteUrl,
     },
     {
       name: "og:type",
       content: "article",
+    },
+    {
+      name: "og:site_name",
+      content: siteTitle,
     },
     {
       name: "og:title",
@@ -99,6 +107,10 @@ const SEO: React.FC<SEOProps> = (props) => {
       name: "keywords",
       content: siteKeywords,
     },
+    {
+      name: "HandheldFriendly",
+      content: true,
+    },
   ].concat(meta);
 
   const linkData = [
@@ -112,7 +124,7 @@ const SEO: React.FC<SEOProps> = (props) => {
     },
   ];
   // Helmet reference: https://github.com/nfl/react-helmet
-  return <Helmet htmlAttributes={{ lang: "en" }} title={siteTitle} meta={metaData} link={linkData} />;
+  return <Helmet htmlAttributes={{ lang: "en", prefix: "og: http://ogp.me/ns#" }} title={siteTitle} meta={metaData} link={linkData} />;
 };
 
 export { SEO };
