@@ -3,15 +3,10 @@ import styled from "styled-components";
 import { Header } from "../header";
 import { Footer } from "../footer";
 import { Helmet } from "react-helmet";
+import {Separator} from "../separator";
 
 const Container = styled.div.attrs({
-  // Sticky footer
-  // https://stackoverflow.com/questions/59812003/make-footer-fixed-on-the-bottom-with-tailwindcss
-  className: "flex flex-col h-screen justify-between",
-})``;
-
-const Separator = styled.hr.attrs({
-  className: "border-b-1 border-gray-100 opacity-25 my-0 py-0",
+  className: "flex flex-col justify-between",
 })``;
 
 const Layout: React.FC = ({ children }) => {
@@ -35,11 +30,11 @@ const Layout: React.FC = ({ children }) => {
         `}
         </script>
       </Helmet>
-      <header className="mx-2 sm:mx-0">
+      <header className="">
         <Header />
       </header>
       <Separator />
-      <main className="flex flex-grow mt-5 mx-2 sm:mx-0">{children}</main>
+      <main className="mt-5 mx-2 sm:mx-0">{children}</main>
       <Footer />
     </Container>
   );

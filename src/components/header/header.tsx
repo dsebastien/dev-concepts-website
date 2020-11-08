@@ -6,7 +6,7 @@ import { faCode, faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const StyledHeader = styled.div.attrs({
-  className: "w-full mx-auto text-left sm:text-center mt-0 py-6 flex flex-col md:flex-row md:justify-between items-center",
+  className: "w-full mx-auto text-left sm:text-center mt-0 pt-4 flex flex-col md:flex-row md:justify-between items-center",
 })``;
 
 const Tagline = styled.h2.attrs({
