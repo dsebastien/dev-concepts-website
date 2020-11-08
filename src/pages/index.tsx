@@ -4,6 +4,10 @@ import { SEO } from "../components/seo";
 import { DevConceptsCover } from "../components/dev-concepts-cover/dev-concepts-cover";
 import styled from "styled-components";
 import { DevConceptsNewsletterForm } from "../components/dev-concepts-newsletter-form";
+import { Countdown } from "../components/countdown";
+import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { graphql, useStaticQuery } from "gatsby";
 
 const CoverImageWrapper = styled.div.attrs({
   className: "flex w-full sm:w-2/4",
@@ -17,30 +21,62 @@ const IntroText = styled.div.attrs({
   className: "",
 })``;
 
-const App = () => (
-  <Layout>
-    <SEO />
-    <div className="w-full flex flex-col sm:flex-row">
-      <CoverImageWrapper>
-        <DevConceptsCover />
-      </CoverImageWrapper>
-      <MainIntroAndNewsletter>
-        <IntroText>
-          <header>
-            <h2>The perfect guide towards full stack development</h2>
-          </header>
-          <div>
-            <span>
-              Get a clear view of modern software development: architecture, back-end, front-end, IT security and IT infrastructure. All in
-              one book.
-            </span>
-          </div>
-        </IntroText>
-        <DevConceptsNewsletterForm />
-      </MainIntroAndNewsletter>
-    </div>
-  </Layout>
-);
+const App = () => {
+  const data: {
+    site: {
+      siteMetadata: {
+        salesPageUrl: string;
+      };
+    };
+  } = useStaticQuery(graphql`
+    query IndexPageQuery {
+      site {
+        siteMetadata {
+          salesPageUrl
+        }
+      }
+    }
+  `);
+
+  return (
+    <Layout>
+      <SEO />
+      <div className="w-full flex flex-col sm:flex-row">
+        <CoverImageWrapper>
+          <DevConceptsCover />
+        </CoverImageWrapper>
+        <MainIntroAndNewsletter>
+          <IntroText>
+            <header>
+              <h1>
+                <span>The perfect guide towards full stack development.</span>
+              </h1>
+              <h4>
+                <FontAwesomeIcon className="text-2xl" icon={faQuoteLeft} />
+                <span className="px-3">
+                  Learn all the software development concepts, practices and attention points in no time. All in one book.
+                </span>
+                <FontAwesomeIcon className="text-2xl" icon={faQuoteRight} />
+              </h4>
+            </header>
+            <div className="mt-5">
+              <Countdown date={new Date(2021, 2, 15, 6, 30, 0, 0)} />
+              <br />
+              <p>
+                The release date is set to <strong>March 31 2021</strong>, but you can{" "}
+                <a href={data.site.siteMetadata.salesPageUrl} className="link uppercase text-xl">
+                  pre-order it now
+                </a>
+                .
+              </p>
+            </div>
+          </IntroText>
+          <DevConceptsNewsletterForm />
+        </MainIntroAndNewsletter>
+      </div>
+    </Layout>
+  );
+};
 
 export default App;
 

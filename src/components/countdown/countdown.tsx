@@ -85,22 +85,22 @@ const Countdown: React.FC<Props> = ({ date }: Props) => {
   });
 
   return (
-    <div className="w-full px-5 sm:px-0 flex justify-between">
-      <div className="flex flex-col">
-        <span className="text-2xl font-bold text-center">{addLeadingZeros(remainingTime.days)}</span>
-        <span className="">{remainingTime.days === 1 ? "Day" : "Days"}</span>
+    <div className="w-full px-5 sm:px-0 flex justify-center">
+      <div className="mx-5 sm:ml-0 flex flex-col">
+        <span className="text-3xl font-bold text-center">{addLeadingZeros(remainingTime.days)}</span>
+        <span className="text-center">{remainingTime.days === 1 ? "Day" : "Days"}</span>
       </div>
       <div className="mx-5 sm:ml-0 flex flex-col">
-        <span className="text-2xl font-bold text-center">{addLeadingZeros(remainingTime.hours)}</span>
-        <span className="">Hours</span>
+        <span className="text-3xl font-bold text-center">{addLeadingZeros(remainingTime.hours)}</span>
+        <span className="text-center">Hours</span>
       </div>
       <div className="mx-5 sm:ml-0 flex flex-col">
-        <span className="text-2xl font-bold text-center">{addLeadingZeros(remainingTime.minutes)}</span>
-        <span className="">Min</span>
+        <span className="text-3xl font-bold text-center">{addLeadingZeros(remainingTime.minutes)}</span>
+        <span className="text-center">Min</span>
       </div>
       <div className="sm:ml-0 flex flex-col">
-        <span className="text-2xl font-bold text-center">{addLeadingZeros(remainingTime.seconds)}</span>
-        <span className="">Sec</span>
+        <span className="text-3xl font-bold text-center">{addLeadingZeros(remainingTime.seconds)}</span>
+        <span className="text-center">Sec</span>
       </div>
     </div>
   );

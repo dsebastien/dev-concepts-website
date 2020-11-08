@@ -71,11 +71,10 @@ h3 {
 }
 
 h4 {
-  @apply text-devConceptsGray-100 text-xs font-bold;
-  line-height: 20px;
+  @apply text-devConceptsGray-100 text-xl font-semibold;
+  line-height: 25px;
   padding: 14px 0;
-  letter-spacing: -0.17px;
-  text-transform: uppercase;
+  letter-spacing: 0.4px;
 }
 
 h5 {
