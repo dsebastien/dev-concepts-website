@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Header } from "../header";
 import { Footer } from "../footer";
 import { Helmet } from "react-helmet";
-import {Separator} from "../separator";
+import { Separator } from "../separator";
 
 const Container = styled.div.attrs({
   className: "flex flex-col justify-between",

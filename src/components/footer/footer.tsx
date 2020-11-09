@@ -3,8 +3,7 @@ import styled from "styled-components";
 
 import metadata from "../../metadata.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const StyledFooter = styled.footer.attrs({
   className: "ml-0 mr-0 w-full py-2 mt-16 sm:py-6 text-center bg-gray-900 sm:rounded-t-lg",

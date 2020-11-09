@@ -5,17 +5,10 @@ import { DevConceptsCover } from "../components/dev-concepts-cover/dev-concepts-
 import styled from "styled-components";
 import { DevConceptsNewsletterForm } from "../components/dev-concepts-newsletter-form";
 import { Countdown } from "../components/countdown";
-import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
+import { faQuoteLeft, faQuoteRight, faSitemap, faLayerGroup, faServer } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { graphql, useStaticQuery } from "gatsby";
-
-const CoverImageWrapper = styled.div.attrs({
-  className: "flex w-full sm:w-2/4",
-})``;
-
-const MainIntroAndNewsletter = styled.div.attrs({
-  className: "w-full h-full sm:w-2/4 mt-8 sm:mt-0",
-})``;
+import { Separator } from "../components/separator";
 
 const IntroText = styled.div.attrs({
   className: "",
@@ -42,24 +35,21 @@ const App = () => {
     <Layout>
       <SEO />
       <div className="w-full flex flex-col sm:flex-row">
-        <CoverImageWrapper>
+        <div className="flex w-full sm:w-2/4">
           <DevConceptsCover />
-        </CoverImageWrapper>
-        <MainIntroAndNewsletter>
+        </div>
+        <div className="w-full h-full sm:w-2/4 mt-8 sm:mt-0">
           <IntroText>
             <header>
               <h1>
                 <span>The perfect guide towards full stack development.</span>
               </h1>
-              <h4>
-                <FontAwesomeIcon className="text-2xl" icon={faQuoteLeft} />
-                <span className="px-3">
-                  Learn all the software development concepts, practices and attention points in no time. All in one book.
-                </span>
-                <FontAwesomeIcon className="text-2xl" icon={faQuoteRight} />
-              </h4>
+              <span>
+                Front-end, back-end, architecture, analysis, design, quality assurance, code quality, IT infrastructure, IT security. We've
+                got you <i>covered</i>. Get a <strong>crystal clear view of modern software development in no time.</strong>
+              </span>
             </header>
-            <div className="mt-5">
+            <div className="mt-4">
               <Countdown date={new Date(2021, 2, 15, 6, 30, 0, 0)} />
               <br />
               <p>
@@ -72,8 +62,17 @@ const App = () => {
             </div>
           </IntroText>
           <DevConceptsNewsletterForm />
-        </MainIntroAndNewsletter>
+        </div>
       </div>
+      <Separator />
+      <h1 className="my-8 sm:my-12 lg:my-16 sm:mx-8 lg:mx-32 xl:mx-48 xxl:mx-64">
+        <FontAwesomeIcon className="text-2xl" icon={faQuoteLeft} />
+        <span className="px-3">
+          Learn all the software development concepts, practices and attention points in no time. All in one book.
+        </span>
+        <FontAwesomeIcon className="text-2xl" icon={faQuoteRight} />
+      </h1>
+      <Separator />
     </Layout>
   );
 };
