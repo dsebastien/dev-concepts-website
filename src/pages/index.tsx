@@ -41,10 +41,9 @@ const App = () => {
         <div className="w-full h-full sm:w-2/4 mt-8 sm:mt-0">
           <IntroText>
             <header>
-              <h1>
-                <span>The perfect guide towards full stack development.</span>
-              </h1>
-              <span>
+              <h1 className="text-5xl tracking-wider leading-none">The perfect guide towards full stack development.</h1>
+              <br />
+              <span className="text-xl">
                 Front-end, back-end, architecture, analysis, design, quality assurance, code quality, IT infrastructure, IT security. We've
                 got you <i>covered</i>. Get a <strong>crystal clear view of modern software development in no time.</strong>
               </span>
