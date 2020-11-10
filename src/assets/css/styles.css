@@ -117,12 +117,24 @@ h6 .anchor:focus svg {
   visibility: visible;
 }
 
+.link {
+  @apply text-devConceptsGray-700;
+}
+
 .link:hover {
   @apply text-devConceptsPink-400 underline;
 }
 
 .giant-icon {
   font-size: 12rem;
+}
+
+.curve {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-right: 2rem;
+  shape-outside: circle();
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////*/

@@ -116,7 +116,7 @@ const DevConceptsCover: React.FC = () => {
     <Wrapper>
       <a href={salesPageUrl} rel="noopener noreferrer" aria-label="Pre-order now!" title="Pre-order now!" className="pointer">
         <figure className="devConceptsLogoFigure">
-          <Img fluid={devConceptsCoverImageData} alt={title} />
+          <Img loading="eager" fluid={devConceptsCoverImageData} alt={title} />
           <figcaption>
             <h2>
               Pre-order&nbsp;&nbsp;<span>now!</span>

@@ -9,6 +9,7 @@ import { faQuoteLeft, faQuoteRight, faSitemap, faLayerGroup, faServer } from "@f
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { graphql, useStaticQuery } from "gatsby";
 import { Separator } from "../components/separator";
+import {AuthorBio} from "../components/author-bio";
 
 const IntroText = styled.div.attrs({
   className: "",
@@ -19,6 +20,11 @@ const App = () => {
     site: {
       siteMetadata: {
         salesPageUrl: string;
+      };
+    };
+    authorPicture: {
+      childImageSharp: {
+        fluid: any;
       };
     };
   } = useStaticQuery(graphql`
@@ -120,6 +126,8 @@ const App = () => {
           </div>
         </div>
       </div>
+      <Separator />
+      <AuthorBio />
     </Layout>
   );
 };
