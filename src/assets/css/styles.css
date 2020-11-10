@@ -121,6 +121,10 @@ h6 .anchor:focus svg {
   @apply text-devConceptsPink-400 underline;
 }
 
+.giant-icon {
+  font-size: 12rem;
+}
+
 /*/////////////////////////////////////////////////////////////////////////////////////////*/
 
 @tailwind components;

@@ -11,12 +11,12 @@ const Wrapper = styled.div.attrs({
 const DevConceptsNewsletterForm: React.FC = () => {
   return (
     <Wrapper id="devConceptsNewsletter">
-      <h3>
+      <h1>
         <span>Join the Newsletter</span>
         <a href="#newsletter" aria-label="Newsletter permalink" className="anchor after pl-3">
           <FontAwesomeIcon className="" icon={faLink} />
         </a>
-      </h3>
+      </h1>
       <ConvertKitForm />
     </Wrapper>
   );

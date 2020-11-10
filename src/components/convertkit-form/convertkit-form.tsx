@@ -160,9 +160,9 @@ const ConvertKitForm: React.FC = () => {
               )}
             </label>
           </div>
-          <div className="flex mt-5">
-            <Button type="submit" aria-label="Subscribe">
-              Subscribe
+          <div className="flex mt-5 flex justify-center sm:justify-start">
+            <Button type="submit" aria-label="Let me know about the progress">
+              Let me know about the progress
             </Button>
           </div>
         </form>

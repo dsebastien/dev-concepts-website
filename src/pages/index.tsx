@@ -72,6 +72,43 @@ const App = () => {
         <FontAwesomeIcon className="text-2xl" icon={faQuoteRight} />
       </h1>
       <Separator />
+      <div className="w-full min-w-full flex flex-col md:flex-row justify-start md:justify-between">
+        <div className="w-full p-2 my-2 md:my-0 flex flex-col object-center text-center justify-start border-devConceptsGray-200">
+          <div className="giant-icon">
+            <FontAwesomeIcon className="text-devConceptsGreen-500" icon={faLayerGroup} />
+          </div>
+          <div className="">
+            <h1 className="text-3xl">Full Stack</h1>
+            <span className="text-xl">
+              Full Stack developers are great to have on a team because they are able to understand and to be productive in both back-end
+              and front-end development. This book will tell you about everything that matters to become one.
+            </span>
+          </div>
+        </div>
+        <div className="w-full p-2 my-2 md:my-0 flex flex-col object-center text-center md:mx-5 justify-start border-devConceptsGray-200">
+          <div className="giant-icon">
+            <FontAwesomeIcon className="text-devConceptsPink-450" icon={faSitemap} />
+          </div>
+          <div className="">
+            <h1 className="text-3xl">A clear map</h1>
+            <span className="text-xl">
+              This book will help you to create a clear mental map of everything that gravitates around software development.
+            </span>
+          </div>
+        </div>
+        <div className="w-full p-2 my-2 md:my-0 flex flex-col object-center text-center justify-start border-devConceptsGray-200">
+          <div className="giant-icon">
+            <FontAwesomeIcon className="text-devConceptsOrange-550" icon={faServer} />
+          </div>
+          <div className="">
+            <h1 className="text-3xl">DevSecOps</h1>
+            <span className="text-xl">
+              The best software developers understand that code is only part of the story. This book will teach you the bare minimum you
+              need to know about IT security, IT infrastructure and IT operations.
+            </span>
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 };
