@@ -11,6 +11,7 @@ interface AuthorBioQuery {
         linkedInSebastien: string;
         mediumSebastien: string;
         twitterSebastien: string;
+        tsBookLink: string;
       };
     };
   }
@@ -20,7 +21,6 @@ interface AuthorBioQuery {
     };
   };
 }
-
 
 interface Props {
   data: AuthorBioQuery;
@@ -54,7 +54,7 @@ const AuthorBioText: React.FC<Props> = ({data}: Props) => {
                 <br />
                 <p>
                   I've used various programming languages over the years (Java, Kotlin, JavaScript, TypeScript, C, C#, Basic, Bash,
-                  PowerShell, Python, etc), wrote a book about the TypeScript programming language, led development teams, managed large
+                  PowerShell, Python, etc), wrote <a className="link" href={data.site.siteMetadata.social.tsBookLink}>a book about the TypeScript programming language</a>, led development teams, managed large
                   projects both on the infrastructure side and on the software development side and even spent a few years as a system
                   architect/administrator of hundreds of Windows Server machines and Active Directory infrastructure for a large financial
                   institution (fun times :p).
@@ -81,6 +81,7 @@ const AuthorBio: React.FC = () => {
             linkedInSebastien
             mediumSebastien
             twitterSebastien
+            tsBookLink
           }
         }
       }

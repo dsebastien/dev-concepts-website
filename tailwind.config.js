@@ -99,7 +99,6 @@ module.exports = {
       devConcepts: [
         "Lato",
         "Source Sans Pro",
-        "Kaushan Script",
         "-apple-system",
         "BlinkMacSystemFont",
         "Segoe UI",
