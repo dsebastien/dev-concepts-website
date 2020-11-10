@@ -65,8 +65,13 @@ const App = () => {
               </p>
             </div>
           </IntroText>
-          <DevConceptsNewsletterForm />
+          <div className="hidden lg:block">
+            <DevConceptsNewsletterForm />
+          </div>
         </div>
+      </div>
+      <div className="block lg:hidden w-4/5 sm:w-3/5 md:w-4/5">
+        <DevConceptsNewsletterForm />
       </div>
       <Separator />
       <h1 className="my-8 sm:my-12 lg:my-16 sm:mx-8 lg:mx-32 xl:mx-48 xxl:mx-64">

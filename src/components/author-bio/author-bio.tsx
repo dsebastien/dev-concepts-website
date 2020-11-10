@@ -29,7 +29,7 @@ interface Props {
 const AuthorBioText: React.FC<Props> = ({data}: Props) => {
   return (
     <div>
-      <h1 className="text-3xl">About the author</h1>
+      <h1 className="text-4xl mb-2">About the author</h1>
       <span className="text-lg">
                 <p>
                   Hey everyone! I'm{" "}
