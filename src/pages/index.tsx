@@ -9,7 +9,7 @@ import { faQuoteLeft, faQuoteRight, faSitemap, faLayerGroup, faServer } from "@f
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { graphql, useStaticQuery } from "gatsby";
 import { Separator } from "../components/separator";
-import {AuthorBio} from "../components/author-bio";
+import { AuthorBio } from "../components/author-bio";
 
 const IntroText = styled.div.attrs({
   className: "",
@@ -59,6 +59,10 @@ const App = () => {
               <br />
               <p>
                 The release date is set to <strong>March 31 2021</strong>, but you can{" "}
+                <strong>
+                  benefit from the <i>early-bird</i>
+                </strong>{" "}
+                offer if you{" "}
                 <a href={data.site.siteMetadata.salesPageUrl} className="link uppercase text-xl">
                   pre-order it now.
                 </a>
