@@ -66,8 +66,10 @@ const AuthorBioText: React.FC<Props> = ({ data }: Props) => {
         <p>
           I want to share my passion with anyone willing to learn/discover what IT and software development are all about. Sharing is
           caring, or so they say. This is why I started giving 1:1 coaching sessions a while ago. I'm convinced that through this book, I'll
-          be able to reach and help many more people, maybe even you? So go ahead, pre-order the book right now, and be amongst my first
-          readers!
+          be able to reach and help many more people, maybe even you? So go ahead,{" "}
+          <a href={data.site.siteMetadata.salesPageUrl} className="link">
+            pre-order the book right now, and be amongst my first readers!
+          </a>
         </p>
       </span>
     </div>
@@ -112,10 +114,9 @@ const AuthorBio: React.FC = () => {
         <AuthorBioText data={data} />
       </div>
 
-      {/* Either or that */}
+      {/* Or that */}
       <div className="w-full lg:hidden text-center">
         {" "}
-        {/* flex flex-col lg:hidden items-center text-center object-center */}
         <a href={data.site.siteMetadata.salesPageUrl} className="">
           <div className="flex flex-col items-center">
             <Img
