@@ -172,7 +172,7 @@ module.exports = {
           "base-uri": "'self'",
           "block-all-mixed-content": "",
           "child-src": "'self'",
-          "connect-src": "'self' http://localhost:8000 http://localhost:* ws://localhost:* app.convertkit.com fonts.googleapis.com stats.g.doubleclick.net",
+          "connect-src": "'self' http://localhost:8000 http://localhost:* ws://localhost:* app.convertkit.com fonts.googleapis.com www.google-analytics.com",
           "default-src": "'self'",
           "disown-opener": "",
           "font-src": "'self' data: https://fonts.gstatic.com",
