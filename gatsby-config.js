@@ -195,31 +195,35 @@ module.exports = {
       },
     },
 
-    // reference: https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/
+    // references:
+    // https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag
+    // https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-google-gtag
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: "G-Y1EM8E6B3T",
-        // Puts tracking script in the head instead of the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: [],
-        // Enables Google Optimize using your container Id
-        //optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
-        // Enables Google Optimize Experiment ID
-        //experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
-        // Set Variation ID. 0 for original 1,2,3....
-        //variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
-        // Any additional create only fields (optional)
-        //sampleRate: 5,
-        //siteSpeedSampleRate: 10,
-        //cookieDomain: "dev-concepts.dev", // auto
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-TL0EMPNJ06", // Google Analytics / GA
+        ],
+        // This object gets passed directly to the gtag config command
+        // This config will be shared across all trackingIds
+        gtagConfig: {
+          //optimize_id: "OPT_CONTAINER_ID",
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: false,
+          // Respect user privacy
+          respectDNT: true,
+          // Avoids sending pageview hits from custom paths
+          exclude: [],
+        },
       },
     },
+
     // reference: https://github.com/dequelabs/axe-core/blob/master/doc/API.md#api-name-axeconfigure
     {
       resolve: "gatsby-plugin-react-axe",

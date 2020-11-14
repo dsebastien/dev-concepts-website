@@ -4,6 +4,7 @@ import styled from "styled-components";
 import metadata from "../../metadata.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 const StyledFooter = styled.footer.attrs({
   className: "ml-0 mr-0 w-full py-2 mt-16 sm:py-6 text-center bg-gray-900 sm:rounded-t-lg",
@@ -34,7 +35,7 @@ const Footer: React.FC = () => {
       <StyledList>
         <StyledListElement>
           &copy; {new Date().getFullYear()}{" "}
-          <a
+          <OutboundLink
             href={metadata.social.mediumSebastien}
             target="_blank"
             rel="noreferrer noopener"
@@ -42,10 +43,10 @@ const Footer: React.FC = () => {
             aria-label="Dubois Sébastien @ Medium"
           >
             Dubois Sébastien
-          </a>
+          </OutboundLink>
         </StyledListElement>
         <StyledListElement>
-          <a
+          <OutboundLink
             href={metadata.develoPassionSiteUrl}
             target="_blank"
             rel="noreferrer noopener"
@@ -53,15 +54,21 @@ const Footer: React.FC = () => {
             aria-label="DeveloPassion"
           >
             DeveloPassion
-          </a>
+          </OutboundLink>
         </StyledListElement>
         <StyledListElement>
-          <a href={metadata.siteSources} target="_blank" rel="noreferrer noopener" title="Website sources" aria-label="Website sources">
+          <OutboundLink
+            href={metadata.siteSources}
+            target="_blank"
+            rel="noreferrer noopener"
+            title="Website sources"
+            aria-label="Website sources"
+          >
             <FontAwesomeIcon icon={faGithub} />
-          </a>
+          </OutboundLink>
         </StyledListElement>
         <StyledListElement>
-          <a
+          <OutboundLink
             href={metadata.social.twitterSebastien}
             target="_blank"
             rel="noreferrer noopener"
@@ -69,7 +76,7 @@ const Footer: React.FC = () => {
             aria-label="Dubois Sébastien @ Twitter"
           >
             <FontAwesomeIcon icon={faTwitter} />
-          </a>
+          </OutboundLink>
         </StyledListElement>
       </StyledList>
     </StyledFooter>

@@ -2,6 +2,7 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
 import Img from "gatsby-image";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 const Wrapper = styled.div.attrs({
   className: "relative w-full",
@@ -114,7 +115,7 @@ const DevConceptsCover: React.FC = () => {
 
   return (
     <Wrapper>
-      <a href={salesPageUrl} rel="noopener noreferrer" aria-label="Pre-order now!" title="Pre-order now!" className="pointer">
+      <OutboundLink href={salesPageUrl} rel="noopener" aria-label="Pre-order now!" title="Pre-order now!" className="pointer">
         <figure className="devConceptsLogoFigure">
           <Img loading="eager" fluid={devConceptsCoverImageData} alt={title} />
           <figcaption>
@@ -123,7 +124,7 @@ const DevConceptsCover: React.FC = () => {
             </h2>
           </figcaption>
         </figure>
-      </a>
+      </OutboundLink>
     </Wrapper>
   );
 };
