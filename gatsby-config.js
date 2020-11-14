@@ -186,8 +186,7 @@ module.exports = {
           "plugin-types": "application/pdf",
           "prefetch-src": "'self'",
           sandbox: "",
-          "script-src":
-            "'self' www.google-analytics.com 'sha256-KWO6UOhc/cfhZd4gtXYPu4WkSRPuCQDtCkF/v9OyJB8=' 'sha256-QAj9SgqS0tkqFXsMg6gbHzN3KfNnrPW0N0FCdMzN3MI=' 'nonce-fcd8146f-6701-4dca-9165-3ed4c96a3b5a'",
+          "script-src": "'self' www.google-analytics.com www.googletagmanager.com 'sha256-KWO6UOhc/cfhZd4gtXYPu4WkSRPuCQDtCkF/v9OyJB8=' 'sha256-QAj9SgqS0tkqFXsMg6gbHzN3KfNnrPW0N0FCdMzN3MI=' 'nonce-fcd8146f-6701-4dca-9165-3ed4c96a3b5a'",
           "style-src": "'self' 'unsafe-inline' blob: https://fonts.googleapis.com",
           "upgrade-insecure-requests": "",
           "worker-src": "'self'",
