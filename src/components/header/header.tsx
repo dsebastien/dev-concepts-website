@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { graphql, useStaticQuery } from "gatsby";
 import { Code } from "../code";
-import { faCode, faLink } from "@fortawesome/free-solid-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
 
@@ -51,9 +51,6 @@ const Header: React.FC = () => {
         >
           {data.site.siteMetadata.title}
         </OutboundLink>
-        <a href="#top" aria-label="Newsletter permalink" className="anchor after pl-3">
-          <FontAwesomeIcon className="" icon={faLink} />
-        </a>
         {/* Alternative: internal link first, but it only adds an uninteresting flash */}
         {/*<Link to="/pre-order" title="Pre-order the book now!" aria-label="Pre-order the book now!">*/}
         {/*  {data.site.siteMetadata.title}*/}
