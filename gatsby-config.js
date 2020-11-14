@@ -179,7 +179,7 @@ module.exports = {
           "form-action": "'none'",
           //"frame-ancestors": "'none'", // cannot be used if CSP defined using a meta tag
           "frame-src": "'self'",
-          "img-src": "'self' data: www.google-analytics.com",
+          "img-src": "'self' data: www.google-analytics.com fonts.gstatic.com",
           "manifest-src": "'self'",
           "media-src": "'self'",
           "object-src": "'self'",
