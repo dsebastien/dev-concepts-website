@@ -14,7 +14,7 @@ const Tagline = styled.h2.attrs({
   className: "w-full mx-auto text-left sm:text-center block md:hidden",
 })``;
 
-const FULL_COMMAND = "sudo make me a Software Craftsman";
+const FULL_COMMAND = "sudo make me a Software Crafter";
 
 const Header: React.FC = () => {
   let COMMAND = FULL_COMMAND;
