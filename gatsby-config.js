@@ -135,9 +135,8 @@ module.exports = {
             //"Access-Control-Allow-Origin: null",
             //"Clear-Site-Data: *" // useful for logout pages: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Clear-Site-Data
 
-            // reference: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy
-            // Not yet ready for prime time
-            "Feature-Policy: autoplay 'none'; camera 'none'",
+            // reference: https://scotthelme.co.uk/goodbye-feature-policy-and-hello-permissions-policy/
+            "Permissions-Policy: accelerometer=(), camera=(), fullscreen=(self), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(self), usb=()",
             "Referrer-Policy: strict-origin",
             "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
             "Upgrade-Insecure-Requests: 1",
