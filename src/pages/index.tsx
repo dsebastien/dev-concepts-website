@@ -51,8 +51,10 @@ const App = () => {
               <h1 className="text-5xl tracking-wider leading-none">The perfect guide towards full stack development.</h1>
               <br />
               <span className="text-xl">
-                Front-end, back-end, architecture, analysis, design, quality assurance, code quality, IT infrastructure, IT security. We've
+                Front-end, back-end, architecture, analysis/design, quality assurance, code quality, IT infrastructure, security, and much more. We've
                 got you <i>covered</i>. Get a <strong>crystal clear view of modern software development in no time.</strong>
+                <br /><br />
+                <p>Check out the full table of contents</p>
               </span>
             </header>
             <div className="mt-4">

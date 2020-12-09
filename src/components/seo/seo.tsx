@@ -11,7 +11,7 @@ type SEOProps = {
   title?: string;
   description?: string;
   siteUrl?: string;
-  author?: string;p
+  author?: string;
   keywords?: string[];
   meta?: MetaItem[];
   image?: string;
