@@ -31,1150 +31,1189 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
         description="Table of contents of the Software Development Concepts book"
       />
 
-      <section className="flex flex-col md:mx-16 lg:mx-32">
-        <h1>Table of contents (draft)</h1>
-        <span>This is a draft of the book's outline. The table of contents will probably evolve during the project.</span>
-
-        <h2>Overview</h2>
-        <section id="top">
-          <ul className="list-disc list-inside ml-2">
-            <li>
-              <a href="#software-craft" className="link no-underline">
-                Part 1: Software craft
-              </a>
-            </li>
-            <li>
-              <a href="#what-clients-need" className="link no-underline">
-                Part 2: What clients need
-              </a>
-            </li>
-            <li>
-              <a href="#architecture" className="link no-underline">
-                Part 3: Architecture
-              </a>
-            </li>
-            <li>
-              <a href="#software-design" className="link no-underline">
-                Part 4: Software design
-              </a>
-            </li>
-            <li>
-              <a href="#computers-and-operating-systems" className="link no-underline">
-                Part 5: Computer architecture and Operating systems basics
-              </a>
-            </li>
-            <li>
-              <a href="#coding-basics" className="link no-underline">
-                Part 6: Coding basics
-              </a>
-            </li>
-            <li>
-              <a href="#general-concerns" className="link no-underline">
-                Part 7: General concerns
-              </a>
-            </li>
-            <li>
-              <a href="#back-end" className="link no-underline">
-                Part 8: Back-end development
-              </a>
-            </li>
-            <li>
-              <a href="#front-end" className="link no-underline">
-                Part 9: Front-end development
-              </a>
-            </li>
-            <li>
-              <a href="#infrastructure" className="link no-underline">
-                Part 10: IT Infrastructure
-              </a>
-            </li>
-            <li>
-              <a href="#security" className="link no-underline">
-                Part 11: Security
-              </a>
-            </li>
-            <li>
-              <a href="#product-project-software" className="link no-underline">
-                Part 12: Product/Project management and Software development approaches
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        {/* -------------------------------------- PART 1 -------------------------------------- */}
-        <section id="software-craft" className="mt-4">
-          <a href="#software-craft" className="anchor">
-            <h2>
-              Part 1: Software craft
-              <span className="anchor-icon">
+      <section className="flex flex-col">
+        <header className="md:px-8 lg:px-16">
+          <h1 id="top">Table of contents (draft)</h1>
+          <span>This is a draft of the book's outline. The table of contents will probably evolve during the project. Note that this version is intentionally kept "short". The actual outline is much longer; DM me on Twitter if you're curious ;-)</span>
+        </header>
+        <div className="mt-4 flex flex-col md:flex-row-reverse md:h-full md:min-h-full w-full">
+          <aside className="md:h-full md:min-h-full md:sticky md:top-0 md:w-4/12"> {/* bg-red-500 mb-8 */}
+            <div>
+              <h2>Overview</h2>
+              <section>
+                <ul className="list-disc list-inside ml-2">
+                  <li>
+                    <a href="#software-craft" className="link no-underline">
+                      Part 1: Software craft
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#what-clients-need" className="link no-underline">
+                      Part 2: What clients need
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#architecture" className="link no-underline">
+                      Part 3: Architecture
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#software-design" className="link no-underline">
+                      Part 4: Software design
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#computers-and-operating-systems" className="link no-underline">
+                      Part 5: Computer architecture and Operating systems basics
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#coding-basics" className="link no-underline">
+                      Part 6: Coding basics
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#general-concerns" className="link no-underline">
+                      Part 7: General concerns
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#back-end" className="link no-underline">
+                      Part 8: Back-end development
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#front-end" className="link no-underline">
+                      Part 9: Front-end development
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#infrastructure" className="link no-underline">
+                      Part 10: IT Infrastructure
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#security" className="link no-underline">
+                      Part 11: Security
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#product-project-software" className="link no-underline">
+                      Part 12: Product/Project management and Software development approaches
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+            <div className="hidden md:block">
+              {/* ------------------ Links in the aside ------------ */}
+              <hr className="my-6" />
+              <div className="w-full flex flex-col sm:flex-row sm:space-between items-center select-none">
+                <div className="w-1/2 text-center">
+                  <h2>
+                    <Link to="/" className="link">
+                      <FontAwesomeIcon className="text-4xl mr-3" icon={faBackward} />
+                      <br />
+                      Go back
+                    </Link>
+                  </h2>
+                </div>
+                <div className="w-1/2 text-center">
+                  <h2>
+                    <OutboundLink
+                      href={data.site.siteMetadata.salesPageUrl}
+                      title="Pre-order the book now!"
+                      aria-label="Pre-order the book now!"
+                      rel="noopener"
+                      className="link"
+                    >
+                      <FontAwesomeIcon className="text-4xl mr-3" icon={faShoppingCart} />
+                      <br />
+                      Pre-order now!
+                    </OutboundLink>
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <main id="main-toc" className="md:px-8 lg:px-16 md:w-8/12">
+            {/* -------------------------------------- PART 1 -------------------------------------- */}
+            <section id="software-craft" className="">
+              <a href="#software-craft" className="anchor">
+                <h2>
+                  Part 1: Software craft
+                  <span className="anchor-icon">
                 <FontAwesomeIcon icon={faLink} />
               </span>
-            </h2>
-          </a>
-          <p>
-            This part explains the different <span className="font-bold italic">skills</span> that you’ll need to acquire and improve over
-            the course of your career to become a software crafter. There are no secrets and no magic; to become one. It’s mostly a question
-            of work, dedication, passion, and <span className="italic">fun</span>.
-          </p>
-          <br />
-          <p>
-            This part is much less about technology than about personality traits and psychology. Even if we all start with our own
-            background, strengths and weaknesses, there are things to know, tips and tricks that will guide you on the path towards becoming
-            a software crafter.
-          </p>
-          <h4 className="mt-2">In this part:</h4>
-          <ol>
-            <li>Introduction</li>
-            <li>What is software development</li>
-            <li>What is a software crafter</li>
-            <li>Important skills and practical advice</li>
-          </ol>
-        </section>
+                </h2>
+              </a>
+              <p>
+                This part explains the different <span className="font-bold italic">skills</span> that you’ll need to acquire and improve over
+                the course of your career to become a software crafter. There are no secrets and no magic; to become one. It’s mostly a question
+                of work, dedication, passion, and <span className="italic">fun</span>.
+              </p>
+              <br />
+              <p>
+                This part is much less about technology than about personality traits and psychology. Even if we all start with our own
+                background, strengths and weaknesses, there are things to know, tips and tricks that will guide you on the path towards becoming
+                a software crafter.
+              </p>
+              <h4 className="mt-2">In this part:</h4>
+              <ol>
+                <li>Introduction</li>
+                <li>What is software development</li>
+                <li>What is a software crafter</li>
+                <li>Important skills and practical advice</li>
+              </ol>
+            </section>
 
-        {/* -------------------------------------- PART 2 -------------------------------------- */}
-        <section id="what-clients-need" className="mt-4">
-          <a href="#what-clients-need" className="anchor">
-            <h2>
-              Part 2: What clients need
-              <span className="anchor-icon">
+            {/* -------------------------------------- PART 2 -------------------------------------- */}
+            <section id="what-clients-need" className="mt-4">
+              <a href="#what-clients-need" className="anchor">
+                <h2>
+                  Part 2: What clients need
+                  <span className="anchor-icon">
                 <FontAwesomeIcon icon={faLink} />
               </span>
-            </h2>
-          </a>
-          <p>
-            All software development endeavors have one thing in common: they aim to solve real-world{" "}
-            <span className="font-bold">problems</span>.
-          </p>
-          <br />
-          <p>
-            This part focuses on how to understand what clients truly need. It covers concepts such as functional & non-functional
-            requirements, techniques that you can use to understand business problems and end user goals. It also covers what specifications
-            are and why they matter.
-          </p>
-          <br />
-          <p>
-            These ideas are important because,{" "}
-            <span className="font-bold">
+                </h2>
+              </a>
+              <p>
+                All software development endeavors have one thing in common: they aim to solve real-world{" "}
+                <span className="font-bold">problems</span>.
+              </p>
+              <br />
+              <p>
+                This part focuses on how to understand what clients truly need. It covers concepts such as functional & non-functional
+                requirements, techniques that you can use to understand business problems and end user goals. It also covers what specifications
+                are and why they matter.
+              </p>
+              <br />
+              <p>
+                These ideas are important because,{" "}
+                <span className="font-bold">
               no matter how good a software developer you are, it doesn’t matter at all if you end up building something that solves the
               wrong problems.
             </span>
-          </p>
-          <h4 className="mt-2">In this part:</h4>
-          <ol>
-            <li>Introduction</li>
-            <li>
-              Requirements
+              </p>
+              <h4 className="mt-2">In this part:</h4>
               <ol>
-                <li>Functional</li>
-                <li>Non-functional</li>
-                <li>Discovery process</li>
+                <li>Introduction</li>
+                <li>
+                  Requirements
+                  <ol>
+                    <li>Functional</li>
+                    <li>Non-functional</li>
+                    <li>Discovery process</li>
+                  </ol>
+                </li>
+                <li>User Centered Design (UCD)</li>
+                <li>User Experience Design (UX)</li>
+                <li>
+                  Specifications
+                  <ol>
+                    <li>Business analysis</li>
+                    <li>Business rules</li>
+                    <li>Ubiquitous language</li>
+                    <li>Functional/Technical analysis</li>
+                  </ol>
+                </li>
+                <li>Minimum Viable Product (MVP)</li>
               </ol>
-            </li>
-            <li>User Centered Design (UCD)</li>
-            <li>User Experience Design (UX)</li>
-            <li>
-              Specifications
-              <ol>
-                <li>Business analysis</li>
-                <li>Business rules</li>
-                <li>Ubiquitous language</li>
-                <li>Functional/Technical analysis</li>
-              </ol>
-            </li>
-            <li>Minimum Viable Product (MVP)</li>
-          </ol>
-        </section>
+            </section>
 
-        {/* -------------------------------------- PART 3 -------------------------------------- */}
-        <section id="architecture" className="mt-4">
-          <a href="#architecture" className="anchor">
-            <h2>
-              Part 3: Architecture
-              <span className="anchor-icon">
+            {/* -------------------------------------- PART 3 -------------------------------------- */}
+            <section id="architecture" className="mt-4">
+              <a href="#architecture" className="anchor">
+                <h2>
+                  Part 3: Architecture
+                  <span className="anchor-icon">
                 <FontAwesomeIcon icon={faLink} />
               </span>
-            </h2>
-          </a>
-          <p>
-            Once you have accumulated enough understanding about the requirements, you need to create IT solutions that efficiently solve
-            the problems.
-          </p>
-          <br />
-          <p>
-            Before diving into design and code, you need to get in the shoes of an architect and devise{" "}
-            <span className="italic">solutions</span>. Software crafters are not necessarily architects, but they should at least understand
-            what architects do and should be able to provide useful input to them.
-          </p>
-          <br />
-          <p>
-            Sometimes, you’ll also have to play the role of the architect (e.g., in small startups) and when that happens, you need to know
-            what needs to be done to avoid disasters. Here, we'll explore some key ideas about IT architecture in general and software
-            architecture in particular.
-          </p>
-          <h4 className="mt-2">In this part:</h4>
-          <ol>
-            <li>
-              Introduction
-              <ol>
-                <li>Hype cycle</li>
-              </ol>
-            </li>
-            <li>Solution architecture</li>
-            <li>
-              Software architecture
+                </h2>
+              </a>
+              <p>
+                Once you have accumulated enough understanding about the requirements, you need to create IT solutions that efficiently solve
+                the problems.
+              </p>
+              <br />
+              <p>
+                Before diving into design and code, you need to get in the shoes of an architect and devise{" "}
+                <span className="italic">solutions</span>. Software crafters are not necessarily architects, but they should at least understand
+                what architects do and should be able to provide useful input to them.
+              </p>
+              <br />
+              <p>
+                Sometimes, you’ll also have to play the role of the architect (e.g., in small startups) and when that happens, you need to know
+                what needs to be done to avoid disasters. Here, we'll explore some key ideas about IT architecture in general and software
+                architecture in particular.
+              </p>
+              <h4 className="mt-2">In this part:</h4>
               <ol>
                 <li>
-                  Architectural/high level design patterns
+                  Introduction
                   <ol>
-                    <li>Multi-tier architectures</li>
-                    <li>Microservices vs monoliths</li>
-                    <li>Cloud-native apps</li>
-                    <li>Serverless & Functions as a Service (FaaS)</li>
-                    <li>Command Query Responsibility Segregation (CQRS)</li>
-                    <li>Event Sourcing (ES)</li>
-                    <li>Event-Driven Architecture (EDA)</li>
-                    <li>RDBMs vs NoSQL</li>
-                    <li>Enterprise Application Integration (EAI)</li>
-                    <li>Micro Front-ends</li>
+                    <li>Hype cycle</li>
                   </ol>
                 </li>
-              </ol>
-            </li>
-            <li>
-              Information/Data architecture
-              <ol>
-                <li>Data modeling</li>
-                <li>Data storage</li>
+                <li>Solution architecture</li>
                 <li>
-                  Data integration
-                  <ol>
-                    <li>Extract Transform Load (ETL)</li>
-                    <li>Web Services / SOA</li>
-                  </ol>
-                </li>
-                <li>Data governance</li>
-                <li>Big Data</li>
-                <li>
-                  Data analytics
-                  <ol>
-                    <li>Data Mining</li>
-                    <li>Business Intelligence (BI)</li>
-                    <li>Artificial Intelligence (AI)</li>
-                  </ol>
-                </li>
-              </ol>
-            </li>
-            <li>Infrastructure architecture</li>
-            <li>Security architecture</li>
-            <li>Enterprise architecture</li>
-          </ol>
-        </section>
-
-        {/*-------------------------------------- PART 4 -------------------------------------- */}
-        <section id="software-design" className="mt-4">
-          <a href="#software-design" className="anchor">
-            <h2>
-              Part 4: Software design
-              <span className="anchor-icon">
-                <FontAwesomeIcon icon={faLink} />
-              </span>
-            </h2>
-          </a>
-          <p>
-            Software design is where the real action begins. Previous parts talk about much higher level concepts. Solving the wrong problem
-            means game over, a bad architecture means tons of waste, and bad software design means costly maintenance. Here, we explore
-            software design, explain why it is critical for mental health (seriously!) and key concepts that you’ll use on a daily basis
-            during your software crafter’s career.
-          </p>
-          <h4 className="mt-2">In this part:</h4>
-          <ol>
-            <li>
-              Technical design
-              <ol>
-                <li>
-                  Data
-                  <ol>
-                    <li>Data models</li>
-                    <li>Data structures</li>
-                    <li>State machines (FSM)</li>
-                  </ol>
-                </li>
-                <li>Business rules</li>
-                <li>Database design</li>
-                <li>
-                  Algorithms
-                  <ol>
-                    <li>Complexity and the Big-O notation</li>
-                  </ol>
-                </li>
-                <li>Workflows</li>
-                <li>
-                  Code design principles
-                  <ol>
-                    <li>Problem partitioning</li>
-                    <li>Design strategies</li>
-                    <li>Abstraction</li>
-                    <li>Modularity</li>
-                    <li>Encapsulation</li>
-                    <li>Law of Demeter (LoD)</li>
-                    <li>Separation of concerns</li>
-                    <li>SOLID principles</li>
-                    <li>Don't Repeat Yourself (DRY)</li>
-                    <li>Don't reinvent the wheel</li>
-                    <li>You aren't gonna need it (YAGNI)</li>
-                    <li>Pareto principle</li>
-                    <li>Convention over configuration</li>
-                    <li>API design</li>
-                    <li>Refactoring/Refinement</li>
-                  </ol>
-                </li>
-                <li>Design patterns</li>
-                <li>Naming</li>
-                <li>Choosing frameworks and libraries</li>
-                <li>
-                  Documentation
-                  <ol>
-                    <li>Diagrams / Notations</li>
-                  </ol>
-                </li>
-              </ol>
-            </li>
-            <li>Domain Driven Design (DDD)</li>
-          </ol>
-        </section>
-
-        {/* -------------------------------------- PART 5 -------------------------------------- */}
-        <section id="computers-and-operating-systems" className="mt-4">
-          <a href="#computers-and-operating-systems" className="anchor">
-            <h2>
-              Part 5: Computer architecture and Operating systems basics
-              <span className="anchor-icon">
-                <FontAwesomeIcon icon={faLink} />
-              </span>
-            </h2>
-          </a>
-          <p>
-            This part is dedicated to real beginners who first want to understand computers and operating systems. We all need to start
-            somewhere, and this is an excellent introduction to basic principles underlying everything that we do as software crafters.
-            Whether our code runs locally on our computer or somewhere in the cloud, it is always executed by a CPU (physical or virtual),
-            accesses memory, reads/writes files, etc.
-          </p>
-          <br />
-          <p>If you want to learn about CPUs, memory, file systems, files, processes, scheduling and whatnot, then this part is for you.</p>
-          <h4 className="mt-2">In this part:</h4>
-          <ol>
-            <li>Introduction</li>
-            <li>
-              Computer architecture basics
-              <ol>
-                <li>Central Processing Unit (CPU)</li>
-                <li>Memory (RAM)</li>
-                <li>Graphical Processing Unit (GPU)</li>
-                <li>Binary</li>
-                <li>Hexadecimal</li>
-              </ol>
-            </li>
-            <li>
-              Operating system basics
-              <ol>
-                <li>Major components</li>
-                <li>Programs</li>
-                <li>Processes and process management</li>
-                <li>Memory management</li>
-                <li>I/O management</li>
-                <li>File systems and files</li>
-                <li>Users and groups</li>
-                <li>Inter-Process Communication (IPC)</li>
-                <li>Ports</li>
-                <li>POSIX</li>
-                <li>Built-in programs</li>
-                <li>Shells</li>
-                <li>Environment variables</li>
-                <li>Services/Daemons</li>
-                <li>Scheduled tasks</li>
-                <li>Virtualization</li>
-                <li>Containerization</li>
-              </ol>
-            </li>
-          </ol>
-        </section>
-
-        {/* -------------------------------------- PART 6 -------------------------------------- */}
-        <section id="coding-basics" className="mt-4">
-          <a href="#coding-basics" className="anchor">
-            <h2>
-              Part 6: Coding basics
-              <span className="anchor-icon">
-                <FontAwesomeIcon icon={faLink} />
-              </span>
-            </h2>
-          </a>
-          <p>
-            This part is dedicated to real beginners who’d like to learn how to C-O-D-E. We will only scratch the surface but this part is a
-            great and practical introduction to{" "}
-            <span className="font-bold">
-              coding concepts that all software crafters <span className="italic">must</span> know
-            </span>{" "}
-            and use literally all the time.
-          </p>
-          <h4 className="mt-2">In this part:</h4>
-          <ol>
-            <li>Introduction</li>
-            <li>
-              Programming concepts
-              <ol>
-                <li>Pseudocode</li>
-                <li>Variables</li>
-                <li>Constants</li>
-                <li>References</li>
-                <li>Operators</li>
-                <li>Statements</li>
-                <li>Expressions</li>
-                <li>Keywords</li>
-                <li>Data types</li>
-                <li>Mutability</li>
-                <li>Conditional structures</li>
-                <li>Functions</li>
-                <li>Loops</li>
-                <li>Errors/Exceptions</li>
-                <li>Generics</li>
-                <li>Decorators/annotations</li>
-                <li>Regular expressions (Regex)</li>
-                <li>Recursion</li>
-                <li>Serialization</li>
-                <li>Modules/Packages</li>
-                <li>Concurrency</li>
-                <li>Streams</li>
-                <li>Libraries</li>
-                <li>Frameworks</li>
-                <li>Bugs</li>
-                <li>Debugging</li>
-              </ol>
-            </li>
-            <li>
-              Programming paradigms
-              <ol>
-                <li>
-                  Imperative
-                  <ol>
-                    <li>Procedural</li>
-                    <li>Object-Oriented Programming (OOP)</li>
-                  </ol>
-                </li>
-                <li>
-                  Declarative
-                  <ol>
-                    <li>Functional Programming (FP)</li>
-                    <li>Functional Reactive Programming (FRP)</li>
-                  </ol>
-                </li>
-                <li>Aspect Oriented Programming (AOP)</li>
-              </ol>
-            </li>
-            <li>
-              Programming languages & platforms
-              <ol>
-                <li>Generations</li>
-                <li>Families</li>
-                <li>Characteristics</li>
-                <li>Examples</li>
-                <li>How to choose</li>
-              </ol>
-            </li>
-            <li>
-              Development tools
-              <ol>
-                <li>Integrated Development Environment (IDE)</li>
-                <li>Source Control Management client</li>
-                <li>Build tools</li>
-                <li>Development environment setup</li>
-              </ol>
-            </li>
-            <li>Free and Open Source Software (FOSS)</li>
-            <li>
-              Databases
-              <ol>
-                <li>Database transactions</li>
-                <li>Relational Database Management Systems (RDBMS)</li>
-                <li>NoSQL</li>
-              </ol>
-            </li>
-            <li>Character encoding</li>
-            <li>
-              Internet
-              <ol>
-                <li>How does it work?</li>
-                <li>
-                  Hypertext Transfer Protocol (HTTP)
-                  <ol>
-                    <li>Server/Clients</li>
-                    <li>Requests/Responses</li>
-                    <li>URLs</li>
-                    <li>Verbs</li>
-                    <li>Headers</li>
-                    <li>Status codes</li>
-                    <li>Protocol versions</li>
-                    <li>Tools</li>
-                  </ol>
-                </li>
-              </ol>
-            </li>
-            <li>Full Text Search (FTS)</li>
-          </ol>
-        </section>
-
-        {/* -------------------------------------- PART 7 -------------------------------------- */}
-        <section id="general-concerns" className="mt-4">
-          <a href="#general-concerns" className="anchor">
-            <h2>
-              Part 7: General concerns
-              <span className="anchor-icon">
-                <FontAwesomeIcon icon={faLink} />
-              </span>
-            </h2>
-          </a>
-          <p>
-            This part is dedicated to elements that must be taken care of <span className="font-bold italic">everywhere</span>; whether
-            you’re doing back-end or front-end software development. Note that I also consider those necessary for infrastructure scripting
-            (but it’s always hard to make IT operations personnel realize that they are also software developers ;-)
-          </p>
-          <br />
-          <p>
-            This is a critical part for true software crafters because many of these points are unfortunately often overlooked for various
-            reasons (mostly bad ones). If you want to become a <span className="italic">true</span> software crafter, then you’ll make sure
-            to always pay attention to those and to convince everyone else to do the same; even if it means going against some pointy-haired
-            manager ;-)
-          </p>
-          <h4 className="mt-2">In this part:</h4>
-          <ol>
-            <li>Error handling</li>
-            <li>
-              Code quality & Quality Assurance (QA)
-              <ol>
-                <li>Broken windows theory</li>
-                <li>Technical debt</li>
-                <li>
-                  Code quality checks
+                  Software architecture
                   <ol>
                     <li>
-                      Static Code Analysis (SCA)
+                      Architectural/high level design patterns
                       <ol>
-                        <li>Metrics</li>
+                        <li>Multi-tier architectures</li>
+                        <li>Microservices vs monoliths</li>
+                        <li>Cloud-native apps</li>
+                        <li>Serverless & Functions as a Service (FaaS)</li>
+                        <li>Command Query Responsibility Segregation (CQRS)</li>
+                        <li>Event Sourcing (ES)</li>
+                        <li>Event-Driven Architecture (EDA)</li>
+                        <li>RDBMs vs NoSQL</li>
+                        <li>Enterprise Application Integration (EAI)</li>
+                        <li>Micro Front-ends</li>
+                      </ol>
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  Information/Data architecture
+                  <ol>
+                    <li>Data modeling</li>
+                    <li>Data storage</li>
+                    <li>
+                      Data integration
+                      <ol>
+                        <li>Extract Transform Load (ETL)</li>
+                        <li>Web Services / SOA</li>
+                      </ol>
+                    </li>
+                    <li>Data governance</li>
+                    <li>Big Data</li>
+                    <li>
+                      Data analytics
+                      <ol>
+                        <li>Data Mining</li>
+                        <li>Business Intelligence (BI)</li>
+                        <li>Artificial Intelligence (AI)</li>
+                      </ol>
+                    </li>
+                  </ol>
+                </li>
+                <li>Infrastructure architecture</li>
+                <li>Security architecture</li>
+                <li>Enterprise architecture</li>
+              </ol>
+            </section>
+
+            {/*-------------------------------------- PART 4 -------------------------------------- */}
+            <section id="software-design" className="mt-4">
+              <a href="#software-design" className="anchor">
+                <h2>
+                  Part 4: Software design
+                  <span className="anchor-icon">
+                <FontAwesomeIcon icon={faLink} />
+              </span>
+                </h2>
+              </a>
+              <p>
+                Software design is where the real action begins. Previous parts talk about much higher level concepts. Solving the wrong problem
+                means game over, a bad architecture means tons of waste, and bad software design means costly maintenance. Here, we explore
+                software design, explain why it is critical for mental health (seriously!) and key concepts that you’ll use on a daily basis
+                during your software crafter’s career.
+              </p>
+              <h4 className="mt-2">In this part:</h4>
+              <ol>
+                <li>
+                  Technical design
+                  <ol>
+                    <li>
+                      Data
+                      <ol>
+                        <li>Data models</li>
+                        <li>Data structures</li>
+                        <li>State machines (FSM)</li>
+                      </ol>
+                    </li>
+                    <li>Business rules</li>
+                    <li>Database design</li>
+                    <li>
+                      Algorithms
+                      <ol>
+                        <li>Complexity and the Big-O notation</li>
+                      </ol>
+                    </li>
+                    <li>Workflows</li>
+                    <li>
+                      Code design principles
+                      <ol>
+                        <li>Problem partitioning</li>
+                        <li>Design strategies</li>
+                        <li>Abstraction</li>
+                        <li>Modularity</li>
+                        <li>Encapsulation</li>
+                        <li>Law of Demeter (LoD)</li>
+                        <li>Separation of concerns</li>
+                        <li>SOLID principles</li>
+                        <li>Don't Repeat Yourself (DRY)</li>
+                        <li>Don't reinvent the wheel</li>
+                        <li>You aren't gonna need it (YAGNI)</li>
+                        <li>Pareto principle</li>
+                        <li>Convention over configuration</li>
+                        <li>API design</li>
+                        <li>Refactoring/Refinement</li>
+                      </ol>
+                    </li>
+                    <li>Design patterns</li>
+                    <li>Naming</li>
+                    <li>Choosing frameworks and libraries</li>
+                    <li>
+                      Documentation
+                      <ol>
+                        <li>Diagrams / Notations</li>
+                      </ol>
+                    </li>
+                  </ol>
+                </li>
+                <li>Domain Driven Design (DDD)</li>
+              </ol>
+            </section>
+
+            {/* -------------------------------------- PART 5 -------------------------------------- */}
+            <section id="computers-and-operating-systems" className="mt-4">
+              <a href="#computers-and-operating-systems" className="anchor">
+                <h2>
+                  Part 5: Computer architecture and Operating systems basics
+                  <span className="anchor-icon">
+                <FontAwesomeIcon icon={faLink} />
+              </span>
+                </h2>
+              </a>
+              <p>
+                This part is dedicated to real beginners who first want to understand computers and operating systems. We all need to start
+                somewhere, and this is an excellent introduction to basic principles underlying everything that we do as software crafters.
+                Whether our code runs locally on our computer or somewhere in the cloud, it is always executed by a CPU (physical or virtual),
+                accesses memory, reads/writes files, etc.
+              </p>
+              <br />
+              <p>If you want to learn about CPUs, memory, file systems, files, processes, scheduling and whatnot, then this part is for you.</p>
+              <h4 className="mt-2">In this part:</h4>
+              <ol>
+                <li>Introduction</li>
+                <li>
+                  Computer architecture basics
+                  <ol>
+                    <li>Central Processing Unit (CPU)</li>
+                    <li>Memory (RAM)</li>
+                    <li>Graphical Processing Unit (GPU)</li>
+                    <li>Binary</li>
+                    <li>Hexadecimal</li>
+                  </ol>
+                </li>
+                <li>
+                  Operating system basics
+                  <ol>
+                    <li>Major components</li>
+                    <li>Programs</li>
+                    <li>Processes and process management</li>
+                    <li>Memory management</li>
+                    <li>I/O management</li>
+                    <li>File systems and files</li>
+                    <li>Users and groups</li>
+                    <li>Inter-Process Communication (IPC)</li>
+                    <li>Ports</li>
+                    <li>POSIX</li>
+                    <li>Built-in programs</li>
+                    <li>Shells</li>
+                    <li>Environment variables</li>
+                    <li>Services/Daemons</li>
+                    <li>Scheduled tasks</li>
+                    <li>Virtualization</li>
+                    <li>Containerization</li>
+                  </ol>
+                </li>
+              </ol>
+            </section>
+
+            {/* -------------------------------------- PART 6 -------------------------------------- */}
+            <section id="coding-basics" className="mt-4">
+              <a href="#coding-basics" className="anchor">
+                <h2>
+                  Part 6: Coding basics
+                  <span className="anchor-icon">
+                <FontAwesomeIcon icon={faLink} />
+              </span>
+                </h2>
+              </a>
+              <p>
+                This part is dedicated to real beginners who’d like to learn how to C-O-D-E. We will only scratch the surface but this part is a
+                great and practical introduction to{" "}
+                <span className="font-bold">
+              coding concepts that all software crafters <span className="italic">must</span> know
+            </span>{" "}
+                and use literally all the time.
+              </p>
+              <h4 className="mt-2">In this part:</h4>
+              <ol>
+                <li>Introduction</li>
+                <li>
+                  Programming concepts
+                  <ol>
+                    <li>Pseudocode</li>
+                    <li>Variables</li>
+                    <li>Constants</li>
+                    <li>References</li>
+                    <li>Operators</li>
+                    <li>Statements</li>
+                    <li>Expressions</li>
+                    <li>Keywords</li>
+                    <li>Data types</li>
+                    <li>Mutability</li>
+                    <li>Conditional structures</li>
+                    <li>Functions</li>
+                    <li>Loops</li>
+                    <li>Errors/Exceptions</li>
+                    <li>Generics</li>
+                    <li>Decorators/annotations</li>
+                    <li>Regular expressions (Regex)</li>
+                    <li>Recursion</li>
+                    <li>Serialization</li>
+                    <li>Modules/Packages</li>
+                    <li>Concurrency</li>
+                    <li>Streams</li>
+                    <li>Libraries</li>
+                    <li>Frameworks</li>
+                    <li>Bugs</li>
+                    <li>Debugging</li>
+                  </ol>
+                </li>
+                <li>
+                  Programming paradigms
+                  <ol>
+                    <li>
+                      Imperative
+                      <ol>
+                        <li>Procedural</li>
+                        <li>Object-Oriented Programming (OOP)</li>
+                      </ol>
+                    </li>
+                    <li>
+                      Declarative
+                      <ol>
+                        <li>Functional Programming (FP)</li>
+                        <li>Functional Reactive Programming (FRP)</li>
+                      </ol>
+                    </li>
+                    <li>Aspect Oriented Programming (AOP)</li>
+                  </ol>
+                </li>
+                <li>
+                  Programming languages & platforms
+                  <ol>
+                    <li>Generations</li>
+                    <li>Families</li>
+                    <li>Characteristics</li>
+                    <li>Examples</li>
+                    <li>How to choose</li>
+                  </ol>
+                </li>
+                <li>
+                  Development tools
+                  <ol>
+                    <li>Integrated Development Environment (IDE)</li>
+                    <li>Source Control Management client</li>
+                    <li>Build tools</li>
+                    <li>Development environment setup</li>
+                  </ol>
+                </li>
+                <li>Free and Open Source Software (FOSS)</li>
+                <li>
+                  Databases
+                  <ol>
+                    <li>Database transactions</li>
+                    <li>Relational Database Management Systems (RDBMS)</li>
+                    <li>NoSQL</li>
+                  </ol>
+                </li>
+                <li>Character encoding</li>
+                <li>
+                  Internet
+                  <ol>
+                    <li>How does it work?</li>
+                    <li>
+                      Hypertext Transfer Protocol (HTTP)
+                      <ol>
+                        <li>Server/Clients</li>
+                        <li>Requests/Responses</li>
+                        <li>URLs</li>
+                        <li>Verbs</li>
+                        <li>Headers</li>
+                        <li>Status codes</li>
+                        <li>Protocol versions</li>
                         <li>Tools</li>
                       </ol>
                     </li>
                   </ol>
                 </li>
-                <li>Testing</li>
+                <li>Full Text Search (FTS)</li>
+              </ol>
+            </section>
+
+            {/* -------------------------------------- PART 7 -------------------------------------- */}
+            <section id="general-concerns" className="mt-4">
+              <a href="#general-concerns" className="anchor">
+                <h2>
+                  Part 7: General concerns
+                  <span className="anchor-icon">
+                <FontAwesomeIcon icon={faLink} />
+              </span>
+                </h2>
+              </a>
+              <p>
+                This part is dedicated to elements that must be taken care of <span className="font-bold italic">everywhere</span>; whether
+                you’re doing back-end or front-end software development. Note that I also consider those necessary for infrastructure scripting
+                (but it’s always hard to make IT operations personnel realize that they are also software developers ;-)
+              </p>
+              <br />
+              <p>
+                This is a critical part for true software crafters because many of these points are unfortunately often overlooked for various
+                reasons (mostly bad ones). If you want to become a <span className="italic">true</span> software crafter, then you’ll make sure
+                to always pay attention to those and to convince everyone else to do the same; even if it means going against some pointy-haired
+                manager ;-)
+              </p>
+              <h4 className="mt-2">In this part:</h4>
+              <ol>
+                <li>Error handling</li>
                 <li>
-                  Clean code advice
+                  Code quality & Quality Assurance (QA)
                   <ol>
+                    <li>Broken windows theory</li>
+                    <li>Technical debt</li>
                     <li>
-                      General
+                      Code quality checks
                       <ol>
-                        <li>Code duplication</li>
-                        <li>Coding conventions</li>
-                        <li>Defensive programming</li>
-                        <li>Dead code elimination</li>
-                        <li>Code quality checklist</li>
-                        <li>Code comments</li>
+                        <li>
+                          Static Code Analysis (SCA)
+                          <ol>
+                            <li>Metrics</li>
+                            <li>Tools</li>
+                          </ol>
+                        </li>
                       </ol>
                     </li>
-                    <li>Variables</li>
-                    <li>Functions</li>
-                    <li>Conditionals</li>
-                    <li>Error handling</li>
                     <li>Testing</li>
-                    <li>Performance</li>
+                    <li>
+                      Clean code advice
+                      <ol>
+                        <li>
+                          General
+                          <ol>
+                            <li>Code duplication</li>
+                            <li>Coding conventions</li>
+                            <li>Defensive programming</li>
+                            <li>Dead code elimination</li>
+                            <li>Code quality checklist</li>
+                            <li>Code comments</li>
+                          </ol>
+                        </li>
+                        <li>Variables</li>
+                        <li>Functions</li>
+                        <li>Conditionals</li>
+                        <li>Error handling</li>
+                        <li>Testing</li>
+                        <li>Performance</li>
+                      </ol>
+                    </li>
+                    <li>Continuous Integration (CI)</li>
+                    <li>Code review process</li>
+                    <li>Issue/Bug tracking</li>
                   </ol>
                 </li>
-                <li>Continuous Integration (CI)</li>
-                <li>Code review process</li>
-                <li>Issue/Bug tracking</li>
+                <li>Logging</li>
+                <li>Performance/resource usage</li>
+                <li>Internationalization (i18n) and localization (l10n)</li>
+                <li>Encoding</li>
+                <li>
+                  Caching
+                  <ol>
+                    <li>Concepts</li>
+                    <li>Types</li>
+                    <li>Patterns</li>
+                  </ol>
+                </li>
+                <li>Feature flagging</li>
+                <li>How to fix bugs</li>
+                <li>Version management</li>
+                <li>
+                  Source Control Management (SCM)
+                  <ol>
+                    <li>Workflows</li>
+                    <li>Monorepos</li>
+                    <li>Practical advice</li>
+                  </ol>
+                </li>
+                <li>Continuous Delivery/Deployment</li>
+                <li>
+                  Operational Maturity (OM)
+                  <ol>
+                    <li>Business Continuity Management (BCM)</li>
+                    <li>IT Service Management (ITSM)</li>
+                    <li>Backup/restore</li>
+                    <li>Disaster Recovery (DR)</li>
+                  </ol>
+                </li>
+                <li>Security</li>
               </ol>
-            </li>
-            <li>Logging</li>
-            <li>Performance/resource usage</li>
-            <li>Internationalization (i18n) and localization (l10n)</li>
-            <li>Encoding</li>
-            <li>
-              Caching
-              <ol>
-                <li>Concepts</li>
-                <li>Types</li>
-                <li>Patterns</li>
-              </ol>
-            </li>
-            <li>Feature flagging</li>
-            <li>How to fix bugs</li>
-            <li>Version management</li>
-            <li>
-              Source Control Management (SCM)
-              <ol>
-                <li>Workflows</li>
-                <li>Monorepos</li>
-                <li>Practical advice</li>
-              </ol>
-            </li>
-            <li>Continuous Delivery/Deployment</li>
-            <li>
-              Operational Maturity (OM)
-              <ol>
-                <li>Business Continuity Management (BCM)</li>
-                <li>IT Service Management (ITSM)</li>
-                <li>Backup/restore</li>
-                <li>Disaster Recovery (DR)</li>
-              </ol>
-            </li>
-            <li>Security</li>
-          </ol>
-        </section>
+            </section>
 
-        {/* -------------------------------------- PART 8 -------------------------------------- */}
-        <section id="back-end" className="mt-4">
-          <a href="#back-end" className="anchor">
-            <h2>
-              Part 8: Back-end development
-              <span className="anchor-icon">
+            {/* -------------------------------------- PART 8 -------------------------------------- */}
+            <section id="back-end" className="mt-4">
+              <a href="#back-end" className="anchor">
+                <h2>
+                  Part 8: Back-end development
+                  <span className="anchor-icon">
                 <FontAwesomeIcon icon={faLink} />
               </span>
-            </h2>
-          </a>
-          <p>
-            This part is all about back-end software, where most of the action occurs under the hood… without anyone knowing. Back-end
-            developers have to focus on very different aspects of IT systems, compared to front-end developers. Software crafters need to
-            understand those differences.
-          </p>
-          <h4 className="mt-2">In this part:</h4>
-          <ol>
-            <li>What back-end developers focus on and why</li>
-            <li>
-              Data
+                </h2>
+              </a>
+              <p>
+                This part is all about back-end software, where most of the action occurs under the hood… without anyone knowing. Back-end
+                developers have to focus on very different aspects of IT systems, compared to front-end developers. Software crafters need to
+                understand those differences.
+              </p>
+              <h4 className="mt-2">In this part:</h4>
               <ol>
-                <li>Models</li>
-                <li>Persistence / Retrieval / Search</li>
-                <li>Exposure through APIs</li>
-                <li>Batch processing</li>
-              </ol>
-            </li>
-            <li>
-              Usual layers and responsibilities
-              <ol>
-                <li>Domain</li>
-                <li>Repository</li>
-                <li>Business</li>
-                <li>Web services</li>
-                <li>Integration</li>
-                <li>Batch</li>
-                <li>Shared</li>
-                <li>Cross-cutting</li>
-              </ol>
-            </li>
-            <li>Security</li>
-            <li>Performance</li>
-            <li>Scalability</li>
-            <li>
-              APIs
-              <ol>
+                <li>What back-end developers focus on and why</li>
                 <li>
-                  Types
+                  Data
                   <ol>
-                    <li>RESTful</li>
-                    <li>GraphQL</li>
-                    <li>SOAP</li>
-                    <li>GRPC</li>
+                    <li>Models</li>
+                    <li>Persistence / Retrieval / Search</li>
+                    <li>Exposure through APIs</li>
+                    <li>Batch processing</li>
                   </ol>
                 </li>
-                <li>Comparison</li>
-                <li>Tools</li>
+                <li>
+                  Usual layers and responsibilities
+                  <ol>
+                    <li>Domain</li>
+                    <li>Repository</li>
+                    <li>Business</li>
+                    <li>Web services</li>
+                    <li>Integration</li>
+                    <li>Batch</li>
+                    <li>Shared</li>
+                    <li>Cross-cutting</li>
+                  </ol>
+                </li>
+                <li>Security</li>
+                <li>Performance</li>
+                <li>Scalability</li>
+                <li>
+                  APIs
+                  <ol>
+                    <li>
+                      Types
+                      <ol>
+                        <li>RESTful</li>
+                        <li>GraphQL</li>
+                        <li>SOAP</li>
+                        <li>GRPC</li>
+                      </ol>
+                    </li>
+                    <li>Comparison</li>
+                    <li>Tools</li>
+                  </ol>
+                </li>
+                <li>Frameworks and major libraries</li>
+                <li>Going full-stack</li>
               </ol>
-            </li>
-            <li>Frameworks and major libraries</li>
-            <li>Going full-stack</li>
-          </ol>
-        </section>
+            </section>
 
-        {/* -------------------------------------- PART 9 -------------------------------------- */}
-        <section id="front-end" className="mt-4">
-          <a href="#front-end" className="anchor">
-            <h2>
-              Part 9: Front-end development
-              <span className="anchor-icon">
+            {/* -------------------------------------- PART 9 -------------------------------------- */}
+            <section id="front-end" className="mt-4">
+              <a href="#front-end" className="anchor">
+                <h2>
+                  Part 9: Front-end development
+                  <span className="anchor-icon">
                 <FontAwesomeIcon icon={faLink} />
               </span>
-            </h2>
-          </a>
-          <p>
-            This part is all about front-end systems, which are the tip of the iceberg; the one concrete part that end users see and can
-            feel. Given the visual nature of front-end applications, front-end developers have to focus on very different aspects, compared
-            to back-end developers. Software crafters must not necessarily be artists, but they still have to pay attention to the
-            aesthetics… among many other things.
-          </p>
-          <h4 className="mt-2">In this part:</h4>
-          <ol>
-            <li>What front-end developers focus on and why</li>
-            <li>Usual layers and responsibilities</li>
-            <li>
-              Component architecture
+                </h2>
+              </a>
+              <p>
+                This part is all about front-end systems, which are the tip of the iceberg; the one concrete part that end users see and can
+                feel. Given the visual nature of front-end applications, front-end developers have to focus on very different aspects, compared
+                to back-end developers. Software crafters must not necessarily be artists, but they still have to pay attention to the
+                aesthetics… among many other things.
+              </p>
+              <h4 className="mt-2">In this part:</h4>
               <ol>
-                <li>Smart components</li>
-                <li>Dumb components</li>
-                <li>Component libraries</li>
-              </ol>
-            </li>
-            <li>
-              User Interface Design (UI)
-              <ol>
-                <li>Principles</li>
-                <li>Elements</li>
-                <li>Design systems</li>
-                <li>Mockups/prototypes & fidelity</li>
-              </ol>
-            </li>
-            <li>
-              Web Design
-              <ol>
-                <li>Technologies</li>
-                <li>Progressive enhancement</li>
-                <li>Graceful degradation</li>
-                <li>Responsive Web Design (RWD)</li>
-                <li>Cross-browser testing</li>
-              </ol>
-            </li>
-            <li>
-              Accessibility (a11y)
-              <ol>
-                <li>Standards</li>
-                <li>Tools</li>
-              </ol>
-            </li>
-            <li>
-              Performance
-              <ol>
-                <li>Testing/Scoring</li>
-                <li>Tools</li>
-              </ol>
-            </li>
-            <li>
-              The Web Platform
-              <ol>
-                <li>Main technologies of the Web</li>
-                <li>How Web browsers work</li>
-                <li>Web standards</li>
-              </ol>
-            </li>
-            <li>HTML basics</li>
-            <li>CSS basics</li>
-            <li>Metadata on the Web</li>
-            <li>
-              Data entry
-              <ol>
-                <li>HTML forms</li>
-                <li>Captcha & security</li>
-              </ol>
-            </li>
-            <li>
-              Approaches to create Web applications
-              <ol>
-                <li>Old school</li>
-                <li>Single Page Applications (SPAs)</li>
-                <li>Server-Side Rendering (SSR)</li>
-                <li>Static sites</li>
-                <li>Micro front-ends</li>
-              </ol>
-            </li>
-            <li>Progressive Web Apps (PWAs)</li>
-            <li>
-              UI state management
-              <ol>
-                <li>Types</li>
+                <li>What front-end developers focus on and why</li>
+                <li>Usual layers and responsibilities</li>
                 <li>
-                  Redux
+                  Component architecture
                   <ol>
-                    <li>Architecture</li>
-                    <li>Libraries</li>
+                    <li>Smart components</li>
+                    <li>Dumb components</li>
+                    <li>Component libraries</li>
                   </ol>
                 </li>
+                <li>
+                  User Interface Design (UI)
+                  <ol>
+                    <li>Principles</li>
+                    <li>Elements</li>
+                    <li>Design systems</li>
+                    <li>Mockups/prototypes & fidelity</li>
+                  </ol>
+                </li>
+                <li>
+                  Web Design
+                  <ol>
+                    <li>Technologies</li>
+                    <li>Progressive enhancement</li>
+                    <li>Graceful degradation</li>
+                    <li>Responsive Web Design (RWD)</li>
+                    <li>Cross-browser testing</li>
+                  </ol>
+                </li>
+                <li>
+                  Accessibility (a11y)
+                  <ol>
+                    <li>Standards</li>
+                    <li>Tools</li>
+                  </ol>
+                </li>
+                <li>
+                  Performance
+                  <ol>
+                    <li>Testing/Scoring</li>
+                    <li>Tools</li>
+                  </ol>
+                </li>
+                <li>
+                  The Web Platform
+                  <ol>
+                    <li>Main technologies of the Web</li>
+                    <li>How Web browsers work</li>
+                    <li>Web standards</li>
+                  </ol>
+                </li>
+                <li>HTML basics</li>
+                <li>CSS basics</li>
+                <li>Metadata on the Web</li>
+                <li>
+                  Data entry
+                  <ol>
+                    <li>HTML forms</li>
+                    <li>Captcha & security</li>
+                  </ol>
+                </li>
+                <li>
+                  Approaches to create Web applications
+                  <ol>
+                    <li>Old school</li>
+                    <li>Single Page Applications (SPAs)</li>
+                    <li>Server-Side Rendering (SSR)</li>
+                    <li>Static sites</li>
+                    <li>Micro front-ends</li>
+                  </ol>
+                </li>
+                <li>Progressive Web Apps (PWAs)</li>
+                <li>
+                  UI state management
+                  <ol>
+                    <li>Types</li>
+                    <li>
+                      Redux
+                      <ol>
+                        <li>Architecture</li>
+                        <li>Libraries</li>
+                      </ol>
+                    </li>
+                  </ol>
+                </li>
+                <li>Scalable Vector Graphics (SVG)</li>
+                <li>Web fonts</li>
+                <li>Desktop/Mobile apps</li>
+                <li>Frameworks and major libraries</li>
               </ol>
-            </li>
-            <li>Scalable Vector Graphics (SVG)</li>
-            <li>Web fonts</li>
-            <li>Desktop/Mobile apps</li>
-            <li>Frameworks and major libraries</li>
-          </ol>
-        </section>
+            </section>
 
-        {/* -------------------------------------- PART 10 -------------------------------------- */}
-        <section id="infrastructure" className="mt-4">
-          <a href="#infrastructure" className="anchor">
-            <h2>
-              Part 10: IT Infrastructure
-              <span className="anchor-icon">
+            {/* -------------------------------------- PART 10 -------------------------------------- */}
+            <section id="infrastructure" className="mt-4">
+              <a href="#infrastructure" className="anchor">
+                <h2>
+                  Part 10: IT Infrastructure
+                  <span className="anchor-icon">
                 <FontAwesomeIcon icon={faLink} />
               </span>
-            </h2>
-          </a>
-          <p>
-            Back-end software is conceptually below the front-end in terms of visibility, but IT infrastructure goes way further down, from
-            services, servers and networks down to cable and electrical signals; phew! ;-)
-          </p>
-          <br />
-          <p>
-            Having a good understanding of where our applications are hosted, how the environment is configured/secured/monitored, etc is
-            super valuable and makes the difference between someone who “just” writes code and someone who contributes to develop end-to-end
-            solutions. This part explains some important concepts about IT infrastructure. All DevSecOps engineers (and thus software
-            crafters) should be aware of at least a part of those ideas.
-          </p>
-          <h4 className="mt-2">In this part:</h4>
-          <ol>
-            <li>What IT infrastructure focuses on and why</li>
-            <li>
-              Networking concepts
+                </h2>
+              </a>
+              <p>
+                Back-end software is conceptually below the front-end in terms of visibility, but IT infrastructure goes way further down, from
+                services, servers and networks down to cable and electrical signals; phew! ;-)
+              </p>
+              <br />
+              <p>
+                Having a good understanding of where our applications are hosted, how the environment is configured/secured/monitored, etc is
+                super valuable and makes the difference between someone who “just” writes code and someone who contributes to develop end-to-end
+                solutions. This part explains some important concepts about IT infrastructure. All DevSecOps engineers (and thus software
+                crafters) should be aware of at least a part of those ideas.
+              </p>
+              <h4 className="mt-2">In this part:</h4>
               <ol>
-                <li>OSI Model</li>
-                <li>Networks</li>
-                <li>Routing</li>
-                <li>Network Address Translation (NAT)</li>
-                <li>Ports</li>
-                <li>Port Address Translation (PAT)</li>
-                <li>Network zones</li>
-                <li>Cloud networks</li>
-                <li>DHCP</li>
-                <li>DNS</li>
+                <li>What IT infrastructure focuses on and why</li>
+                <li>
+                  Networking concepts
+                  <ol>
+                    <li>OSI Model</li>
+                    <li>Networks</li>
+                    <li>Routing</li>
+                    <li>Network Address Translation (NAT)</li>
+                    <li>Ports</li>
+                    <li>Port Address Translation (PAT)</li>
+                    <li>Network zones</li>
+                    <li>Cloud networks</li>
+                    <li>DHCP</li>
+                    <li>DNS</li>
+                  </ol>
+                </li>
+                <li>Network domains</li>
+                <li>
+                  Availability & performance
+                  <ol>
+                    <li>High Availability (HA)</li>
+                    <li>Clustering</li>
+                    <li>Load Balancing (LB)</li>
+                  </ol>
+                </li>
+                <li>Systems maintenance</li>
+                <li>
+                  Systems management
+                  <ol>
+                    <li>Databases</li>
+                    <li>Configuration management</li>
+                    <li>Compliance management</li>
+                    <li>Naming conventions</li>
+                  </ol>
+                </li>
+                <li>
+                  Data
+                  <ol>
+                    <li>Storage</li>
+                    <li>Backup/restore</li>
+                    <li>File services</li>
+                    <li>Enterprise Content Management (ECM)</li>
+                    <li>Databases</li>
+                  </ol>
+                </li>
+                <li>
+                  Cloud computing
+                  <ol>
+                    <li>Infrastructure as a Service (IaaS)</li>
+                    <li>Software as a Service (SaaS)</li>
+                    <li>Platform as a Service (PaaS</li>
+                    <li>Cloud types</li>
+                    <li>Workload portability</li>
+                  </ol>
+                </li>
+                <li>
+                  Hosting
+                  <ol>
+                    <li>Applications</li>
+                    <li>Services</li>
+                    <li>Functions</li>
+                  </ol>
+                </li>
+                <li>Deployments</li>
+                <li>Environments</li>
+                <li>Security</li>
+                <li>
+                  Automation
+                  <ol>
+                    <li>Scripting</li>
+                    <li>Infrastructure as code</li>
+                    <li>GitOps</li>
+                    <li>ChatOps</li>
+                    <li>Tools</li>
+                  </ol>
+                </li>
+                <li>API integration</li>
               </ol>
-            </li>
-            <li>Network domains</li>
-            <li>
-              Availability & performance
-              <ol>
-                <li>High Availability (HA)</li>
-                <li>Clustering</li>
-                <li>Load Balancing (LB)</li>
-              </ol>
-            </li>
-            <li>Systems maintenance</li>
-            <li>
-              Systems management
-              <ol>
-                <li>Databases</li>
-                <li>Configuration management</li>
-                <li>Compliance management</li>
-                <li>Naming conventions</li>
-              </ol>
-            </li>
-            <li>
-              Data
-              <ol>
-                <li>Storage</li>
-                <li>Backup/restore</li>
-                <li>File services</li>
-                <li>Enterprise Content Management (ECM)</li>
-                <li>Databases</li>
-              </ol>
-            </li>
-            <li>
-              Cloud computing
-              <ol>
-                <li>Infrastructure as a Service (IaaS)</li>
-                <li>Software as a Service (SaaS)</li>
-                <li>Platform as a Service (PaaS</li>
-                <li>Cloud types</li>
-                <li>Workload portability</li>
-              </ol>
-            </li>
-            <li>
-              Hosting
-              <ol>
-                <li>Applications</li>
-                <li>Services</li>
-                <li>Functions</li>
-              </ol>
-            </li>
-            <li>Deployments</li>
-            <li>Environments</li>
-            <li>Security</li>
-            <li>
-              Automation
-              <ol>
-                <li>Scripting</li>
-                <li>Infrastructure as code</li>
-                <li>GitOps</li>
-                <li>ChatOps</li>
-                <li>Tools</li>
-              </ol>
-            </li>
-            <li>API integration</li>
-          </ol>
-        </section>
+            </section>
 
-        {/* -------------------------------------- PART 11 -------------------------------------- */}
-        <section id="security" className="mt-4">
-          <a href="#security" className="anchor">
-            <h2>
-              Part 11: Security
-              <span className="anchor-icon">
+            {/* -------------------------------------- PART 11 -------------------------------------- */}
+            <section id="security" className="mt-4">
+              <a href="#security" className="anchor">
+                <h2>
+                  Part 11: Security
+                  <span className="anchor-icon">
                 <FontAwesomeIcon icon={faLink} />
               </span>
-            </h2>
-          </a>
-          <p>
-            IT security (ITSEC) is paramount for digital solutions. 20 years ago, things were less complicated, but nowadays, leaving an
-            insecure system online even for a few seconds is enough to get hacked. Everyday, there are countless stories of security
-            breaches and stolen data. Together, we’ll learn about the most important IT security concepts; knowledge that will expand your
-            understanding of this complex, but incredibly important field of IT:
-          </p>
-          <h4 className="mt-2">In this part:</h4>
-          <ol>
-            <li>Attackers</li>
-            <li>
-              Key concepts
+                </h2>
+              </a>
+              <p>
+                IT security (ITSEC) is paramount for digital solutions. 20 years ago, things were less complicated, but nowadays, leaving an
+                insecure system online even for a few seconds is enough to get hacked. Everyday, there are countless stories of security
+                breaches and stolen data. Together, we’ll learn about the most important IT security concepts; knowledge that will expand your
+                understanding of this complex, but incredibly important field of IT:
+              </p>
+              <h4 className="mt-2">In this part:</h4>
               <ol>
-                <li>Attack vectors</li>
-                <li>Attack surface</li>
-                <li>Physical security</li>
-                <li>Confidentiality, Integrity, Availability (CIA)</li>
-                <li>Non-repudiation</li>
-                <li>Defense-in-depth</li>
-                <li>Identification</li>
-                <li>Authentication, Authorization, Auditing (AAA)</li>
-                <li>Principle of least privilege</li>
-                <li>Allow lists and deny lists</li>
-                <li>Privilege escalation</li>
-                <li>Need to know</li>
-                <li>Segregation of duties</li>
-                <li>Responsibility Assignment Matrix (RACI)</li>
-                <li>Security by obscurity</li>
-                <li>Personally Identifiable Information (PII)</li>
-              </ol>
-            </li>
-            <li>
-              Risk management
-              <ol>
-                <li>Risk assessment</li>
-                <li>Risk mitigation</li>
-              </ol>
-            </li>
-            <li>
-              Security controls
-              <ol>
-                <li>Common controls</li>
-                <li>OWASP</li>
-              </ol>
-            </li>
-            <li>
-              Cryptography
-              <ol>
-                <li>Encryption</li>
-                <li>Hashing</li>
-                <li>Digital Signatures</li>
-                <li>Pseudo-Random Number Generators (PRNG)</li>
-                <li>Keys</li>
-              </ol>
-            </li>
-            <li>
-              Secure communications
-              <ol>
+                <li>Attackers</li>
                 <li>
-                  Secure protocols
+                  Key concepts
                   <ol>
-                    <li>Why HTTPS matters</li>
-                    <li>Transport Layer Security (TLS)</li>
-                    <li>Perfect Forward Secrecy</li>
+                    <li>Attack vectors</li>
+                    <li>Attack surface</li>
+                    <li>Physical security</li>
+                    <li>Confidentiality, Integrity, Availability (CIA)</li>
+                    <li>Non-repudiation</li>
+                    <li>Defense-in-depth</li>
+                    <li>Identification</li>
+                    <li>Authentication, Authorization, Auditing (AAA)</li>
+                    <li>Principle of least privilege</li>
+                    <li>Allow lists and deny lists</li>
+                    <li>Privilege escalation</li>
+                    <li>Need to know</li>
+                    <li>Segregation of duties</li>
+                    <li>Responsibility Assignment Matrix (RACI)</li>
+                    <li>Security by obscurity</li>
+                    <li>Personally Identifiable Information (PII)</li>
                   </ol>
                 </li>
-                <li>Public Key Infrastructure (PKI)</li>
-                <li>Firewalls</li>
-                <li>Network segregation</li>
-                <li>Proxies</li>
-                <li>NAC, IDS, IPS</li>
+                <li>
+                  Risk management
+                  <ol>
+                    <li>Risk assessment</li>
+                    <li>Risk mitigation</li>
+                  </ol>
+                </li>
+                <li>
+                  Security controls
+                  <ol>
+                    <li>Common controls</li>
+                    <li>OWASP</li>
+                  </ol>
+                </li>
+                <li>
+                  Cryptography
+                  <ol>
+                    <li>Encryption</li>
+                    <li>Hashing</li>
+                    <li>Digital Signatures</li>
+                    <li>Pseudo-Random Number Generators (PRNG)</li>
+                    <li>Keys</li>
+                  </ol>
+                </li>
+                <li>
+                  Secure communications
+                  <ol>
+                    <li>
+                      Secure protocols
+                      <ol>
+                        <li>Why HTTPS matters</li>
+                        <li>Transport Layer Security (TLS)</li>
+                        <li>Perfect Forward Secrecy</li>
+                      </ol>
+                    </li>
+                    <li>Public Key Infrastructure (PKI)</li>
+                    <li>Firewalls</li>
+                    <li>Network segregation</li>
+                    <li>Proxies</li>
+                    <li>NAC, IDS, IPS</li>
+                  </ol>
+                </li>
+                <li>
+                  Configuration hardening
+                  <ol>
+                    <li>Accounts security</li>
+                    <li>Hosts security</li>
+                    <li>Web servers security</li>
+                    <li>Domain security</li>
+                    <li>Cloud security</li>
+                    <li>Configuration drift</li>
+                  </ol>
+                </li>
+                <li>
+                  Secret management
+                  <ol>
+                    <li>Password management</li>
+                    <li>Privileged Access Management (PAM)</li>
+                    <li>Hardware Security Modules (HSM)</li>
+                  </ol>
+                </li>
+                <li>
+                  Vulnerability tracking
+                  <ol>
+                    <li>Vulnerability databases</li>
+                    <li>How to track vulnerabilities</li>
+                  </ol>
+                </li>
+                <li>
+                  Security testing
+                  <ol>
+                    <li>Security verification</li>
+                    <li>Penetration testing</li>
+                    <li>Bug bounty programs</li>
+                  </ol>
+                </li>
+                <li>
+                  Web platform security
+                  <ol>
+                    <li>Same Origin Policy (SOP)</li>
+                    <li>Mixed content</li>
+                    <li>Browser sandbox</li>
+                    <li>Content Security Policy (CSP)</li>
+                    <li>Cross-Origin Resource Sharing (CORS)</li>
+                    <li>Cookies security</li>
+                    <li>Privacy sandbox</li>
+                  </ol>
+                </li>
+                <li>
+                  Secure coding
+                  <ol>
+                    <li>OWASP top vulnerabilities</li>
+                    <li>Integrity security in the SDLC</li>
+                    <li>General advice</li>
+                    <li>Input validation</li>
+                    <li>Output encoding</li>
+                    <li>Authentication</li>
+                    <li>Session management</li>
+                    <li>Authorization</li>
+                    <li>Error handling</li>
+                    <li>Logging and auditing</li>
+                    <li>Data security</li>
+                    <li>... and more!</li>
+                  </ol>
+                </li>
+                <li>Incident response</li>
+                <li>Security monitoring</li>
+                <li>Security automation</li>
+                <li>Administrative measures</li>
+                <li>Laws and regulations</li>
               </ol>
-            </li>
-            <li>
-              Configuration hardening
-              <ol>
-                <li>Accounts security</li>
-                <li>Hosts security</li>
-                <li>Web servers security</li>
-                <li>Domain security</li>
-                <li>Cloud security</li>
-                <li>Configuration drift</li>
-              </ol>
-            </li>
-            <li>
-              Secret management
-              <ol>
-                <li>Password management</li>
-                <li>Privileged Access Management (PAM)</li>
-                <li>Hardware Security Modules (HSM)</li>
-              </ol>
-            </li>
-            <li>
-              Vulnerability tracking
-              <ol>
-                <li>Vulnerability databases</li>
-                <li>How to track vulnerabilities</li>
-              </ol>
-            </li>
-            <li>
-              Security testing
-              <ol>
-                <li>Security verification</li>
-                <li>Penetration testing</li>
-                <li>Bug bounty programs</li>
-              </ol>
-            </li>
-            <li>
-              Web platform security
-              <ol>
-                <li>Same Origin Policy (SOP)</li>
-                <li>Mixed content</li>
-                <li>Browser sandbox</li>
-                <li>Content Security Policy (CSP)</li>
-                <li>Cross-Origin Resource Sharing (CORS)</li>
-                <li>Cookies security</li>
-                <li>Privacy sandbox</li>
-              </ol>
-            </li>
-            <li>
-              Secure coding
-              <ol>
-                <li>OWASP top vulnerabilities</li>
-                <li>Integrity security in the SDLC</li>
-                <li>General advice</li>
-                <li>Input validation</li>
-                <li>Output encoding</li>
-                <li>Authentication</li>
-                <li>Session management</li>
-                <li>Authorization</li>
-                <li>Error handling</li>
-                <li>Logging and auditing</li>
-                <li>Data security</li>
-                <li>... and more!</li>
-              </ol>
-            </li>
-            <li>Incident response</li>
-            <li>Security monitoring</li>
-            <li>Security automation</li>
-            <li>Administrative measures</li>
-            <li>Laws and regulations</li>
-          </ol>
-        </section>
+            </section>
 
-        {/* -------------------------------------- PART 12 -------------------------------------- */}
-        <section id="product-project-software" className="mt-4">
-          <a href="#product-project-software" className="anchor">
-            <h2>
-              Part 12: Product/Project management and Software development approaches
-              <span className="anchor-icon">
+            {/* -------------------------------------- PART 12 -------------------------------------- */}
+            <section id="product-project-software" className="mt-4">
+              <a href="#product-project-software" className="anchor">
+                <h2>
+                  Part 12: Product/Project management and Software development approaches
+                  <span className="anchor-icon">
                 <FontAwesomeIcon icon={faLink} />
               </span>
-            </h2>
-          </a>
-          <p>
-            Once you understand what your clients need (or at least, what they need right now), you can think about the “product”. Product
-            management is a specific job, but as a software crafter, it is important to at least understand what it is and what it entails
-            because, sometimes, you might have to take the lead for some parts of product management.
-          </p>
-          <br />
-          <p>
-            How are products and their features defined, prioritized and organized? Dive into this part to learn about technical product
-            management, product backlogs, product roadmaps as well as how to create, structure and maintain those.
-          </p>
-          <h4 className="mt-2">In this part:</h4>
-          <ol>
-            <li>Project roles</li>
-            <li>
-              Product management
+                </h2>
+              </a>
+              <p>
+                Once you understand what your clients need (or at least, what they need right now), you can think about the “product”. Product
+                management is a specific job, but as a software crafter, it is important to at least understand what it is and what it entails
+                because, sometimes, you might have to take the lead for some parts of product management.
+              </p>
+              <br />
+              <p>
+                How are products and their features defined, prioritized and organized? Dive into this part to learn about technical product
+                management, product backlogs, product roadmaps as well as how to create, structure and maintain those.
+              </p>
+              <h4 className="mt-2">In this part:</h4>
               <ol>
-                <li>Product manager's role</li>
+                <li>Project roles</li>
                 <li>
-                  Product roadmap
+                  Product management
                   <ol>
-                    <li>Phases/Milestones</li>
-                    <li>User Story Map</li>
-                  </ol>
-                </li>
-              </ol>
-            </li>
-            <li>
-              Backlog management
-              <ol>
-                <li>Advice</li>
-                <li>Tools</li>
-              </ol>
-            </li>
-            <li>
-              Software development process
-              <ol>
-                <li>Cowboy coding</li>
-                <li>Software/System Development Life Cycle (SDLC)</li>
-              </ol>
-            </li>
-            <li>
-              Software development approaches
-              <ol>
-                <li>Waterfall</li>
-                <li>Rational Unified Process (RUP)</li>
-                <li>
-                  Agile
-                  <ol>
-                    <li>Scrum</li>
-                    <li>Kanban</li>
-                    <li>Scrumban</li>
-                    <li>Disciplined Agile Delivery (DAD)</li>
-                    <li>Agile Unified Process (AUP)</li>
+                    <li>Product manager's role</li>
+                    <li>
+                      Product roadmap
+                      <ol>
+                        <li>Phases/Milestones</li>
+                        <li>User Story Map</li>
+                      </ol>
+                    </li>
                   </ol>
                 </li>
                 <li>
-                  Lean
+                  Backlog management
                   <ol>
-                    <li>Lean thinking</li>
-                    <li>Lean Product Development (LPD)</li>
+                    <li>Advice</li>
+                    <li>Tools</li>
                   </ol>
                 </li>
-                <li>Extreme Programming (XP)</li>
-                <li>Feature-driven Development (FDD)</li>
-                <li>DevOps and DevSecOps</li>
+                <li>
+                  Software development process
+                  <ol>
+                    <li>Cowboy coding</li>
+                    <li>Software/System Development Life Cycle (SDLC)</li>
+                  </ol>
+                </li>
+                <li>
+                  Software development approaches
+                  <ol>
+                    <li>Waterfall</li>
+                    <li>Rational Unified Process (RUP)</li>
+                    <li>
+                      Agile
+                      <ol>
+                        <li>Scrum</li>
+                        <li>Kanban</li>
+                        <li>Scrumban</li>
+                        <li>Disciplined Agile Delivery (DAD)</li>
+                        <li>Agile Unified Process (AUP)</li>
+                      </ol>
+                    </li>
+                    <li>
+                      Lean
+                      <ol>
+                        <li>Lean thinking</li>
+                        <li>Lean Product Development (LPD)</li>
+                      </ol>
+                    </li>
+                    <li>Extreme Programming (XP)</li>
+                    <li>Feature-driven Development (FDD)</li>
+                    <li>DevOps and DevSecOps</li>
+                  </ol>
+                </li>
+                <li>Project management basics</li>
+                <li>
+                  Important definitions for teams
+                  <ol>
+                    <li>Definition of Ready to implement</li>
+                    <li>Definition of Done</li>
+                  </ol>
+                </li>
+                <li>Release management</li>
               </ol>
-            </li>
-            <li>Project management basics</li>
-            <li>
-              Important definitions for teams
-              <ol>
-                <li>Definition of Ready to implement</li>
-                <li>Definition of Done</li>
-              </ol>
-            </li>
-            <li>Release management</li>
-          </ol>
-        </section>
-
-        {/* ------------------ Links ------------ */}
-        <hr className="my-6" />
-        <div className="w-full flex flex-col sm:flex-row sm:space-between items-center select-none">
-          <div className="w-1/2 text-center">
-            <h2>
-              <Link to="/" className="link">
-                <FontAwesomeIcon className="text-4xl mr-3" icon={faBackward} />
-                <br />
-                Go back
-              </Link>
-            </h2>
-          </div>
-          <div className="w-1/2 text-center">
-            <h2>
-              <OutboundLink
-                href={data.site.siteMetadata.salesPageUrl}
-                title="Pre-order the book now!"
-                aria-label="Pre-order the book now!"
-                rel="noopener"
-                className="link"
-              >
-                <FontAwesomeIcon className="text-4xl mr-3" icon={faShoppingCart} />
-                <br />
-                Pre-order now!
-              </OutboundLink>
-            </h2>
+            </section>
+          </main>
+        </div>
+        <div className="block md:hidden">
+          {/* ------------------ Links bottom ------------ */}
+          <hr className="my-6" />
+          <div className="w-full flex flex-col sm:flex-row sm:space-between items-center select-none">
+            <div className="w-1/2 text-center">
+              <h2>
+                <Link to="/" className="link">
+                  <FontAwesomeIcon className="text-4xl mr-3" icon={faBackward} />
+                  <br />
+                  Go back
+                </Link>
+              </h2>
+            </div>
+            <div className="w-1/2 text-center">
+              <h2>
+                <OutboundLink
+                  href={data.site.siteMetadata.salesPageUrl}
+                  title="Pre-order the book now!"
+                  aria-label="Pre-order the book now!"
+                  rel="noopener"
+                  className="link"
+                >
+                  <FontAwesomeIcon className="text-4xl mr-3" icon={faShoppingCart} />
+                  <br />
+                  Pre-order now!
+                </OutboundLink>
+              </h2>
+            </div>
           </div>
         </div>
       </section>
