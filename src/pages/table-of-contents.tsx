@@ -27,13 +27,15 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
   return (
     <Layout>
       <SEO
-        title="Software Development Concepts - Table of contents"
+        title="Software Development Concepts - Table of contents (draft)"
         description="Table of contents of the Software Development Concepts book"
       />
 
       <section className="flex flex-col md:mx-16 lg:mx-32">
-        <h1>Table of contents</h1>
+        <h1>Table of contents (draft)</h1>
+        <span>This is a draft of the book's outline. The table of contents will probably evolve during the project.</span>
 
+        <h2>Overview</h2>
         <section id="top">
           <ul className="list-disc list-inside ml-2">
             <li>
@@ -76,8 +78,26 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 Part 8: Back-end development
               </a>
             </li>
-
-            <li>Coming soon...</li>
+            <li>
+              <a href="#front-end" className="link no-underline">
+                Part 9: Front-end development
+              </a>
+            </li>
+            <li>
+              <a href="#infrastructure" className="link no-underline">
+                Part 10: IT Infrastructure
+              </a>
+            </li>
+            <li>
+              <a href="#security" className="link no-underline">
+                Part 11: Security
+              </a>
+            </li>
+            <li>
+              <a href="#product-project-software" className="link no-underline">
+                Part 12: Product/Project management and Software development approaches
+              </a>
+            </li>
           </ul>
         </section>
 
@@ -151,26 +171,14 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </li>
             <li>User Centered Design (UCD)</li>
-            <li>
-              User Experience Design (UX)
-              <ol>
-                <ul>
-                  <li>What is it</li>
-                  <li>Why you should care</li>
-                  <li>Concepts</li>
-                  <li>Tools</li>
-                </ul>
-              </ol>
-            </li>
+            <li>User Experience Design (UX)</li>
             <li>
               Specifications
               <ol>
-                <ul>
-                  <li>Business analysis</li>
-                  <li>Business rules</li>
-                  <li>Ubiquitous language</li>
-                  <li>Functional/Technical analysis</li>
-                </ul>
+                <li>Business analysis</li>
+                <li>Business rules</li>
+                <li>Ubiquitous language</li>
+                <li>Functional/Technical analysis</li>
               </ol>
             </li>
             <li>Minimum Viable Product (MVP)</li>
@@ -211,22 +219,13 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <li>Hype cycle</li>
               </ol>
             </li>
-            <li>
-              Solution architecture
-              <ol>
-                <li>What is it about</li>
-                <li>Covered domains</li>
-                <li>Architecture specifications</li>
-              </ol>
-            </li>
+            <li>Solution architecture</li>
             <li>
               Software architecture
               <ol>
-                <li>What is it about</li>
                 <li>
                   Architectural/high level design patterns
                   <ol>
-                    <li>What are architectural patterns</li>
                     <li>Multi-tier architectures</li>
                     <li>Microservices vs monoliths</li>
                     <li>Cloud-native apps</li>
@@ -244,7 +243,6 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <li>
               Information/Data architecture
               <ol>
-                <li>What is it about</li>
                 <li>Data modeling</li>
                 <li>Data storage</li>
                 <li>
@@ -254,13 +252,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                     <li>Web Services / SOA</li>
                   </ol>
                 </li>
-                <li>
-                  Data governance
-                  <ol>
-                    <li>Data Quality Management</li>
-                    <li>Master Data Management (MDM)</li>
-                  </ol>
-                </li>
+                <li>Data governance</li>
                 <li>Big Data</li>
                 <li>
                   Data analytics
@@ -272,30 +264,9 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </li>
               </ol>
             </li>
-            <li>
-              Infrastructure architecture
-              <ol>
-                <li>What is it about</li>
-                <li>Problems it tackles</li>
-                <li>On-premise vs cloud vs hybrid</li>
-                <li>Vendor lock-in</li>
-              </ol>
-            </li>
-            <li>
-              Security architecture
-              <ol>
-                <li>What is it about</li>
-                <li>Problems it tackles</li>
-              </ol>
-            </li>
-            <li>
-              Enterprise architecture
-              <ol>
-                <li>What is it about</li>
-                <li>Problems it tackles</li>
-                <li>Benefits</li>
-              </ol>
-            </li>
+            <li>Infrastructure architecture</li>
+            <li>Security architecture</li>
+            <li>Enterprise architecture</li>
           </ol>
         </section>
 
@@ -317,15 +288,6 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
           </p>
           <h4 className="mt-2">In this part:</h4>
           <ol>
-            <li>Introduction</li>
-            <li>What software design is all about</li>
-            <li>Objectives</li>
-            <li>
-              No big design up front (BDUF)
-              <ol>
-                <li>Waterfall vs agile</li>
-              </ol>
-            </li>
             <li>
               Technical design
               <ol>
@@ -338,20 +300,10 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </ol>
                 </li>
                 <li>Business rules</li>
-                <li>
-                  Database design
-                  <ol>
-                    <li>Tables</li>
-                    <li>Columns</li>
-                    <li>Data types</li>
-                    <li>Constraints</li>
-                    <li>Data Definition Language (DDL)</li>
-                  </ol>
-                </li>
+                <li>Database design</li>
                 <li>
                   Algorithms
                   <ol>
-                    <li>Examples</li>
                     <li>Complexity and the Big-O notation</li>
                   </ol>
                 </li>
@@ -376,20 +328,12 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                     <li>Refactoring/Refinement</li>
                   </ol>
                 </li>
-                <li>
-                  Design patterns
-                  <ol>
-                    <li>What are design patterns</li>
-                    <li>Examples</li>
-                  </ol>
-                </li>
+                <li>Design patterns</li>
                 <li>Naming</li>
                 <li>Choosing frameworks and libraries</li>
                 <li>
                   Documentation
                   <ol>
-                    <li>Why documentation is critical</li>
-                    <li>Practical advice</li>
                     <li>Diagrams / Notations</li>
                   </ol>
                 </li>
@@ -423,18 +367,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <li>
               Computer architecture basics
               <ol>
-                <li>
-                  Central Processing Unit (CPU)
-                  <ol>
-                    <li>What is a CPU</li>
-                    <li>Machine code</li>
-                    <li>Instruction set</li>
-                    <li>Cores</li>
-                    <li>Hyperthreading</li>
-                    <li>Input/Output</li>
-                    <li>Input/Output Operations per Seconds (IOPS)</li>
-                  </ol>
-                </li>
+                <li>Central Processing Unit (CPU)</li>
                 <li>Memory (RAM)</li>
                 <li>Graphical Processing Unit (GPU)</li>
                 <li>Binary</li>
@@ -444,125 +377,23 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <li>
               Operating system basics
               <ol>
-                <li>Introduction</li>
-                <li>
-                  Major components
-                  <ol>
-                    <li>File systems</li>
-                    <li>Scheduler</li>
-                    <li>Device drivers</li>
-                    <li>Abstractions</li>
-                    <li>Mechanisms</li>
-                  </ol>
-                </li>
-                <li>
-                  Programs
-                  <ol>
-                    <li>Instructions</li>
-                    <li>Binaries</li>
-                  </ol>
-                </li>
-                <li>
-                  Processes and process management
-                  <ol>
-                    <li>Introduction</li>
-                    <li>What is a process</li>
-                    <li>Memory organization</li>
-                    <li>Process states</li>
-                    <li>Process Control Block (PCB)</li>
-                    <li>Concurrency, parallelism and threads</li>
-                    <li>Kernel vs user-space</li>
-                    <li>
-                      Scheduling
-                      <ol>
-                        <li>Process manager</li>
-                        <li>Process scheduling queues</li>
-                        <li>Context switching</li>
-                      </ol>
-                    </li>
-                  </ol>
-                </li>
+                <li>Major components</li>
+                <li>Programs</li>
+                <li>Processes and process management</li>
                 <li>Memory management</li>
                 <li>I/O management</li>
-                <li>
-                  File systems and files
-                  <ol>
-                    <li>File systems</li>
-                    <li>File</li>
-                    <li>
-                      File formats
-                      <ol>
-                        <li>What is a file format</li>
-                        <li>Data exchange formats</li>
-                        <li>Mime types</li>
-                        <li>
-                          Reading/writing files
-                          <ol>
-                            <li>File handles</li>
-                            <li>File access modes</li>
-                          </ol>
-                        </li>
-                      </ol>
-                    </li>
-                    <li>File permissions</li>
-                  </ol>
-                </li>
+                <li>File systems and files</li>
                 <li>Users and groups</li>
                 <li>Inter-Process Communication (IPC)</li>
                 <li>Ports</li>
                 <li>POSIX</li>
                 <li>Built-in programs</li>
-                <li>
-                  Shells
-                  <ol>
-                    <li>What is a shell</li>
-                    <li>Examples</li>
-                    <li>Prompt</li>
-                    <li>Current working directory (CWD)</li>
-                    <li>Scripting</li>
-                    <li>Aliases</li>
-                    <li>Standard streams</li>
-                  </ol>
-                </li>
+                <li>Shells</li>
                 <li>Environment variables</li>
-                <li>
-                  Services/Daemons
-                  <ol>
-                    <li>What is a service or daemon</li>
-                    <li>Built-in vs custom</li>
-                    <li>Examples</li>
-                  </ol>
-                </li>
-                <li>
-                  Scheduled tasks
-                  <ol>
-                    <li>What is a scheduled task</li>
-                    <li>Built-in vs custom</li>
-                    <li>Examples</li>
-                  </ol>
-                </li>
-                <li>
-                  Virtualization
-                  <ol>
-                    <li>What is it</li>
-                    <li>
-                      Hypervisor
-                      <ol>
-                        <li>Type-1</li>
-                        <li>Type-2</li>
-                      </ol>
-                    </li>
-                    <li>Virtual Machines (VMs)</li>
-                    <li>Types of virtualization</li>
-                  </ol>
-                </li>
-                <li>
-                  Containerization
-                  <ol>
-                    <li>What is it?</li>
-                    <li>Examples</li>
-                  </ol>
-                </li>
+                <li>Services/Daemons</li>
+                <li>Scheduled tasks</li>
+                <li>Virtualization</li>
+                <li>Containerization</li>
               </ol>
             </li>
           </ol>
@@ -593,85 +424,19 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               Programming concepts
               <ol>
                 <li>Pseudocode</li>
-                <li>
-                  Variables
-                  <ol>
-                    <li>Declaration</li>
-                    <li>Type</li>
-                    <li>Scope</li>
-                  </ol>
-                </li>
+                <li>Variables</li>
                 <li>Constants</li>
                 <li>References</li>
-                <li>
-                  Operators
-                  <ol>
-                    <li>Arithmetic</li>
-                    <li>Comparison</li>
-                    <li>Logical</li>
-                    <li>Assignment</li>
-                  </ol>
-                </li>
+                <li>Operators</li>
                 <li>Statements</li>
                 <li>Expressions</li>
                 <li>Keywords</li>
-                <li>
-                  Data types
-                  <ol>
-                    <li>Primitives</li>
-                    <li>Classes</li>
-                    <li>Objects</li>
-                    <li>Interfaces</li>
-                    <li>Enumerations (enums)</li>
-                    <li>Functions</li>
-                  </ol>
-                </li>
-                <li>
-                  Mutability
-                  <ol>
-                    <li>What is it</li>
-                    <li>Why is it (often) bad</li>
-                  </ol>
-                </li>
-                <li>
-                  Conditional structures
-                  <ol>
-                    <li>Introduction</li>
-                    <li>If-then-else</li>
-                    <li>Ternary operator</li>
-                    <li>Switch</li>
-                  </ol>
-                </li>
-                <li>
-                  Functions
-                  <ol>
-                    <li>Introduction</li>
-                    <li>Signature</li>
-                    <li>Scope</li>
-                    <li>
-                      Arguments
-                      <ol>
-                        <li>Pass by value</li>
-                        <li>Pass by reference</li>
-                      </ol>
-                    </li>
-                    <li>Call stack</li>
-                  </ol>
-                </li>
+                <li>Data types</li>
+                <li>Mutability</li>
+                <li>Conditional structures</li>
+                <li>Functions</li>
                 <li>Loops</li>
-                <li>
-                  Errors/Exceptions
-                  <ol>
-                    <li>What are errors and exceptions</li>
-                    <li>Error types</li>
-                    <li>Errors vs exceptions</li>
-                    <li>Uncaught/unhandled exceptions</li>
-                    <li>Control flow</li>
-                    <li>Syntax/keywords</li>
-                    <li>Stack traces</li>
-                    <li>Differences between programming languages</li>
-                  </ol>
-                </li>
+                <li>Errors/Exceptions</li>
                 <li>Generics</li>
                 <li>Decorators/annotations</li>
                 <li>Regular expressions (Regex)</li>
@@ -683,75 +448,32 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <li>Libraries</li>
                 <li>Frameworks</li>
                 <li>Bugs</li>
-                <li>
-                  Debugging
-                  <ol>
-                    <li>Introduction</li>
-                    <li>Concepts</li>
-                  </ol>
-                </li>
+                <li>Debugging</li>
               </ol>
             </li>
             <li>
               Programming paradigms
               <ol>
-                <li>What is a programming paradigm</li>
                 <li>
                   Imperative
                   <ol>
-                    <li>What is imperative programming</li>
                     <li>Procedural</li>
-                    <li>
-                      Object-Oriented Programming (OOP)
-                      <ol>
-                        <li>What is it</li>
-                        <li>Encapsulation</li>
-                        <li>Inheritance</li>
-                        <li>Polymorphism</li>
-                        <li>Classes</li>
-                        <li>Abstraction</li>
-                        <li>Interfaces</li>
-                        <li>Enumerations (enums)</li>
-                        <li>Overloading</li>
-                      </ol>
-                    </li>
+                    <li>Object-Oriented Programming (OOP)</li>
                   </ol>
                 </li>
                 <li>
                   Declarative
                   <ol>
-                    <li>What is declarative programming</li>
-                    <li>
-                      Functional Programming (FP)
-                      <ol>
-                        <li>What is it</li>
-                        <li>Characteristics</li>
-                        <li>Examples</li>
-                      </ol>
-                    </li>
-                    <li>
-                      Functional Reactive Programming (FRP)
-                      <li>What is it</li>
-                      <li>Characteristics</li>
-                      <li>Examples</li>
-                      <li>Libraries</li>
-                    </li>
+                    <li>Functional Programming (FP)</li>
+                    <li>Functional Reactive Programming (FRP)</li>
                   </ol>
                 </li>
-                <li>
-                  Aspect Oriented Programming (AOP)
-                  <ol>
-                    <li>What is it</li>
-                    <li>Examples</li>
-                    <li>Libraries</li>
-                  </ol>
-                </li>
+                <li>Aspect Oriented Programming (AOP)</li>
               </ol>
             </li>
             <li>
               Programming languages & platforms
               <ol>
-                <li>Introduction</li>
                 <li>Generations</li>
                 <li>Families</li>
                 <li>Characteristics</li>
@@ -762,80 +484,22 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <li>
               Development tools
               <ol>
-                <li>Introduction</li>
-                <li>
-                  Integrated Development Environment (IDE)
-                  <ol>
-                    <li>What is it</li>
-                    <li>Features</li>
-                    <li>Tools</li>
-                  </ol>
-                </li>
-                <li>
-                  Source Control Management client
-                  <ol>
-                    <li>What is it</li>
-                    <li>Tools</li>
-                  </ol>
-                </li>
-                <li>
-                  Build tools
-                  <ol>
-                    <li>What is it</li>
-                    <li>Command Line Interfaces (CLI)</li>
-                    <li>Tools</li>
-                  </ol>
-                </li>
+                <li>Integrated Development Environment (IDE)</li>
+                <li>Source Control Management client</li>
+                <li>Build tools</li>
                 <li>Development environment setup</li>
               </ol>
             </li>
-            <li>
-              Free and Open Source Software (FOSS)
-              <ol>
-                <li>What is Open Source</li>
-                <li>Values</li>
-                <li>Popular Open source licenses</li>
-              </ol>
-            </li>
+            <li>Free and Open Source Software (FOSS)</li>
             <li>
               Databases
               <ol>
-                <li>Introduction</li>
-                <li>
-                  Database transactions
-                  <ol>
-                    <li>What are transactions</li>
-                    <li>ACID</li>
-                  </ol>
-                </li>
-                <li>
-                  Relational Database Management Systems (RDBMS)
-                  <ol>
-                    <li>Specificities</li>
-                    <li>Good for</li>
-                    <li>Structured Query Language (SQL)</li>
-                    <li>Tools</li>
-                  </ol>
-                </li>
-                <li>
-                  NoSQL
-                  <ol>
-                    <li>Specificities</li>
-                    <li>Good for</li>
-                    <li>Types</li>
-                    <li>Tools</li>
-                  </ol>
-                </li>
+                <li>Database transactions</li>
+                <li>Relational Database Management Systems (RDBMS)</li>
+                <li>NoSQL</li>
               </ol>
             </li>
-            <li>
-              Character encoding
-              <ol>
-                <li>Introduction</li>
-                <li>Types</li>
-                <li>Advice</li>
-              </ol>
-            </li>
+            <li>Character encoding</li>
             <li>
               Internet
               <ol>
@@ -843,8 +507,6 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <li>
                   Hypertext Transfer Protocol (HTTP)
                   <ol>
-                    <li>What is it</li>
-                    <li>Overview</li>
                     <li>Server/Clients</li>
                     <li>Requests/Responses</li>
                     <li>URLs</li>
@@ -857,13 +519,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </li>
               </ol>
             </li>
-            <li>
-              Full Text Search (FTS)
-              <ol>
-                <li>What is it</li>
-                <li>Tools</li>
-              </ol>
-            </li>
+            <li>Full Text Search (FTS)</li>
           </ol>
         </section>
 
@@ -891,57 +547,28 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
           </p>
           <h4 className="mt-2">In this part:</h4>
           <ol>
-            <li>Introduction</li>
-            <li>
-              Error handling
-              <ol>
-                <li>Goals</li>
-                <li>Why you should care</li>
-                <li>Debate around exceptions</li>
-                <li>Advice</li>
-              </ol>
-            </li>
+            <li>Error handling</li>
             <li>
               Code quality & Quality Assurance (QA)
               <ol>
-                <li>Goals</li>
-                <li>Why you should care</li>
                 <li>Broken windows theory</li>
-                <li>
-                  Technical debt
-                  <ol>
-                    <li>Introduction</li>
-                    <li>Advice to fight against it</li>
-                  </ol>
-                </li>
+                <li>Technical debt</li>
                 <li>
                   Code quality checks
-                  <li>Introduction</li>
-                  <li>Goals</li>
-                  <li>
-                    Static Code Analysis (SCA)
-                    <ol>
-                      <li>Introduction</li>
-                      <li>Metrics</li>
-                      <li>Tools</li>
-                    </ol>
-                  </li>
-                </li>
-                <li>
-                  Testing
                   <ol>
-                    <li>Introduction</li>
-                    <li>Goals</li>
-                    <li>Test categories</li>
-                    <li>Testing concepts</li>
-                    <li>Tools</li>
+                    <li>
+                      Static Code Analysis (SCA)
+                      <ol>
+                        <li>Metrics</li>
+                        <li>Tools</li>
+                      </ol>
+                    </li>
                   </ol>
                 </li>
+                <li>Testing</li>
                 <li>
                   Clean code advice
                   <ol>
-                    <li>Introduction</li>
-                    <li>Goals</li>
                     <li>
                       General
                       <ol>
@@ -951,7 +578,6 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                         <li>Dead code elimination</li>
                         <li>Code quality checklist</li>
                         <li>Code comments</li>
-                        <li>...</li>
                       </ol>
                     </li>
                     <li>Variables</li>
@@ -962,170 +588,45 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                     <li>Performance</li>
                   </ol>
                 </li>
-                <li>
-                  Continuous Integration (CI)
-                  <ol>
-                    <li>Introduction</li>
-                    <li>Goals</li>
-                    <li>Practical advice</li>
-                    <li>Tools</li>
-                  </ol>
-                </li>
-                <li>
-                  Code review process
-                  <ol>
-                    <li>Introduction</li>
-                    <li>Goals</li>
-                    <li>Practical advice</li>
-                    <li>Tools</li>
-                  </ol>
-                </li>
-                <li>
-                  Issue/Bug tracking
-                  <ol>
-                    <li>Introduction</li>
-                    <li>Goals</li>
-                    <li>Concepts</li>
-                    <li>Tools</li>
-                  </ol>
-                </li>
+                <li>Continuous Integration (CI)</li>
+                <li>Code review process</li>
+                <li>Issue/Bug tracking</li>
               </ol>
             </li>
-            <li>
-              Logging
-              <ol>
-                <li>Introduction</li>
-                <li>Why you should care</li>
-                <li>Log levels</li>
-                <li>Log formats</li>
-                <li>Practical advice</li>
-                <li>Tools</li>
-              </ol>
-            </li>
-            <li>
-              Performance/resource usage
-              <ol>
-                <li>Introduction</li>
-                <li>Why you should care</li>
-                <li>Practical advice</li>
-                <li>Tools</li>
-              </ol>
-            </li>
-            <li>
-              Internationalization (i18n) and localization (l10n)
-              <ol>
-                <li>Introduction</li>
-                <li>Why you should care</li>
-                <li>Practical advice</li>
-                <li>Tools</li>
-              </ol>
-            </li>
-            <li>
-              Encoding
-              <ol>
-                <li>Introduction</li>
-                <li>Why you should care</li>
-                <li>
-                  Examples
-                  <ol>
-                    <li>Base64 encoding</li>
-                  </ol>
-                </li>
-              </ol>
-            </li>
+            <li>Logging</li>
+            <li>Performance/resource usage</li>
+            <li>Internationalization (i18n) and localization (l10n)</li>
+            <li>Encoding</li>
             <li>
               Caching
               <ol>
-                <li>Introduction</li>
-                <li>Goals</li>
-                <li>Why you should care</li>
                 <li>Concepts</li>
                 <li>Types</li>
                 <li>Patterns</li>
-                <li>Practical advice</li>
               </ol>
             </li>
             <li>Feature flagging</li>
             <li>How to fix bugs</li>
-            <li>
-              Version management
-              <ol>
-                <li>Introduction</li>
-                <li>Why you should care</li>
-                <li>Versions</li>
-                <li>
-                  Versioning schemes
-                  <ol>
-                    <li>Semantic Versioning (SemVer)</li>
-                    <li>Calendar Versioning (CalVer)</li>
-                  </ol>
-                </li>
-                <li>Tagging</li>
-              </ol>
-            </li>
+            <li>Version management</li>
             <li>
               Source Control Management (SCM)
               <ol>
-                <li>Introduction</li>
-                <li>Goals</li>
-                <li>Why you should care</li>
                 <li>Workflows</li>
                 <li>Monorepos</li>
                 <li>Practical advice</li>
               </ol>
             </li>
-            <li>
-              Continuous Delivery/Deployment
-              <ol>
-                <li>Introduction</li>
-                <li>Goals</li>
-                <li>Why you should care</li>
-                <li>Concepts</li>
-              </ol>
-            </li>
+            <li>Continuous Delivery/Deployment</li>
             <li>
               Operational Maturity (OM)
               <ol>
-                <li>Introduction</li>
-                <li>Why you should care</li>
                 <li>Business Continuity Management (BCM)</li>
-                <li>
-                  IT Service Management (ITSM)
-                  <ol>
-                    <li>Introduction</li>
-                    <li>Why you should care</li>
-                    <li>Concepts</li>
-                  </ol>
-                </li>
-                <li>
-                  Backup/restore
-                  <ol>
-                    <li>Introduction</li>
-                    <li>Why you should care</li>
-                    <li>Concepts</li>
-                  </ol>
-                </li>
-                <li>
-                  Disaster Recovery (DR)
-                  <ol>
-                    <li>Introduction</li>
-                    <li>Why you should care</li>
-                    <li>Disaster Recovery Plan (DRP)</li>
-                  </ol>
-                </li>
+                <li>IT Service Management (ITSM)</li>
+                <li>Backup/restore</li>
+                <li>Disaster Recovery (DR)</li>
               </ol>
             </li>
-            <li>
-              Security
-              <ol>
-                <li>Introduction</li>
-                <li>Why you should care</li>
-                <li>Secure SDLC</li>
-                <li>Secure coding</li>
-                <li>Security testing</li>
-                <li>Incident response</li>
-              </ol>
-            </li>
+            <li>Security</li>
           </ol>
         </section>
 
@@ -1139,29 +640,514 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </span>
             </h2>
           </a>
-          <p>Coming soon...</p>
-          {/*  <br />*/}
-          {/*<ol>*/}
-          {/*  <li>Introduction</li>*/}
-          {/*</ol>*/}
+          <p>
+            This part is all about back-end software, where most of the action occurs under the hood… without anyone knowing. Back-end
+            developers have to focus on very different aspects of IT systems, compared to front-end developers. Software crafters need to
+            understand those differences.
+          </p>
+          <h4 className="mt-2">In this part:</h4>
+          <ol>
+            <li>What back-end developers focus on and why</li>
+            <li>
+              Data
+              <ol>
+                <li>Models</li>
+                <li>Persistence / Retrieval / Search</li>
+                <li>Exposure through APIs</li>
+                <li>Batch processing</li>
+              </ol>
+            </li>
+            <li>
+              Usual layers and responsibilities
+              <ol>
+                <li>Domain</li>
+                <li>Repository</li>
+                <li>Business</li>
+                <li>Web services</li>
+                <li>Integration</li>
+                <li>Batch</li>
+                <li>Shared</li>
+                <li>Cross-cutting</li>
+              </ol>
+            </li>
+            <li>Security</li>
+            <li>Performance</li>
+            <li>Scalability</li>
+            <li>
+              APIs
+              <ol>
+                <li>
+                  Types
+                  <ol>
+                    <li>RESTful</li>
+                    <li>GraphQL</li>
+                    <li>SOAP</li>
+                    <li>GRPC</li>
+                  </ol>
+                </li>
+                <li>Comparison</li>
+                <li>Tools</li>
+              </ol>
+            </li>
+            <li>Frameworks and major libraries</li>
+            <li>Going full-stack</li>
+          </ol>
         </section>
 
-        {/* -------------------------------------- PART X -------------------------------------- */}
-        {/*<section id="whatever" className="mt-4">*/}
-        {/*  <a href="#whatever" className="anchor">*/}
-        {/*    <h2>*/}
-        {/*      Part X: Whatever*/}
-        {/*      <span className="anchor-icon">*/}
-        {/*        <FontAwesomeIcon icon={faLink} />*/}
-        {/*      </span>*/}
-        {/*    </h2>*/}
-        {/*  </a>*/}
-        {/*  <p>Coming soon...</p>*/}
-        {/*  <br />*/}
-        {/*<ol>*/}
-        {/*  <li>Introduction</li>*/}
-        {/*</ol>*/}
-        {/*</section>*/}
+        {/* -------------------------------------- PART 9 -------------------------------------- */}
+        <section id="front-end" className="mt-4">
+          <a href="#front-end" className="anchor">
+            <h2>
+              Part 9: Front-end development
+              <span className="anchor-icon">
+                <FontAwesomeIcon icon={faLink} />
+              </span>
+            </h2>
+          </a>
+          <p>
+            This part is all about front-end systems, which are the tip of the iceberg; the one concrete part that end users see and can
+            feel. Given the visual nature of front-end applications, front-end developers have to focus on very different aspects, compared
+            to back-end developers. Software crafters must not necessarily be artists, but they still have to pay attention to the
+            aesthetics… among many other things.
+          </p>
+          <h4 className="mt-2">In this part:</h4>
+          <ol>
+            <li>What front-end developers focus on and why</li>
+            <li>Usual layers and responsibilities</li>
+            <li>
+              Component architecture
+              <ol>
+                <li>Smart components</li>
+                <li>Dumb components</li>
+                <li>Component libraries</li>
+              </ol>
+            </li>
+            <li>
+              User Interface Design (UI)
+              <ol>
+                <li>Principles</li>
+                <li>Elements</li>
+                <li>Design systems</li>
+                <li>Mockups/prototypes & fidelity</li>
+              </ol>
+            </li>
+            <li>
+              Web Design
+              <ol>
+                <li>Technologies</li>
+                <li>Progressive enhancement</li>
+                <li>Graceful degradation</li>
+                <li>Responsive Web Design (RWD)</li>
+                <li>Cross-browser testing</li>
+              </ol>
+            </li>
+            <li>
+              Accessibility (a11y)
+              <ol>
+                <li>Standards</li>
+                <li>Tools</li>
+              </ol>
+            </li>
+            <li>
+              Performance
+              <ol>
+                <li>Testing/Scoring</li>
+                <li>Tools</li>
+              </ol>
+            </li>
+            <li>
+              The Web Platform
+              <ol>
+                <li>Main technologies of the Web</li>
+                <li>How Web browsers work</li>
+                <li>Web standards</li>
+              </ol>
+            </li>
+            <li>HTML basics</li>
+            <li>CSS basics</li>
+            <li>Metadata on the Web</li>
+            <li>
+              Data entry
+              <ol>
+                <li>HTML forms</li>
+                <li>Captcha & security</li>
+              </ol>
+            </li>
+            <li>
+              Approaches to create Web applications
+              <ol>
+                <li>Old school</li>
+                <li>Single Page Applications (SPAs)</li>
+                <li>Server-Side Rendering (SSR)</li>
+                <li>Static sites</li>
+                <li>Micro front-ends</li>
+              </ol>
+            </li>
+            <li>Progressive Web Apps (PWAs)</li>
+            <li>
+              UI state management
+              <ol>
+                <li>Types</li>
+                <li>
+                  Redux
+                  <ol>
+                    <li>Architecture</li>
+                    <li>Libraries</li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+            <li>Scalable Vector Graphics (SVG)</li>
+            <li>Web fonts</li>
+            <li>Desktop/Mobile apps</li>
+            <li>Frameworks and major libraries</li>
+          </ol>
+        </section>
+
+        {/* -------------------------------------- PART 10 -------------------------------------- */}
+        <section id="infrastructure" className="mt-4">
+          <a href="#infrastructure" className="anchor">
+            <h2>
+              Part 10: IT Infrastructure
+              <span className="anchor-icon">
+                <FontAwesomeIcon icon={faLink} />
+              </span>
+            </h2>
+          </a>
+          <p>
+            Back-end software is conceptually below the front-end in terms of visibility, but IT infrastructure goes way further down, from
+            services, servers and networks down to cable and electrical signals; phew! ;-)
+          </p>
+          <br />
+          <p>
+            Having a good understanding of where our applications are hosted, how the environment is configured/secured/monitored, etc is
+            super valuable and makes the difference between someone who “just” writes code and someone who contributes to develop end-to-end
+            solutions. This part explains some important concepts about IT infrastructure. All DevSecOps engineers (and thus software
+            crafters) should be aware of at least a part of those ideas.
+          </p>
+          <h4 className="mt-2">In this part:</h4>
+          <ol>
+            <li>What IT infrastructure focuses on and why</li>
+            <li>
+              Networking concepts
+              <ol>
+                <li>OSI Model</li>
+                <li>Networks</li>
+                <li>Routing</li>
+                <li>Network Address Translation (NAT)</li>
+                <li>Ports</li>
+                <li>Port Address Translation (PAT)</li>
+                <li>Network zones</li>
+                <li>Cloud networks</li>
+                <li>DHCP</li>
+                <li>DNS</li>
+              </ol>
+            </li>
+            <li>Network domains</li>
+            <li>
+              Availability & performance
+              <ol>
+                <li>High Availability (HA)</li>
+                <li>Clustering</li>
+                <li>Load Balancing (LB)</li>
+              </ol>
+            </li>
+            <li>Systems maintenance</li>
+            <li>
+              Systems management
+              <ol>
+                <li>Databases</li>
+                <li>Configuration management</li>
+                <li>Compliance management</li>
+                <li>Naming conventions</li>
+              </ol>
+            </li>
+            <li>
+              Data
+              <ol>
+                <li>Storage</li>
+                <li>Backup/restore</li>
+                <li>File services</li>
+                <li>Enterprise Content Management (ECM)</li>
+                <li>Databases</li>
+              </ol>
+            </li>
+            <li>
+              Cloud computing
+              <ol>
+                <li>Infrastructure as a Service (IaaS)</li>
+                <li>Software as a Service (SaaS)</li>
+                <li>Platform as a Service (PaaS</li>
+                <li>Cloud types</li>
+                <li>Workload portability</li>
+              </ol>
+            </li>
+            <li>
+              Hosting
+              <ol>
+                <li>Applications</li>
+                <li>Services</li>
+                <li>Functions</li>
+              </ol>
+            </li>
+            <li>Deployments</li>
+            <li>Environments</li>
+            <li>Security</li>
+            <li>
+              Automation
+              <ol>
+                <li>Scripting</li>
+                <li>Infrastructure as code</li>
+                <li>GitOps</li>
+                <li>ChatOps</li>
+                <li>Tools</li>
+              </ol>
+            </li>
+            <li>API integration</li>
+          </ol>
+        </section>
+
+        {/* -------------------------------------- PART 11 -------------------------------------- */}
+        <section id="security" className="mt-4">
+          <a href="#security" className="anchor">
+            <h2>
+              Part 11: Security
+              <span className="anchor-icon">
+                <FontAwesomeIcon icon={faLink} />
+              </span>
+            </h2>
+          </a>
+          <p>
+            IT security (ITSEC) is paramount for digital solutions. 20 years ago, things were less complicated, but nowadays, leaving an
+            insecure system online even for a few seconds is enough to get hacked. Everyday, there are countless stories of security
+            breaches and stolen data. Together, we’ll learn about the most important IT security concepts; knowledge that will expand your
+            understanding of this complex, but incredibly important field of IT:
+          </p>
+          <h4 className="mt-2">In this part:</h4>
+          <ol>
+            <li>Attackers</li>
+            <li>
+              Key concepts
+              <ol>
+                <li>Attack vectors</li>
+                <li>Attack surface</li>
+                <li>Physical security</li>
+                <li>Confidentiality, Integrity, Availability (CIA)</li>
+                <li>Non-repudiation</li>
+                <li>Defense-in-depth</li>
+                <li>Identification</li>
+                <li>Authentication, Authorization, Auditing (AAA)</li>
+                <li>Principle of least privilege</li>
+                <li>Allow lists and deny lists</li>
+                <li>Privilege escalation</li>
+                <li>Need to know</li>
+                <li>Segregation of duties</li>
+                <li>Responsibility Assignment Matrix (RACI)</li>
+                <li>Security by obscurity</li>
+                <li>Personally Identifiable Information (PII)</li>
+              </ol>
+            </li>
+            <li>
+              Risk management
+              <ol>
+                <li>Risk assessment</li>
+                <li>Risk mitigation</li>
+              </ol>
+            </li>
+            <li>
+              Security controls
+              <ol>
+                <li>Common controls</li>
+                <li>OWASP</li>
+              </ol>
+            </li>
+            <li>
+              Cryptography
+              <ol>
+                <li>Encryption</li>
+                <li>Hashing</li>
+                <li>Digital Signatures</li>
+                <li>Pseudo-Random Number Generators (PRNG)</li>
+                <li>Keys</li>
+              </ol>
+            </li>
+            <li>
+              Secure communications
+              <ol>
+                <li>
+                  Secure protocols
+                  <ol>
+                    <li>Why HTTPS matters</li>
+                    <li>Transport Layer Security (TLS)</li>
+                    <li>Perfect Forward Secrecy</li>
+                  </ol>
+                </li>
+                <li>Public Key Infrastructure (PKI)</li>
+                <li>Firewalls</li>
+                <li>Network segregation</li>
+                <li>Proxies</li>
+                <li>NAC, IDS, IPS</li>
+              </ol>
+            </li>
+            <li>
+              Configuration hardening
+              <ol>
+                <li>Accounts security</li>
+                <li>Hosts security</li>
+                <li>Web servers security</li>
+                <li>Domain security</li>
+                <li>Cloud security</li>
+                <li>Configuration drift</li>
+              </ol>
+            </li>
+            <li>
+              Secret management
+              <ol>
+                <li>Password management</li>
+                <li>Privileged Access Management (PAM)</li>
+                <li>Hardware Security Modules (HSM)</li>
+              </ol>
+            </li>
+            <li>
+              Vulnerability tracking
+              <ol>
+                <li>Vulnerability databases</li>
+                <li>How to track vulnerabilities</li>
+              </ol>
+            </li>
+            <li>
+              Security testing
+              <ol>
+                <li>Security verification</li>
+                <li>Penetration testing</li>
+                <li>Bug bounty programs</li>
+              </ol>
+            </li>
+            <li>
+              Web platform security
+              <ol>
+                <li>Same Origin Policy (SOP)</li>
+                <li>Mixed content</li>
+                <li>Browser sandbox</li>
+                <li>Content Security Policy (CSP)</li>
+                <li>Cross-Origin Resource Sharing (CORS)</li>
+                <li>Cookies security</li>
+                <li>Privacy sandbox</li>
+              </ol>
+            </li>
+            <li>
+              Secure coding
+              <ol>
+                <li>OWASP top vulnerabilities</li>
+                <li>Integrity security in the SDLC</li>
+                <li>General advice</li>
+                <li>Input validation</li>
+                <li>Output encoding</li>
+                <li>Authentication</li>
+                <li>Session management</li>
+                <li>Authorization</li>
+                <li>Error handling</li>
+                <li>Logging and auditing</li>
+                <li>Data security</li>
+                <li>... and more!</li>
+              </ol>
+            </li>
+            <li>Incident response</li>
+            <li>Security monitoring</li>
+            <li>Security automation</li>
+            <li>Administrative measures</li>
+            <li>Laws and regulations</li>
+          </ol>
+        </section>
+
+        {/* -------------------------------------- PART 12 -------------------------------------- */}
+        <section id="product-project-software" className="mt-4">
+          <a href="#product-project-software" className="anchor">
+            <h2>
+              Part 12: Product/Project management and Software development approaches
+              <span className="anchor-icon">
+                <FontAwesomeIcon icon={faLink} />
+              </span>
+            </h2>
+          </a>
+          <p>
+            Once you understand what your clients need (or at least, what they need right now), you can think about the “product”. Product
+            management is a specific job, but as a software crafter, it is important to at least understand what it is and what it entails
+            because, sometimes, you might have to take the lead for some parts of product management.
+          </p>
+          <br />
+          <p>
+            How are products and their features defined, prioritized and organized? Dive into this part to learn about technical product
+            management, product backlogs, product roadmaps as well as how to create, structure and maintain those.
+          </p>
+          <h4 className="mt-2">In this part:</h4>
+          <ol>
+            <li>Project roles</li>
+            <li>
+              Product management
+              <ol>
+                <li>Product manager's role</li>
+                <li>
+                  Product roadmap
+                  <ol>
+                    <li>Phases/Milestones</li>
+                    <li>User Story Map</li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+            <li>
+              Backlog management
+              <ol>
+                <li>Advice</li>
+                <li>Tools</li>
+              </ol>
+            </li>
+            <li>
+              Software development process
+              <ol>
+                <li>Cowboy coding</li>
+                <li>Software/System Development Life Cycle (SDLC)</li>
+              </ol>
+            </li>
+            <li>
+              Software development approaches
+              <ol>
+                <li>Waterfall</li>
+                <li>Rational Unified Process (RUP)</li>
+                <li>
+                  Agile
+                  <ol>
+                    <li>Scrum</li>
+                    <li>Kanban</li>
+                    <li>Scrumban</li>
+                    <li>Disciplined Agile Delivery (DAD)</li>
+                    <li>Agile Unified Process (AUP)</li>
+                  </ol>
+                </li>
+                <li>
+                  Lean
+                  <ol>
+                    <li>Lean thinking</li>
+                    <li>Lean Product Development (LPD)</li>
+                  </ol>
+                </li>
+                <li>Extreme Programming (XP)</li>
+                <li>Feature-driven Development (FDD)</li>
+                <li>DevOps and DevSecOps</li>
+              </ol>
+            </li>
+            <li>Project management basics</li>
+            <li>
+              Important definitions for teams
+              <ol>
+                <li>Definition of Ready to implement</li>
+                <li>Definition of Done</li>
+              </ol>
+            </li>
+            <li>Release management</li>
+          </ol>
+        </section>
 
         {/* ------------------ Links ------------ */}
         <hr className="my-6" />
