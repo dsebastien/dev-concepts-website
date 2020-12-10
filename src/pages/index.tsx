@@ -7,7 +7,7 @@ import { DevConceptsNewsletterForm } from "../components/dev-concepts-newsletter
 import { Countdown } from "../components/countdown";
 import { faQuoteLeft, faQuoteRight, faSitemap, faLayerGroup, faServer } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { graphql, useStaticQuery } from "gatsby";
+import {graphql, Link, useStaticQuery} from "gatsby";
 import { Separator } from "../components/separator";
 import { AuthorBio } from "../components/author-bio";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
@@ -54,7 +54,7 @@ const App = () => {
                 Front-end, back-end, architecture, analysis/design, quality assurance, code quality, IT infrastructure, security, and much more. We've
                 got you <i>covered</i>. Get a <strong>crystal clear view of modern software development in no time.</strong>
                 <br /><br />
-                <p>Check out the full table of contents</p>
+                <p>Check out the <b><Link to="/table-of-contents" className="link text-xl">full table of contents</Link></b></p>
               </span>
             </header>
             <div className="mt-4">
@@ -66,8 +66,8 @@ const App = () => {
                   benefit from the <i>early-bird</i>
                 </strong>{" "}
                 offer if you{" "}
-                <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="link uppercase text-xl" rel="noopener">
-                  pre-order it now.
+                <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="link text-xl" rel="noopener">
+                  PRE-ORDER IT NOW.
                 </OutboundLink>
               </p>
             </div>

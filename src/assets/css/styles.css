@@ -176,6 +176,34 @@ figure.devConceptsLogoFigure:hover figcaption::before {
   transition-delay: 0s;
 }
 
+/* Table of contents */
+ol {
+  counter-reset: item;
+  list-style-type: none;
+  list-style-position: inside;
+  margin-left: 0.5rem;
+}
+ol li::before {
+  counter-increment: item;
+  content: counters(item, ".")". ";
+}
+ol ol li {
+  padding-inline-start: 0.5rem;
+}
+
+/* Permalinks */
+.anchor .anchor-icon {
+  @apply hidden;
+}
+
+.anchor:hover {
+  @apply cursor-pointer;
+}
+
+.anchor:hover .anchor-icon {
+  @apply inline-block pl-3;
+}
+
 /*/////////////////////////////////////////////////////////////////////////////////////////*/
 
 @tailwind components;
