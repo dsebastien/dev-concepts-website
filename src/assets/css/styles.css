@@ -181,14 +181,37 @@ ol {
   counter-reset: item;
   list-style-type: none;
   list-style-position: inside;
-  margin-left: 0.5rem;
+  margin-left: 0.3rem;
 }
+
+@screen sm {
+  ol {
+    margin-left: 0.5rem;
+  }
+}
+
+@screen sm {
+  ol {
+    margin-left: 1rem;
+  }
+}
+
 ol li::before {
   counter-increment: item;
   content: counters(item, ".") ". ";
+  padding-inline-start: 0.3rem;
 }
-ol ol li {
-  padding-inline-start: 0.5rem;
+
+@screen sm {
+  ol ol li {
+    padding-inline-start: 0.5rem;
+  }
+}
+
+@screen xl {
+  ol ol li {
+    padding-inline-start: 1rem;
+  }
 }
 
 /* Permalinks */
