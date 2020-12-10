@@ -134,9 +134,8 @@ const ConvertKitForm: React.FC = () => {
           </label>
           <div className="mt-5">
             <span className="text-sm">
-              We need this information to be able to contact you. We value your privacy and won't share
-              the information with anyone. The only person that will get access is Sébastien Dubois, the author. We won't send
-              you spam. Unsubscribe at any time.
+              We need this information to be able to contact you. We value your privacy and won't share the information with anyone. The
+              only person that will get access is Sébastien Dubois, the author. We won't send you spam. Unsubscribe at any time.
             </span>
           </div>
           <div className="mt-5">

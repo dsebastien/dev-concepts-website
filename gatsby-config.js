@@ -171,7 +171,8 @@ module.exports = {
           "base-uri": "'self'",
           "block-all-mixed-content": "",
           "child-src": "'self'",
-          "connect-src": "'self' http://localhost:8000 http://localhost:* ws://localhost:* app.convertkit.com fonts.googleapis.com www.google-analytics.com",
+          "connect-src":
+            "'self' http://localhost:8000 http://localhost:* ws://localhost:* app.convertkit.com fonts.googleapis.com www.google-analytics.com",
           "default-src": "'self'",
           "disown-opener": "",
           "font-src": "'self' data: https://fonts.gstatic.com",
@@ -184,8 +185,9 @@ module.exports = {
           "object-src": "'self'",
           "plugin-types": "application/pdf",
           "prefetch-src": "'self'",
-          "sandbox": "",
-          "script-src": "'self' www.google-analytics.com www.googletagmanager.com 'sha256-KWO6UOhc/cfhZd4gtXYPu4WkSRPuCQDtCkF/v9OyJB8=' 'sha256-QAj9SgqS0tkqFXsMg6gbHzN3KfNnrPW0N0FCdMzN3MI=' 'nonce-fcd8146f-6701-4dca-9165-3ed4c96a3b5a' 'sha256-srzUm2bR52Dg2g2SqWiGuo719+FqQulMWAYRYJ8hkhc='",
+          sandbox: "",
+          "script-src":
+            "'self' www.google-analytics.com www.googletagmanager.com 'sha256-KWO6UOhc/cfhZd4gtXYPu4WkSRPuCQDtCkF/v9OyJB8=' 'sha256-QAj9SgqS0tkqFXsMg6gbHzN3KfNnrPW0N0FCdMzN3MI=' 'nonce-fcd8146f-6701-4dca-9165-3ed4c96a3b5a' 'sha256-srzUm2bR52Dg2g2SqWiGuo719+FqQulMWAYRYJ8hkhc='",
           "style-src": "'self' 'unsafe-inline' blob: https://fonts.googleapis.com",
           "upgrade-insecure-requests": "",
           "worker-src": "'self'",

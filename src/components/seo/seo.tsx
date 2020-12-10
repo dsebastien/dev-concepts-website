@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
@@ -23,17 +23,14 @@ interface WindowWithGTag extends Window {
 }
 
 const SEO: React.FC<SEOProps> = (props) => {
-
   useEffect(() => {
     let windowWithGtag: WindowWithGTag | null = null;
-    if(window) {
+    if (window) {
       windowWithGtag = window;
     }
 
-    if(windowWithGtag?.gtag) {
-      const pagePath = location
-        ? location.pathname + location.search + location.hash
-        : undefined
+    if (windowWithGtag?.gtag) {
+      const pagePath = location ? location.pathname + location.search + location.hash : undefined;
       console.log("Sending GA pageview for path: ", pagePath);
       windowWithGtag.gtag(`event`, `page_view`, { page_path: pagePath });
     }

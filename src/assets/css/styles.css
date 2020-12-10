@@ -185,7 +185,7 @@ ol {
 }
 ol li::before {
   counter-increment: item;
-  content: counters(item, ".")". ";
+  content: counters(item, ".") ". ";
 }
 ol ol li {
   padding-inline-start: 0.5rem;

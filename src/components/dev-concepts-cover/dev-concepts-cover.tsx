@@ -6,8 +6,7 @@ import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 const Wrapper = styled.div.attrs({
   className: "relative w-full",
-})`
-`;
+})``;
 
 const DevConceptsCover: React.FC = () => {
   const data = useStaticQuery(graphql`

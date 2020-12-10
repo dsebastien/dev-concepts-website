@@ -7,7 +7,7 @@ import { DevConceptsNewsletterForm } from "../components/dev-concepts-newsletter
 import { Countdown } from "../components/countdown";
 import { faQuoteLeft, faQuoteRight, faSitemap, faLayerGroup, faServer } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {graphql, Link, useStaticQuery} from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
 import { Separator } from "../components/separator";
 import { AuthorBio } from "../components/author-bio";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
@@ -51,10 +51,18 @@ const App = () => {
               <h1 className="text-5xl tracking-wider leading-none">The perfect guide towards full stack development.</h1>
               <br />
               <span className="text-xl">
-                Front-end, back-end, architecture, analysis/design, quality assurance, code quality, IT infrastructure, security, and much more. We've
-                got you <i>covered</i>. Get a <strong>crystal clear view of modern software development in no time.</strong>
-                <br /><br />
-                <p>Check out the <b><Link to="/table-of-contents" className="link text-xl">full table of contents</Link></b></p>
+                Front-end, back-end, architecture, analysis/design, quality assurance, code quality, IT infrastructure, security, and much
+                more. We've got you <i>covered</i>. Get a <strong>crystal clear view of modern software development in no time.</strong>
+                <br />
+                <br />
+                <p>
+                  Check out the{" "}
+                  <b>
+                    <Link to="/table-of-contents" className="link text-xl">
+                      full table of contents
+                    </Link>
+                  </b>
+                </p>
               </span>
             </header>
             <div className="mt-4">
