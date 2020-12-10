@@ -125,7 +125,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                       title="Pre-order the book now!"
                       aria-label="Pre-order the book now!"
                       rel="noopener"
-                      className="link"
+                      className="link hover:text-devConceptsGreen-500"
                     >
                       <FontAwesomeIcon className="text-4xl mr-3" icon={faShoppingCart} />
                       <br />
@@ -1206,7 +1206,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   title="Pre-order the book now!"
                   aria-label="Pre-order the book now!"
                   rel="noopener"
-                  className="link"
+                  className="link hover:text-devConceptsGreen-500"
                 >
                   <FontAwesomeIcon className="text-4xl mr-3" icon={faShoppingCart} />
                   <br />
