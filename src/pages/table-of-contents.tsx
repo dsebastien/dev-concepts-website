@@ -53,7 +53,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   <div className="h-full rounded bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
                     <div className="text-xl flex xg:block items-center lg:items-start">01</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faInfinity} />
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faInfinity} /></span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Software craft</div>
                     </div>
                   </div>
@@ -63,7 +63,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   <div className="h-full rounded bg-devConceptsGreen-600 hover:bg-devConceptsGreen-700 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
                     <div className="text-xl flex xg:block items-center lg:items-start">02</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faSmileWink} />
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faSmileWink} /></span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">What clients need</div>
                     </div>
                   </div>
@@ -73,7 +73,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   <div className="h-full rounded bg-devConceptsTeal-700 hover:bg-devConceptsTeal-800 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
                     <div className="text-xl flex xg:block items-center lg:items-start">03</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faGopuram} />
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faGopuram} /></span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Architecture</div>
                     </div>
                   </div>
@@ -83,7 +83,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   <div className="h-full rounded bg-devConceptsPink-500 hover:bg-devConceptsPink-600 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
                     <div className="text-xl flex xg:block items-center lg:items-start">04</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faGem} />
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faGem} /></span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Software design</div>
                     </div>
                   </div>
@@ -93,7 +93,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   <div className="h-full rounded bg-devConceptsOrange-500 hover:bg-devConceptsOrange-600 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
                     <div className="text-xl flex xg:block items-center lg:items-start">05</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faServer} />
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faServer} /></span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Computer architecture and OS basics</div>
                     </div>
                   </div>
@@ -103,7 +103,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   <div className="h-full rounded bg-devConceptsIndigo-700 hover:bg-devConceptsIndigo-800 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
                     <div className="text-xl flex xg:block items-center lg:items-start">06</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faSeedling} />
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faSeedling} /></span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Coding basics</div>
                     </div>
                   </div>
@@ -113,7 +113,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   <div className="h-full rounded bg-devConceptsCerise-600 hover:bg-devConceptsCerise-700 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
                     <div className="text-xl flex xg:block items-center lg:items-start">07</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faSitemap} />
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faSitemap} /></span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">General concerns</div>
                     </div>
                   </div>
@@ -123,7 +123,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   <div className="h-full rounded bg-devConceptsOrange-800 hover:bg-devConceptsOrange-900 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
                     <div className="text-xl flex xg:block items-center lg:items-start">08</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faLayerGroup} />
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faLayerGroup} /></span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Back-end development</div>
                     </div>
                   </div>
@@ -133,7 +133,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   <div className="h-full rounded bg-devConceptsTeal-700 hover:bg-devConceptsTeal-800 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
                     <div className="text-xl flex xg:block items-center lg:items-start">09</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faMagic} /> {/*faPalette*/}
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faMagic} /></span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Front-end development</div>
                     </div>
                   </div>
@@ -143,7 +143,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   <div className="h-full rounded bg-devConceptsPurple-600 hover:bg-devConceptsPurple-700 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
                     <div className="text-xl flex xg:block items-center lg:items-start">10</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faNetworkWired} />
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faNetworkWired} /></span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">IT Infrastructure</div>
                     </div>
                   </div>
@@ -153,7 +153,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   <div className="h-full rounded bg-devConceptsAmber-500 hover:bg-devConceptsAmber-600 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
                     <div className="text-xl flex xg:block items-center lg:items-start">11</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faLock} />
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faLock} /></span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Security</div>
                     </div>
                   </div>
@@ -163,7 +163,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   <div className="h-full rounded bg-devConceptsGray-700 hover:bg-devConceptsGray-800 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
                     <div className="text-xl flex xg:block items-center lg:items-start">12</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faLock} />
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faLock} /></span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">PM & Dev. approaches</div>
                     </div>
                   </div>
