@@ -3,7 +3,14 @@ import { RouteComponentProps } from "@reach/router";
 import { Layout } from "../components/layout";
 import { SEO } from "../components/seo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBackward, faLink, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBackward, faGem, faGopuram,
+  faInfinity, faLayerGroup,
+  faLink, faLock, faMagic, faNetworkWired,
+  faSeedling, faServer,
+  faShoppingCart, faSitemap, faSmileWink,
+
+} from "@fortawesome/free-solid-svg-icons";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
 
@@ -32,84 +39,142 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
       />
 
       <section className="flex flex-col">
-        <header className="md:px-8 lg:px-16">
+        <header className="md:px-2 lg:px-16">
           <h1 id="top">Table of contents (draft)</h1>
           <span>This is a draft of the book's outline. The table of contents will probably evolve during the project. Note that this version is intentionally kept "short". The actual outline is much longer; DM me on Twitter if you're curious ;-)</span>
         </header>
         <div className="mt-4 flex flex-col md:flex-row-reverse md:h-full md:min-h-full w-full">
-          <aside className="md:h-full md:min-h-full md:sticky md:top-0 md:w-4/12"> {/* bg-red-500 mb-8 */}
+          <div className="md:h-full md:min-h-full md:sticky md:top-0 md:w-5/12 lg:w-4/12">
             <div>
-              <h2>Overview</h2>
-              <section>
-                <ul className="list-disc list-inside ml-2">
-                  <li>
-                    <a href="#software-craft" className="link no-underline">
-                      Part 1: Software craft
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#what-clients-need" className="link no-underline">
-                      Part 2: What clients need
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#architecture" className="link no-underline">
-                      Part 3: Architecture
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#software-design" className="link no-underline">
-                      Part 4: Software design
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#computers-and-operating-systems" className="link no-underline">
-                      Part 5: Computer architecture and Operating systems basics
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#coding-basics" className="link no-underline">
-                      Part 6: Coding basics
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#general-concerns" className="link no-underline">
-                      Part 7: General concerns
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#back-end" className="link no-underline">
-                      Part 8: Back-end development
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#front-end" className="link no-underline">
-                      Part 9: Front-end development
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#infrastructure" className="link no-underline">
-                      Part 10: IT Infrastructure
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#security" className="link no-underline">
-                      Part 11: Security
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#product-project-software" className="link no-underline">
-                      Part 12: Product/Project management and Software development approaches
-                    </a>
-                  </li>
-                </ul>
+              <h2 className="w-full text-center text-xl lg:text-3xl">Dev Concepts Parts</h2>
+              <section className="grid object-center grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-2">
+
+                <Link to="#software-craft" aria-label="Part 1: Software craft" className="no-underline">
+                  <div className="h-full rounded bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
+                    <div className="text-xl flex xg:block items-center lg:items-start">01</div>
+                    <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faInfinity} />
+                      <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Software craft</div>
+                    </div>
+                  </div>
+                </Link>
+
+                <Link to="#what-clients-need"  aria-label="Part 2: What clients need"  className="no-underline">
+                  <div className="h-full rounded bg-devConceptsGreen-600 hover:bg-devConceptsGreen-700 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
+                    <div className="text-xl flex xg:block items-center lg:items-start">02</div>
+                    <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faSmileWink} />
+                      <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">What clients need</div>
+                    </div>
+                  </div>
+                </Link>
+
+                <Link to="#architecture" aria-label="Part 3: Architecture" className="no-underline">
+                  <div className="h-full rounded bg-devConceptsTeal-700 hover:bg-devConceptsTeal-800 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
+                    <div className="text-xl flex xg:block items-center lg:items-start">03</div>
+                    <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faGopuram} />
+                      <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Architecture</div>
+                    </div>
+                  </div>
+                </Link>
+
+                <Link to="#software-design" aria-label="Part 4: Software design" className="no-underline">
+                  <div className="h-full rounded bg-devConceptsPink-500 hover:bg-devConceptsPink-600 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
+                    <div className="text-xl flex xg:block items-center lg:items-start">04</div>
+                    <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faGem} />
+                      <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Software design</div>
+                    </div>
+                  </div>
+                </Link>
+
+                <Link to="#computers-and-operating-systems" aria-label="Part 5: Computer architecture and Operating systems basics" className="no-underline">
+                  <div className="h-full rounded bg-devConceptsOrange-500 hover:bg-devConceptsOrange-600 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
+                    <div className="text-xl flex xg:block items-center lg:items-start">05</div>
+                    <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faServer} />
+                      <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Computer architecture and OS basics</div>
+                    </div>
+                  </div>
+                </Link>
+
+                <Link to="#coding-basics" aria-label="Part 6: Coding basics" className="no-underline">
+                  <div className="h-full rounded bg-devConceptsIndigo-700 hover:bg-devConceptsIndigo-800 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
+                    <div className="text-xl flex xg:block items-center lg:items-start">06</div>
+                    <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faSeedling} />
+                      <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Coding basics</div>
+                    </div>
+                  </div>
+                </Link>
+
+                <Link to="#general-concerns" aria-label="Part 7: General concerns" className="no-underline">
+                  <div className="h-full rounded bg-devConceptsCerise-600 hover:bg-devConceptsCerise-700 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
+                    <div className="text-xl flex xg:block items-center lg:items-start">07</div>
+                    <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faSitemap} />
+                      <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">General concerns</div>
+                    </div>
+                  </div>
+                </Link>
+
+                <Link to="#back-end" aria-label="Part 8: Back-end development" className="no-underline">
+                  <div className="h-full rounded bg-devConceptsOrange-800 hover:bg-devConceptsOrange-900 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
+                    <div className="text-xl flex xg:block items-center lg:items-start">08</div>
+                    <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faLayerGroup} />
+                      <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Back-end development</div>
+                    </div>
+                  </div>
+                </Link>
+
+                <Link to="#front-end" aria-label="Part 9: Front-end development" className="no-underline">
+                  <div className="h-full rounded bg-devConceptsTeal-700 hover:bg-devConceptsTeal-800 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
+                    <div className="text-xl flex xg:block items-center lg:items-start">09</div>
+                    <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faMagic} /> {/*faPalette*/}
+                      <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Front-end development</div>
+                    </div>
+                  </div>
+                </Link>
+
+                <Link to="#infrastructure" aria-label="Part 10: IT Infrastructure" className="no-underline">
+                  <div className="h-full rounded bg-devConceptsPurple-600 hover:bg-devConceptsPurple-700 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
+                    <div className="text-xl flex xg:block items-center lg:items-start">10</div>
+                    <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faNetworkWired} />
+                      <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">IT Infrastructure</div>
+                    </div>
+                  </div>
+                </Link>
+
+                <Link to="#security" aria-label="Part 11: Security" className="no-underline">
+                  <div className="h-full rounded bg-devConceptsAmber-500 hover:bg-devConceptsAmber-600 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
+                    <div className="text-xl flex xg:block items-center lg:items-start">11</div>
+                    <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faLock} />
+                      <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Security</div>
+                    </div>
+                  </div>
+                </Link>
+
+                <Link to="#product-project-software" aria-label="Part 12: Product/Project management and Software development approaches" className="no-underline">
+                  <div className="h-full rounded bg-devConceptsGray-700 hover:bg-devConceptsGray-800 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
+                    <div className="text-xl flex xg:block items-center lg:items-start">12</div>
+                    <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                      <FontAwesomeIcon className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl xl:text-4xl" icon={faLock} />
+                      <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">PM & Dev. approaches</div>
+                    </div>
+                  </div>
+                </Link>
               </section>
             </div>
             <div className="hidden md:block">
               {/* ------------------ Links in the aside ------------ */}
               <hr className="my-6" />
-              <div className="w-full flex flex-col sm:flex-row sm:space-between items-center select-none">
-                <div className="w-1/2 text-center">
+              <div className="w-full flex flex-col lg:flex-row sm:space-between items-center select-none">
+                <div className="lg:w-1/2 text-center">
                   <h2>
                     <Link to="/" className="link">
                       <FontAwesomeIcon className="text-4xl mr-3" icon={faBackward} />
@@ -118,7 +183,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                     </Link>
                   </h2>
                 </div>
-                <div className="w-1/2 text-center">
+                <div className="lg:w-1/2 text-center">
                   <h2>
                     <OutboundLink
                       href={data.site.siteMetadata.salesPageUrl}
@@ -135,8 +200,8 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </div>
               </div>
             </div>
-          </aside>
-          <main id="main-toc" className="md:px-8 lg:px-16 md:w-8/12">
+          </div>
+          <div id="main-toc" className="mt-4 md:mt-0 md:px-4 lg:px-16 md:w-7/12 lg:w-8/12">
             {/* -------------------------------------- PART 1 -------------------------------------- */}
             <section id="software-craft" className="">
               <a href="#software-craft" className="anchor">
@@ -1184,7 +1249,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <li>Release management</li>
               </ol>
             </section>
-          </main>
+          </div>
         </div>
         <div className="block md:hidden">
           {/* ------------------ Links bottom ------------ */}
