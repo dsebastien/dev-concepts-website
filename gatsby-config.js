@@ -234,6 +234,16 @@ module.exports = {
         },
       },
     },
+
+    // reference: https://www.gatsbyjs.com/plugins/gatsby-plugin-anchor-links/
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: 0,
+        duration: 1000,
+      },
+    },
+
     // Offline plugin
     // Reference: https://www.gatsbyjs.com/plugins/gatsby-plugin-offline/
     // WARNING: Should be last so that it can include/cache other metadata/manifests
