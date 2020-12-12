@@ -66,10 +66,10 @@ const App = () => {
               </span>
             </header>
             <div className="mt-4">
-              <Countdown date={new Date(2021, 2, 15, 6, 30, 0, 0)} />
+              <Countdown date={new Date("2021-12-20T18:00:00")} />
               <br />
               <p>
-                The release date is set to <strong>March 31 2021</strong>, but you can{" "}
+                The release date is set to <strong>December 20 2021</strong>, but you can{" "}
                 <strong>
                   benefit from the <i>early-bird</i>
                 </strong>{" "}

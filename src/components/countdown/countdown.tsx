@@ -87,6 +87,10 @@ const Countdown: React.FC<Props> = ({ date }: Props) => {
   return (
     <div className="w-full px-5 sm:px-0 flex justify-center">
       <div className="mx-5 sm:ml-0 flex flex-col">
+        <span className="text-3xl font-bold text-center">{addLeadingZeros(remainingTime.years)}</span>
+        <span className="text-center">{remainingTime.years === 1 ? "Year" : "Years"}</span>
+      </div>
+      <div className="mx-5 sm:ml-0 flex flex-col">
         <span className="text-3xl font-bold text-center">{addLeadingZeros(remainingTime.days)}</span>
         <span className="text-center">{remainingTime.days === 1 ? "Day" : "Days"}</span>
       </div>
@@ -98,7 +102,7 @@ const Countdown: React.FC<Props> = ({ date }: Props) => {
         <span className="text-3xl font-bold text-center">{addLeadingZeros(remainingTime.minutes)}</span>
         <span className="text-center">Min</span>
       </div>
-      <div className="sm:ml-0 flex flex-col">
+      <div className="mx-5 sm:ml-0 flex flex-col">
         <span className="text-3xl font-bold text-center">{addLeadingZeros(remainingTime.seconds)}</span>
         <span className="text-center">Sec</span>
       </div>
