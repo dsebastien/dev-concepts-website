@@ -29,7 +29,7 @@ const Layout: React.FC = ({ children }) => {
         `}
         </script>
       </Helmet>
-      <header className="">
+      <header className="mx-2 sm:mx-0">
         <Header />
       </header>
       <Separator />
