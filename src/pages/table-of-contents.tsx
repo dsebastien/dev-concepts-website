@@ -4,12 +4,20 @@ import { Layout } from "../components/layout";
 import { SEO } from "../components/seo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBackward, faGem, faGopuram,
-  faInfinity, faLayerGroup,
-  faLink, faLock, faMagic, faNetworkWired,
-  faSeedling, faServer,
-  faShoppingCart, faSitemap, faSmileWink,
-
+  faBackward,
+  faGem,
+  faGopuram,
+  faInfinity,
+  faLayerGroup,
+  faLink,
+  faLock,
+  faMagic,
+  faNetworkWired,
+  faSeedling,
+  faServer,
+  faShoppingCart,
+  faSitemap,
+  faSmileWink,
 } from "@fortawesome/free-solid-svg-icons";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
@@ -41,129 +49,163 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
       <section className="flex flex-col">
         <header className="md:px-2 lg:px-16">
           <h1 id="top">Table of contents (draft)</h1>
-          <span>This is a draft of the book's outline. The table of contents will probably evolve during the project. Note that this version is intentionally kept "short". The actual outline is much longer; DM me on Twitter if you're curious ;-)</span>
+          <span>
+            This is a draft of the book's outline. The table of contents will probably evolve during the project. Note that this version is
+            intentionally kept "short". The actual outline is much longer; DM me on Twitter if you're curious ;-)
+          </span>
         </header>
         <div className="mt-4 flex flex-col md:flex-row-reverse md:h-full md:min-h-full w-full">
           <div className="md:h-full md:min-h-full md:sticky md:top-0 md:w-5/12 lg:w-4/12">
             <div>
               <h2 className="w-full text-center text-xl lg:text-3xl">Dev Concepts Parts</h2>
               <section className="grid object-center grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-2">
-
                 <Link to="#software-craft" aria-label="Part 1: Software craft" className="no-underline">
-                  <div className="h-full rounded bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
-                    <div className="text-xl flex xg:block items-center lg:items-start">01</div>
+                  <div className="h-full rounded bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                    <div className="text-xl flex items-center">01</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faInfinity} /></span>
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                        <FontAwesomeIcon className="" icon={faInfinity} />
+                      </span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Software craft</div>
                     </div>
                   </div>
                 </Link>
 
-                <Link to="#what-clients-need"  aria-label="Part 2: What clients need"  className="no-underline">
-                  <div className="h-full rounded bg-devConceptsGreen-600 hover:bg-devConceptsGreen-700 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
-                    <div className="text-xl flex xg:block items-center lg:items-start">02</div>
+                <Link to="#what-clients-need" aria-label="Part 2: What clients need" className="no-underline">
+                  <div className="h-full rounded bg-devConceptsGreen-600 hover:bg-devConceptsGreen-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                    <div className="text-xl flex items-center">02</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faSmileWink} /></span>
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                        <FontAwesomeIcon className="" icon={faSmileWink} />
+                      </span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">What clients need</div>
                     </div>
                   </div>
                 </Link>
 
                 <Link to="#architecture" aria-label="Part 3: Architecture" className="no-underline">
-                  <div className="h-full rounded bg-devConceptsTeal-700 hover:bg-devConceptsTeal-800 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
-                    <div className="text-xl flex xg:block items-center lg:items-start">03</div>
+                  <div className="h-full rounded bg-devConceptsTeal-700 hover:bg-devConceptsTeal-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                    <div className="text-xl flex items-center">03</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faGopuram} /></span>
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                        <FontAwesomeIcon className="" icon={faGopuram} />
+                      </span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Architecture</div>
                     </div>
                   </div>
                 </Link>
 
                 <Link to="#software-design" aria-label="Part 4: Software design" className="no-underline">
-                  <div className="h-full rounded bg-devConceptsPink-500 hover:bg-devConceptsPink-600 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
-                    <div className="text-xl flex xg:block items-center lg:items-start">04</div>
+                  <div className="h-full rounded bg-devConceptsPink-500 hover:bg-devConceptsPink-600 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                    <div className="text-xl flex items-center">04</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faGem} /></span>
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                        <FontAwesomeIcon className="" icon={faGem} />
+                      </span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Software design</div>
                     </div>
                   </div>
                 </Link>
 
-                <Link to="#computers-and-operating-systems" aria-label="Part 5: Computer architecture and Operating systems basics" className="no-underline">
-                  <div className="h-full rounded bg-devConceptsOrange-500 hover:bg-devConceptsOrange-600 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
-                    <div className="text-xl flex xg:block items-center lg:items-start">05</div>
+                <Link
+                  to="#computers-and-operating-systems"
+                  aria-label="Part 5: Computer architecture and Operating systems basics"
+                  className="no-underline"
+                >
+                  <div className="h-full rounded bg-devConceptsOrange-500 hover:bg-devConceptsOrange-600 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                    <div className="text-xl flex items-center">05</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faServer} /></span>
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                        <FontAwesomeIcon className="" icon={faServer} />
+                      </span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Computer architecture and OS basics</div>
                     </div>
                   </div>
                 </Link>
 
                 <Link to="#coding-basics" aria-label="Part 6: Coding basics" className="no-underline">
-                  <div className="h-full rounded bg-devConceptsIndigo-700 hover:bg-devConceptsIndigo-800 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
-                    <div className="text-xl flex xg:block items-center lg:items-start">06</div>
+                  <div className="h-full rounded bg-devConceptsIndigo-700 hover:bg-devConceptsIndigo-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                    <div className="text-xl flex items-center">06</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faSeedling} /></span>
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                        <FontAwesomeIcon className="" icon={faSeedling} />
+                      </span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Coding basics</div>
                     </div>
                   </div>
                 </Link>
 
                 <Link to="#general-concerns" aria-label="Part 7: General concerns" className="no-underline">
-                  <div className="h-full rounded bg-devConceptsCerise-600 hover:bg-devConceptsCerise-700 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
-                    <div className="text-xl flex xg:block items-center lg:items-start">07</div>
+                  <div className="h-full rounded bg-devConceptsCerise-600 hover:bg-devConceptsCerise-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                    <div className="text-xl flex items-center">07</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faSitemap} /></span>
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                        <FontAwesomeIcon className="" icon={faSitemap} />
+                      </span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">General concerns</div>
                     </div>
                   </div>
                 </Link>
 
                 <Link to="#back-end" aria-label="Part 8: Back-end development" className="no-underline">
-                  <div className="h-full rounded bg-devConceptsOrange-800 hover:bg-devConceptsOrange-900 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
-                    <div className="text-xl flex xg:block items-center lg:items-start">08</div>
+                  <div className="h-full rounded bg-devConceptsOrange-800 hover:bg-devConceptsOrange-900 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                    <div className="text-xl flex items-center">08</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faLayerGroup} /></span>
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                        <FontAwesomeIcon className="" icon={faLayerGroup} />
+                      </span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Back-end development</div>
                     </div>
                   </div>
                 </Link>
 
                 <Link to="#front-end" aria-label="Part 9: Front-end development" className="no-underline">
-                  <div className="h-full rounded bg-devConceptsTeal-700 hover:bg-devConceptsTeal-800 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
-                    <div className="text-xl flex xg:block items-center lg:items-start">09</div>
+                  <div className="h-full rounded bg-devConceptsTeal-700 hover:bg-devConceptsTeal-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                    <div className="text-xl flex items-center">09</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faMagic} /></span>
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                        <FontAwesomeIcon className="" icon={faMagic} />
+                      </span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Front-end development</div>
                     </div>
                   </div>
                 </Link>
 
                 <Link to="#infrastructure" aria-label="Part 10: IT Infrastructure" className="no-underline">
-                  <div className="h-full rounded bg-devConceptsPurple-600 hover:bg-devConceptsPurple-700 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
-                    <div className="text-xl flex xg:block items-center lg:items-start">10</div>
+                  <div className="h-full rounded bg-devConceptsPurple-600 hover:bg-devConceptsPurple-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                    <div className="text-xl flex items-center">10</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faNetworkWired} /></span>
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                        <FontAwesomeIcon className="" icon={faNetworkWired} />
+                      </span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">IT Infrastructure</div>
                     </div>
                   </div>
                 </Link>
 
                 <Link to="#security" aria-label="Part 11: Security" className="no-underline">
-                  <div className="h-full rounded bg-devConceptsAmber-500 hover:bg-devConceptsAmber-600 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
-                    <div className="text-xl flex xg:block items-center lg:items-start">11</div>
+                  <div className="h-full rounded bg-devConceptsAmber-500 hover:bg-devConceptsAmber-600 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                    <div className="text-xl flex items-center">11</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faLock} /></span>
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                        <FontAwesomeIcon className="" icon={faLock} />
+                      </span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">Security</div>
                     </div>
                   </div>
                 </Link>
 
-                <Link to="#product-project-software" aria-label="Part 12: Product/Project management and Software development approaches" className="no-underline">
-                  <div className="h-full rounded bg-devConceptsGray-700 hover:bg-devConceptsGray-800 hover:no-underline shadow-lg flex flex-row object-center xg:block py-2 px-2">
-                    <div className="text-xl flex xg:block items-center lg:items-start">12</div>
+                <Link
+                  to="#product-project-software"
+                  aria-label="Part 12: Product/Project management and Software development approaches"
+                  className="no-underline"
+                >
+                  <div className="h-full rounded bg-devConceptsGray-700 hover:bg-devConceptsGray-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                    <div className="text-xl flex items-center">12</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl"><FontAwesomeIcon className="" icon={faLock} /></span>
+                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                        <FontAwesomeIcon className="" icon={faLock} />
+                      </span>
                       <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">PM & Dev. approaches</div>
                     </div>
                   </div>
@@ -208,20 +250,20 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <h2>
                   Part 1: Software craft
                   <span className="anchor-icon">
-                <FontAwesomeIcon icon={faLink} />
-              </span>
+                    <FontAwesomeIcon icon={faLink} />
+                  </span>
                 </h2>
               </a>
               <p>
-                This part explains the different <span className="font-bold italic">skills</span> that you’ll need to acquire and improve over
-                the course of your career to become a software crafter. There are no secrets and no magic; to become one. It’s mostly a question
-                of work, dedication, passion, and <span className="italic">fun</span>.
+                This part explains the different <span className="font-bold italic">skills</span> that you’ll need to acquire and improve
+                over the course of your career to become a software crafter. There are no secrets and no magic; to become one. It’s mostly a
+                question of work, dedication, passion, and <span className="italic">fun</span>.
               </p>
               <br />
               <p>
                 This part is much less about technology than about personality traits and psychology. Even if we all start with our own
-                background, strengths and weaknesses, there are things to know, tips and tricks that will guide you on the path towards becoming
-                a software crafter.
+                background, strengths and weaknesses, there are things to know, tips and tricks that will guide you on the path towards
+                becoming a software crafter.
               </p>
               <h4 className="mt-2">In this part:</h4>
               <ol>
@@ -238,8 +280,8 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <h2>
                   Part 2: What clients need
                   <span className="anchor-icon">
-                <FontAwesomeIcon icon={faLink} />
-              </span>
+                    <FontAwesomeIcon icon={faLink} />
+                  </span>
                 </h2>
               </a>
               <p>
@@ -249,16 +291,16 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               <br />
               <p>
                 This part focuses on how to understand what clients truly need. It covers concepts such as functional & non-functional
-                requirements, techniques that you can use to understand business problems and end user goals. It also covers what specifications
-                are and why they matter.
+                requirements, techniques that you can use to understand business problems and end user goals. It also covers what
+                specifications are and why they matter.
               </p>
               <br />
               <p>
                 These ideas are important because,{" "}
                 <span className="font-bold">
-              no matter how good a software developer you are, it doesn’t matter at all if you end up building something that solves the
-              wrong problems.
-            </span>
+                  no matter how good a software developer you are, it doesn’t matter at all if you end up building something that solves the
+                  wrong problems.
+                </span>
               </p>
               <h4 className="mt-2">In this part:</h4>
               <ol>
@@ -292,25 +334,25 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <h2>
                   Part 3: Architecture
                   <span className="anchor-icon">
-                <FontAwesomeIcon icon={faLink} />
-              </span>
+                    <FontAwesomeIcon icon={faLink} />
+                  </span>
                 </h2>
               </a>
               <p>
-                Once you have accumulated enough understanding about the requirements, you need to create IT solutions that efficiently solve
-                the problems.
+                Once you have accumulated enough understanding about the requirements, you need to create IT solutions that efficiently
+                solve the problems.
               </p>
               <br />
               <p>
                 Before diving into design and code, you need to get in the shoes of an architect and devise{" "}
-                <span className="italic">solutions</span>. Software crafters are not necessarily architects, but they should at least understand
-                what architects do and should be able to provide useful input to them.
+                <span className="italic">solutions</span>. Software crafters are not necessarily architects, but they should at least
+                understand what architects do and should be able to provide useful input to them.
               </p>
               <br />
               <p>
-                Sometimes, you’ll also have to play the role of the architect (e.g., in small startups) and when that happens, you need to know
-                what needs to be done to avoid disasters. Here, we'll explore some key ideas about IT architecture in general and software
-                architecture in particular.
+                Sometimes, you’ll also have to play the role of the architect (e.g., in small startups) and when that happens, you need to
+                know what needs to be done to avoid disasters. Here, we'll explore some key ideas about IT architecture in general and
+                software architecture in particular.
               </p>
               <h4 className="mt-2">In this part:</h4>
               <ol>
@@ -377,15 +419,15 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <h2>
                   Part 4: Software design
                   <span className="anchor-icon">
-                <FontAwesomeIcon icon={faLink} />
-              </span>
+                    <FontAwesomeIcon icon={faLink} />
+                  </span>
                 </h2>
               </a>
               <p>
-                Software design is where the real action begins. Previous parts talk about much higher level concepts. Solving the wrong problem
-                means game over, a bad architecture means tons of waste, and bad software design means costly maintenance. Here, we explore
-                software design, explain why it is critical for mental health (seriously!) and key concepts that you’ll use on a daily basis
-                during your software crafter’s career.
+                Software design is where the real action begins. Previous parts talk about much higher level concepts. Solving the wrong
+                problem means game over, a bad architecture means tons of waste, and bad software design means costly maintenance. Here, we
+                explore software design, explain why it is critical for mental health (seriously!) and key concepts that you’ll use on a
+                daily basis during your software crafter’s career.
               </p>
               <h4 className="mt-2">In this part:</h4>
               <ol>
@@ -450,18 +492,20 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <h2>
                   Part 5: Computer architecture and Operating systems basics
                   <span className="anchor-icon">
-                <FontAwesomeIcon icon={faLink} />
-              </span>
+                    <FontAwesomeIcon icon={faLink} />
+                  </span>
                 </h2>
               </a>
               <p>
                 This part is dedicated to real beginners who first want to understand computers and operating systems. We all need to start
                 somewhere, and this is an excellent introduction to basic principles underlying everything that we do as software crafters.
-                Whether our code runs locally on our computer or somewhere in the cloud, it is always executed by a CPU (physical or virtual),
-                accesses memory, reads/writes files, etc.
+                Whether our code runs locally on our computer or somewhere in the cloud, it is always executed by a CPU (physical or
+                virtual), accesses memory, reads/writes files, etc.
               </p>
               <br />
-              <p>If you want to learn about CPUs, memory, file systems, files, processes, scheduling and whatnot, then this part is for you.</p>
+              <p>
+                If you want to learn about CPUs, memory, file systems, files, processes, scheduling and whatnot, then this part is for you.
+              </p>
               <h4 className="mt-2">In this part:</h4>
               <ol>
                 <li>Introduction</li>
@@ -506,16 +550,16 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <h2>
                   Part 6: Coding basics
                   <span className="anchor-icon">
-                <FontAwesomeIcon icon={faLink} />
-              </span>
+                    <FontAwesomeIcon icon={faLink} />
+                  </span>
                 </h2>
               </a>
               <p>
-                This part is dedicated to real beginners who’d like to learn how to C-O-D-E. We will only scratch the surface but this part is a
-                great and practical introduction to{" "}
+                This part is dedicated to real beginners who’d like to learn how to C-O-D-E. We will only scratch the surface but this part
+                is a great and practical introduction to{" "}
                 <span className="font-bold">
-              coding concepts that all software crafters <span className="italic">must</span> know
-            </span>{" "}
+                  coding concepts that all software crafters <span className="italic">must</span> know
+                </span>{" "}
                 and use literally all the time.
               </p>
               <h4 className="mt-2">In this part:</h4>
@@ -630,21 +674,21 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <h2>
                   Part 7: General concerns
                   <span className="anchor-icon">
-                <FontAwesomeIcon icon={faLink} />
-              </span>
+                    <FontAwesomeIcon icon={faLink} />
+                  </span>
                 </h2>
               </a>
               <p>
                 This part is dedicated to elements that must be taken care of <span className="font-bold italic">everywhere</span>; whether
-                you’re doing back-end or front-end software development. Note that I also consider those necessary for infrastructure scripting
-                (but it’s always hard to make IT operations personnel realize that they are also software developers ;-)
+                you’re doing back-end or front-end software development. Note that I also consider those necessary for infrastructure
+                scripting (but it’s always hard to make IT operations personnel realize that they are also software developers ;-)
               </p>
               <br />
               <p>
-                This is a critical part for true software crafters because many of these points are unfortunately often overlooked for various
-                reasons (mostly bad ones). If you want to become a <span className="italic">true</span> software crafter, then you’ll make sure
-                to always pay attention to those and to convince everyone else to do the same; even if it means going against some pointy-haired
-                manager ;-)
+                This is a critical part for true software crafters because many of these points are unfortunately often overlooked for
+                various reasons (mostly bad ones). If you want to become a <span className="italic">true</span> software crafter, then
+                you’ll make sure to always pay attention to those and to convince everyone else to do the same; even if it means going
+                against some pointy-haired manager ;-)
               </p>
               <h4 className="mt-2">In this part:</h4>
               <ol>
@@ -737,14 +781,14 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <h2>
                   Part 8: Back-end development
                   <span className="anchor-icon">
-                <FontAwesomeIcon icon={faLink} />
-              </span>
+                    <FontAwesomeIcon icon={faLink} />
+                  </span>
                 </h2>
               </a>
               <p>
                 This part is all about back-end software, where most of the action occurs under the hood… without anyone knowing. Back-end
-                developers have to focus on very different aspects of IT systems, compared to front-end developers. Software crafters need to
-                understand those differences.
+                developers have to focus on very different aspects of IT systems, compared to front-end developers. Software crafters need
+                to understand those differences.
               </p>
               <h4 className="mt-2">In this part:</h4>
               <ol>
@@ -801,15 +845,15 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <h2>
                   Part 9: Front-end development
                   <span className="anchor-icon">
-                <FontAwesomeIcon icon={faLink} />
-              </span>
+                    <FontAwesomeIcon icon={faLink} />
+                  </span>
                 </h2>
               </a>
               <p>
                 This part is all about front-end systems, which are the tip of the iceberg; the one concrete part that end users see and can
-                feel. Given the visual nature of front-end applications, front-end developers have to focus on very different aspects, compared
-                to back-end developers. Software crafters must not necessarily be artists, but they still have to pay attention to the
-                aesthetics… among many other things.
+                feel. Given the visual nature of front-end applications, front-end developers have to focus on very different aspects,
+                compared to back-end developers. Software crafters must not necessarily be artists, but they still have to pay attention to
+                the aesthetics… among many other things.
               </p>
               <h4 className="mt-2">In this part:</h4>
               <ol>
@@ -911,20 +955,20 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <h2>
                   Part 10: IT Infrastructure
                   <span className="anchor-icon">
-                <FontAwesomeIcon icon={faLink} />
-              </span>
+                    <FontAwesomeIcon icon={faLink} />
+                  </span>
                 </h2>
               </a>
               <p>
-                Back-end software is conceptually below the front-end in terms of visibility, but IT infrastructure goes way further down, from
-                services, servers and networks down to cable and electrical signals; phew! ;-)
+                Back-end software is conceptually below the front-end in terms of visibility, but IT infrastructure goes way further down,
+                from services, servers and networks down to cable and electrical signals; phew! ;-)
               </p>
               <br />
               <p>
-                Having a good understanding of where our applications are hosted, how the environment is configured/secured/monitored, etc is
-                super valuable and makes the difference between someone who “just” writes code and someone who contributes to develop end-to-end
-                solutions. This part explains some important concepts about IT infrastructure. All DevSecOps engineers (and thus software
-                crafters) should be aware of at least a part of those ideas.
+                Having a good understanding of where our applications are hosted, how the environment is configured/secured/monitored, etc
+                is super valuable and makes the difference between someone who “just” writes code and someone who contributes to develop
+                end-to-end solutions. This part explains some important concepts about IT infrastructure. All DevSecOps engineers (and thus
+                software crafters) should be aware of at least a part of those ideas.
               </p>
               <h4 className="mt-2">In this part:</h4>
               <ol>
@@ -1014,15 +1058,15 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <h2>
                   Part 11: Security
                   <span className="anchor-icon">
-                <FontAwesomeIcon icon={faLink} />
-              </span>
+                    <FontAwesomeIcon icon={faLink} />
+                  </span>
                 </h2>
               </a>
               <p>
                 IT security (ITSEC) is paramount for digital solutions. 20 years ago, things were less complicated, but nowadays, leaving an
                 insecure system online even for a few seconds is enough to get hacked. Everyday, there are countless stories of security
-                breaches and stolen data. Together, we’ll learn about the most important IT security concepts; knowledge that will expand your
-                understanding of this complex, but incredibly important field of IT:
+                breaches and stolen data. Together, we’ll learn about the most important IT security concepts; knowledge that will expand
+                your understanding of this complex, but incredibly important field of IT:
               </p>
               <h4 className="mt-2">In this part:</h4>
               <ol>
@@ -1167,14 +1211,14 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <h2>
                   Part 12: Product/Project management and Software development approaches
                   <span className="anchor-icon">
-                <FontAwesomeIcon icon={faLink} />
-              </span>
+                    <FontAwesomeIcon icon={faLink} />
+                  </span>
                 </h2>
               </a>
               <p>
-                Once you understand what your clients need (or at least, what they need right now), you can think about the “product”. Product
-                management is a specific job, but as a software crafter, it is important to at least understand what it is and what it entails
-                because, sometimes, you might have to take the lead for some parts of product management.
+                Once you understand what your clients need (or at least, what they need right now), you can think about the “product”.
+                Product management is a specific job, but as a software crafter, it is important to at least understand what it is and what
+                it entails because, sometimes, you might have to take the lead for some parts of product management.
               </p>
               <br />
               <p>
