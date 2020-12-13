@@ -257,7 +257,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </a>
               <p>
                 This part explains the different <span className="font-bold italic">skills</span> that you’ll need to acquire and improve
-                over the course of your career to become a software crafter. There are no secrets and no magic; to become one. It’s mostly a
+                over the course of your career to become a software crafter. There are no secrets and no magic to become one. It’s mostly a
                 question of work, dedication, passion, and <span className="italic">fun</span>.
               </p>
               <br />
