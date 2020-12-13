@@ -1185,7 +1185,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   Secure coding
                   <ol>
                     <li>OWASP top vulnerabilities</li>
-                    <li>Integrity security in the SDLC</li>
+                    <li>Integrating security in the SDLC</li>
                     <li>General advice</li>
                     <li>Input validation</li>
                     <li>Output encoding</li>
