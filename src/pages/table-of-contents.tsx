@@ -271,7 +271,9 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <li>Introduction</li>
                 <li>What is software development</li>
                 <li>What is software engineering</li>
+                <li>What is a software developer</li>
                 <li>What is a software crafter</li>
+                <li>Quality vs user satisfaction</li>
                 <li>Important skills and practical advice</li>
               </ol>
             </section>
