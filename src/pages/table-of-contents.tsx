@@ -1096,6 +1096,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <li>
                   Risk management
                   <ol>
+                    <li>Operational Risk Management (ORM)</li>
                     <li>Risk assessment</li>
                     <li>Risk mitigation</li>
                   </ol>
