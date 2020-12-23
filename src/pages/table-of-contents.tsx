@@ -255,6 +255,8 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
+              <p>Estimated page count: <span className="font-bold">50</span></p>
+              <br />
               <p>
                 This part explains the different <span className="font-bold italic">skills</span> that you’ll need to acquire and improve
                 over the course of your career to become a software crafter. There are no secrets and no magic to become one. It’s mostly a
@@ -289,6 +291,8 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
+              <p>Estimated page count: <span className="font-bold">30</span></p>
+              <br />
               <p>
                 All software development endeavors have one thing in common: they aim to solve real-world{" "}
                 <span className="font-bold">problems</span>.
@@ -343,6 +347,8 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
+              <p>Estimated page count: <span className="font-bold">70</span></p>
+              <br />
               <p>
                 Once you have accumulated enough understanding about the requirements, you need to create IT solutions that efficiently
                 solve the problems.
@@ -397,6 +403,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                       Data integration
                       <ol>
                         <li>Extract Transform Load (ETL)</li>
+                        <li>Change Data Capture (CDC)</li>
                         <li>Web Services / SOA</li>
                       </ol>
                     </li>
@@ -428,6 +435,8 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
+              <p>Estimated page count: <span className="font-bold">80</span></p>
+              <br />
               <p>
                 Software design is where the real action begins. Previous parts talk about much higher level concepts. Solving the wrong
                 problem means game over, a bad architecture means tons of waste, and bad software design means costly maintenance. Here, we
@@ -501,6 +510,8 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
+              <p>Estimated page count: <span className="font-bold">100</span></p>
+              <br />
               <p>
                 This part is dedicated to real beginners who first want to understand computers and operating systems. We all need to start
                 somewhere, and this is an excellent introduction to basic principles underlying everything that we do as software crafters.
@@ -559,6 +570,8 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
+              <p>Estimated page count: <span className="font-bold">150</span></p>
+              <br />
               <p>
                 This part is dedicated to real beginners who’d like to learn how to C-O-D-E. We will only scratch the surface but this part
                 is a great and practical introduction to{" "}
@@ -577,6 +590,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                     <li>Variables</li>
                     <li>Constants</li>
                     <li>References</li>
+                    <li>Special values</li>
                     <li>Operators</li>
                     <li>Statements</li>
                     <li>Expressions</li>
@@ -683,6 +697,8 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
+              <p>Estimated page count: <span className="font-bold">120</span></p>
+              <br />
               <p>
                 This part is dedicated to elements that must be taken care of <span className="font-bold italic">everywhere</span>; whether
                 you’re doing back-end or front-end software development. Note that I also consider those necessary for infrastructure
@@ -790,6 +806,8 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
+              <p>Estimated page count: <span className="font-bold">100</span></p>
+              <br />
               <p>
                 This part is all about back-end software, where most of the action occurs under the hood… without anyone knowing. Back-end
                 developers have to focus on very different aspects of IT systems, compared to front-end developers. Software crafters need
@@ -854,6 +872,8 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
+              <p>Estimated page count: <span className="font-bold">130</span></p>
+              <br />
               <p>
                 This part is all about front-end systems, which are the tip of the iceberg; the one concrete part that end users see and can
                 feel. Given the visual nature of front-end applications, front-end developers have to focus on very different aspects,
@@ -964,6 +984,8 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
+              <p>Estimated page count: <span className="font-bold">100</span></p>
+              <br />
               <p>
                 Back-end software is conceptually below the front-end in terms of visibility, but IT infrastructure goes way further down,
                 from services, servers and networks down to cable and electrical signals; phew! ;-)
@@ -1067,6 +1089,8 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
+              <p>Estimated page count: <span className="font-bold">180</span></p>
+              <br />
               <p>
                 IT security (ITSEC) is paramount for digital solutions. 20 years ago, things were less complicated, but nowadays, leaving an
                 insecure system online even for a few seconds is enough to get hacked. Everyday, there are countless stories of security
@@ -1221,6 +1245,8 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
+              <p>Estimated page count: <span className="font-bold">80</span></p>
+              <br />
               <p>
                 Once you understand what your clients need (or at least, what they need right now), you can think about the “product”.
                 Product management is a specific job, but as a software crafter, it is important to at least understand what it is and what
