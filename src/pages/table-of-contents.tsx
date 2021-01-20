@@ -255,7 +255,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
-              <p>Estimated page count: <span className="font-bold">60</span></p>
+              <p>Page count: <span className="font-bold">95</span></p>
               <br />
               <p>
                 This part explains the different <span className="font-bold italic">skills</span> that you’ll need to acquire and improve
