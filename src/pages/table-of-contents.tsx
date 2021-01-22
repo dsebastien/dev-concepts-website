@@ -255,7 +255,9 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
-              <p>Page count: <span className="font-bold">95</span></p>
+              <p>
+                Page count: <span className="font-bold">95</span>
+              </p>
               <br />
               <p>
                 This part explains the different <span className="font-bold italic">skills</span> that you’ll need to acquire and improve
@@ -291,7 +293,9 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
-              <p>Estimated page count: <span className="font-bold">30</span></p>
+              <p>
+                Estimated page count: <span className="font-bold">30</span>
+              </p>
               <br />
               <p>
                 All software development endeavors have one thing in common: they aim to solve real-world{" "}
@@ -347,7 +351,9 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
-              <p>Estimated page count: <span className="font-bold">70</span></p>
+              <p>
+                Estimated page count: <span className="font-bold">70</span>
+              </p>
               <br />
               <p>
                 Once you have accumulated enough understanding about the requirements, you need to create IT solutions that efficiently
@@ -435,7 +441,9 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
-              <p>Estimated page count: <span className="font-bold">80</span></p>
+              <p>
+                Estimated page count: <span className="font-bold">80</span>
+              </p>
               <br />
               <p>
                 Software design is where the real action begins. Previous parts talk about much higher level concepts. Solving the wrong
@@ -510,7 +518,9 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
-              <p>Estimated page count: <span className="font-bold">100</span></p>
+              <p>
+                Estimated page count: <span className="font-bold">100</span>
+              </p>
               <br />
               <p>
                 This part is dedicated to real beginners who first want to understand computers and operating systems. We all need to start
@@ -570,7 +580,9 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
-              <p>Estimated page count: <span className="font-bold">150</span></p>
+              <p>
+                Estimated page count: <span className="font-bold">150</span>
+              </p>
               <br />
               <p>
                 This part is dedicated to real beginners who’d like to learn how to C-O-D-E. We will only scratch the surface but this part
@@ -697,7 +709,9 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
-              <p>Estimated page count: <span className="font-bold">120</span></p>
+              <p>
+                Estimated page count: <span className="font-bold">120</span>
+              </p>
               <br />
               <p>
                 This part is dedicated to elements that must be taken care of <span className="font-bold italic">everywhere</span>; whether
@@ -806,7 +820,9 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
-              <p>Estimated page count: <span className="font-bold">100</span></p>
+              <p>
+                Estimated page count: <span className="font-bold">100</span>
+              </p>
               <br />
               <p>
                 This part is all about back-end software, where most of the action occurs under the hood… without anyone knowing. Back-end
@@ -872,7 +888,9 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
-              <p>Estimated page count: <span className="font-bold">130</span></p>
+              <p>
+                Estimated page count: <span className="font-bold">130</span>
+              </p>
               <br />
               <p>
                 This part is all about front-end systems, which are the tip of the iceberg; the one concrete part that end users see and can
@@ -984,7 +1002,9 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
-              <p>Estimated page count: <span className="font-bold">100</span></p>
+              <p>
+                Estimated page count: <span className="font-bold">100</span>
+              </p>
               <br />
               <p>
                 Back-end software is conceptually below the front-end in terms of visibility, but IT infrastructure goes way further down,
@@ -1089,7 +1109,9 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
-              <p>Estimated page count: <span className="font-bold">180</span></p>
+              <p>
+                Estimated page count: <span className="font-bold">180</span>
+              </p>
               <br />
               <p>
                 IT security (ITSEC) is paramount for digital solutions. 20 years ago, things were less complicated, but nowadays, leaving an
@@ -1245,7 +1267,9 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
-              <p>Estimated page count: <span className="font-bold">80</span></p>
+              <p>
+                Estimated page count: <span className="font-bold">80</span>
+              </p>
               <br />
               <p>
                 Once you understand what your clients need (or at least, what they need right now), you can think about the “product”.
