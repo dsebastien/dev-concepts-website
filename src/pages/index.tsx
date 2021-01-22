@@ -5,7 +5,14 @@ import { DevConceptsCover } from "../components/dev-concepts-cover/dev-concepts-
 import styled from "styled-components";
 import { DevConceptsNewsletterForm } from "../components/dev-concepts-newsletter-form";
 import { Countdown } from "../components/countdown";
-import { faQuoteLeft, faQuoteRight, faSitemap, faLayerGroup, faServer } from "@fortawesome/free-solid-svg-icons";
+import {
+  faQuoteLeft,
+  faQuoteRight,
+  faSitemap,
+  faLayerGroup,
+  faServer,
+  faArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import { Separator } from "../components/separator";
@@ -56,7 +63,7 @@ const App = () => {
                 <br />
                 <br />
                 <p>
-                  Check out the{" "}
+                  <FontAwesomeIcon icon={faArrowRight} /> Check out the{" "}
                   <b>
                     <Link to="/table-of-contents" className="link text-xl">
                       full table of contents
@@ -73,10 +80,14 @@ const App = () => {
                 <span className="font-bold">
                   benefit from the <i>early-bird offer</i>
                 </span>{" "}
-                <span className="font-bold underline">(-30% until the end of February 2021)</span> if you{" "}
+                <span className="font-bold">(-30% until the end of February 2021)</span> if you{" "}
                 <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="link text-xl" rel="noopener">
                   PRE-ORDER IT NOW.
                 </OutboundLink>
+                <br /><br />
+                <p>
+                  The release date is set to <strong>December 20 2021</strong>
+                </p>
               </p>
             </div>
           </IntroText>
