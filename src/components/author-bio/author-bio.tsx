@@ -41,7 +41,7 @@ const AuthorBioText: React.FC<Props> = ({ data }: Props) => {
           <OutboundLink className="link" href={data.site.siteMetadata.develoPassionSiteUrl} rel="noopener">
             DeveloPassion
           </OutboundLink>
-          , a software development company located in Belgium (beer & chocolate!). You can find me on{" "}
+          , a software development company located in Belgium. You can find me on{" "}
           <OutboundLink className="link" href={data.site.siteMetadata.social.twitterSebastien} rel="noopener">
             Twitter
           </OutboundLink>{" "}
@@ -59,14 +59,11 @@ const AuthorBioText: React.FC<Props> = ({ data }: Props) => {
           <OutboundLink className="link" href={data.site.siteMetadata.social.tsBookLink} rel="noopener">
             a book about the TypeScript programming language
           </OutboundLink>
-          , led development teams, managed large projects both on the infrastructure side and on the software development side and even
-          spent a few years as a system architect/administrator of hundreds of Windows Server machines and Active Directory infrastructure
-          for a large financial institution (fun times :p).
+          , led development teams, managed large software developement & infrastructure projects.
         </p>
         <br />
         <p>
-          I want to share my passion with anyone willing to learn/discover what IT and software development are all about. Sharing is
-          caring, or so they say. This is why I started giving 1:1 coaching sessions a while ago. I'm convinced that through this book, I'll
+          I want to share my passion, and I'm convinced that through this book, I'll
           be able to reach and help many more people, maybe even you? So go ahead,{" "}
           <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="link" rel="noopener">
             pre-order the book right now, and be amongst my first readers!
