@@ -326,7 +326,13 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                     <li>Discovery process</li>
                   </ol>
                 </li>
-                <li>User Centered Design (UCD)</li>
+                <li>User Centered Design (UCD)
+                  <ol>
+                    <li>User Research</li>
+                    <li>Jobs to be done</li>
+                    <li>Design Thinking</li>
+                  </ol>
+                </li>
                 <li>User Experience Design (UX)</li>
                 <li>
                   Specifications
