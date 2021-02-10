@@ -152,7 +152,8 @@ const AuthorBioText: React.FC<Props> = ({ data }: Props) => {
           </OutboundLink>
         </div>
         <p className="text-lg">
-          I've used various programming languages over the years (JavaScript, TypeScript, Kotlin, Java, Python, C#, C, Bash, PowerShell, etc), wrote{" "}
+          I've used various programming languages over the years (JavaScript, TypeScript, Kotlin, Java, Python, C#, C, Bash, PowerShell,
+          etc), wrote{" "}
           <OutboundLink className="link" href={data.site.siteMetadata.social.tsBookLink} rel="noopener">
             a book about the TypeScript programming language
           </OutboundLink>
@@ -160,8 +161,9 @@ const AuthorBioText: React.FC<Props> = ({ data }: Props) => {
         </p>
         <br />
         <p className="text-lg">
-          I want to share my passion, and I'm convinced that through this book, I'll
-          be able to reach and help many more people, maybe even you? <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="link" rel="noopener">
+          I want to share my passion, and I'm convinced that through this book, I'll be able to reach and help many more people, maybe even
+          you?{" "}
+          <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="link" rel="noopener">
             Pre-order the book right now, and be amongst my first readers!
           </OutboundLink>
         </p>

@@ -5,14 +5,7 @@ import { DevConceptsCover } from "../components/dev-concepts-cover/dev-concepts-
 import styled from "styled-components";
 import { DevConceptsNewsletterForm } from "../components/dev-concepts-newsletter-form";
 import { Countdown } from "../components/countdown";
-import {
-  faQuoteLeft,
-  faQuoteRight,
-  faSitemap,
-  faLayerGroup,
-  faServer,
-  faArrowRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { faQuoteLeft, faQuoteRight, faSitemap, faLayerGroup, faServer, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import { Separator } from "../components/separator";
@@ -84,7 +77,8 @@ const App = () => {
                 <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="link text-xl" rel="noopener">
                   PRE-ORDER IT NOW.
                 </OutboundLink>
-                <br /><br />
+                <br />
+                <br />
                 <p>
                   The release date is set to <strong>December 20 2021</strong>
                 </p>

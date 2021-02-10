@@ -279,7 +279,36 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <li>Evolution</li>
                 <li>What is a software crafter</li>
                 <li>Quality vs user satisfaction</li>
-                <li>Important skills and practical advice</li>
+                <li>
+                  Important skills and practical advice
+                  <ol>
+                    <li>Enjoy solving problems</li>
+                    <li>Improve your analytical skills</li>
+                    <li>Be creative and open-minded</li>
+                    <li>Be organized</li>
+                    <li>Always Be Curious (ABC)</li>
+                    <li>Improve continuously</li>
+                    <li>Build habits</li>
+                    <li>Learn your craft</li>
+                    <li>Understand client needs</li>
+                    <li>Go above and beyond</li>
+                    <li>Learn to deal with hard problems</li>
+                    <li>Learn to deal with failure</li>
+                    <li>Focus on quality</li>
+                    <li>Focus on security</li>
+                    <li>Be reliable</li>
+                    <li>Be pragmatic</li>
+                    <li>Be super productive</li>
+                    <li>Work in a structured manner</li>
+                    <li>Have fun</li>
+                    <li>Be a good communicator</li>
+                    <li>Be a true team member</li>
+                    <li>Be an Innovator and Influence others</li>
+                    <li>Be a great decision maker</li>
+                    <li>Manage your career</li>
+                    <li>Preserve yourself</li>
+                  </ol>
+                </li>
               </ol>
             </section>
 
@@ -294,7 +323,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </h2>
               </a>
               <p>
-                Estimated page count: <span className="font-bold">30</span>
+                Page count: <span className="font-bold">50</span>
               </p>
               <br />
               <p>
@@ -318,32 +347,61 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               <h4 className="mt-2">In this part:</h4>
               <ol>
                 <li>Introduction</li>
+                <li>What do clients need?</li>
                 <li>
                   Requirements
                   <ol>
-                    <li>Functional</li>
-                    <li>Non-functional</li>
-                    <li>Discovery process</li>
+                    <li>Functional requirements and jobs to be done</li>
+                    <li>Non-functional requirements</li>
+                    <li>Software Requirements Specification (SRS)</li>
+                    <li>Actors, use cases and user stories</li>
+                    <li>Business domain and Ubiquitous language</li>
                   </ol>
                 </li>
-                <li>User Centered Design (UCD)
+                <li>
+                  Requirements discovery
+                  <ol>
+                    <li>Requirements always change</li>
+                    <li>Event storming</li>
+                    <li>Discovery tools and techniques</li>
+                    <li>Clarify and refine gradually</li>
+                  </ol>
+                </li>
+                <li>
+                  User Centered Design (UCD)
                   <ol>
                     <li>User Research</li>
                     <li>Jobs to be done</li>
                     <li>Design Thinking</li>
                   </ol>
                 </li>
-                <li>User Experience Design (UX)</li>
                 <li>
-                  Specifications
+                  User Experience Design (UX)
                   <ol>
-                    <li>Business analysis</li>
-                    <li>Business rules</li>
-                    <li>Ubiquitous language</li>
-                    <li>Functional/Technical analysis</li>
+                    <li>What UX designers focus on</li>
+                    <li>
+                      UX Concepts overview
+                      <ol>
+                        <li>UX User Research</li>
+                        <li>User personas</li>
+                        <li>User path, scenario, journey, and journey mapping</li>
+                        <li>Human-Computer Interaction (HCI)</li>
+                        <li>Interaction Design (IxD)</li>
+                        <li>Usability and ergonomics</li>
+                        <li>Accessibility</li>
+                        <li>Information architecture & content strategy</li>
+                        <li>UX/UI Design Patterns</li>
+                        <li>A/B testing</li>
+                      </ol>
+                    </li>
+                    <li>UX Workflow</li>
+                    <li>Tools</li>
                   </ol>
                 </li>
-                <li>Minimum Viable Product (MVP)</li>
+                <li>Design Sprints</li>
+                <li>The Lean Startup and Minimum Lovable Products</li>
+                <li>Specifications</li>
+                <li>Conclusion</li>
               </ol>
             </section>
 
