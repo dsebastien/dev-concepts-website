@@ -60,7 +60,14 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <div>
               <h2 className="w-full text-center text-xl lg:text-3xl">Dev Concepts Parts</h2>
               <section className="grid object-center grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-2">
-                <AnchorLink to="/table-of-contents/#software-craft" aria-label="Part 1: Software craft" className="no-underline">
+                <AnchorLink
+                  to="/table-of-contents/#software-craft"
+                  onAnchorLinkClick={() =>
+                    history.pushState(null, "Software Development Concepts - Table of contents (draft) - Software craft", "#software-craft")
+                  }
+                  aria-label="Part 1: Software craft"
+                  className="no-underline"
+                >
                   <div className="h-full rounded bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">01</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
@@ -72,7 +79,18 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </div>
                 </AnchorLink>
 
-                <AnchorLink to="/table-of-contents/#what-clients-need" aria-label="Part 2: What clients need" className="no-underline">
+                <AnchorLink
+                  to="/table-of-contents/#what-clients-need"
+                  onAnchorLinkClick={() =>
+                    history.pushState(
+                      null,
+                      "Software Development Concepts - Table of contents (draft) - What clients need",
+                      "#what-clients-need",
+                    )
+                  }
+                  aria-label="Part 2: What clients need"
+                  className="no-underline"
+                >
                   <div className="h-full rounded bg-devConceptsGreen-600 hover:bg-devConceptsGreen-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">02</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
@@ -84,7 +102,14 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </div>
                 </AnchorLink>
 
-                <AnchorLink to="/table-of-contents/#architecture" aria-label="Part 3: Architecture" className="no-underline">
+                <AnchorLink
+                  to="/table-of-contents/#architecture"
+                  onAnchorLinkClick={() =>
+                    history.pushState(null, "Software Development Concepts - Table of contents (draft) - Architecture", "#architecture")
+                  }
+                  aria-label="Part 3: Architecture"
+                  className="no-underline"
+                >
                   <div className="h-full rounded bg-devConceptsTeal-700 hover:bg-devConceptsTeal-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">03</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
@@ -96,7 +121,18 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </div>
                 </AnchorLink>
 
-                <AnchorLink to="/table-of-contents/#software-design" aria-label="Part 4: Software design" className="no-underline">
+                <AnchorLink
+                  to="/table-of-contents/#software-design"
+                  onAnchorLinkClick={() =>
+                    history.pushState(
+                      null,
+                      "Software Development Concepts - Table of contents (draft) - Software design",
+                      "#software-design",
+                    )
+                  }
+                  aria-label="Part 4: Software design"
+                  className="no-underline"
+                >
                   <div className="h-full rounded bg-devConceptsPink-500 hover:bg-devConceptsPink-600 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">04</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
@@ -110,6 +146,13 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
 
                 <AnchorLink
                   to="/table-of-contents/#computers-and-operating-systems"
+                  onAnchorLinkClick={() =>
+                    history.pushState(
+                      null,
+                      "Software Development Concepts - Table of contents (draft) - Computer architecture and Operating systems basics",
+                      "#computers-and-operating-systems",
+                    )
+                  }
                   aria-label="Part 5: Computer architecture and Operating systems basics"
                   className="no-underline"
                 >
@@ -124,7 +167,14 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </div>
                 </AnchorLink>
 
-                <AnchorLink to="/table-of-contents/#coding-basics" aria-label="Part 6: Coding basics" className="no-underline">
+                <AnchorLink
+                  to="/table-of-contents/#coding-basics"
+                  onAnchorLinkClick={() =>
+                    history.pushState(null, "Software Development Concepts - Table of contents (draft) - Coding basics", "#coding-basics")
+                  }
+                  aria-label="Part 6: Coding basics"
+                  className="no-underline"
+                >
                   <div className="h-full rounded bg-devConceptsIndigo-700 hover:bg-devConceptsIndigo-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">06</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
@@ -136,7 +186,18 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </div>
                 </AnchorLink>
 
-                <AnchorLink to="/table-of-contents/#general-concerns" aria-label="Part 7: General concerns" className="no-underline">
+                <AnchorLink
+                  to="/table-of-contents/#general-concerns"
+                  onAnchorLinkClick={() =>
+                    history.pushState(
+                      null,
+                      "Software Development Concepts - Table of contents (draft) - General concerns",
+                      "#general-concerns",
+                    )
+                  }
+                  aria-label="Part 7: General concerns"
+                  className="no-underline"
+                >
                   <div className="h-full rounded bg-devConceptsCerise-600 hover:bg-devConceptsCerise-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">07</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
@@ -148,7 +209,14 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </div>
                 </AnchorLink>
 
-                <AnchorLink to="/table-of-contents/#back-end" aria-label="Part 8: Back-end development" className="no-underline">
+                <AnchorLink
+                  to="/table-of-contents/#back-end"
+                  onAnchorLinkClick={() =>
+                    history.pushState(null, "Software Development Concepts - Table of contents (draft) - Back-end", "#back-end")
+                  }
+                  aria-label="Part 8: Back-end development"
+                  className="no-underline"
+                >
                   <div className="h-full rounded bg-devConceptsOrange-800 hover:bg-devConceptsOrange-900 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">08</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
@@ -160,7 +228,14 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </div>
                 </AnchorLink>
 
-                <AnchorLink to="/table-of-contents/#front-end" aria-label="Part 9: Front-end development" className="no-underline">
+                <AnchorLink
+                  to="/table-of-contents/#front-end"
+                  onAnchorLinkClick={() =>
+                    history.pushState(null, "Software Development Concepts - Table of contents (draft) - Front-end", "#front-end")
+                  }
+                  aria-label="Part 9: Front-end development"
+                  className="no-underline"
+                >
                   <div className="h-full rounded bg-devConceptsTeal-700 hover:bg-devConceptsTeal-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">09</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
@@ -172,7 +247,14 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </div>
                 </AnchorLink>
 
-                <AnchorLink to="/table-of-contents/#infrastructure" aria-label="Part 10: IT Infrastructure" className="no-underline">
+                <AnchorLink
+                  to="/table-of-contents/#infrastructure"
+                  onAnchorLinkClick={() =>
+                    history.pushState(null, "Software Development Concepts - Table of contents (draft) - Infrastructure", "#infrastructure")
+                  }
+                  aria-label="Part 10: IT Infrastructure"
+                  className="no-underline"
+                >
                   <div className="h-full rounded bg-devConceptsPurple-600 hover:bg-devConceptsPurple-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">10</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
@@ -184,7 +266,14 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </div>
                 </AnchorLink>
 
-                <AnchorLink to="/table-of-contents/#security" aria-label="Part 11: Security" className="no-underline">
+                <AnchorLink
+                  to="/table-of-contents/#security"
+                  onAnchorLinkClick={() =>
+                    history.pushState(null, "Software Development Concepts - Table of contents (draft) - Security", "#security")
+                  }
+                  aria-label="Part 11: Security"
+                  className="no-underline"
+                >
                   <div className="h-full rounded bg-devConceptsAmber-500 hover:bg-devConceptsAmber-600 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">11</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
@@ -198,6 +287,13 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
 
                 <AnchorLink
                   to="/table-of-contents/#product-project-software"
+                  onAnchorLinkClick={() =>
+                    history.pushState(
+                      null,
+                      "Software Development Concepts - Table of contents (draft) - Product/Project management and Software development approaches",
+                      "#product-project-software",
+                    )
+                  }
                   aria-label="Part 12: Product/Project management and Software development approaches"
                   className="no-underline"
                 >
