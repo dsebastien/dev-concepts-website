@@ -66,22 +66,14 @@ const App = () => {
               </span>
             </header>
             <div className="mt-4">
-              <Countdown date={new Date("2021-02-28T23:59:59")} />
+              <Countdown date={new Date("2021-12-20T18:00:00")} />
               <br />
               <p className="text-lg">
-                You can{" "}
-                <span className="font-bold">
-                  benefit from the <i>early-bird offer</i>
-                </span>{" "}
-                <span className="font-bold">(-30% until the end of February 2021)</span> if you{" "}
+                The release date is set to <strong>December 20 2021</strong> but you can{" "}
                 <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="link text-xl" rel="noopener">
                   PRE-ORDER IT NOW.
                 </OutboundLink>
                 <br />
-                <br />
-                <p>
-                  The release date is set to <strong>December 20 2021</strong>
-                </p>
               </p>
             </div>
           </IntroText>
