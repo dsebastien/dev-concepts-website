@@ -345,15 +345,16 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <section id="software-craft" className="">
               <a href="#software-craft" className="anchor">
                 <h2>
-                  Part 1: Software craft
+                  Part 1: Software craft (<span className="font-semibold">completed</span>)
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
                 </h2>
               </a>
-              <p>
-                Page count: <span className="font-bold">95</span>
-              </p>
+              <div className="sm:flex sm:justify-between">
+                <div>Page count: <span className="font-bold">100</span></div>
+                <div className="mt-4 flex justify-center sm:mt-0"><a href="https://gum.co/DevConcepts-Part-01-SoftwareCraft" aria-label="Buy part 1 now" className="bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg p-2 rounded-md"><FontAwesomeIcon className="text-xl mr-2" icon={faShoppingCart} />Buy part 1 now!</a></div>
+              </div>
               <br />
               <p>
                 This part explains the different <span className="font-bold italic">skills</span> that you’ll need to acquire and improve
@@ -412,7 +413,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <section id="what-clients-need" className="mt-4">
               <a href="#what-clients-need" className="anchor">
                 <h2>
-                  Part 2: What clients need
+                  Part 2: What clients need (<span className="font-semibold">completed</span>)
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -505,7 +506,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <section id="architecture" className="mt-4">
               <a href="#architecture" className="anchor">
                 <h2>
-                  Part 3: Architecture
+                  Part 3: Architecture (<span className="font-semibold">in progress</span>)
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>

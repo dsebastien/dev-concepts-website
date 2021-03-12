@@ -5,7 +5,15 @@ import { DevConceptsCover } from "../components/dev-concepts-cover/dev-concepts-
 import styled from "styled-components";
 import { DevConceptsNewsletterForm } from "../components/dev-concepts-newsletter-form";
 import { Countdown } from "../components/countdown";
-import { faQuoteLeft, faQuoteRight, faSitemap, faLayerGroup, faServer, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faQuoteLeft,
+  faQuoteRight,
+  faSitemap,
+  faLayerGroup,
+  faServer,
+  faArrowRight,
+  faShoppingCart
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import { Separator } from "../components/separator";
@@ -74,7 +82,11 @@ const App = () => {
                   PRE-ORDER IT NOW.
                 </OutboundLink>
                 <br />
+                <br />
+                <span className="">If you can't wait, you can already...</span>
               </p>
+              <br />
+              <div className="flex justify-center sm:mt-0"><a href="https://gum.co/DevConcepts-Part-01-SoftwareCraft" aria-label="Buy part 1 now" className="bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg p-2 rounded-md"><FontAwesomeIcon className="text-xl mr-2" icon={faShoppingCart} />Buy part 1 now!</a></div>
             </div>
           </IntroText>
           <div className="hidden lg:block">
