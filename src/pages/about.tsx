@@ -6,7 +6,7 @@ import { SEO } from "../components/seo";
 const AboutPage: React.FC<RouteComponentProps> = () => {
   return (
     <Layout>
-      <SEO title="Software Development Concepts - About" description="The Story behind the Software Development Concepts book" />
+      <SEO title="Software Development Concepts - About" description="The Story behind the Software Development Concepts project" />
       <section className="flex flex-col">
         <h1>About</h1>
         <div>Coming soon...</div>

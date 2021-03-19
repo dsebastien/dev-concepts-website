@@ -11,7 +11,7 @@ const Wrapper = styled.div.attrs({
 })``;
 
 const NEWSLETTER_SUBSCRIPTION_SUCCESS_MESSAGE =
-  "Thanks for subscribing to the Dev Concepts newsletter. Now check your email to confirm your subscription. Once done, you'll receive the updates about the book directly in your inbox.";
+  "Thanks for subscribing to the Dev Concepts newsletter. Now check your email to confirm your subscription. Once done, you'll receive the updates about the project directly in your inbox.";
 const NEWSLETTER_SUBSCRIPTION_ERROR_MESSAGE = "An error occurred. Please try again..";
 
 const CONVERT_KIT_FORM_URL = `https://app.convertkit.com/forms/1795118/subscriptions`;

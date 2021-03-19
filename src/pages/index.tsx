@@ -12,7 +12,7 @@ import {
   faLayerGroup,
   faServer,
   faArrowRight,
-  faShoppingCart
+  faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { graphql, Link, useStaticQuery } from "gatsby";
@@ -86,7 +86,16 @@ const App = () => {
                 <span className="">If you can't wait, you can already...</span>
               </p>
               <br />
-              <div className="flex justify-center sm:mt-0"><a href="https://gum.co/DevConcepts-Part-01-SoftwareCraft" aria-label="Buy part 1 now" className="bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg p-2 rounded-md"><FontAwesomeIcon className="text-xl mr-2" icon={faShoppingCart} />Buy part 1 now!</a></div>
+              <div className="flex justify-center sm:mt-0">
+                <a
+                  href="https://gum.co/DevConcepts-Part-01-SoftwareCraft"
+                  aria-label="Buy tome 1 now"
+                  className="bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg p-2 rounded-md"
+                >
+                  <FontAwesomeIcon className="text-xl mr-2" icon={faShoppingCart} />
+                  Buy tome 1 now!
+                </a>
+              </div>
             </div>
           </IntroText>
           <div className="hidden lg:block">
@@ -100,9 +109,7 @@ const App = () => {
       <Separator />
       <h1 className="my-8 sm:my-12 lg:my-16 sm:mx-8 lg:mx-32 xl:mx-48 xxl:mx-64">
         <FontAwesomeIcon className="text-2xl" icon={faQuoteLeft} />
-        <span className="px-3">
-          Learn all the software development concepts, practices and attention points in no time. All in one book.
-        </span>
+        <span className="px-3">Learn all the software development concepts, practices and attention points in no time.</span>
         <FontAwesomeIcon className="text-2xl" icon={faQuoteRight} />
       </h1>
       <Separator />
@@ -118,7 +125,7 @@ const App = () => {
               <h1 className="text-3xl">Full Stack</h1>
               <span className="text-xl">
                 Full Stack developers are great to have on a team because they are able to understand and to be productive in both back-end
-                and front-end development. This book will tell you about everything that matters to become one.
+                and front-end development. This collection of e-books will tell you about _everything_ that matters to become one.
               </span>
             </OutboundLink>
           </div>
@@ -133,7 +140,8 @@ const App = () => {
             <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener">
               <h1 className="text-3xl">A clear map</h1>
               <span className="text-xl">
-                This book will help you to create a clear mental map of everything that gravitates around software development.
+                The Dev Concepts series will help you to create a clear mental map of everything that gravitates around software
+                development.
               </span>
             </OutboundLink>
           </div>
@@ -148,8 +156,8 @@ const App = () => {
             <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener">
               <h1 className="text-3xl">DevSecOps</h1>
               <span className="text-xl">
-                The best software developers understand that code is only part of the story. This book will teach you the bare minimum you
-                need to know about IT security, IT infrastructure and IT operations.
+                The best software developers understand that code is only part of the story. This series of books will teach you the bare
+                minimum you need to know about IT security, IT infrastructure and IT operations.
               </span>
             </OutboundLink>
           </div>

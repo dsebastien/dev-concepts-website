@@ -44,15 +44,15 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
     <Layout>
       <SEO
         title="Software Development Concepts - Table of contents (draft)"
-        description="Table of contents of the Software Development Concepts book"
+        description="Table of contents of the Software Development Concepts series"
       />
 
       <section className="flex flex-col">
         <header className="md:px-2 lg:px-16">
           <h1 id="top">Table of contents (draft)</h1>
           <span>
-            This is a draft of the book's outline. The table of contents will probably evolve during the project. Note that this version is
-            intentionally kept "short". The actual outline is much longer; DM me on Twitter if you're curious ;-)
+            This is the outline of the whole Dev Concepts series of e-books. The table of contents will probably evolve during the project.
+            Note that this version is intentionally kept "short". The actual outline is much longer; DM me on Twitter if you're curious ;-)
           </span>
         </header>
         <div className="mt-4 flex flex-col md:flex-row-reverse md:h-full md:min-h-full w-full">
@@ -326,8 +326,8 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   <h2>
                     <OutboundLink
                       href={data.site.siteMetadata.salesPageUrl}
-                      title="Pre-order the book now!"
-                      aria-label="Pre-order the book now!"
+                      title="Pre-order the collection now!"
+                      aria-label="Pre-order the collection now!"
                       rel="noopener"
                       className="link hover:text-devConceptsGreen-500"
                     >
@@ -341,7 +341,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             </div>
           </div>
           <div id="main-toc" className="mt-4 md:mt-0 md:px-4 lg:px-16 md:w-7/12 lg:w-8/12">
-            {/* -------------------------------------- PART 1 -------------------------------------- */}
+            {/* -------------------------------------- TOME 1 -------------------------------------- */}
             <section id="software-craft" className="">
               <a href="#software-craft" className="anchor">
                 <h2>
@@ -352,22 +352,33 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </h2>
               </a>
               <div className="sm:flex sm:justify-between">
-                <div>Page count: <span className="font-bold">100</span></div>
-                <div className="mt-4 flex justify-center sm:mt-0"><a href="https://gum.co/DevConcepts-Part-01-SoftwareCraft" aria-label="Buy part 1 now" className="bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg p-2 rounded-md"><FontAwesomeIcon className="text-xl mr-2" icon={faShoppingCart} />Buy part 1 now!</a></div>
+                <div>
+                  Page count: <span className="font-bold">100</span>
+                </div>
+                <div className="mt-4 flex justify-center sm:mt-0">
+                  <a
+                    href="https://gum.co/DevConcepts-Part-01-SoftwareCraft"
+                    aria-label="Buy tome 1 now"
+                    className="bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg p-2 rounded-md"
+                  >
+                    <FontAwesomeIcon className="text-xl mr-2" icon={faShoppingCart} />
+                    Buy tome 1 now!
+                  </a>
+                </div>
               </div>
               <br />
               <p>
-                This part explains the different <span className="font-bold italic">skills</span> that you’ll need to acquire and improve
+                This tome explains the different <span className="font-bold italic">skills</span> that you’ll need to acquire and improve
                 over the course of your career to become a software crafter. There are no secrets and no magic to become one. It’s mostly a
                 question of work, dedication, passion, and <span className="italic">fun</span>.
               </p>
               <br />
               <p>
-                This part is much less about technology than about personality traits and psychology. Even if we all start with our own
+                This tome is much less about technology than about personality traits and psychology. Even if we all start with our own
                 background, strengths and weaknesses, there are things to know, tips and tricks that will guide you on the path towards
                 becoming a software crafter.
               </p>
-              <h4 className="mt-2">In this part:</h4>
+              <h4 className="mt-2">In this tome:</h4>
               <ol>
                 <li>Introduction</li>
                 <li>What is software development</li>
@@ -409,7 +420,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- PART 2 -------------------------------------- */}
+            {/* -------------------------------------- TOME 2 -------------------------------------- */}
             <section id="what-clients-need" className="mt-4">
               <a href="#what-clients-need" className="anchor">
                 <h2>
@@ -429,7 +440,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </p>
               <br />
               <p>
-                This part focuses on how to understand what clients truly need. It covers concepts such as functional & non-functional
+                This tome focuses on how to understand what clients truly need. It covers concepts such as functional & non-functional
                 requirements, techniques that you can use to understand business problems and end user goals. It also covers what
                 specifications are and why they matter.
               </p>
@@ -441,7 +452,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   wrong problems.
                 </span>
               </p>
-              <h4 className="mt-2">In this part:</h4>
+              <h4 className="mt-2">In this tome:</h4>
               <ol>
                 <li>Introduction</li>
                 <li>What do clients need?</li>
@@ -502,7 +513,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- PART 3 -------------------------------------- */}
+            {/* -------------------------------------- TOME 3 -------------------------------------- */}
             <section id="architecture" className="mt-4">
               <a href="#architecture" className="anchor">
                 <h2>
@@ -532,7 +543,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 know what needs to be done to avoid disasters. Here, we'll explore some key ideas about IT architecture in general and
                 software architecture in particular.
               </p>
-              <h4 className="mt-2">In this part:</h4>
+              <h4 className="mt-2">In this tome:</h4>
               <ol>
                 <li>
                   Introduction
@@ -592,7 +603,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/*-------------------------------------- PART 4 -------------------------------------- */}
+            {/*-------------------------------------- TOME 4 -------------------------------------- */}
             <section id="software-design" className="mt-4">
               <a href="#software-design" className="anchor">
                 <h2>
@@ -607,12 +618,12 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </p>
               <br />
               <p>
-                Software design is where the real action begins. Previous parts talk about much higher level concepts. Solving the wrong
+                Software design is where the real action begins. Previous tomes covered much higher level concepts. Solving the wrong
                 problem means game over, a bad architecture means tons of waste, and bad software design means costly maintenance. Here, we
                 explore software design, explain why it is critical for mental health (seriously!) and key concepts that you’ll use on a
                 daily basis during your software crafter’s career.
               </p>
-              <h4 className="mt-2">In this part:</h4>
+              <h4 className="mt-2">In this tome:</h4>
               <ol>
                 <li>
                   Technical design
@@ -669,7 +680,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- PART 5 -------------------------------------- */}
+            {/* -------------------------------------- TOME 5 -------------------------------------- */}
             <section id="computers-and-operating-systems" className="mt-4">
               <a href="#computers-and-operating-systems" className="anchor">
                 <h2>
@@ -684,16 +695,16 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </p>
               <br />
               <p>
-                This part is dedicated to real beginners who first want to understand computers and operating systems. We all need to start
+                This tome is dedicated to real beginners who first want to understand computers and operating systems. We all need to start
                 somewhere, and this is an excellent introduction to basic principles underlying everything that we do as software crafters.
                 Whether our code runs locally on our computer or somewhere in the cloud, it is always executed by a CPU (physical or
                 virtual), accesses memory, reads/writes files, etc.
               </p>
               <br />
               <p>
-                If you want to learn about CPUs, memory, file systems, files, processes, scheduling and whatnot, then this part is for you.
+                If you want to learn about CPUs, memory, file systems, files, processes, scheduling and whatnot, then this tome is for you.
               </p>
-              <h4 className="mt-2">In this part:</h4>
+              <h4 className="mt-2">In this tome:</h4>
               <ol>
                 <li>Introduction</li>
                 <li>
@@ -731,7 +742,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- PART 6 -------------------------------------- */}
+            {/* -------------------------------------- TOME 6 -------------------------------------- */}
             <section id="coding-basics" className="mt-4">
               <a href="#coding-basics" className="anchor">
                 <h2>
@@ -746,14 +757,14 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </p>
               <br />
               <p>
-                This part is dedicated to real beginners who’d like to learn how to C-O-D-E. We will only scratch the surface but this part
+                This tome is dedicated to real beginners who’d like to learn how to C-O-D-E. We will only scratch the surface but this tome
                 is a great and practical introduction to{" "}
                 <span className="font-bold">
                   coding concepts that all software crafters <span className="italic">must</span> know
                 </span>{" "}
                 and use literally all the time.
               </p>
-              <h4 className="mt-2">In this part:</h4>
+              <h4 className="mt-2">In this tome:</h4>
               <ol>
                 <li>Introduction</li>
                 <li>
@@ -860,7 +871,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- PART 7 -------------------------------------- */}
+            {/* -------------------------------------- TOME 7 -------------------------------------- */}
             <section id="general-concerns" className="mt-4">
               <a href="#general-concerns" className="anchor">
                 <h2>
@@ -875,18 +886,18 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </p>
               <br />
               <p>
-                This part is dedicated to elements that must be taken care of <span className="font-bold italic">everywhere</span>; whether
+                This tome is dedicated to elements that must be taken care of <span className="font-bold italic">everywhere</span>; whether
                 you’re doing back-end or front-end software development. Note that I also consider those necessary for infrastructure
                 scripting (but it’s always hard to make IT operations personnel realize that they are also software developers ;-)
               </p>
               <br />
               <p>
-                This is a critical part for true software crafters because many of these points are unfortunately often overlooked for
+                This is a critical tome for true software crafters because many of these points are unfortunately often overlooked for
                 various reasons (mostly bad ones). If you want to become a <span className="italic">true</span> software crafter, then
                 you’ll make sure to always pay attention to those and to convince everyone else to do the same; even if it means going
                 against some pointy-haired manager ;-)
               </p>
-              <h4 className="mt-2">In this part:</h4>
+              <h4 className="mt-2">In this tome:</h4>
               <ol>
                 <li>Error handling</li>
                 <li>
@@ -971,7 +982,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- PART 8 -------------------------------------- */}
+            {/* -------------------------------------- TOME 8 -------------------------------------- */}
             <section id="back-end" className="mt-4">
               <a href="#back-end" className="anchor">
                 <h2>
@@ -986,11 +997,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </p>
               <br />
               <p>
-                This part is all about back-end software, where most of the action occurs under the hood… without anyone knowing. Back-end
+                This tome is all about back-end software, where most of the action occurs under the hood… without anyone knowing. Back-end
                 developers have to focus on very different aspects of IT systems, compared to front-end developers. Software crafters need
                 to understand those differences.
               </p>
-              <h4 className="mt-2">In this part:</h4>
+              <h4 className="mt-2">In this tome:</h4>
               <ol>
                 <li>What back-end developers focus on and why</li>
                 <li>
@@ -1039,7 +1050,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- PART 9 -------------------------------------- */}
+            {/* -------------------------------------- TOME 9 -------------------------------------- */}
             <section id="front-end" className="mt-4">
               <a href="#front-end" className="anchor">
                 <h2>
@@ -1054,12 +1065,12 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </p>
               <br />
               <p>
-                This part is all about front-end systems, which are the tip of the iceberg; the one concrete part that end users see and can
+                This tome is all about front-end systems, which are the tip of the iceberg; the one concrete part that end users see and can
                 feel. Given the visual nature of front-end applications, front-end developers have to focus on very different aspects,
                 compared to back-end developers. Software crafters must not necessarily be artists, but they still have to pay attention to
                 the aesthetics… among many other things.
               </p>
-              <h4 className="mt-2">In this part:</h4>
+              <h4 className="mt-2">In this tome:</h4>
               <ol>
                 <li>What front-end developers focus on and why</li>
                 <li>Usual layers and responsibilities</li>
@@ -1153,7 +1164,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- PART 10 -------------------------------------- */}
+            {/* -------------------------------------- TOME 10 -------------------------------------- */}
             <section id="infrastructure" className="mt-4">
               <a href="#infrastructure" className="anchor">
                 <h2>
@@ -1175,10 +1186,10 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               <p>
                 Having a good understanding of where our applications are hosted, how the environment is configured/secured/monitored, etc
                 is super valuable and makes the difference between someone who “just” writes code and someone who contributes to develop
-                end-to-end solutions. This part explains some important concepts about IT infrastructure. All DevSecOps engineers (and thus
+                end-to-end solutions. This tome explains some important concepts about IT infrastructure. All DevSecOps engineers (and thus
                 software crafters) should be aware of at least a part of those ideas.
               </p>
-              <h4 className="mt-2">In this part:</h4>
+              <h4 className="mt-2">In this tome:</h4>
               <ol>
                 <li>What IT infrastructure focuses on and why</li>
                 <li>
@@ -1260,7 +1271,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- PART 11 -------------------------------------- */}
+            {/* -------------------------------------- TOME 11 -------------------------------------- */}
             <section id="security" className="mt-4">
               <a href="#security" className="anchor">
                 <h2>
@@ -1280,7 +1291,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 breaches and stolen data. Together, we’ll learn about the most important IT security concepts; knowledge that will expand
                 your understanding of this complex, but incredibly important field of IT:
               </p>
-              <h4 className="mt-2">In this part:</h4>
+              <h4 className="mt-2">In this tome:</h4>
               <ol>
                 <li>Attackers</li>
                 <li>
@@ -1418,7 +1429,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- PART 12 -------------------------------------- */}
+            {/* -------------------------------------- TOME 12 -------------------------------------- */}
             <section id="product-project-software" className="mt-4">
               <a href="#product-project-software" className="anchor">
                 <h2>
@@ -1439,10 +1450,10 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </p>
               <br />
               <p>
-                How are products and their features defined, prioritized and organized? Dive into this part to learn about technical product
+                How are products and their features defined, prioritized and organized? Dive into this tome to learn about technical product
                 management, product backlogs, product roadmaps as well as how to create, structure and maintain those.
               </p>
-              <h4 className="mt-2">In this part:</h4>
+              <h4 className="mt-2">In this tome:</h4>
               <ol>
                 <li>Project roles</li>
                 <li>
@@ -1529,8 +1540,8 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               <h2>
                 <OutboundLink
                   href={data.site.siteMetadata.salesPageUrl}
-                  title="Pre-order the book now!"
-                  aria-label="Pre-order the book now!"
+                  title="Pre-order the collection now!"
+                  aria-label="Pre-order the collection now!"
                   rel="noopener"
                   className="link hover:text-devConceptsGreen-500"
                 >
