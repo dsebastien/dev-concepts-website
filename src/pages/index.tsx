@@ -25,18 +25,7 @@ const IntroText = styled.div.attrs({
 })``;
 
 const App = () => {
-  const data: {
-    site: {
-      siteMetadata: {
-        salesPageUrl: string;
-      };
-    };
-    authorPicture: {
-      childImageSharp: {
-        fluid: any;
-      };
-    };
-  } = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query IndexPageQuery {
       site {
         siteMetadata {

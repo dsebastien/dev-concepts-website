@@ -22,23 +22,129 @@ import {
 import { graphql, Link, useStaticQuery } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import Img from "gatsby-image";
 
 const AboutPage: React.FC<RouteComponentProps> = () => {
-  const data: {
-    site: {
-      siteMetadata: {
-        salesPageUrl: string;
-      };
-    };
-  } = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query TableOfContentsPageQuery {
       site {
         siteMetadata {
           salesPageUrl
+          salesPageUrlTome01
+        }
+      }
+      tome01CoverImage: file(relativePath: { eq: "DevConceptsTome01SoftwareCraftCover3D.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 640, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+      tome02CoverImage: file(relativePath: { eq: "DevConceptsTome02SoftwareCraftCover3D.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 640, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+      tome03CoverImage: file(relativePath: { eq: "DevConceptsTome03SoftwareCraftCover3D.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 640, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+      tome04CoverImage: file(relativePath: { eq: "DevConceptsTome04SoftwareCraftCover3D.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 640, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+      tome05CoverImage: file(relativePath: { eq: "DevConceptsTome05SoftwareCraftCover3D.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 640, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+      tome06CoverImage: file(relativePath: { eq: "DevConceptsTome06SoftwareCraftCover3D.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 640, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+      tome07CoverImage: file(relativePath: { eq: "DevConceptsTome07SoftwareCraftCover3D.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 640, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+      tome08CoverImage: file(relativePath: { eq: "DevConceptsTome08SoftwareCraftCover3D.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 640, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+      tome09CoverImage: file(relativePath: { eq: "DevConceptsTome09SoftwareCraftCover3D.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 640, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+      tome10CoverImage: file(relativePath: { eq: "DevConceptsTome10SoftwareCraftCover3D.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 640, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+      tome11CoverImage: file(relativePath: { eq: "DevConceptsTome11SoftwareCraftCover3D.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 640, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+      tome12CoverImage: file(relativePath: { eq: "DevConceptsTome12SoftwareCraftCover3D.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 640, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
         }
       }
     }
   `);
+
+  const tome01CoverImage = data.tome01CoverImage.childImageSharp.fluid;
+  const tome02CoverImage = data.tome02CoverImage.childImageSharp.fluid;
+  const tome03CoverImage = data.tome03CoverImage.childImageSharp.fluid;
+  const tome04CoverImage = data.tome04CoverImage.childImageSharp.fluid;
+  const tome05CoverImage = data.tome05CoverImage.childImageSharp.fluid;
+  const tome06CoverImage = data.tome06CoverImage.childImageSharp.fluid;
+  const tome07CoverImage = data.tome07CoverImage.childImageSharp.fluid;
+  const tome08CoverImage = data.tome08CoverImage.childImageSharp.fluid;
+  const tome09CoverImage = data.tome09CoverImage.childImageSharp.fluid;
+  const tome10CoverImage = data.tome10CoverImage.childImageSharp.fluid;
+  const tome11CoverImage = data.tome11CoverImage.childImageSharp.fluid;
+  const tome12CoverImage = data.tome12CoverImage.childImageSharp.fluid;
+  const tome01SalesPageUrl = data.site.siteMetadata.salesPageUrlTome01;
 
   return (
     <Layout>
@@ -352,8 +458,8 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </h2>
               </a>
               <div className="sm:flex sm:justify-between">
-                <div>
-                  Page count: <span className="font-bold">100</span>
+                <div className="items-center flex">
+                  Page count:&nbsp;<span className="font-bold">100</span>
                 </div>
                 <div className="mt-4 flex justify-center sm:mt-0">
                   <a
@@ -365,6 +471,17 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                     Buy tome 1 now!
                   </a>
                 </div>
+              </div>
+              <div className="opacity-75 hover:opacity-100">
+                <OutboundLink
+                  href={tome01SalesPageUrl}
+                  rel="noopener"
+                  aria-label="Buy tome 1 now!"
+                  title="Buy tome 1 now!"
+                  className="pointer"
+                >
+                  <Img loading="eager" fluid={tome01CoverImage} alt="Tome 1: Software Craft" className="hover:opacity-10" />
+                </OutboundLink>
               </div>
               <br />
               <p>
@@ -430,9 +547,12 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
-              <p>
-                Page count: <span className="font-bold">50</span>
-              </p>
+              <div className="items-center flex">
+                Page count:&nbsp;<span className="font-bold">50</span>
+              </div>
+              <div className="opacity-75 hover:opacity-100">
+                <Img loading="eager" fluid={tome02CoverImage} alt="Tome 2: What clients need" className="hover:opacity-10" />
+              </div>
               <br />
               <p>
                 All software development endeavors have one thing in common: they aim to solve real-world{" "}
@@ -524,8 +644,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </h2>
               </a>
               <p>
-                Estimated page count: <span className="font-bold">70</span>
+                Estimated page count:&nbsp;<span className="font-bold">70</span>
               </p>
+              <div className="opacity-75 hover:opacity-100">
+                <Img loading="eager" fluid={tome03CoverImage} alt="Tome 3: Architecture" className="hover:opacity-10" />
+              </div>
               <br />
               <p>
                 Once you have accumulated enough understanding about the requirements, you need to create IT solutions that efficiently
@@ -614,8 +737,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </h2>
               </a>
               <p>
-                Estimated page count: <span className="font-bold">80</span>
+                Estimated page count:&nbsp;<span className="font-bold">80</span>
               </p>
+              <div className="opacity-75 hover:opacity-100">
+                <Img loading="eager" fluid={tome04CoverImage} alt="Tome 4: Software Design" className="hover:opacity-10" />
+              </div>
               <br />
               <p>
                 Software design is where the real action begins. Previous tomes covered much higher level concepts. Solving the wrong
@@ -691,8 +817,16 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </h2>
               </a>
               <p>
-                Estimated page count: <span className="font-bold">100</span>
+                Estimated page count:&nbsp;<span className="font-bold">100</span>
               </p>
+              <div className="opacity-75 hover:opacity-100">
+                <Img
+                  loading="eager"
+                  fluid={tome05CoverImage}
+                  alt="Tome 5: Computer architecture and Operating systems basics"
+                  className="hover:opacity-10"
+                />
+              </div>
               <br />
               <p>
                 This tome is dedicated to real beginners who first want to understand computers and operating systems. We all need to start
@@ -753,8 +887,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </h2>
               </a>
               <p>
-                Estimated page count: <span className="font-bold">150</span>
+                Estimated page count:&nbsp;<span className="font-bold">150</span>
               </p>
+              <div className="opacity-75 hover:opacity-100">
+                <Img loading="eager" fluid={tome06CoverImage} alt="Tome 6: Coding basics" className="hover:opacity-10" />
+              </div>
               <br />
               <p>
                 This tome is dedicated to real beginners who’d like to learn how to C-O-D-E. We will only scratch the surface but this tome
@@ -882,8 +1019,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </h2>
               </a>
               <p>
-                Estimated page count: <span className="font-bold">120</span>
+                Estimated page count:&nbsp;<span className="font-bold">120</span>
               </p>
+              <div className="opacity-75 hover:opacity-100">
+                <Img loading="eager" fluid={tome07CoverImage} alt="Tome 7: General concerns" className="hover:opacity-10" />
+              </div>
               <br />
               <p>
                 This tome is dedicated to elements that must be taken care of <span className="font-bold italic">everywhere</span>; whether
@@ -993,8 +1133,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </h2>
               </a>
               <p>
-                Estimated page count: <span className="font-bold">100</span>
+                Estimated page count:&nbsp;<span className="font-bold">100</span>
               </p>
+              <div className="opacity-75 hover:opacity-100">
+                <Img loading="eager" fluid={tome08CoverImage} alt="Tome 8: Back-end development" className="hover:opacity-10" />
+              </div>
               <br />
               <p>
                 This tome is all about back-end software, where most of the action occurs under the hood… without anyone knowing. Back-end
@@ -1061,8 +1204,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </h2>
               </a>
               <p>
-                Estimated page count: <span className="font-bold">130</span>
+                Estimated page count:&nbsp;<span className="font-bold">130</span>
               </p>
+              <div className="opacity-75 hover:opacity-100">
+                <Img loading="eager" fluid={tome09CoverImage} alt="Tome 9: Front-end development" className="hover:opacity-10" />
+              </div>
               <br />
               <p>
                 This tome is all about front-end systems, which are the tip of the iceberg; the one concrete part that end users see and can
@@ -1175,8 +1321,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </h2>
               </a>
               <p>
-                Estimated page count: <span className="font-bold">100</span>
+                Estimated page count:&nbsp;<span className="font-bold">100</span>
               </p>
+              <div className="opacity-75 hover:opacity-100">
+                <Img loading="eager" fluid={tome10CoverImage} alt="Tome 10: IT Infrastructure" className="hover:opacity-10" />
+              </div>
               <br />
               <p>
                 Back-end software is conceptually below the front-end in terms of visibility, but IT infrastructure goes way further down,
@@ -1282,8 +1431,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </h2>
               </a>
               <p>
-                Estimated page count: <span className="font-bold">180</span>
+                Estimated page count:&nbsp;<span className="font-bold">180</span>
               </p>
+              <div className="opacity-75 hover:opacity-100">
+                <Img loading="eager" fluid={tome11CoverImage} alt="Tome 11: Security" className="hover:opacity-10" />
+              </div>
               <br />
               <p>
                 IT security (ITSEC) is paramount for digital solutions. 20 years ago, things were less complicated, but nowadays, leaving an
@@ -1440,8 +1592,16 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </h2>
               </a>
               <p>
-                Estimated page count: <span className="font-bold">80</span>
+                Estimated page count:&nbsp;<span className="font-bold">80</span>
               </p>
+              <div className="opacity-75 hover:opacity-100">
+                <Img
+                  loading="eager"
+                  fluid={tome12CoverImage}
+                  alt="Tome 12: Product/Project management and Software development approaches"
+                  className="hover:opacity-10"
+                />
+              </div>
               <br />
               <p>
                 Once you understand what your clients need (or at least, what they need right now), you can think about the “product”.

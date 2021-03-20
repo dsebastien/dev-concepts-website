@@ -17,7 +17,7 @@ const DevConceptsCover: React.FC = () => {
           salesPageUrl
         }
       }
-      devConceptsCoverImage: file(relativePath: { eq: "DevConceptsCover3DTransparentBackground.png" }) {
+      devConceptsCoverImage: file(relativePath: { eq: "DevConceptsAllCovers.png" }) {
         childImageSharp {
           fluid(maxWidth: 1500, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
