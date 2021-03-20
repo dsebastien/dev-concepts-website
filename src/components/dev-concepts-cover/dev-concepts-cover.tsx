@@ -35,14 +35,7 @@ const DevConceptsCover: React.FC = () => {
   return (
     <Wrapper>
       <OutboundLink href={salesPageUrl} rel="noopener" aria-label="Pre-order now!" title="Pre-order now!" className="pointer">
-        <figure className="devConceptsLogoFigure">
-          <Img loading="eager" fluid={devConceptsCoverImageData} alt={title} />
-          <figcaption>
-            <h2>
-              Pre-order&nbsp;&nbsp;<span>now!</span>
-            </h2>
-          </figcaption>
-        </figure>
+        <Img loading="eager" fluid={devConceptsCoverImageData} alt={title} />
       </OutboundLink>
     </Wrapper>
   );
