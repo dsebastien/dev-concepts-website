@@ -58,14 +58,14 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
         <div className="mt-4 flex flex-col md:flex-row-reverse md:h-full md:min-h-full w-full">
           <div className="md:h-full md:min-h-full md:sticky md:top-0 md:w-5/12 lg:w-4/12">
             <div>
-              <h2 className="w-full text-center text-xl lg:text-3xl">Dev Concepts Parts</h2>
+              <h2 className="w-full text-center text-xl lg:text-3xl">Dev Concepts Tomes</h2>
               <section className="grid object-center grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-2">
                 <AnchorLink
                   to="/table-of-contents/#software-craft"
                   onAnchorLinkClick={() =>
                     history.pushState(null, "Software Development Concepts - Table of contents (draft) - Software craft", "#software-craft")
                   }
-                  aria-label="Part 1: Software craft"
+                  aria-label="Tome 1: Software craft"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -88,7 +88,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                       "#what-clients-need",
                     )
                   }
-                  aria-label="Part 2: What clients need"
+                  aria-label="Tome 2: What clients need"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsGreen-600 hover:bg-devConceptsGreen-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -107,7 +107,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   onAnchorLinkClick={() =>
                     history.pushState(null, "Software Development Concepts - Table of contents (draft) - Architecture", "#architecture")
                   }
-                  aria-label="Part 3: Architecture"
+                  aria-label="Tome 3: Architecture"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsTeal-700 hover:bg-devConceptsTeal-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -130,7 +130,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                       "#software-design",
                     )
                   }
-                  aria-label="Part 4: Software design"
+                  aria-label="Tome 4: Software design"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsPink-500 hover:bg-devConceptsPink-600 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -153,7 +153,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                       "#computers-and-operating-systems",
                     )
                   }
-                  aria-label="Part 5: Computer architecture and Operating systems basics"
+                  aria-label="Tome 5: Computer architecture and Operating systems basics"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsOrange-500 hover:bg-devConceptsOrange-600 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -172,7 +172,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   onAnchorLinkClick={() =>
                     history.pushState(null, "Software Development Concepts - Table of contents (draft) - Coding basics", "#coding-basics")
                   }
-                  aria-label="Part 6: Coding basics"
+                  aria-label="Tome 6: Coding basics"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsIndigo-700 hover:bg-devConceptsIndigo-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -195,7 +195,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                       "#general-concerns",
                     )
                   }
-                  aria-label="Part 7: General concerns"
+                  aria-label="Tome 7: General concerns"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsCerise-600 hover:bg-devConceptsCerise-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -214,7 +214,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   onAnchorLinkClick={() =>
                     history.pushState(null, "Software Development Concepts - Table of contents (draft) - Back-end", "#back-end")
                   }
-                  aria-label="Part 8: Back-end development"
+                  aria-label="Tome 8: Back-end development"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsOrange-800 hover:bg-devConceptsOrange-900 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -233,7 +233,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   onAnchorLinkClick={() =>
                     history.pushState(null, "Software Development Concepts - Table of contents (draft) - Front-end", "#front-end")
                   }
-                  aria-label="Part 9: Front-end development"
+                  aria-label="Tome 9: Front-end development"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsTeal-700 hover:bg-devConceptsTeal-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -252,7 +252,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   onAnchorLinkClick={() =>
                     history.pushState(null, "Software Development Concepts - Table of contents (draft) - Infrastructure", "#infrastructure")
                   }
-                  aria-label="Part 10: IT Infrastructure"
+                  aria-label="Tome 10: IT Infrastructure"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsPurple-600 hover:bg-devConceptsPurple-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -271,7 +271,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   onAnchorLinkClick={() =>
                     history.pushState(null, "Software Development Concepts - Table of contents (draft) - Security", "#security")
                   }
-                  aria-label="Part 11: Security"
+                  aria-label="Tome 11: Security"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsAmber-500 hover:bg-devConceptsAmber-600 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -294,7 +294,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                       "#product-project-software",
                     )
                   }
-                  aria-label="Part 12: Product/Project management and Software development approaches"
+                  aria-label="Tome 12: Product/Project management and Software development approaches"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsGray-700 hover:bg-devConceptsGray-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
