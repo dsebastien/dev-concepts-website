@@ -345,7 +345,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <section id="software-craft" className="">
               <a href="#software-craft" className="anchor">
                 <h2>
-                  Part 1: Software craft (<span className="font-semibold">completed</span>)
+                  Tome 1: Software craft (<span className="font-semibold">completed</span>)
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -424,7 +424,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <section id="what-clients-need" className="mt-4">
               <a href="#what-clients-need" className="anchor">
                 <h2>
-                  Part 2: What clients need (<span className="font-semibold">completed</span>)
+                  Tome 2: What clients need (<span className="font-semibold">completed</span>)
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -517,7 +517,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <section id="architecture" className="mt-4">
               <a href="#architecture" className="anchor">
                 <h2>
-                  Part 3: Architecture (<span className="font-semibold">in progress</span>)
+                  Tome 3: Architecture (<span className="font-semibold">in progress</span>)
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -607,7 +607,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <section id="software-design" className="mt-4">
               <a href="#software-design" className="anchor">
                 <h2>
-                  Part 4: Software design
+                  Tome 4: Software design
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -684,7 +684,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <section id="computers-and-operating-systems" className="mt-4">
               <a href="#computers-and-operating-systems" className="anchor">
                 <h2>
-                  Part 5: Computer architecture and Operating systems basics
+                  Tome 5: Computer architecture and Operating systems basics
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -746,7 +746,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <section id="coding-basics" className="mt-4">
               <a href="#coding-basics" className="anchor">
                 <h2>
-                  Part 6: Coding basics
+                  Tome 6: Coding basics
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -875,7 +875,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <section id="general-concerns" className="mt-4">
               <a href="#general-concerns" className="anchor">
                 <h2>
-                  Part 7: General concerns
+                  Tome 7: General concerns
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -986,7 +986,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <section id="back-end" className="mt-4">
               <a href="#back-end" className="anchor">
                 <h2>
-                  Part 8: Back-end development
+                  Tome 8: Back-end development
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -1054,7 +1054,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <section id="front-end" className="mt-4">
               <a href="#front-end" className="anchor">
                 <h2>
-                  Part 9: Front-end development
+                  Tome 9: Front-end development
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -1168,7 +1168,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <section id="infrastructure" className="mt-4">
               <a href="#infrastructure" className="anchor">
                 <h2>
-                  Part 10: IT Infrastructure
+                  Tome 10: IT Infrastructure
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -1275,7 +1275,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <section id="security" className="mt-4">
               <a href="#security" className="anchor">
                 <h2>
-                  Part 11: Security
+                  Tome 11: Security
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -1433,7 +1433,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             <section id="product-project-software" className="mt-4">
               <a href="#product-project-software" className="anchor">
                 <h2>
-                  Part 12: Product/Project management and Software development approaches
+                  Tome 12: Product/Project management and Software development approaches
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
