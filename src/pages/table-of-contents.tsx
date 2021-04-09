@@ -31,6 +31,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
         siteMetadata {
           salesPageUrl
           salesPageUrlTome01
+          salesPageUrlTome02
         }
       }
       tome01CoverImage: file(relativePath: { eq: "DevConceptsTome01SoftwareCraftCover3D.png" }) {
@@ -145,6 +146,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
   const tome11CoverImage = data.tome11CoverImage.childImageSharp.fluid;
   const tome12CoverImage = data.tome12CoverImage.childImageSharp.fluid;
   const tome01SalesPageUrl = data.site.siteMetadata.salesPageUrlTome01;
+  const tome02SalesPageUrl = data.site.siteMetadata.salesPageUrlTome02;
 
   return (
     <Layout>
@@ -463,7 +465,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </div>
                 <div className="mt-4 flex justify-center sm:mt-0">
                   <a
-                    href="https://gum.co/DevConcepts-Part-01-SoftwareCraft"
+                    href={tome01SalesPageUrl}
                     aria-label="Buy tome 1 now"
                     className="bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg p-2 rounded-md"
                   >
@@ -547,11 +549,31 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
-              <div className="items-center flex">
-                Page count:&nbsp;<span className="font-bold">50</span>
+              <div className="sm:flex sm:justify-between">
+                <div className="items-center flex">
+                  Page count:&nbsp;<span className="font-bold">50</span>
+                </div>
+                <div className="mt-4 flex justify-center sm:mt-0">
+                  <a
+                    href={tome02SalesPageUrl}
+                    aria-label="Buy tome 2 now"
+                    className="bg-devConceptsGreen-600 hover:bg-devConceptsGreen-700 hover:no-underline shadow-lg p-2 rounded-md"
+                  >
+                    <FontAwesomeIcon className="text-xl mr-2" icon={faShoppingCart} />
+                    Pre-order tome 2 now!
+                  </a>
+                </div>
               </div>
               <div className="opacity-75 hover:opacity-100">
-                <Img loading="eager" fluid={tome02CoverImage} alt="Tome 2: What clients need" className="hover:opacity-10" />
+                <OutboundLink
+                  href={tome02SalesPageUrl}
+                  rel="noopener"
+                  aria-label="Pre-order tome 2 now!"
+                  title="Pre-order tome 2 now!"
+                  className="pointer"
+                >
+                  <Img loading="eager" fluid={tome02CoverImage} alt="Tome 2: What clients need" className="hover:opacity-10" />
+                </OutboundLink>
               </div>
               <br />
               <p>

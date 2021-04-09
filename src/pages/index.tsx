@@ -25,11 +25,21 @@ const IntroText = styled.div.attrs({
 })``;
 
 const App = () => {
-  const data = useStaticQuery(graphql`
+  const data: {
+    site: {
+      siteMetadata: {
+        salesPageUrl: string;
+        salesPageUrlTome01: string;
+        salesPageUrlTome02: string;
+      };
+    };
+  } = useStaticQuery(graphql`
     query IndexPageQuery {
       site {
         siteMetadata {
           salesPageUrl
+          salesPageUrlTome01
+          salesPageUrlTome02
         }
       }
     }
@@ -49,7 +59,7 @@ const App = () => {
               <br />
               <span className="text-xl">
                 Front-end, back-end, architecture, analysis/design, quality assurance, code quality, IT infrastructure, security, and much
-                more. We've got you <i>covered</i>. Get a <strong>crystal clear view of modern software development in no time.</strong>
+                more. I've got you <i>covered</i>. Get a <strong>crystal clear view of modern software development in no time.</strong>
                 <br />
                 <br />
                 <p>
@@ -62,28 +72,39 @@ const App = () => {
                 </p>
               </span>
             </header>
+            <Separator />
             <div className="mt-4">
-              <Countdown date={new Date("2021-12-20T18:00:00")} />
-              <br />
-              <p className="text-lg">
-                The release date is set to <strong>December 20 2021</strong> but you can{" "}
-                <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="link text-xl" rel="noopener">
-                  PRE-ORDER IT NOW.
-                </OutboundLink>
-                <br />
-                <br />
-                <span className="">If you can't wait, you can already...</span>
-              </p>
-              <br />
-              <div className="flex justify-center sm:mt-0">
+              <p className="text-lg">Tome 2 will be available soon:</p>
+
+              <Countdown date={new Date("2021-04-20T10:00:00")} />
+              {/*<Countdown date={new Date("2021-12-20T18:00:00")} />*/}
+              <div className="flex justify-center flex-wrap mt-4 gap-2">
                 <a
-                  href="https://gum.co/DevConcepts-Part-01-SoftwareCraft"
+                  href={data.site.siteMetadata.salesPageUrlTome01}
                   aria-label="Buy tome 1 now"
                   className="bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg p-2 rounded-md"
                 >
                   <FontAwesomeIcon className="text-xl mr-2" icon={faShoppingCart} />
                   Buy tome 1 now!
                 </a>
+                <a
+                  href={data.site.siteMetadata.salesPageUrlTome02}
+                  aria-label="Pre-order tome 2 now"
+                  className="bg-devConceptsGreen-600 hover:bg-devConceptsGreen-700 hover:no-underline shadow-lg p-2 rounded-md"
+                >
+                  <FontAwesomeIcon className="text-xl mr-2" icon={faShoppingCart} />
+                  Pre-order tome 2 now!
+                </a>
+              </div>
+              <div className="mt-4 text-lg">
+                The release date of the whole series is set to <strong>December 20 2021</strong>.
+              </div>
+              <div className="mt-4 flex justify-center flex-wrap">
+                <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="text-xl" rel="noopener">
+                  <span className="bg-devConceptsGray-700 hover:bg-devConceptsGray-800 hover:no-underline shadow-lg p-2 rounded-md px-4">
+                    I want to pre-order the series!
+                  </span>
+                </OutboundLink>
               </div>
             </div>
           </IntroText>
@@ -114,7 +135,7 @@ const App = () => {
               <h1 className="text-3xl">Full Stack</h1>
               <span className="text-xl">
                 Full Stack developers are great to have on a team because they are able to understand and to be productive in both back-end
-                and front-end development. This collection of e-books will tell you about _everything_ that matters to become one.
+                and front-end development. This collection of e-books will tell you about <i>everything</i> that matters to become one.
               </span>
             </OutboundLink>
           </div>

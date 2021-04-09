@@ -161,10 +161,10 @@ const AuthorBioText: React.FC<Props> = ({ data }: Props) => {
         </p>
         <br />
         <p className="text-lg">
-          I want to share my passion, and I'm convinced that through this book, I'll be able to reach and help many more people, maybe even
-          you?{" "}
+          I want to share my passion, and I'm convinced that through this project, I'll be able to reach and help many more people, maybe
+          even you?{" "}
           <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="link" rel="noopener">
-            Pre-order the book right now, and be amongst my first readers!
+            Pre-order the series right now, and be amongst my first readers!
           </OutboundLink>
         </p>
       </div>
