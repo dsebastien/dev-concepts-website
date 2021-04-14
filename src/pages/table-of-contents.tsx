@@ -30,11 +30,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
       site {
         siteMetadata {
           salesPageUrl
-          salesPageUrlTome01
-          salesPageUrlTome02
+          salesPageUrlVolume01
+          salesPageUrlVolume02
         }
       }
-      tome01CoverImage: file(relativePath: { eq: "DevConceptsTome01SoftwareCraftCover3D.png" }) {
+      volume01CoverImage: file(relativePath: { eq: "DevConceptsVolume01SoftwareCraftCover3D.png" }) {
         childImageSharp {
           fluid(maxWidth: 640, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -42,7 +42,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
           }
         }
       }
-      tome02CoverImage: file(relativePath: { eq: "DevConceptsTome02SoftwareCraftCover3D.png" }) {
+      volume02CoverImage: file(relativePath: { eq: "DevConceptsVolume02SoftwareCraftCover3D.png" }) {
         childImageSharp {
           fluid(maxWidth: 640, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -50,7 +50,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
           }
         }
       }
-      tome03CoverImage: file(relativePath: { eq: "DevConceptsTome03SoftwareCraftCover3D.png" }) {
+      volume03CoverImage: file(relativePath: { eq: "DevConceptsVolume03SoftwareCraftCover3D.png" }) {
         childImageSharp {
           fluid(maxWidth: 640, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -58,7 +58,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
           }
         }
       }
-      tome04CoverImage: file(relativePath: { eq: "DevConceptsTome04SoftwareCraftCover3D.png" }) {
+      volume04CoverImage: file(relativePath: { eq: "DevConceptsVolume04SoftwareCraftCover3D.png" }) {
         childImageSharp {
           fluid(maxWidth: 640, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -66,7 +66,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
           }
         }
       }
-      tome05CoverImage: file(relativePath: { eq: "DevConceptsTome05SoftwareCraftCover3D.png" }) {
+      volume05CoverImage: file(relativePath: { eq: "DevConceptsVolume05SoftwareCraftCover3D.png" }) {
         childImageSharp {
           fluid(maxWidth: 640, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -74,7 +74,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
           }
         }
       }
-      tome06CoverImage: file(relativePath: { eq: "DevConceptsTome06SoftwareCraftCover3D.png" }) {
+      volume06CoverImage: file(relativePath: { eq: "DevConceptsVolume06SoftwareCraftCover3D.png" }) {
         childImageSharp {
           fluid(maxWidth: 640, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -82,7 +82,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
           }
         }
       }
-      tome07CoverImage: file(relativePath: { eq: "DevConceptsTome07SoftwareCraftCover3D.png" }) {
+      volume07CoverImage: file(relativePath: { eq: "DevConceptsVolume07SoftwareCraftCover3D.png" }) {
         childImageSharp {
           fluid(maxWidth: 640, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -90,7 +90,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
           }
         }
       }
-      tome08CoverImage: file(relativePath: { eq: "DevConceptsTome08SoftwareCraftCover3D.png" }) {
+      volume08CoverImage: file(relativePath: { eq: "DevConceptsVolume08SoftwareCraftCover3D.png" }) {
         childImageSharp {
           fluid(maxWidth: 640, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -98,7 +98,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
           }
         }
       }
-      tome09CoverImage: file(relativePath: { eq: "DevConceptsTome09SoftwareCraftCover3D.png" }) {
+      volume09CoverImage: file(relativePath: { eq: "DevConceptsVolume09SoftwareCraftCover3D.png" }) {
         childImageSharp {
           fluid(maxWidth: 640, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -106,7 +106,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
           }
         }
       }
-      tome10CoverImage: file(relativePath: { eq: "DevConceptsTome10SoftwareCraftCover3D.png" }) {
+      volume10CoverImage: file(relativePath: { eq: "DevConceptsVolume10SoftwareCraftCover3D.png" }) {
         childImageSharp {
           fluid(maxWidth: 640, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -114,7 +114,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
           }
         }
       }
-      tome11CoverImage: file(relativePath: { eq: "DevConceptsTome11SoftwareCraftCover3D.png" }) {
+      volume11CoverImage: file(relativePath: { eq: "DevConceptsVolume11SoftwareCraftCover3D.png" }) {
         childImageSharp {
           fluid(maxWidth: 640, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -122,7 +122,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
           }
         }
       }
-      tome12CoverImage: file(relativePath: { eq: "DevConceptsTome12SoftwareCraftCover3D.png" }) {
+      volume12CoverImage: file(relativePath: { eq: "DevConceptsVolume12SoftwareCraftCover3D.png" }) {
         childImageSharp {
           fluid(maxWidth: 640, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -133,20 +133,20 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
     }
   `);
 
-  const tome01CoverImage = data.tome01CoverImage.childImageSharp.fluid;
-  const tome02CoverImage = data.tome02CoverImage.childImageSharp.fluid;
-  const tome03CoverImage = data.tome03CoverImage.childImageSharp.fluid;
-  const tome04CoverImage = data.tome04CoverImage.childImageSharp.fluid;
-  const tome05CoverImage = data.tome05CoverImage.childImageSharp.fluid;
-  const tome06CoverImage = data.tome06CoverImage.childImageSharp.fluid;
-  const tome07CoverImage = data.tome07CoverImage.childImageSharp.fluid;
-  const tome08CoverImage = data.tome08CoverImage.childImageSharp.fluid;
-  const tome09CoverImage = data.tome09CoverImage.childImageSharp.fluid;
-  const tome10CoverImage = data.tome10CoverImage.childImageSharp.fluid;
-  const tome11CoverImage = data.tome11CoverImage.childImageSharp.fluid;
-  const tome12CoverImage = data.tome12CoverImage.childImageSharp.fluid;
-  const tome01SalesPageUrl = data.site.siteMetadata.salesPageUrlTome01;
-  const tome02SalesPageUrl = data.site.siteMetadata.salesPageUrlTome02;
+  const volume01CoverImage = data.volume01CoverImage.childImageSharp.fluid;
+  const volume02CoverImage = data.volume02CoverImage.childImageSharp.fluid;
+  const volume03CoverImage = data.volume03CoverImage.childImageSharp.fluid;
+  const volume04CoverImage = data.volume04CoverImage.childImageSharp.fluid;
+  const volume05CoverImage = data.volume05CoverImage.childImageSharp.fluid;
+  const volume06CoverImage = data.volume06CoverImage.childImageSharp.fluid;
+  const volume07CoverImage = data.volume07CoverImage.childImageSharp.fluid;
+  const volume08CoverImage = data.volume08CoverImage.childImageSharp.fluid;
+  const volume09CoverImage = data.volume09CoverImage.childImageSharp.fluid;
+  const volume10CoverImage = data.volume10CoverImage.childImageSharp.fluid;
+  const volume11CoverImage = data.volume11CoverImage.childImageSharp.fluid;
+  const volume12CoverImage = data.volume12CoverImage.childImageSharp.fluid;
+  const volume01SalesPageUrl = data.site.siteMetadata.salesPageUrlVolume01;
+  const volume02SalesPageUrl = data.site.siteMetadata.salesPageUrlVolume02;
 
   return (
     <Layout>
@@ -163,14 +163,14 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
         <div className="mt-4 flex flex-col md:flex-row-reverse md:h-full md:min-h-full w-full">
           <div className="md:h-full md:min-h-full md:sticky md:top-0 md:w-5/12 lg:w-4/12">
             <div>
-              <h2 className="w-full text-center text-xl lg:text-3xl">Dev Concepts Tomes</h2>
+              <h2 className="w-full text-center text-xl lg:text-3xl">Dev Concepts Volumes</h2>
               <section className="grid object-center grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-2">
                 <AnchorLink
                   to="/table-of-contents/#software-craft"
                   onAnchorLinkClick={() =>
                     history.pushState(null, "Dev Concepts - Table of contents (draft) - Software craft", "#software-craft")
                   }
-                  aria-label="Tome 1: Software craft"
+                  aria-label="Volume 1: Software craft"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -189,7 +189,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   onAnchorLinkClick={() =>
                     history.pushState(null, "Dev Concepts - Table of contents (draft) - What clients need", "#what-clients-need")
                   }
-                  aria-label="Tome 2: What clients need"
+                  aria-label="Volume 2: What clients need"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsGreen-600 hover:bg-devConceptsGreen-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -208,7 +208,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   onAnchorLinkClick={() =>
                     history.pushState(null, "Dev Concepts - Table of contents (draft) - Architecture", "#architecture")
                   }
-                  aria-label="Tome 3: Architecture"
+                  aria-label="Volume 3: Architecture"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsTeal-700 hover:bg-devConceptsTeal-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -227,7 +227,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   onAnchorLinkClick={() =>
                     history.pushState(null, "Dev Concepts - Table of contents (draft) - Software design", "#software-design")
                   }
-                  aria-label="Tome 4: Software design"
+                  aria-label="Volume 4: Software design"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsPink-500 hover:bg-devConceptsPink-600 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -250,7 +250,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                       "#computers-and-operating-systems",
                     )
                   }
-                  aria-label="Tome 5: Computer architecture and Operating systems basics"
+                  aria-label="Volume 5: Computer architecture and Operating systems basics"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsOrange-500 hover:bg-devConceptsOrange-600 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -269,7 +269,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   onAnchorLinkClick={() =>
                     history.pushState(null, "Dev Concepts - Table of contents (draft) - Coding basics", "#coding-basics")
                   }
-                  aria-label="Tome 6: Coding basics"
+                  aria-label="Volume 6: Coding basics"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsIndigo-700 hover:bg-devConceptsIndigo-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -288,7 +288,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   onAnchorLinkClick={() =>
                     history.pushState(null, "Dev Concepts - Table of contents (draft) - General concerns", "#general-concerns")
                   }
-                  aria-label="Tome 7: General concerns"
+                  aria-label="Volume 7: General concerns"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsCerise-600 hover:bg-devConceptsCerise-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -305,7 +305,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <AnchorLink
                   to="/table-of-contents/#back-end"
                   onAnchorLinkClick={() => history.pushState(null, "Dev Concepts - Table of contents (draft) - Back-end", "#back-end")}
-                  aria-label="Tome 8: Back-end development"
+                  aria-label="Volume 8: Back-end development"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsOrange-800 hover:bg-devConceptsOrange-900 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -322,7 +322,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <AnchorLink
                   to="/table-of-contents/#front-end"
                   onAnchorLinkClick={() => history.pushState(null, "Dev Concepts - Table of contents (draft) - Front-end", "#front-end")}
-                  aria-label="Tome 9: Front-end development"
+                  aria-label="Volume 9: Front-end development"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsTeal-700 hover:bg-devConceptsTeal-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -341,7 +341,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   onAnchorLinkClick={() =>
                     history.pushState(null, "Dev Concepts - Table of contents (draft) - Infrastructure", "#infrastructure")
                   }
-                  aria-label="Tome 10: IT Infrastructure"
+                  aria-label="Volume 10: IT Infrastructure"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsPurple-600 hover:bg-devConceptsPurple-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -358,7 +358,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <AnchorLink
                   to="/table-of-contents/#security"
                   onAnchorLinkClick={() => history.pushState(null, "Dev Concepts - Table of contents (draft) - Security", "#security")}
-                  aria-label="Tome 11: Security"
+                  aria-label="Volume 11: Security"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsAmber-500 hover:bg-devConceptsAmber-600 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -381,7 +381,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                       "#product-project-software",
                     )
                   }
-                  aria-label="Tome 12: Product/Project management and Software development approaches"
+                  aria-label="Volume 12: Product/Project management and Software development approaches"
                   className="no-underline"
                 >
                   <div className="h-full rounded bg-devConceptsGray-700 hover:bg-devConceptsGray-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
@@ -428,11 +428,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             </div>
           </div>
           <div id="main-toc" className="mt-4 md:mt-0 md:px-4 lg:px-16 md:w-7/12 lg:w-8/12">
-            {/* -------------------------------------- TOME 1 -------------------------------------- */}
+            {/* -------------------------------------- VOLUME 1 -------------------------------------- */}
             <section id="software-craft" className="">
               <a href="#software-craft" className="anchor">
                 <h2>
-                  Tome 1: Software craft (<span className="font-semibold">completed</span>)
+                  Volume 1: Software craft (<span className="font-semibold">completed</span>)
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -444,39 +444,39 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </div>
                 <div className="mt-4 flex justify-center sm:mt-0">
                   <a
-                    href={tome01SalesPageUrl}
-                    aria-label="Buy tome 1 now"
+                    href={volume01SalesPageUrl}
+                    aria-label="Buy volume 1 now"
                     className="bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg p-2 rounded-md"
                   >
                     <FontAwesomeIcon className="text-xl mr-2" icon={faShoppingCart} />
-                    Buy tome 1 now!
+                    Buy volume 1 now!
                   </a>
                 </div>
               </div>
               <div className="opacity-75 hover:opacity-100">
                 <OutboundLink
-                  href={tome01SalesPageUrl}
+                  href={volume01SalesPageUrl}
                   rel="noopener"
-                  aria-label="Buy tome 1 now!"
-                  title="Buy tome 1 now!"
+                  aria-label="Buy volume 1 now!"
+                  title="Buy volume 1 now!"
                   className="pointer"
                 >
-                  <Img loading="eager" fluid={tome01CoverImage} alt="Tome 1: Software Craft" className="hover:opacity-10" />
+                  <Img loading="eager" fluid={volume01CoverImage} alt="Volume 1: Software Craft" className="hover:opacity-10" />
                 </OutboundLink>
               </div>
               <br />
               <p>
-                This tome explains the different <span className="font-bold italic">skills</span> that you’ll need to acquire and improve
+                This volume explains the different <span className="font-bold italic">skills</span> that you’ll need to acquire and improve
                 over the course of your career to become a software crafter. There are no secrets and no magic to become one. It’s mostly a
                 question of work, dedication, passion, and <span className="italic">fun</span>.
               </p>
               <br />
               <p>
-                This tome is much less about technology than about personality traits and psychology. Even if we all start with our own
+                This volume is much less about technology than about personality traits and psychology. Even if we all start with our own
                 background, strengths and weaknesses, there are things to know, tips and tricks that will guide you on the path towards
                 becoming a software crafter.
               </p>
-              <h4 className="mt-2">In this tome:</h4>
+              <h4 className="mt-2">In this volume:</h4>
               <ol>
                 <li>Introduction</li>
                 <li>What is software development</li>
@@ -518,11 +518,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- TOME 2 -------------------------------------- */}
+            {/* -------------------------------------- VOLUME 2 -------------------------------------- */}
             <section id="what-clients-need" className="mt-4">
               <a href="#what-clients-need" className="anchor">
                 <h2>
-                  Tome 2: What clients need (<span className="font-semibold">completed</span>)
+                  Volume 2: What clients need (<span className="font-semibold">completed</span>)
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -534,24 +534,24 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </div>
                 <div className="mt-4 flex justify-center sm:mt-0">
                   <a
-                    href={tome02SalesPageUrl}
-                    aria-label="Buy tome 2 now"
+                    href={volume02SalesPageUrl}
+                    aria-label="Buy volume 2 now"
                     className="bg-devConceptsGreen-600 hover:bg-devConceptsGreen-700 hover:no-underline shadow-lg p-2 rounded-md"
                   >
                     <FontAwesomeIcon className="text-xl mr-2" icon={faShoppingCart} />
-                    Pre-order tome 2 now!
+                    Pre-order volume 2 now!
                   </a>
                 </div>
               </div>
               <div className="opacity-75 hover:opacity-100">
                 <OutboundLink
-                  href={tome02SalesPageUrl}
+                  href={volume02SalesPageUrl}
                   rel="noopener"
-                  aria-label="Pre-order tome 2 now!"
-                  title="Pre-order tome 2 now!"
+                  aria-label="Pre-order volume 2 now!"
+                  title="Pre-order volume 2 now!"
                   className="pointer"
                 >
-                  <Img loading="eager" fluid={tome02CoverImage} alt="Tome 2: What clients need" className="hover:opacity-10" />
+                  <Img loading="eager" fluid={volume02CoverImage} alt="Volume 2: What clients need" className="hover:opacity-10" />
                 </OutboundLink>
               </div>
               <br />
@@ -561,7 +561,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </p>
               <br />
               <p>
-                This tome focuses on how to understand what clients truly need. It covers concepts such as functional & non-functional
+                This volume focuses on how to understand what clients truly need. It covers concepts such as functional & non-functional
                 requirements, techniques that you can use to understand business problems and end user goals. It also covers what
                 specifications are and why they matter.
               </p>
@@ -573,7 +573,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   wrong problems.
                 </span>
               </p>
-              <h4 className="mt-2">In this tome:</h4>
+              <h4 className="mt-2">In this volume:</h4>
               <ol>
                 <li>Introduction</li>
                 <li>What do clients need?</li>
@@ -634,11 +634,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- TOME 3 -------------------------------------- */}
+            {/* -------------------------------------- VOLUME 3 -------------------------------------- */}
             <section id="architecture" className="mt-4">
               <a href="#architecture" className="anchor">
                 <h2>
-                  Tome 3: Architecture (<span className="font-semibold">in progress</span>)
+                  Volume 3: Architecture (<span className="font-semibold">in progress</span>)
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -648,7 +648,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 Estimated page count:&nbsp;<span className="font-bold">70</span>
               </p>
               <div className="opacity-75 hover:opacity-100">
-                <Img loading="eager" fluid={tome03CoverImage} alt="Tome 3: Architecture" className="hover:opacity-10" />
+                <Img loading="eager" fluid={volume03CoverImage} alt="Volume 3: Architecture" className="hover:opacity-10" />
               </div>
               <br />
               <p>
@@ -667,7 +667,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 know what needs to be done to avoid disasters. Here, we'll explore some key ideas about IT architecture in general and
                 software architecture in particular.
               </p>
-              <h4 className="mt-2">In this tome:</h4>
+              <h4 className="mt-2">In this volume:</h4>
               <ol>
                 <li>
                   Introduction
@@ -727,11 +727,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/*-------------------------------------- TOME 4 -------------------------------------- */}
+            {/*-------------------------------------- VOLUME 4 -------------------------------------- */}
             <section id="software-design" className="mt-4">
               <a href="#software-design" className="anchor">
                 <h2>
-                  Tome 4: Software design
+                  Volume 4: Software design
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -741,16 +741,16 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 Estimated page count:&nbsp;<span className="font-bold">80</span>
               </p>
               <div className="opacity-75 hover:opacity-100">
-                <Img loading="eager" fluid={tome04CoverImage} alt="Tome 4: Software Design" className="hover:opacity-10" />
+                <Img loading="eager" fluid={volume04CoverImage} alt="Volume 4: Software Design" className="hover:opacity-10" />
               </div>
               <br />
               <p>
-                Software design is where the real action begins. Previous tomes covered much higher level concepts. Solving the wrong
+                Software design is where the real action begins. Previous volumes covered much higher level concepts. Solving the wrong
                 problem means game over, a bad architecture means tons of waste, and bad software design means costly maintenance. Here, we
                 explore software design, explain why it is critical for mental health (seriously!) and key concepts that you’ll use on a
                 daily basis during your software crafter’s career.
               </p>
-              <h4 className="mt-2">In this tome:</h4>
+              <h4 className="mt-2">In this volume:</h4>
               <ol>
                 <li>
                   Technical design
@@ -807,11 +807,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- TOME 5 -------------------------------------- */}
+            {/* -------------------------------------- VOLUME 5 -------------------------------------- */}
             <section id="computers-and-operating-systems" className="mt-4">
               <a href="#computers-and-operating-systems" className="anchor">
                 <h2>
-                  Tome 5: Computer architecture and Operating systems basics
+                  Volume 5: Computer architecture and Operating systems basics
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -823,23 +823,24 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               <div className="opacity-75 hover:opacity-100">
                 <Img
                   loading="eager"
-                  fluid={tome05CoverImage}
-                  alt="Tome 5: Computer architecture and Operating systems basics"
+                  fluid={volume05CoverImage}
+                  alt="Volume 5: Computer architecture and Operating systems basics"
                   className="hover:opacity-10"
                 />
               </div>
               <br />
               <p>
-                This tome is dedicated to real beginners who first want to understand computers and operating systems. We all need to start
-                somewhere, and this is an excellent introduction to basic principles underlying everything that we do as software crafters.
-                Whether our code runs locally on our computer or somewhere in the cloud, it is always executed by a CPU (physical or
-                virtual), accesses memory, reads/writes files, etc.
+                This volume is dedicated to real beginners who first want to understand computers and operating systems. We all need to
+                start somewhere, and this is an excellent introduction to basic principles underlying everything that we do as software
+                crafters. Whether our code runs locally on our computer or somewhere in the cloud, it is always executed by a CPU (physical
+                or virtual), accesses memory, reads/writes files, etc.
               </p>
               <br />
               <p>
-                If you want to learn about CPUs, memory, file systems, files, processes, scheduling and whatnot, then this tome is for you.
+                If you want to learn about CPUs, memory, file systems, files, processes, scheduling and whatnot, then this volume is for
+                you.
               </p>
-              <h4 className="mt-2">In this tome:</h4>
+              <h4 className="mt-2">In this volume:</h4>
               <ol>
                 <li>Introduction</li>
                 <li>
@@ -877,11 +878,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- TOME 6 -------------------------------------- */}
+            {/* -------------------------------------- VOLUME 6 -------------------------------------- */}
             <section id="coding-basics" className="mt-4">
               <a href="#coding-basics" className="anchor">
                 <h2>
-                  Tome 6: Coding basics
+                  Volume 6: Coding basics
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -891,18 +892,18 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 Estimated page count:&nbsp;<span className="font-bold">150</span>
               </p>
               <div className="opacity-75 hover:opacity-100">
-                <Img loading="eager" fluid={tome06CoverImage} alt="Tome 6: Coding basics" className="hover:opacity-10" />
+                <Img loading="eager" fluid={volume06CoverImage} alt="Volume 6: Coding basics" className="hover:opacity-10" />
               </div>
               <br />
               <p>
-                This tome is dedicated to real beginners who’d like to learn how to C-O-D-E. We will only scratch the surface but this tome
-                is a great and practical introduction to{" "}
+                This volume is dedicated to real beginners who’d like to learn how to C-O-D-E. We will only scratch the surface but this
+                volume is a great and practical introduction to{" "}
                 <span className="font-bold">
                   coding concepts that all software crafters <span className="italic">must</span> know
                 </span>{" "}
                 and use literally all the time.
               </p>
-              <h4 className="mt-2">In this tome:</h4>
+              <h4 className="mt-2">In this volume:</h4>
               <ol>
                 <li>Introduction</li>
                 <li>
@@ -1009,11 +1010,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- TOME 7 -------------------------------------- */}
+            {/* -------------------------------------- VOLUME 7 -------------------------------------- */}
             <section id="general-concerns" className="mt-4">
               <a href="#general-concerns" className="anchor">
                 <h2>
-                  Tome 7: General concerns
+                  Volume 7: General concerns
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -1023,22 +1024,23 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 Estimated page count:&nbsp;<span className="font-bold">120</span>
               </p>
               <div className="opacity-75 hover:opacity-100">
-                <Img loading="eager" fluid={tome07CoverImage} alt="Tome 7: General concerns" className="hover:opacity-10" />
+                <Img loading="eager" fluid={volume07CoverImage} alt="Volume 7: General concerns" className="hover:opacity-10" />
               </div>
               <br />
               <p>
-                This tome is dedicated to elements that must be taken care of <span className="font-bold italic">everywhere</span>; whether
-                you’re doing back-end or front-end software development. Note that I also consider those necessary for infrastructure
-                scripting (but it’s always hard to make IT operations personnel realize that they are also software developers ;-)
+                This volume is dedicated to elements that must be taken care of <span className="font-bold italic">everywhere</span>;
+                whether you’re doing back-end or front-end software development. Note that I also consider those necessary for
+                infrastructure scripting (but it’s always hard to make IT operations personnel realize that they are also software
+                developers ;-)
               </p>
               <br />
               <p>
-                This is a critical tome for true software crafters because many of these points are unfortunately often overlooked for
+                This is a critical volume for true software crafters because many of these points are unfortunately often overlooked for
                 various reasons (mostly bad ones). If you want to become a <span className="italic">true</span> software crafter, then
                 you’ll make sure to always pay attention to those and to convince everyone else to do the same; even if it means going
                 against some pointy-haired manager ;-)
               </p>
-              <h4 className="mt-2">In this tome:</h4>
+              <h4 className="mt-2">In this volume:</h4>
               <ol>
                 <li>Error handling</li>
                 <li>
@@ -1123,11 +1125,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- TOME 8 -------------------------------------- */}
+            {/* -------------------------------------- VOLUME 8 -------------------------------------- */}
             <section id="back-end" className="mt-4">
               <a href="#back-end" className="anchor">
                 <h2>
-                  Tome 8: Back-end development
+                  Volume 8: Back-end development
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -1137,15 +1139,15 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 Estimated page count:&nbsp;<span className="font-bold">100</span>
               </p>
               <div className="opacity-75 hover:opacity-100">
-                <Img loading="eager" fluid={tome08CoverImage} alt="Tome 8: Back-end development" className="hover:opacity-10" />
+                <Img loading="eager" fluid={volume08CoverImage} alt="Volume 8: Back-end development" className="hover:opacity-10" />
               </div>
               <br />
               <p>
-                This tome is all about back-end software, where most of the action occurs under the hood… without anyone knowing. Back-end
+                This volume is all about back-end software, where most of the action occurs under the hood… without anyone knowing. Back-end
                 developers have to focus on very different aspects of IT systems, compared to front-end developers. Software crafters need
                 to understand those differences.
               </p>
-              <h4 className="mt-2">In this tome:</h4>
+              <h4 className="mt-2">In this volume:</h4>
               <ol>
                 <li>What back-end developers focus on and why</li>
                 <li>
@@ -1194,11 +1196,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- TOME 9 -------------------------------------- */}
+            {/* -------------------------------------- VOLUME 9 -------------------------------------- */}
             <section id="front-end" className="mt-4">
               <a href="#front-end" className="anchor">
                 <h2>
-                  Tome 9: Front-end development
+                  Volume 9: Front-end development
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -1208,16 +1210,16 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 Estimated page count:&nbsp;<span className="font-bold">130</span>
               </p>
               <div className="opacity-75 hover:opacity-100">
-                <Img loading="eager" fluid={tome09CoverImage} alt="Tome 9: Front-end development" className="hover:opacity-10" />
+                <Img loading="eager" fluid={volume09CoverImage} alt="Volume 9: Front-end development" className="hover:opacity-10" />
               </div>
               <br />
               <p>
-                This tome is all about front-end systems, which are the tip of the iceberg; the one concrete part that end users see and can
-                feel. Given the visual nature of front-end applications, front-end developers have to focus on very different aspects,
+                This volume is all about front-end systems, which are the tip of the iceberg; the one concrete part that end users see and
+                can feel. Given the visual nature of front-end applications, front-end developers have to focus on very different aspects,
                 compared to back-end developers. Software crafters must not necessarily be artists, but they still have to pay attention to
                 the aesthetics… among many other things.
               </p>
-              <h4 className="mt-2">In this tome:</h4>
+              <h4 className="mt-2">In this volume:</h4>
               <ol>
                 <li>What front-end developers focus on and why</li>
                 <li>Usual layers and responsibilities</li>
@@ -1311,11 +1313,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- TOME 10 -------------------------------------- */}
+            {/* -------------------------------------- VOLUME 10 -------------------------------------- */}
             <section id="infrastructure" className="mt-4">
               <a href="#infrastructure" className="anchor">
                 <h2>
-                  Tome 10: IT Infrastructure
+                  Volume 10: IT Infrastructure
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -1325,7 +1327,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 Estimated page count:&nbsp;<span className="font-bold">100</span>
               </p>
               <div className="opacity-75 hover:opacity-100">
-                <Img loading="eager" fluid={tome10CoverImage} alt="Tome 10: IT Infrastructure" className="hover:opacity-10" />
+                <Img loading="eager" fluid={volume10CoverImage} alt="Volume 10: IT Infrastructure" className="hover:opacity-10" />
               </div>
               <br />
               <p>
@@ -1336,10 +1338,10 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               <p>
                 Having a good understanding of where our applications are hosted, how the environment is configured/secured/monitored, etc
                 is super valuable and makes the difference between someone who “just” writes code and someone who contributes to develop
-                end-to-end solutions. This tome explains some important concepts about IT infrastructure. All DevSecOps engineers (and thus
-                software crafters) should be aware of at least a part of those ideas.
+                end-to-end solutions. This volume explains some important concepts about IT infrastructure. All DevSecOps engineers (and
+                thus software crafters) should be aware of at least a part of those ideas.
               </p>
-              <h4 className="mt-2">In this tome:</h4>
+              <h4 className="mt-2">In this volume:</h4>
               <ol>
                 <li>What IT infrastructure focuses on and why</li>
                 <li>
@@ -1421,11 +1423,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- TOME 11 -------------------------------------- */}
+            {/* -------------------------------------- VOLUME 11 -------------------------------------- */}
             <section id="security" className="mt-4">
               <a href="#security" className="anchor">
                 <h2>
-                  Tome 11: Security
+                  Volume 11: Security
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -1435,7 +1437,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 Estimated page count:&nbsp;<span className="font-bold">180</span>
               </p>
               <div className="opacity-75 hover:opacity-100">
-                <Img loading="eager" fluid={tome11CoverImage} alt="Tome 11: Security" className="hover:opacity-10" />
+                <Img loading="eager" fluid={volume11CoverImage} alt="Volume 11: Security" className="hover:opacity-10" />
               </div>
               <br />
               <p>
@@ -1444,7 +1446,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 breaches and stolen data. Together, we’ll learn about the most important IT security concepts; knowledge that will expand
                 your understanding of this complex, but incredibly important field of IT:
               </p>
-              <h4 className="mt-2">In this tome:</h4>
+              <h4 className="mt-2">In this volume:</h4>
               <ol>
                 <li>Attackers</li>
                 <li>
@@ -1582,11 +1584,11 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </ol>
             </section>
 
-            {/* -------------------------------------- TOME 12 -------------------------------------- */}
+            {/* -------------------------------------- VOLUME 12 -------------------------------------- */}
             <section id="product-project-software" className="mt-4">
               <a href="#product-project-software" className="anchor">
                 <h2>
-                  Tome 12: Product/Project management and Software development approaches
+                  Volume 12: Product/Project management and Software development approaches
                   <span className="anchor-icon">
                     <FontAwesomeIcon icon={faLink} />
                   </span>
@@ -1598,8 +1600,8 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               <div className="opacity-75 hover:opacity-100">
                 <Img
                   loading="eager"
-                  fluid={tome12CoverImage}
-                  alt="Tome 12: Product/Project management and Software development approaches"
+                  fluid={volume12CoverImage}
+                  alt="Volume 12: Product/Project management and Software development approaches"
                   className="hover:opacity-10"
                 />
               </div>
@@ -1611,10 +1613,10 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </p>
               <br />
               <p>
-                How are products and their features defined, prioritized and organized? Dive into this tome to learn about technical product
-                management, product backlogs, product roadmaps as well as how to create, structure and maintain those.
+                How are products and their features defined, prioritized and organized? Dive into this volume to learn about technical
+                product management, product backlogs, product roadmaps as well as how to create, structure and maintain those.
               </p>
-              <h4 className="mt-2">In this tome:</h4>
+              <h4 className="mt-2">In this volume:</h4>
               <ol>
                 <li>Project roles</li>
                 <li>

@@ -12,8 +12,8 @@
   },
   "siteSources": "https://github.com/DeveloPassion/dev-concepts-website",
   "salesPageUrl": "https://gumroad.com/l/DevConcepts",
-  "salesPageUrlTome01": "https://gum.co/DevConcepts-Part-01-SoftwareCraft",
-  "salesPageUrlTome02": "https://gum.co/DevConcepts-Tome-02-WhatClientsNeed",
+  "salesPageUrlVolume01": "https://gum.co/DevConcepts-Part-01-SoftwareCraft",
+  "salesPageUrlVolume02": "https://gum.co/DevConcepts-Tome-02-WhatClientsNeed",
   "social": {
     "blogSebastien": "https://www.dsebastien.net",
     "facebook": "https://fb.me/DeveloPassion",
