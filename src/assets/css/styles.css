@@ -176,6 +176,11 @@ figure.devConceptsLogoFigure:hover figcaption::before {
   transition-delay: 0s;
 }
 
+/* Newsletter form */
+.newsletter-form-email-input {
+  width: 300px;
+}
+
 /* Table of contents */
 ol {
   counter-reset: item;

@@ -2,18 +2,22 @@ import React from "react";
 import styled from "styled-components";
 import { ConvertKitForm } from "../convertkit-form";
 
+import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Wrapper = styled.div.attrs({
-  className: "w-full mt-5 flex flex-col object-center",
+  className: "flex flex-col items-center rounded-lg bg-blue-700 shadow-lg p-4",
 })``;
 
 const DevConceptsNewsletterForm: React.FC = () => {
   return (
     <Wrapper id="devConceptsNewsletter">
+      <FontAwesomeIcon className="text-4xl -top-4 -inset-y-10" icon={faEnvelopeOpenText} />
       <h1>
-        <span>Join the Newsletter</span>
+        <span className="w-full text-center">Join the Newsletter</span>
       </h1>
       <p className="pb-1">
-        Sign-up to join our software crafters <i>community</i>, and receive interesting content about software developement, as well as news
+        Sign-up to join the Software Crafters <i>community</i>, and receive interesting content about software development, as well as news
         about the project. Right in your inbox!
       </p>
       <ConvertKitForm />

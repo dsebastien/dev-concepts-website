@@ -18,7 +18,6 @@ const CONVERT_KIT_FORM_URL = `https://app.convertkit.com/forms/1795118/subscript
 
 interface NewsletterSubscriptionFormData {
   email: string;
-  firstName: string;
   consent: boolean;
 }
 
@@ -53,12 +52,10 @@ const ConvertKitForm: React.FC = () => {
 
     console.log(`Preparing to submit: ${JSON.stringify(data, null, 1)}`);
 
-    // Expected by convertkit form:
+    // Expected by ConvertKit form:
     // email_address
-    // fields[first_name]
     const convertKitFormData: FormData = new FormData();
     convertKitFormData.set("email_address", data.email);
-    convertKitFormData.set("fields[first_name]", data.firstName);
 
     try {
       const subscriptionResponse = await fetch(CONVERT_KIT_FORM_URL, {
@@ -107,7 +104,7 @@ const ConvertKitForm: React.FC = () => {
               Email&nbsp;<span className="text-red-500">*</span>
             </span>
             <input
-              className="form-input mt-1 block w-full md:w-3/4 text-gray-700"
+              className="form-input newsletter-form-email-input mt-1 block text-gray-700"
               type="email"
               name={formDataPropertyNames("email")}
               ref={register({ required: true })}
@@ -121,21 +118,10 @@ const ConvertKitForm: React.FC = () => {
               </div>
             )}
           </label>
-          <label className="block mt-5">
-            <span className="">First Name</span>
-            <input
-              className="form-input mt-1 block w-full md:w-3/4 text-gray-700"
-              type="text"
-              name={formDataPropertyNames("firstName")}
-              placeholder="First Name"
-              aria-label="First Name"
-              ref={register}
-            />
-          </label>
           <div className="mt-5">
             <span className="text-sm">
-              We need this information to be able to contact you. We value your privacy and won't share the information with anyone. The
-              only person that will get access is Sébastien Dubois, the author. We won't send you spam. Unsubscribe at any time.
+              I need this information to be able to contact you. I value your privacy and won't share the information with anyone or send
+              you spam. The only person that will get access is myself, Sébastien Dubois, the author. Unsubscribe at any time.
             </span>
           </div>
           <div className="mt-5">
@@ -159,9 +145,9 @@ const ConvertKitForm: React.FC = () => {
               )}
             </label>
           </div>
-          <div className="flex mt-5 flex justify-center sm:justify-start">
-            <Button type="submit" aria-label="Let me know about the progress">
-              Let me know about the progress
+          <div className="flex mt-5 flex justify-center">
+            <Button type="submit" aria-label="Subscribe" className="rounded-lg px-20 py-3">
+              Subscribe
             </Button>
           </div>
         </form>

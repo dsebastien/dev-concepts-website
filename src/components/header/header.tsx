@@ -41,7 +41,7 @@ const Header: React.FC = () => {
 
   return (
     <StyledHeader>
-      <h1 className="w-full lg:w-auto">
+      <h1 className="w-full lg:w-auto text-5xl sm:text-6xl">
         <FontAwesomeIcon className="mr-3" icon={faCode} />
         <OutboundLink
           href={data.site.siteMetadata.salesPageUrl}

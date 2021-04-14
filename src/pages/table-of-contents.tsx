@@ -150,10 +150,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
 
   return (
     <Layout>
-      <SEO
-        title="Software Development Concepts - Table of contents (draft)"
-        description="Table of contents of the Software Development Concepts series"
-      />
+      <SEO title="Dev Concepts - Table of contents (draft)" description="Table of contents of the Dev Concepts series" />
 
       <section className="flex flex-col">
         <header className="md:px-2 lg:px-16">
@@ -171,7 +168,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <AnchorLink
                   to="/table-of-contents/#software-craft"
                   onAnchorLinkClick={() =>
-                    history.pushState(null, "Software Development Concepts - Table of contents (draft) - Software craft", "#software-craft")
+                    history.pushState(null, "Dev Concepts - Table of contents (draft) - Software craft", "#software-craft")
                   }
                   aria-label="Tome 1: Software craft"
                   className="no-underline"
@@ -190,11 +187,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <AnchorLink
                   to="/table-of-contents/#what-clients-need"
                   onAnchorLinkClick={() =>
-                    history.pushState(
-                      null,
-                      "Software Development Concepts - Table of contents (draft) - What clients need",
-                      "#what-clients-need",
-                    )
+                    history.pushState(null, "Dev Concepts - Table of contents (draft) - What clients need", "#what-clients-need")
                   }
                   aria-label="Tome 2: What clients need"
                   className="no-underline"
@@ -213,7 +206,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <AnchorLink
                   to="/table-of-contents/#architecture"
                   onAnchorLinkClick={() =>
-                    history.pushState(null, "Software Development Concepts - Table of contents (draft) - Architecture", "#architecture")
+                    history.pushState(null, "Dev Concepts - Table of contents (draft) - Architecture", "#architecture")
                   }
                   aria-label="Tome 3: Architecture"
                   className="no-underline"
@@ -232,11 +225,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <AnchorLink
                   to="/table-of-contents/#software-design"
                   onAnchorLinkClick={() =>
-                    history.pushState(
-                      null,
-                      "Software Development Concepts - Table of contents (draft) - Software design",
-                      "#software-design",
-                    )
+                    history.pushState(null, "Dev Concepts - Table of contents (draft) - Software design", "#software-design")
                   }
                   aria-label="Tome 4: Software design"
                   className="no-underline"
@@ -257,7 +246,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   onAnchorLinkClick={() =>
                     history.pushState(
                       null,
-                      "Software Development Concepts - Table of contents (draft) - Computer architecture and Operating systems basics",
+                      "Dev Concepts - Table of contents (draft) - Computer architecture and Operating systems basics",
                       "#computers-and-operating-systems",
                     )
                   }
@@ -278,7 +267,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <AnchorLink
                   to="/table-of-contents/#coding-basics"
                   onAnchorLinkClick={() =>
-                    history.pushState(null, "Software Development Concepts - Table of contents (draft) - Coding basics", "#coding-basics")
+                    history.pushState(null, "Dev Concepts - Table of contents (draft) - Coding basics", "#coding-basics")
                   }
                   aria-label="Tome 6: Coding basics"
                   className="no-underline"
@@ -297,11 +286,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <AnchorLink
                   to="/table-of-contents/#general-concerns"
                   onAnchorLinkClick={() =>
-                    history.pushState(
-                      null,
-                      "Software Development Concepts - Table of contents (draft) - General concerns",
-                      "#general-concerns",
-                    )
+                    history.pushState(null, "Dev Concepts - Table of contents (draft) - General concerns", "#general-concerns")
                   }
                   aria-label="Tome 7: General concerns"
                   className="no-underline"
@@ -319,9 +304,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
 
                 <AnchorLink
                   to="/table-of-contents/#back-end"
-                  onAnchorLinkClick={() =>
-                    history.pushState(null, "Software Development Concepts - Table of contents (draft) - Back-end", "#back-end")
-                  }
+                  onAnchorLinkClick={() => history.pushState(null, "Dev Concepts - Table of contents (draft) - Back-end", "#back-end")}
                   aria-label="Tome 8: Back-end development"
                   className="no-underline"
                 >
@@ -338,9 +321,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
 
                 <AnchorLink
                   to="/table-of-contents/#front-end"
-                  onAnchorLinkClick={() =>
-                    history.pushState(null, "Software Development Concepts - Table of contents (draft) - Front-end", "#front-end")
-                  }
+                  onAnchorLinkClick={() => history.pushState(null, "Dev Concepts - Table of contents (draft) - Front-end", "#front-end")}
                   aria-label="Tome 9: Front-end development"
                   className="no-underline"
                 >
@@ -358,7 +339,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 <AnchorLink
                   to="/table-of-contents/#infrastructure"
                   onAnchorLinkClick={() =>
-                    history.pushState(null, "Software Development Concepts - Table of contents (draft) - Infrastructure", "#infrastructure")
+                    history.pushState(null, "Dev Concepts - Table of contents (draft) - Infrastructure", "#infrastructure")
                   }
                   aria-label="Tome 10: IT Infrastructure"
                   className="no-underline"
@@ -376,9 +357,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
 
                 <AnchorLink
                   to="/table-of-contents/#security"
-                  onAnchorLinkClick={() =>
-                    history.pushState(null, "Software Development Concepts - Table of contents (draft) - Security", "#security")
-                  }
+                  onAnchorLinkClick={() => history.pushState(null, "Dev Concepts - Table of contents (draft) - Security", "#security")}
                   aria-label="Tome 11: Security"
                   className="no-underline"
                 >
@@ -398,7 +377,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   onAnchorLinkClick={() =>
                     history.pushState(
                       null,
-                      "Software Development Concepts - Table of contents (draft) - Product/Project management and Software development approaches",
+                      "Dev Concepts - Table of contents (draft) - Product/Project management and Software development approaches",
                       "#product-project-software",
                     )
                   }

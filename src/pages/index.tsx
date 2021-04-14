@@ -55,14 +55,16 @@ const App = () => {
         <div className="w-full h-full sm:w-2/4 mt-8 sm:mt-0">
           <IntroText>
             <header>
-              <h1 className="text-5xl tracking-wider leading-none">The perfect guide towards full stack development.</h1>
-              <br />
-              <span className="text-xl">
-                Front-end, back-end, architecture, analysis/design, quality assurance, code quality, IT infrastructure, security, and much
-                more. I've got you <i>covered</i>. Get a <strong>crystal clear view of modern software development in no time.</strong>
-                <br />
-                <br />
-                <p>
+              <h1 className="text-5xl tracking-wider leading-none italic">The perfect guide towards full stack development.</h1>
+              <div className="text-xl mt-6">
+                A{" "}
+                <Link to="/table-of-contents" className="link text-xl">
+                  <b>12 volumes</b> e-book collection
+                </Link>{" "}
+                to learn about all the important concepts about Front-end, back-end, architecture, analysis/design, quality assurance, code
+                quality, IT infrastructure, security, and much more. Get a{" "}
+                <strong>crystal clear view of modern software development.</strong>
+                <p className="mt-6">
                   <FontAwesomeIcon icon={faArrowRight} /> Check out the{" "}
                   <b>
                     <Link to="/table-of-contents" className="link text-xl">
@@ -70,15 +72,18 @@ const App = () => {
                     </Link>
                   </b>
                 </p>
-              </span>
+              </div>
+              <div className="mt-6 text-lg">
+                The release date of the whole series is set to <strong>December 20 2021</strong>.
+              </div>
             </header>
             <Separator />
-            <div className="mt-4">
+            <div className="mt-6">
               <p className="text-lg">Tome 2 will be available soon:</p>
 
               <Countdown date={new Date("2021-04-20T10:00:00")} />
               {/*<Countdown date={new Date("2021-12-20T18:00:00")} />*/}
-              <div className="flex justify-center flex-wrap mt-4 gap-2">
+              <div className="flex justify-center flex-wrap mt-6 gap-2">
                 <a
                   href={data.site.siteMetadata.salesPageUrlTome01}
                   aria-label="Buy tome 1 now"
@@ -96,9 +101,6 @@ const App = () => {
                   Pre-order tome 2 now!
                 </a>
               </div>
-              <div className="mt-4 text-lg">
-                The release date of the whole series is set to <strong>December 20 2021</strong>.
-              </div>
               <div className="mt-4 flex justify-center flex-wrap">
                 <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="text-xl" rel="noopener">
                   <span className="bg-devConceptsGray-700 hover:bg-devConceptsGray-800 hover:no-underline shadow-lg p-2 rounded-md px-4">
@@ -108,12 +110,13 @@ const App = () => {
               </div>
             </div>
           </IntroText>
-          <div className="hidden lg:block">
+          <div className="hidden lg:block mt-10 w-full flex flex-col items-center">
+            <Separator />
             <DevConceptsNewsletterForm />
           </div>
         </div>
       </div>
-      <div className="block lg:hidden w-4/5 sm:w-3/5 md:w-4/5">
+      <div className="block lg:hidden w-full flex flex-col items-center my-8">
         <DevConceptsNewsletterForm />
       </div>
       <Separator />
