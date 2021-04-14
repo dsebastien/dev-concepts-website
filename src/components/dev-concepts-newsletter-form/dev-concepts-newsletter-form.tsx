@@ -12,11 +12,11 @@ const Wrapper = styled.div.attrs({
 const DevConceptsNewsletterForm: React.FC = () => {
   return (
     <Wrapper id="devConceptsNewsletter">
-      <FontAwesomeIcon className="text-4xl" icon={faEnvelopeOpenText} />
-      <h1>
+      <FontAwesomeIcon className="text-4xl !important" icon={faEnvelopeOpenText} />
+      <h1 className="mt-4">
         <span className="w-full text-center">Join the Newsletter</span>
       </h1>
-      <p className="pb-1">
+      <p className="my-2">
         Sign-up to join the Software Crafters <i>community</i>, and receive interesting content about software development, as well as news
         about the project. Right in your inbox!
       </p>
