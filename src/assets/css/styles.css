@@ -179,9 +179,9 @@ figure.devConceptsLogoFigure:hover figcaption::before {
 /* Homepage order links */
 .homepage-order-link {
   @apply shadow-lg py-2 rounded-md flex flex-row justify-center items-center;
-  width: 300px;
+  width: 350px;
   &:hover {
-     @apply no-underline;
+    @apply no-underline;
   }
 }
 
