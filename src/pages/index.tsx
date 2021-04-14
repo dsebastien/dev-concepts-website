@@ -13,6 +13,8 @@ import {
   faServer,
   faArrowRight,
   faShoppingCart,
+  faCheck,
+  faNewspaper, faShoppingBasket,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { graphql, Link, useStaticQuery } from "gatsby";
@@ -55,68 +57,79 @@ const App = () => {
         <div className="w-full h-full sm:w-2/4 mt-8 sm:mt-0">
           <IntroText>
             <header>
-              <h1 className="text-5xl tracking-wider leading-none italic">The perfect guide towards full stack development.</h1>
-              <div className="text-xl mt-6">
+              {/*<h1 className="text-5xl tracking-wider leading-tight italic">Your guide towards full stack development.</h1>*/}
+              <div className="mt-6">
+                <h1 className="text-5xl tracking-wider leading-tight italic">
                 A{" "}
-                <Link to="/table-of-contents" className="link text-xl">
+                <Link to="/table-of-contents" className="link">
                   <b>12 volumes</b> e-book collection
                 </Link>{" "}
-                to learn about all the important concepts about Front-end, back-end, architecture, analysis/design, quality assurance, code
-                quality, IT infrastructure, security, and much more. Get a{" "}
-                <strong>crystal clear view of modern software development.</strong>
+                to understand the most important Software Development concepts:
+                </h1>
+                <ul className="mt-6 text-2xl">
+                  <li className="flex flex-row align-middle">
+                    <FontAwesomeIcon className="text-4xl mr-2 text-green-500" icon={faCheck} />Full Stack: Back-end, Front-end & APIs
+                  </li>
+                  <li className="flex flex-row align-middle">
+                    <FontAwesomeIcon className="text-4xl mr-2 text-green-500" icon={faCheck} />Coding basics, code quality
+                  </li>
+                  <li className="flex flex-row align-middle">
+                    <FontAwesomeIcon className="text-4xl mr-2 text-green-500" icon={faCheck} />Security, Operating Systems, Infrastructure
+                  </li>
+                  <li className="flex flex-row align-middle">
+                    <FontAwesomeIcon className="text-4xl mr-2 text-green-500" icon={faCheck} />Analysis, Architecture, Design
+                  </li>
+                  <li className="flex flex-row align-middle">
+                    <FontAwesomeIcon className="text-4xl mr-2 text-green-500" icon={faCheck} />Project/Product management
+                  </li>
+                </ul>
                 <p className="mt-6">
-                  <FontAwesomeIcon icon={faArrowRight} /> Check out the{" "}
-                  <b>
-                    <Link to="/table-of-contents" className="link text-xl">
-                      full table of contents
+                  <FontAwesomeIcon className="text-4xl mr-2" icon={faArrowRight} /><span className="text-2xl font-semibold">
+                    <Link to="/table-of-contents" className="link">
+                      Check out the full table of contents
                     </Link>
-                  </b>
+                </span>
                 </p>
               </div>
-              <div className="mt-6 text-lg">
+              <div className="mt-6 text-xl">
                 The release date of the whole series is set to <strong>December 20 2021</strong>.
               </div>
             </header>
             <Separator />
             <div className="mt-6">
-              <p className="text-lg">Tome 2 will be available soon:</p>
+              <FontAwesomeIcon className="text-4xl mr-2" icon={faNewspaper} />
+              <span className="text-3xl">Volume 2 is almost there!</span>
 
               <Countdown date={new Date("2021-04-20T10:00:00")} />
               {/*<Countdown date={new Date("2021-12-20T18:00:00")} />*/}
-              <div className="flex justify-center flex-wrap mt-6 gap-2">
-                <a
-                  href={data.site.siteMetadata.salesPageUrlTome01}
-                  aria-label="Buy tome 1 now"
-                  className="bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg p-2 rounded-md"
-                >
-                  <FontAwesomeIcon className="text-xl mr-2" icon={faShoppingCart} />
-                  Buy tome 1 now!
-                </a>
-                <a
-                  href={data.site.siteMetadata.salesPageUrlTome02}
-                  aria-label="Pre-order tome 2 now"
-                  className="bg-devConceptsGreen-600 hover:bg-devConceptsGreen-700 hover:no-underline shadow-lg p-2 rounded-md"
-                >
-                  <FontAwesomeIcon className="text-xl mr-2" icon={faShoppingCart} />
-                  Pre-order tome 2 now!
-                </a>
-              </div>
-              <div className="mt-4 flex justify-center flex-wrap">
-                <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="text-xl" rel="noopener">
-                  <span className="bg-devConceptsGray-700 hover:bg-devConceptsGray-800 hover:no-underline shadow-lg p-2 rounded-md px-4">
-                    I want to pre-order the series!
+              <div className="flex justify-center flex-wrap mt-6 gap-3">
+                <OutboundLink href={data.site.siteMetadata.salesPageUrlTome01} className="bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 homepage-order-link" rel="noopener" aria-label="Buy tome 1 now">
+                  <FontAwesomeIcon className="text-2xl mr-2" icon={faShoppingCart} />
+                  <span className="text-2xl">Buy tome 1 now!</span>
+                </OutboundLink>
+                <OutboundLink href={data.site.siteMetadata.salesPageUrlTome02} className="bg-devConceptsGreen-600 hover:bg-devConceptsGreen-700 homepage-order-link" rel="noopener" aria-label="Pre-order tome 2 now">
+                  <FontAwesomeIcon className="text-2xl mr-2" icon={faShoppingCart} />
+                  <span className="text-2xl">Pre-order tome 2 now!</span>
+                </OutboundLink>
+                <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="bg-devConceptsGray-700 hover:bg-devConceptsGray-800 homepage-order-link" rel="noopener">
+                  <FontAwesomeIcon className="text-2xl mr-2" icon={faShoppingBasket} />
+                  <span className="text-2xl">
+                    Pre-order a bundle!
                   </span>
                 </OutboundLink>
               </div>
             </div>
           </IntroText>
-          <div className="hidden lg:block mt-10 w-full flex flex-col items-center">
+          <div className="hidden xxl:block mt-10 w-full">
             <Separator />
-            <DevConceptsNewsletterForm />
+            <div className="flex flex-col items-center">
+              <DevConceptsNewsletterForm />
+            </div>
           </div>
         </div>
       </div>
-      <div className="block lg:hidden w-full flex flex-col items-center my-8">
+      <Separator className="block xxl:hidden" />
+      <div className="w-full flex flex-col items-center my-8 block xxl:hidden">
         <DevConceptsNewsletterForm />
       </div>
       <Separator />

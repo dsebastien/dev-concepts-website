@@ -6,7 +6,7 @@ import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Wrapper = styled.div.attrs({
-  className: "flex flex-col items-center rounded-lg bg-blue-700 shadow-lg p-4",
+  className: "w-full mx-6 sm:m-0 sm:w-4/5 lg:w-3/5 xl:w-2/5 xxl:w-3/5 flex flex-col items-center rounded-lg bg-blue-700 shadow-lg p-4",
 })``;
 
 const DevConceptsNewsletterForm: React.FC = () => {

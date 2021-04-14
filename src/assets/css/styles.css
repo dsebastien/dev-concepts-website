@@ -176,6 +176,15 @@ figure.devConceptsLogoFigure:hover figcaption::before {
   transition-delay: 0s;
 }
 
+/* Homepage order links */
+.homepage-order-link {
+  @apply shadow-lg py-2 rounded-md flex flex-row justify-center items-center;
+  width: 300px;
+  &:hover {
+     @apply no-underline;
+  }
+}
+
 /* Newsletter form */
 .newsletter-form-email-input {
   width: 300px;
