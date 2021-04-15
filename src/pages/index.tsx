@@ -67,30 +67,42 @@ const App = () => {
                   </Link>{" "}
                   to understand the most important Software Development concepts:
                 </h1>
-                <ul className="mt-6 text-2xl">
-                  <li className="flex flex-row align-middle">
-                    <FontAwesomeIcon className="text-4xl mr-2 text-green-500" icon={faCheck} />
+                <ul className="mt-6 text-2xl xxl:text-3xl">
+                  <li className="flex flex-row items-center">
+                    <span className="text-3xl xxl:text-4xl !important">
+                      <FontAwesomeIcon className="mr-2 text-green-500" icon={faCheck} />
+                    </span>
                     Full Stack: Back-end, Front-end & APIs
                   </li>
-                  <li className="flex flex-row align-middle">
-                    <FontAwesomeIcon className="text-4xl mr-2 text-green-500" icon={faCheck} />
+                  <li className="flex flex-row items-center">
+                    <span className="text-3xl xxl:text-4xl !important">
+                      <FontAwesomeIcon className="mr-2 text-green-500" icon={faCheck} />
+                    </span>
                     Coding basics, code quality
                   </li>
-                  <li className="flex flex-row align-middle">
-                    <FontAwesomeIcon className="text-4xl mr-2 text-green-500" icon={faCheck} />
+                  <li className="flex flex-row items-center">
+                    <span className="text-3xl xxl:text-4xl !important">
+                      <FontAwesomeIcon className="mr-2 text-green-500" icon={faCheck} />
+                    </span>
                     Security, Operating Systems, Infrastructure
                   </li>
-                  <li className="flex flex-row align-middle">
-                    <FontAwesomeIcon className="text-4xl mr-2 text-green-500" icon={faCheck} />
+                  <li className="flex flex-row items-center">
+                    <span className="text-3xl xxl:text-4xl !important">
+                      <FontAwesomeIcon className="mr-2 text-green-500" icon={faCheck} />
+                    </span>
                     Analysis, Architecture, Design
                   </li>
-                  <li className="flex flex-row align-middle">
-                    <FontAwesomeIcon className="text-4xl mr-2 text-green-500" icon={faCheck} />
+                  <li className="flex flex-row items-center">
+                    <span className="text-3xl xxl:text-4xl !important">
+                      <FontAwesomeIcon className="mr-2 text-green-500" icon={faCheck} />
+                    </span>
                     Project/Product management
                   </li>
                 </ul>
                 <p className="mt-6">
-                  <FontAwesomeIcon className="text-4xl mr-2" icon={faArrowRight} />
+                  <span className="text-3xl xxl:text-4xl !important">
+                    <FontAwesomeIcon className="mr-2" icon={faArrowRight} />
+                  </span>
                   <span className="text-2xl font-semibold">
                     <Link to="/table-of-contents" className="link">
                       Check out the full table of contents
@@ -104,11 +116,14 @@ const App = () => {
             </header>
             <Separator />
             <div className="mt-6">
-              <FontAwesomeIcon className="text-4xl mr-2" icon={faNewspaper} />
+              <span className="text-3xl !important">
+                <FontAwesomeIcon className="mr-2" icon={faNewspaper} />
+              </span>
               <span className="text-3xl">Volume 2 is almost there!</span>
 
               <Countdown date={new Date("2021-04-20T10:00:00")} />
               {/*<Countdown date={new Date("2021-12-20T18:00:00")} />*/}
+
               <div className="flex justify-center flex-wrap mt-6 gap-3">
                 <OutboundLink
                   href={data.site.siteMetadata.salesPageUrlVolume01}
