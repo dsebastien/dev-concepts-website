@@ -121,7 +121,7 @@ const App = () => {
               </span>
               <span className="text-3xl">Volume 2 is almost there!</span>
 
-              <Countdown date={new Date("2021-04-20T10:00:00")} />
+              <Countdown date={new Date("2021-04-27T10:00:00")} />
               {/*<Countdown date={new Date("2021-12-20T18:00:00")} />*/}
 
               <div className="flex justify-center flex-wrap mt-6 gap-3">
