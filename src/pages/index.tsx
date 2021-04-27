@@ -4,7 +4,6 @@ import { SEO } from "../components/seo";
 import { DevConceptsCover } from "../components/dev-concepts-cover/dev-concepts-cover";
 import styled from "styled-components";
 import { DevConceptsNewsletterForm } from "../components/dev-concepts-newsletter-form";
-import { Countdown } from "../components/countdown";
 import {
   faQuoteLeft,
   faQuoteRight,
@@ -119,9 +118,9 @@ const App = () => {
               <span className="text-3xl !important">
                 <FontAwesomeIcon className="mr-2" icon={faNewspaper} />
               </span>
-              <span className="text-3xl">Volume 2 is almost there!</span>
+              <span className="text-3xl">Volume 2 is now available!</span>
 
-              <Countdown date={new Date("2021-04-27T10:00:00")} />
+              {/*<Countdown date={new Date("2021-04-27T10:00:00")} />*/}
               {/*<Countdown date={new Date("2021-12-20T18:00:00")} />*/}
 
               <div className="flex justify-center flex-wrap mt-6 gap-3">
@@ -141,7 +140,7 @@ const App = () => {
                   aria-label="Pre-order volume 2 now"
                 >
                   <FontAwesomeIcon className="text-2xl mr-2" icon={faShoppingCart} />
-                  <span className="text-2xl">Pre-order volume 2 now!</span>
+                  <span className="text-2xl">Buy volume 2 now!</span>
                 </OutboundLink>
                 <OutboundLink
                   href={data.site.siteMetadata.salesPageUrl}

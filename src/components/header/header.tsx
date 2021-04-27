@@ -56,10 +56,17 @@ const Header: React.FC = () => {
         {/*  {data.site.siteMetadata.title}*/}
         {/*</Link>*/}
       </h1>
+      <OutboundLink
+        href={data.site.siteMetadata.salesPageUrl}
+        title="Pre-order the collection now!"
+        aria-label="Pre-order the collection now!"
+        rel="noopener"
+      >
       <div className="hidden lg:block">
         <Code>{COMMAND}</Code>
       </div>
       <Tagline>{data.site.siteMetadata.tagline}</Tagline>
+      </OutboundLink>
     </StyledHeader>
   );
 };

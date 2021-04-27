@@ -539,7 +539,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                     className="bg-devConceptsGreen-600 hover:bg-devConceptsGreen-700 hover:no-underline shadow-lg p-2 rounded-md"
                   >
                     <FontAwesomeIcon className="text-xl mr-2" icon={faShoppingCart} />
-                    Pre-order volume 2 now!
+                    Buy volume 2 now!
                   </a>
                 </div>
               </div>
