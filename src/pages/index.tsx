@@ -64,7 +64,7 @@ const App = () => {
                   <Link to="/table-of-contents" className="link">
                     <b>12 volumes</b> e-book collection
                   </Link>{" "}
-                  to understand the most important Software Development concepts:
+                  explaining a gazillion of Software Development concepts:
                 </h1>
                 <ul className="mt-6 text-2xl xxl:text-3xl">
                   <li className="flex flex-row items-center">
