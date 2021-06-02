@@ -174,52 +174,46 @@ const App = () => {
       <Separator />
       <div className="w-full min-w-full flex flex-col md:flex-row justify-start md:justify-between">
         <div className="w-full p-2 my-2 md:my-0 flex flex-col object-center text-center justify-start border-devConceptsGray-200">
+          <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex="-1">
           <div className="giant-icon">
-            <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex="-1">
               <FontAwesomeIcon className="text-devConceptsGreen-500" icon={faLayerGroup} />
-            </OutboundLink>
           </div>
           <div className="">
-            <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex="-1">
               <h1 className="text-3xl">Full Stack</h1>
-              <span className="text-xl">
+            <span class="text-xl">
                 Full Stack developers are great to have on a team because they are able to understand and to be productive in both back-end
                 and front-end development. This collection of e-books will tell you about <i>everything</i> that matters to become one.
               </span>
-            </OutboundLink>
           </div>
+          </OutboundLink>
         </div>
         <div className="w-full p-2 my-2 md:my-0 flex flex-col object-center text-center md:mx-5 justify-start border-devConceptsGray-200">
+          <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex="-1">
           <div className="giant-icon">
-            <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex="-1">
               <FontAwesomeIcon className="text-devConceptsPink-450" icon={faSitemap} />
-            </OutboundLink>
           </div>
           <div className="">
-            <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex="-1">
               <h1 className="text-3xl">A clear map</h1>
               <span className="text-xl">
                 The Dev Concepts series will help you to create a clear mental map of everything that gravitates around software
                 development.
               </span>
-            </OutboundLink>
           </div>
+          </OutboundLink>
         </div>
         <div className="w-full p-2 my-2 md:my-0 flex flex-col object-center text-center justify-start border-devConceptsGray-200">
+          <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex="-1">
           <div className="giant-icon">
-            <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex="-1">
               <FontAwesomeIcon className="text-devConceptsOrange-550" icon={faServer} />
-            </OutboundLink>
           </div>
           <div className="">
-            <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex="-1">
               <h1 className="text-3xl">DevSecOps</h1>
               <span className="text-xl">
                 The best software developers understand that code is only part of the story. This series of books will teach you the bare
                 minimum you need to know about IT security, IT infrastructure and IT operations.
               </span>
-            </OutboundLink>
           </div>
+          </OutboundLink>
         </div>
       </div>
       <Separator />

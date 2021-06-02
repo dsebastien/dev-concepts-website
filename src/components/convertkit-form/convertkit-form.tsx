@@ -100,17 +100,19 @@ const ConvertKitForm: React.FC = () => {
         newsletterSubscriptionFormStatus === NewsletterSubscriptionFormStatus.ERROR) && (
         <form onSubmit={onSubmit}>
           <label className="block">
-            <span className="">
-              Email&nbsp;<span className="text-red-500">*</span>
-            </span>
-            <input
-              className="form-input newsletter-form-email-input mt-1 block text-gray-700"
-              type="email"
-              name={formDataPropertyNames("email")}
-              ref={register({ required: true })}
-              placeholder="Email Address"
-              aria-label="Your email"
-            />
+            <fieldset>
+              <legend>
+                Email&nbsp;<span className="text-red-500">*</span>
+              </legend>
+              <input
+                className="form-input newsletter-form-email-input mt-1 block text-gray-700"
+                type="email"
+                name={formDataPropertyNames("email")}
+                ref={register({ required: true })}
+                placeholder="Email Address"
+                aria-label="Your email"
+              />
+            </fieldset>
             {errors.email && (
               <div className="mt-2">
                 <FontAwesomeIcon className="text-devConceptsRed-400" icon={faExclamationTriangle} />

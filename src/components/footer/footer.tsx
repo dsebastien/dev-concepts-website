@@ -50,7 +50,6 @@ const Footer: React.FC = () => {
             href={metadata.develoPassionSiteUrl}
             target="_blank"
             rel="noreferrer noopener"
-            title="DeveloPassion"
             aria-label="DeveloPassion"
           >
             DeveloPassion
