@@ -173,7 +173,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   aria-label="Volume 1: Software craft"
                   className="no-underline"
                 >
-                  <div className="h-full rounded bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                  <div className="h-full rounded bg-devConceptsBlue-500 hover:bg-devConceptsBlue-400 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">01</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
                       <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
@@ -192,7 +192,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   aria-label="Volume 2: What clients need"
                   className="no-underline"
                 >
-                  <div className="h-full rounded bg-devConceptsGreen-600 hover:bg-devConceptsGreen-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                  <div className="h-full rounded bg-devConceptsGreen-700 hover:bg-devConceptsGreen-600 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">02</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
                       <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
@@ -211,7 +211,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   aria-label="Volume 3: Architecture"
                   className="no-underline"
                 >
-                  <div className="h-full rounded bg-devConceptsTeal-700 hover:bg-devConceptsTeal-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                  <div className="h-full rounded bg-devConceptsTeal-800 hover:bg-devConceptsTeal-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">03</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
                       <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
@@ -230,7 +230,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   aria-label="Volume 4: Software design"
                   className="no-underline"
                 >
-                  <div className="h-full rounded bg-devConceptsPink-500 hover:bg-devConceptsPink-600 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                  <div className="h-full rounded bg-devConceptsPink-600 hover:bg-devConceptsPink-500 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">04</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
                       <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
@@ -253,7 +253,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   aria-label="Volume 5: Computer architecture and Operating systems basics"
                   className="no-underline"
                 >
-                  <div className="h-full rounded bg-devConceptsOrange-500 hover:bg-devConceptsOrange-600 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                  <div className="h-full rounded bg-devConceptsOrange-700 hover:bg-devConceptsOrange-600 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">05</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
                       <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
@@ -272,7 +272,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   aria-label="Volume 6: Coding basics"
                   className="no-underline"
                 >
-                  <div className="h-full rounded bg-devConceptsIndigo-700 hover:bg-devConceptsIndigo-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                  <div className="h-full rounded bg-devConceptsIndigo-800 hover:bg-devConceptsIndigo-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">06</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
                       <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
@@ -291,7 +291,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   aria-label="Volume 7: General concerns"
                   className="no-underline"
                 >
-                  <div className="h-full rounded bg-devConceptsCerise-600 hover:bg-devConceptsCerise-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                  <div className="h-full rounded bg-devConceptsCerise-700 hover:bg-devConceptsCerise-600 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">07</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
                       <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
@@ -308,7 +308,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   aria-label="Volume 8: Back-end development"
                   className="no-underline"
                 >
-                  <div className="h-full rounded bg-devConceptsOrange-800 hover:bg-devConceptsOrange-900 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                  <div className="h-full rounded bg-devConceptsOrange-900 hover:bg-devConceptsOrange-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">08</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
                       <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
@@ -325,7 +325,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   aria-label="Volume 9: Front-end development"
                   className="no-underline"
                 >
-                  <div className="h-full rounded bg-devConceptsTeal-700 hover:bg-devConceptsTeal-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                  <div className="h-full rounded bg-devConceptsTeal-800 hover:bg-devConceptsTeal-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">09</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
                       <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
@@ -344,7 +344,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   aria-label="Volume 10: IT Infrastructure"
                   className="no-underline"
                 >
-                  <div className="h-full rounded bg-devConceptsPurple-600 hover:bg-devConceptsPurple-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                  <div className="h-full rounded bg-devConceptsPurple-700 hover:bg-devConceptsPurple-600 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">10</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
                       <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
@@ -361,7 +361,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   aria-label="Volume 11: Security"
                   className="no-underline"
                 >
-                  <div className="h-full rounded bg-devConceptsAmber-500 hover:bg-devConceptsAmber-600 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                  <div className="h-full rounded bg-devConceptsAmber-600 hover:bg-devConceptsAmber-500 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">11</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
                       <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
@@ -384,7 +384,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   aria-label="Volume 12: Product/Project management and Software development approaches"
                   className="no-underline"
                 >
-                  <div className="h-full rounded bg-devConceptsGray-700 hover:bg-devConceptsGray-800 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
+                  <div className="h-full rounded bg-devConceptsGray-800 hover:bg-devConceptsGray-700 hover:no-underline shadow-lg flex flex-row object-center py-2 px-2">
                     <div className="text-xl flex items-center">12</div>
                     <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
                       <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
@@ -446,7 +446,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   <a
                     href={volume01SalesPageUrl}
                     aria-label="Buy volume 1 now"
-                    className="bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 hover:no-underline shadow-lg p-2 rounded-md"
+                    className="bg-devConceptsBlue-500 hover:bg-devConceptsBlue-400 hover:no-underline shadow-lg p-2 rounded-md"
                   >
                     <FontAwesomeIcon className="text-xl mr-2" icon={faShoppingCart} />
                     Buy volume 1 now!
@@ -476,7 +476,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 background, strengths and weaknesses, there are things to know, tips and tricks that will guide you on the path towards
                 becoming a software crafter.
               </p>
-              <h4 className="mt-2">In this volume:</h4>
+              <h3 className="mt-2">In this volume:</h3>
               <ol>
                 <li>Introduction</li>
                 <li>What is software development</li>
@@ -536,7 +536,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   <a
                     href={volume02SalesPageUrl}
                     aria-label="Buy volume 2 now"
-                    className="bg-devConceptsGreen-600 hover:bg-devConceptsGreen-700 hover:no-underline shadow-lg p-2 rounded-md"
+                    className="bg-devConceptsGreen-700 hover:bg-devConceptsGreen-600 hover:no-underline shadow-lg p-2 rounded-md"
                   >
                     <FontAwesomeIcon className="text-xl mr-2" icon={faShoppingCart} />
                     Buy volume 2 now!
@@ -573,7 +573,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   wrong problems.
                 </span>
               </p>
-              <h4 className="mt-2">In this volume:</h4>
+              <h3 className="mt-2">In this volume:</h3>
               <ol>
                 <li>Introduction</li>
                 <li>What do clients need?</li>
@@ -667,7 +667,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 know what needs to be done to avoid disasters. Here, we'll explore some key ideas about IT architecture in general and
                 software architecture in particular.
               </p>
-              <h4 className="mt-2">In this volume:</h4>
+              <h3 className="mt-2">In this volume:</h3>
               <ol>
                 <li>
                   Introduction
@@ -750,7 +750,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 explore software design, explain why it is critical for mental health (seriously!) and key concepts that you’ll use on a
                 daily basis during your software crafter’s career.
               </p>
-              <h4 className="mt-2">In this volume:</h4>
+              <h3 className="mt-2">In this volume:</h3>
               <ol>
                 <li>
                   Technical design
@@ -840,7 +840,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 If you want to learn about CPUs, memory, file systems, files, processes, scheduling and whatnot, then this volume is for
                 you.
               </p>
-              <h4 className="mt-2">In this volume:</h4>
+              <h3 className="mt-2">In this volume:</h3>
               <ol>
                 <li>Introduction</li>
                 <li>
@@ -903,7 +903,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </span>{" "}
                 and use literally all the time.
               </p>
-              <h4 className="mt-2">In this volume:</h4>
+              <h3 className="mt-2">In this volume:</h3>
               <ol>
                 <li>Introduction</li>
                 <li>
@@ -1040,7 +1040,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 you’ll make sure to always pay attention to those and to convince everyone else to do the same; even if it means going
                 against some pointy-haired manager ;-)
               </p>
-              <h4 className="mt-2">In this volume:</h4>
+              <h3 className="mt-2">In this volume:</h3>
               <ol>
                 <li>Error handling</li>
                 <li>
@@ -1147,7 +1147,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 developers have to focus on very different aspects of IT systems, compared to front-end developers. Software crafters need
                 to understand those differences.
               </p>
-              <h4 className="mt-2">In this volume:</h4>
+              <h3 className="mt-2">In this volume:</h3>
               <ol>
                 <li>What back-end developers focus on and why</li>
                 <li>
@@ -1219,7 +1219,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 compared to back-end developers. Software crafters must not necessarily be artists, but they still have to pay attention to
                 the aesthetics… among many other things.
               </p>
-              <h4 className="mt-2">In this volume:</h4>
+              <h3 className="mt-2">In this volume:</h3>
               <ol>
                 <li>What front-end developers focus on and why</li>
                 <li>Usual layers and responsibilities</li>
@@ -1341,7 +1341,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 end-to-end solutions. This volume explains some important concepts about IT infrastructure. All DevSecOps engineers (and
                 thus software crafters) should be aware of at least a part of those ideas.
               </p>
-              <h4 className="mt-2">In this volume:</h4>
+              <h3 className="mt-2">In this volume:</h3>
               <ol>
                 <li>What IT infrastructure focuses on and why</li>
                 <li>
@@ -1446,7 +1446,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 breaches and stolen data. Together, we’ll learn about the most important IT security concepts; knowledge that will expand
                 your understanding of this complex, but incredibly important field of IT:
               </p>
-              <h4 className="mt-2">In this volume:</h4>
+              <h3 className="mt-2">In this volume:</h3>
               <ol>
                 <li>Attackers</li>
                 <li>
@@ -1616,7 +1616,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 How are products and their features defined, prioritized and organized? Dive into this volume to learn about technical
                 product management, product backlogs, product roadmaps as well as how to create, structure and maintain those.
               </p>
-              <h4 className="mt-2">In this volume:</h4>
+              <h3 className="mt-2">In this volume:</h3>
               <ol>
                 <li>Project roles</li>
                 <li>
