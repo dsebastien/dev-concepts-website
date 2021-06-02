@@ -64,7 +64,7 @@ const App = () => {
                   <Link to="/table-of-contents" className="link">
                     <b>12 volumes</b> e-book collection
                   </Link>{" "}
-                  explaining a gazillion of Software Development concepts:
+                  explaining every concept around Software Development:
                 </h1>
                 <ul className="mt-6 text-2xl xxl:text-3xl">
                   <li className="flex flex-row items-center">
@@ -175,12 +175,12 @@ const App = () => {
       <div className="w-full min-w-full flex flex-col md:flex-row justify-start md:justify-between">
         <div className="w-full p-2 my-2 md:my-0 flex flex-col object-center text-center justify-start border-devConceptsGray-200">
           <div className="giant-icon">
-            <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener">
+            <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex="-1">
               <FontAwesomeIcon className="text-devConceptsGreen-500" icon={faLayerGroup} />
             </OutboundLink>
           </div>
           <div className="">
-            <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener">
+            <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex="-1">
               <h1 className="text-3xl">Full Stack</h1>
               <span className="text-xl">
                 Full Stack developers are great to have on a team because they are able to understand and to be productive in both back-end
@@ -191,12 +191,12 @@ const App = () => {
         </div>
         <div className="w-full p-2 my-2 md:my-0 flex flex-col object-center text-center md:mx-5 justify-start border-devConceptsGray-200">
           <div className="giant-icon">
-            <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener">
+            <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex="-1">
               <FontAwesomeIcon className="text-devConceptsPink-450" icon={faSitemap} />
             </OutboundLink>
           </div>
           <div className="">
-            <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener">
+            <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex="-1">
               <h1 className="text-3xl">A clear map</h1>
               <span className="text-xl">
                 The Dev Concepts series will help you to create a clear mental map of everything that gravitates around software
@@ -207,12 +207,12 @@ const App = () => {
         </div>
         <div className="w-full p-2 my-2 md:my-0 flex flex-col object-center text-center justify-start border-devConceptsGray-200">
           <div className="giant-icon">
-            <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener">
+            <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex="-1">
               <FontAwesomeIcon className="text-devConceptsOrange-550" icon={faServer} />
             </OutboundLink>
           </div>
           <div className="">
-            <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener">
+            <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex="-1">
               <h1 className="text-3xl">DevSecOps</h1>
               <span className="text-xl">
                 The best software developers understand that code is only part of the story. This series of books will teach you the bare

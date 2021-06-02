@@ -48,13 +48,10 @@ const Header: React.FC = () => {
           title="Pre-order the collection now!"
           aria-label="Pre-order the collection now!"
           rel="noopener"
+          tabIndex="-1"
         >
           {data.site.siteMetadata.title}
         </OutboundLink>
-        {/* Alternative: internal link first, but it only adds an uninteresting flash */}
-        {/*<Link to="/pre-order" title="Pre-order the collection now!" aria-label="Pre-order the collection now!">*/}
-        {/*  {data.site.siteMetadata.title}*/}
-        {/*</Link>*/}
       </h1>
       <OutboundLink
         href={data.site.siteMetadata.salesPageUrl}
