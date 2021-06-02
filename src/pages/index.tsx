@@ -64,7 +64,7 @@ const App = () => {
                   <Link to="/table-of-contents" className="link">
                     <b>12 volumes</b> e-book collection
                   </Link>{" "}
-                  explaining every concept around Software Development:
+                  explaining every concept of Software Development:
                 </h1>
                 <ul className="mt-6 text-2xl xxl:text-3xl">
                   <li className="flex flex-row items-center">
@@ -126,7 +126,7 @@ const App = () => {
               <div className="flex justify-center flex-wrap mt-6 gap-3">
                 <OutboundLink
                   href={data.site.siteMetadata.salesPageUrlVolume01}
-                  className="bg-devConceptsBlue-400 hover:bg-devConceptsBlue-500 homepage-order-link"
+                  className="bg-devConceptsBlue-500 hover:bg-devConceptsBlue-400 homepage-order-link"
                   rel="noopener"
                   aria-label="Buy volume 1 now"
                 >
@@ -135,7 +135,7 @@ const App = () => {
                 </OutboundLink>
                 <OutboundLink
                   href={data.site.siteMetadata.salesPageUrlVolume02}
-                  className="bg-devConceptsGreen-600 hover:bg-devConceptsGreen-700 homepage-order-link"
+                  className="bg-devConceptsGreen-700 hover:bg-devConceptsGreen-600 homepage-order-link"
                   rel="noopener"
                   aria-label="Pre-order volume 2 now"
                 >
@@ -144,7 +144,7 @@ const App = () => {
                 </OutboundLink>
                 <OutboundLink
                   href={data.site.siteMetadata.salesPageUrl}
-                  className="bg-devConceptsGray-700 hover:bg-devConceptsGray-800 homepage-order-link"
+                  className="bg-devConceptsGray-800 hover:bg-devConceptsGray-700 homepage-order-link"
                   rel="noopener"
                 >
                   <FontAwesomeIcon className="text-2xl mr-2" icon={faShoppingBasket} />

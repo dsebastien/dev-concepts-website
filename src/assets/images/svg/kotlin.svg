@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <defs>
-        <linearGradient x1="100%" y1="10.6090779%" x2="31.318239%" y2="50%" id="linearGradient-1">
+        <linearGradient x1="100%" y1="10.6090779%" x2="31.318239%" y2="50%" id="firstGradientKotlin">
             <stop stop-color="#945DFF" offset="0%" />
             <stop stop-color="#00AFFF" offset="100%" />
         </linearGradient>
-        <linearGradient x1="75.2887028%" y1="50%" x2="50%" y2="100%" id="linearGradient-2">
+        <linearGradient x1="75.2887028%" y1="50%" x2="50%" y2="100%" id="secondGradientKotlin">
             <stop stop-color="#945DFF" offset="0%" />
             <stop stop-color="#00AFFF" offset="100%" />
         </linearGradient>
-        <linearGradient x1="72.5089109%" y1="0%" x2="0%" y2="74.7439451%" id="linearGradient-3">
+        <linearGradient x1="72.5089109%" y1="0%" x2="0%" y2="74.7439451%" id="thirdGradientKotlin">
             <stop stop-color="#FF8900" offset="0%" />
             <stop stop-color="#C757BC" offset="100%" />
         </linearGradient>
@@ -18,9 +18,9 @@
         <g stroke-width="24">
             <g transform="translate(11.000000, 14.000000)">
                 <g transform="translate(3.000000, 0.000000)">
-                    <polygon id="Shape" stroke="url(#linearGradient-1)" points="0 0 125.518 0 0 131.998" />
-                    <polygon id="Shape" stroke="url(#linearGradient-2)" points="0 250 125.338 124.444 250 250" />
-                    <polygon id="Shape" stroke="url(#linearGradient-3)" points="125.518 0 0 131.998 0 250 125.338 124.442 250 0" />
+                    <polygon id="Shape" stroke="url(#firstGradientKotlin)" points="0 0 125.518 0 0 131.998" />
+                    <polygon id="Shape" stroke="url(#secondGradientKotlin)" points="0 250 125.338 124.444 250 250" />
+                    <polygon id="Shape" stroke="url(#thirdGradientKotlin)" points="125.518 0 0 131.998 0 250 125.338 124.442 250 0" />
                 </g>
             </g>
         </g>

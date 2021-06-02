@@ -17,8 +17,7 @@ body {
   letter-spacing: -0.1px;
   /* Reference for line-height: https://dev.to/lampewebdev/css-line-height-jjp */
   line-height: 1.5;
-
-  background: linear-gradient(90deg, #263545 0%, #4a6887 100%); /* blue-700 to blue-500 */
+  background: linear-gradient(90deg, #263545 0%, #4a6887); /* blue-700 to blue-500 */
   /*background-image: url('../images/bg-hexagon.jpg');*/
 }
 

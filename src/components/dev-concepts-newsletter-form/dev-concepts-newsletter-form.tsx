@@ -11,7 +11,7 @@ const Wrapper = styled.div.attrs({
 
 const DevConceptsNewsletterForm: React.FC = () => {
   return (
-    <Wrapper id="devConceptsNewsletter">
+    <Wrapper>
       <FontAwesomeIcon className="text-4xl !important" icon={faEnvelopeOpenText} />
       <h1 className="mt-4">
         <span className="w-full text-center">Join the Newsletter</span>

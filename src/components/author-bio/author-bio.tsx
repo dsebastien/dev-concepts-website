@@ -127,28 +127,28 @@ const AuthorBioText: React.FC<Props> = ({ data }: Props) => {
         </p>
         <div className="my-4 grid grid-cols-4 gap-4 place-items-center">
           <OutboundLink className="w-8 h-8" href="https://developer.mozilla.org/nl/docs/Web/JavaScript" rel="noopener" title="JavaScript">
-            <LogoJavaScript className="w-8 h-8" aria-label="JavaScript" />
+            <LogoJavaScript className="w-8 h-8" role="button" aria-label="JavaScript" />
           </OutboundLink>
           <OutboundLink className="w-8 h-8" href="https://www.typescriptlang.org/" rel="noopener" title="TypeScript">
-            <LogoTypeScript className="w-8 h-8" aria-label="TypeScript" />
+            <LogoTypeScript className="w-8 h-8" role="button" aria-label="TypeScript" />
           </OutboundLink>
           <OutboundLink className="w-8 h-8" href="https://kotlinlang.org/" rel="noopener" title="Kotlin">
-            <LogoKotlin className="w-8 h-8" aria-label="Kotlin" />
+            <LogoKotlin className="w-8 h-8" role="button" aria-label="Kotlin" />
           </OutboundLink>
           <OutboundLink className="w-8 h-8" href="https://www.java.com" rel="noopener" title="Java">
-            <LogoJava className="w-8 h-8" aria-label="Java" />
+            <LogoJava className="w-8 h-8" role="button" aria-label="Java" />
           </OutboundLink>
           <OutboundLink className="w-8 h-8" href="https://www.python.org/" rel="noopener" title="Python">
-            <LogoPython className="w-8 h-8" aria-label="Python" />
+            <LogoPython className="w-8 h-8" role="button" aria-label="Python" />
           </OutboundLink>
           <OutboundLink className="w-8 h-8" href="https://en.wikipedia.org/wiki/C_(programming_language)" rel="noopener" title="C">
-            <LogoC className="w-8 h-8" aria-label="C" />
+            <LogoC className="w-8 h-8" role="button" aria-label="C" />
           </OutboundLink>
           <OutboundLink className="w-8 h-8" href="https://docs.microsoft.com/en-us/dotnet/csharp/" rel="noopener" title="C#">
-            <LogoCSharp className="w-8 h-8" aria-label="C#" />
+            <LogoCSharp className="w-8 h-8" role="button" aria-label="C#" />
           </OutboundLink>
           <OutboundLink className="w-8 h-8" href="https://www.gnu.org/software/bash/" rel="noopener" title="Bash">
-            <LogoBash className="w-8 h-8" aria-label="Bash" />
+            <LogoBash className="w-8 h-8" role="button" aria-label="Bash" />
           </OutboundLink>
         </div>
         <p className="text-lg">
