@@ -77,7 +77,7 @@ const App = () => {
                     <span className="text-3xl xxl:text-4xl !important">
                       <FontAwesomeIcon className="mr-2 text-green-500" icon={faCheck} />
                     </span>
-                    Coding basics, code quality
+                    Coding basics, code quality & maintenance
                   </li>
                   <li className="flex flex-row items-center">
                     <span className="text-3xl xxl:text-4xl !important">
@@ -95,7 +95,7 @@ const App = () => {
                     <span className="text-3xl xxl:text-4xl !important">
                       <FontAwesomeIcon className="mr-2 text-green-500" icon={faCheck} />
                     </span>
-                    Project/Product management
+                    Project/Product/Team management
                   </li>
                 </ul>
                 <p className="mt-6">
