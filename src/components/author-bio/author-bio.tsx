@@ -157,7 +157,7 @@ const AuthorBioText: React.FC<Props> = ({ data }: Props) => {
           <OutboundLink className="link" href={data.site.siteMetadata.social.tsBookLink} rel="noopener">
             a book about the TypeScript programming language
           </OutboundLink>
-          , led development teams, managed large software developement & infrastructure projects.
+          , led development teams, managed large software development & infrastructure projects.
         </p>
         <br />
         <p className="text-lg">
