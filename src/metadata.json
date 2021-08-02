@@ -8,12 +8,13 @@
   "keywords": ["book", ",software", "development", "software development", "concepts", "ebook", "programming", "coding"],
   "image": "src/assets/images/developassion-logo.png",
   "contact": {
-    "mail": "contact@developassion.be"
+    "mail": "sebastien@developassion.be"
   },
   "siteSources": "https://github.com/DeveloPassion/dev-concepts-website",
   "salesPageUrl": "https://gumroad.com/l/DevConcepts",
   "salesPageUrlVolume01": "https://gum.co/DevConcepts-Part-01-SoftwareCraft",
   "salesPageUrlVolume02": "https://gum.co/DevConcepts-Tome-02-WhatClientsNeed",
+  "salesPageUrlVolume03": "https://gum.co/DevConcepts-Volume-03-Architecture",
   "social": {
     "blogSebastien": "https://www.dsebastien.net",
     "facebook": "https://fb.me/DeveloPassion",

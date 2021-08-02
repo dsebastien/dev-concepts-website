@@ -33,6 +33,7 @@ const App = () => {
         salesPageUrl: string;
         salesPageUrlVolume01: string;
         salesPageUrlVolume02: string;
+        salesPageUrlVolume03: string;
       };
     };
   } = useStaticQuery(graphql`
@@ -42,6 +43,7 @@ const App = () => {
           salesPageUrl
           salesPageUrlVolume01
           salesPageUrlVolume02
+          salesPageUrlVolume03
         }
       }
     }
@@ -118,7 +120,7 @@ const App = () => {
               <span className="text-3xl !important">
                 <FontAwesomeIcon className="mr-2" icon={faNewspaper} />
               </span>
-              <span className="text-3xl">Volume 2 is now available!</span>
+              <span className="text-3xl">Volume 3 is now available for pre-order!</span>
 
               {/*<Countdown date={new Date("2021-04-27T10:00:00")} />*/}
               {/*<Countdown date={new Date("2021-12-20T18:00:00")} />*/}
@@ -137,10 +139,19 @@ const App = () => {
                   href={data.site.siteMetadata.salesPageUrlVolume02}
                   className="bg-devConceptsGreen-700 hover:bg-devConceptsGreen-600 homepage-order-link"
                   rel="noopener"
-                  aria-label="Pre-order volume 2 now"
+                  aria-label="Buy volume 2 now"
                 >
                   <FontAwesomeIcon className="text-2xl mr-2" icon={faShoppingCart} />
                   <span className="text-2xl">Buy volume 2 now!</span>
+                </OutboundLink>
+                <OutboundLink
+                  href={data.site.siteMetadata.salesPageUrlVolume03}
+                  className="bg-devConceptsTeal-800 hover:bg-devConceptsTeal-700 homepage-order-link"
+                  rel="noopener"
+                  aria-label="Pre-order volume 3 now"
+                >
+                  <FontAwesomeIcon className="text-2xl mr-2" icon={faShoppingCart} />
+                  <span className="text-2xl">Pre-order volume 3 now!</span>
                 </OutboundLink>
                 <OutboundLink
                   href={data.site.siteMetadata.salesPageUrl}

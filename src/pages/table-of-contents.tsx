@@ -32,6 +32,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
           salesPageUrl
           salesPageUrlVolume01
           salesPageUrlVolume02
+          salesPageUrlVolume03
         }
       }
       volume01CoverImage: file(relativePath: { eq: "DevConceptsVolume01SoftwareCraftCover3D.png" }) {
@@ -147,6 +148,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
   const volume12CoverImage = data.volume12CoverImage.childImageSharp.fluid;
   const volume01SalesPageUrl = data.site.siteMetadata.salesPageUrlVolume01;
   const volume02SalesPageUrl = data.site.siteMetadata.salesPageUrlVolume02;
+  const volume03SalesPageUrl = data.site.siteMetadata.salesPageUrlVolume03;
 
   return (
     <Layout>
@@ -644,12 +646,34 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   </span>
                 </h2>
               </a>
-              <p>
-                Estimated page count:&nbsp;<span className="font-bold">70</span>
-              </p>
-              <div className="opacity-75 hover:opacity-100">
-                <Img loading="eager" fluid={volume03CoverImage} alt="Volume 3: Architecture" className="hover:opacity-10" />
+
+              <div className="sm:flex sm:justify-between">
+                <div className="items-center flex">
+                  Page count:&nbsp;<span className="font-bold">120</span>
+                </div>
+                <div className="mt-4 flex justify-center sm:mt-0">
+                  <a
+                    href={volume02SalesPageUrl}
+                    aria-label="Pre-order volume 3 now"
+                    className="bg-devConceptsTeal-800 hover:bg-devConceptsTeal-700 hover:no-underline shadow-lg p-2 rounded-md"
+                  >
+                    <FontAwesomeIcon className="text-xl mr-2" icon={faShoppingCart} />
+                    Pre-order volume 3 now!
+                  </a>
+                </div>
               </div>
+              <div className="opacity-75 hover:opacity-100">
+                <OutboundLink
+                  href={volume03SalesPageUrl}
+                  rel="noopener"
+                  aria-label="Pre-order volume 2 now!"
+                  title="Pre-order volume 3 now!"
+                  className="pointer"
+                >
+                  <Img loading="eager" fluid={volume03CoverImage} alt="Volume 3: Architecture" className="hover:opacity-10" />
+                </OutboundLink>
+              </div>
+
               <br />
               <p>
                 Once you have accumulated enough understanding about the requirements, you need to create IT solutions that efficiently
@@ -669,31 +693,35 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
               </p>
               <h3 className="mt-2">In this volume:</h3>
               <ol>
-                <li>
-                  Introduction
-                  <ol>
-                    <li>Hype cycle</li>
-                  </ol>
-                </li>
+                <li>IT Architecture Overview</li>
+                <li>Enterprise Applications</li>
+                <li>The Hype Cycle</li>
+                <li>Enterprise Architecture (EA)</li>
                 <li>Solution architecture</li>
                 <li>
                   Software architecture
                   <ol>
+                    <li>The role of a software architect</li>
+                    <li>Overview</li>
+                    <li>A basic example</li>
+                    <li>Agile and Minimum Viable Architecture</li>
                     <li>
-                      Architectural/high level design patterns
+                      Patterns
                       <ol>
-                        <li>Multi-tier architectures</li>
-                        <li>Microservices vs monoliths</li>
-                        <li>Cloud-native apps</li>
+                        <li>Modular and multi-tier architectures</li>
+                        <li>Layered</li>
+                        <li>Monoliths</li>
+                        <li>Microservices architecture & bounded contexts</li>
+                        <li>Cloud-native applications</li>
                         <li>Serverless & Functions as a Service (FaaS)</li>
                         <li>Command Query Responsibility Segregation (CQRS)</li>
-                        <li>Event Sourcing (ES)</li>
                         <li>Event-Driven Architecture (EDA)</li>
-                        <li>RDBMs vs NoSQL</li>
-                        <li>Enterprise Application Integration (EAI)</li>
-                        <li>Micro Front-ends</li>
+                        <li>Event Sourcing (ES)</li>
+                        <li>Communications (protocols, HTTP, WebSockets, Message Queues, REST, GraphQL, SOAP, etc)</li>
                       </ol>
                     </li>
+                    <li>Architecture and scalability</li>
+                    <li>Technical stack selection</li>
                   </ol>
                 </li>
                 <li>
@@ -723,7 +751,6 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </li>
                 <li>Infrastructure architecture</li>
                 <li>Security architecture</li>
-                <li>Enterprise architecture</li>
               </ol>
             </section>
 
