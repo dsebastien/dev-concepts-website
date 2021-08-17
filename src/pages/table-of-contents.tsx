@@ -653,7 +653,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </div>
                 <div className="mt-4 flex justify-center sm:mt-0">
                   <a
-                    href={volume02SalesPageUrl}
+                    href={volume03SalesPageUrl}
                     aria-label="Pre-order volume 3 now"
                     className="bg-devConceptsTeal-800 hover:bg-devConceptsTeal-700 hover:no-underline shadow-lg p-2 rounded-md"
                   >
