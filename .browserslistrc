@@ -1,13 +1,7 @@
-# https://github.com/browserslist/browserslist#readme
-# based on https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/package.json
-
-[production]
->0.2%
-not dead
-not op_mini all
-
-# Faster build time in development
-[development]
-last 1 chrome version
-last 1 firefox version
-last 1 safari version
+last 1 Chrome version
+last 1 Firefox version
+last 2 Edge major versions
+last 2 Safari major version
+last 2 iOS major versions
+Firefox ESR
+not IE 9-11 # For IE 9-11 support, remove 'not'.

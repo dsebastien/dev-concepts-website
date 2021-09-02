@@ -148,6 +148,7 @@ const ConvertKitForm: React.FC = () => {
             </label>
           </div>
           <div className="flex mt-5 flex justify-center">
+            {/* @ts-ignore */}
             <Button type="submit" aria-label="Subscribe" className="rounded-lg px-20 py-3">
               Subscribe
             </Button>

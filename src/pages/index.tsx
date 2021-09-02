@@ -20,7 +20,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import { Separator } from "../components/separator";
 import { AuthorBio } from "../components/author-bio";
-import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 const IntroText = styled.div.attrs({
   className: "",
@@ -126,7 +125,7 @@ const App = () => {
               {/*<Countdown date={new Date("2021-12-20T18:00:00")} />*/}
 
               <div className="flex justify-center flex-wrap mt-6 gap-3">
-                <OutboundLink
+                <a
                   href={data.site.siteMetadata.salesPageUrlVolume01}
                   className="bg-devConceptsBlue-500 hover:bg-devConceptsBlue-400 homepage-order-link"
                   rel="noopener"
@@ -134,8 +133,8 @@ const App = () => {
                 >
                   <FontAwesomeIcon className="text-2xl mr-2" icon={faShoppingCart} />
                   <span className="text-2xl">Buy volume 1 now!</span>
-                </OutboundLink>
-                <OutboundLink
+                </a>
+                <a
                   href={data.site.siteMetadata.salesPageUrlVolume02}
                   className="bg-devConceptsGreen-700 hover:bg-devConceptsGreen-600 homepage-order-link"
                   rel="noopener"
@@ -143,8 +142,8 @@ const App = () => {
                 >
                   <FontAwesomeIcon className="text-2xl mr-2" icon={faShoppingCart} />
                   <span className="text-2xl">Buy volume 2 now!</span>
-                </OutboundLink>
-                <OutboundLink
+                </a>
+                <a
                   href={data.site.siteMetadata.salesPageUrlVolume03}
                   className="bg-devConceptsTeal-800 hover:bg-devConceptsTeal-700 homepage-order-link"
                   rel="noopener"
@@ -152,15 +151,15 @@ const App = () => {
                 >
                   <FontAwesomeIcon className="text-2xl mr-2" icon={faShoppingCart} />
                   <span className="text-2xl">Pre-order volume 3 now!</span>
-                </OutboundLink>
-                <OutboundLink
+                </a>
+                <a
                   href={data.site.siteMetadata.salesPageUrl}
                   className="bg-devConceptsGray-800 hover:bg-devConceptsGray-700 homepage-order-link"
                   rel="noopener"
                 >
                   <FontAwesomeIcon className="text-2xl mr-2" icon={faShoppingBasket} />
                   <span className="text-2xl">Pre-order a bundle!</span>
-                </OutboundLink>
+                </a>
               </div>
             </div>
           </IntroText>
@@ -172,6 +171,7 @@ const App = () => {
           </div>
         </div>
       </div>
+      {/* @ts-ignore */}
       <Separator className="block xxl:hidden" />
       <div className="w-full flex flex-col items-center my-8 block xxl:hidden">
         <DevConceptsNewsletterForm />
@@ -185,21 +185,21 @@ const App = () => {
       <Separator />
       <div className="w-full min-w-full flex flex-col md:flex-row justify-start md:justify-between">
         <div className="w-full p-2 my-2 md:my-0 flex flex-col object-center text-center justify-start border-devConceptsGray-200">
-          <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex="-1">
+          <a href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex={-1}>
           <div className="giant-icon">
               <FontAwesomeIcon className="text-devConceptsGreen-500" icon={faLayerGroup} />
           </div>
           <div className="">
               <h1 className="text-3xl">Full Stack</h1>
-            <span class="text-xl">
+            <span className="text-xl">
                 Full Stack developers are great to have on a team because they are able to understand and to be productive in both back-end
                 and front-end development. This collection of e-books will tell you about <i>everything</i> that matters to become one.
               </span>
           </div>
-          </OutboundLink>
+          </a>
         </div>
         <div className="w-full p-2 my-2 md:my-0 flex flex-col object-center text-center md:mx-5 justify-start border-devConceptsGray-200">
-          <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex="-1">
+          <a href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex={-1}>
           <div className="giant-icon">
               <FontAwesomeIcon className="text-devConceptsPink-450" icon={faSitemap} />
           </div>
@@ -210,10 +210,10 @@ const App = () => {
                 development.
               </span>
           </div>
-          </OutboundLink>
+          </a>
         </div>
         <div className="w-full p-2 my-2 md:my-0 flex flex-col object-center text-center justify-start border-devConceptsGray-200">
-          <OutboundLink href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex="-1">
+          <a href={data.site.siteMetadata.salesPageUrl} className="" rel="noopener" aria-label="Pre-order now" tabIndex={-1}>
           <div className="giant-icon">
               <FontAwesomeIcon className="text-devConceptsOrange-550" icon={faServer} />
           </div>
@@ -224,7 +224,7 @@ const App = () => {
                 minimum you need to know about IT security, IT infrastructure and IT operations.
               </span>
           </div>
-          </OutboundLink>
+          </a>
         </div>
       </div>
       <Separator />

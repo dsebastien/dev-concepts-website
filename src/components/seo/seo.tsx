@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
@@ -17,25 +17,7 @@ type SEOProps = {
   image?: string;
 };
 
-interface WindowWithGTag extends Window {
-  gtag?: any;
-  excludeGtagPaths?: string[];
-}
-
 const SEO: React.FC<SEOProps> = (props) => {
-  useEffect(() => {
-    let windowWithGtag: WindowWithGTag | null = null;
-    if (window) {
-      windowWithGtag = window;
-    }
-
-    if (windowWithGtag?.gtag) {
-      const pagePath = location ? location.pathname + location.search + location.hash : undefined;
-      console.log("Sending GA pageview for path: ", pagePath);
-      windowWithGtag.gtag(`event`, `page_view`, { page_path: pagePath });
-    }
-  });
-
   const data = useStaticQuery(graphql`
     {
       site {

@@ -20,132 +20,22 @@ import {
   faSmileWink,
 } from "@fortawesome/free-solid-svg-icons";
 import { graphql, Link, useStaticQuery } from "gatsby";
-import { OutboundLink } from "gatsby-plugin-google-gtag";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import Img from "gatsby-image";
+import {StaticImage} from "gatsby-plugin-image";
 
-const AboutPage: React.FC<RouteComponentProps> = () => {
-  const data = useStaticQuery(graphql`
-    query TableOfContentsPageQuery {
-      site {
-        siteMetadata {
-          salesPageUrl
-          salesPageUrlVolume01
-          salesPageUrlVolume02
-          salesPageUrlVolume03
-        }
-      }
-      volume01CoverImage: file(relativePath: { eq: "DevConceptsVolume01SoftwareCraftCover3D.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 640, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-            ...GatsbyImageSharpFluidLimitPresentationSize
-          }
-        }
-      }
-      volume02CoverImage: file(relativePath: { eq: "DevConceptsVolume02SoftwareCraftCover3D.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 640, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-            ...GatsbyImageSharpFluidLimitPresentationSize
-          }
-        }
-      }
-      volume03CoverImage: file(relativePath: { eq: "DevConceptsVolume03SoftwareCraftCover3D.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 640, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-            ...GatsbyImageSharpFluidLimitPresentationSize
-          }
-        }
-      }
-      volume04CoverImage: file(relativePath: { eq: "DevConceptsVolume04SoftwareCraftCover3D.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 640, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-            ...GatsbyImageSharpFluidLimitPresentationSize
-          }
-        }
-      }
-      volume05CoverImage: file(relativePath: { eq: "DevConceptsVolume05SoftwareCraftCover3D.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 640, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-            ...GatsbyImageSharpFluidLimitPresentationSize
-          }
-        }
-      }
-      volume06CoverImage: file(relativePath: { eq: "DevConceptsVolume06SoftwareCraftCover3D.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 640, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-            ...GatsbyImageSharpFluidLimitPresentationSize
-          }
-        }
-      }
-      volume07CoverImage: file(relativePath: { eq: "DevConceptsVolume07SoftwareCraftCover3D.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 640, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-            ...GatsbyImageSharpFluidLimitPresentationSize
-          }
-        }
-      }
-      volume08CoverImage: file(relativePath: { eq: "DevConceptsVolume08SoftwareCraftCover3D.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 640, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-            ...GatsbyImageSharpFluidLimitPresentationSize
-          }
-        }
-      }
-      volume09CoverImage: file(relativePath: { eq: "DevConceptsVolume09SoftwareCraftCover3D.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 640, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-            ...GatsbyImageSharpFluidLimitPresentationSize
-          }
-        }
-      }
-      volume10CoverImage: file(relativePath: { eq: "DevConceptsVolume10SoftwareCraftCover3D.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 640, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-            ...GatsbyImageSharpFluidLimitPresentationSize
-          }
-        }
-      }
-      volume11CoverImage: file(relativePath: { eq: "DevConceptsVolume11SoftwareCraftCover3D.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 640, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-            ...GatsbyImageSharpFluidLimitPresentationSize
-          }
-        }
-      }
-      volume12CoverImage: file(relativePath: { eq: "DevConceptsVolume12SoftwareCraftCover3D.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 640, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-            ...GatsbyImageSharpFluidLimitPresentationSize
-          }
-        }
-      }
+const TocPage: React.FC<RouteComponentProps> = () => {
+  const data = useStaticQuery(graphql`query TableOfContentsPageQuery {
+  site {
+    siteMetadata {
+      salesPageUrl
+      salesPageUrlVolume01
+      salesPageUrlVolume02
+      salesPageUrlVolume03
     }
-  `);
+  }
+}
+`);
 
-  const volume01CoverImage = data.volume01CoverImage.childImageSharp.fluid;
-  const volume02CoverImage = data.volume02CoverImage.childImageSharp.fluid;
-  const volume03CoverImage = data.volume03CoverImage.childImageSharp.fluid;
-  const volume04CoverImage = data.volume04CoverImage.childImageSharp.fluid;
-  const volume05CoverImage = data.volume05CoverImage.childImageSharp.fluid;
-  const volume06CoverImage = data.volume06CoverImage.childImageSharp.fluid;
-  const volume07CoverImage = data.volume07CoverImage.childImageSharp.fluid;
-  const volume08CoverImage = data.volume08CoverImage.childImageSharp.fluid;
-  const volume09CoverImage = data.volume09CoverImage.childImageSharp.fluid;
-  const volume10CoverImage = data.volume10CoverImage.childImageSharp.fluid;
-  const volume11CoverImage = data.volume11CoverImage.childImageSharp.fluid;
-  const volume12CoverImage = data.volume12CoverImage.childImageSharp.fluid;
   const volume01SalesPageUrl = data.site.siteMetadata.salesPageUrlVolume01;
   const volume02SalesPageUrl = data.site.siteMetadata.salesPageUrlVolume02;
   const volume03SalesPageUrl = data.site.siteMetadata.salesPageUrlVolume03;
@@ -413,7 +303,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </div>
                 <div className="lg:w-1/2 text-center">
                   <h2>
-                    <OutboundLink
+                    <a
                       href={data.site.siteMetadata.salesPageUrl}
                       title="Pre-order the collection now!"
                       aria-label="Pre-order the collection now!"
@@ -423,7 +313,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                       <FontAwesomeIcon className="text-4xl mr-3" icon={faShoppingCart} />
                       <br />
                       Pre-order now!
-                    </OutboundLink>
+                    </a>
                   </h2>
                 </div>
               </div>
@@ -456,15 +346,15 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </div>
               </div>
               <div className="opacity-75 hover:opacity-100">
-                <OutboundLink
+                <a
                   href={volume01SalesPageUrl}
                   rel="noopener"
                   aria-label="Buy volume 1 now!"
                   title="Buy volume 1 now!"
                   className="pointer"
                 >
-                  <Img loading="eager" fluid={volume01CoverImage} alt="Volume 1: Software Craft" className="hover:opacity-10" />
-                </OutboundLink>
+                  <StaticImage layout={"fullWidth"} src="../assets/images/DevConceptsVolume01Cover3D.png" alt="Volume 1: Software Craft" loading="eager" className="hover:opacity-10" />
+                </a>
               </div>
               <br />
               <p>
@@ -546,15 +436,15 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </div>
               </div>
               <div className="opacity-75 hover:opacity-100">
-                <OutboundLink
+                <a
                   href={volume02SalesPageUrl}
                   rel="noopener"
                   aria-label="Pre-order volume 2 now!"
                   title="Pre-order volume 2 now!"
                   className="pointer"
                 >
-                  <Img loading="eager" fluid={volume02CoverImage} alt="Volume 2: What clients need" className="hover:opacity-10" />
-                </OutboundLink>
+                  <StaticImage layout={"fullWidth"} src="../assets/images/DevConceptsVolume02Cover3D.png" alt="Volume 2: What clients need" loading="eager" className="hover:opacity-10" />
+                </a>
               </div>
               <br />
               <p>
@@ -663,15 +553,15 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 </div>
               </div>
               <div className="opacity-75 hover:opacity-100">
-                <OutboundLink
+                <a
                   href={volume03SalesPageUrl}
                   rel="noopener"
                   aria-label="Pre-order volume 2 now!"
                   title="Pre-order volume 3 now!"
                   className="pointer"
                 >
-                  <Img loading="eager" fluid={volume03CoverImage} alt="Volume 3: Architecture" className="hover:opacity-10" />
-                </OutboundLink>
+                  <StaticImage layout={"fullWidth"} src="../assets/images/DevConceptsVolume03Cover3D.png" alt="Volume 3: Architecture" loading="eager" className="hover:opacity-10" />
+                </a>
               </div>
 
               <br />
@@ -768,7 +658,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 Estimated page count:&nbsp;<span className="font-bold">80</span>
               </p>
               <div className="opacity-75 hover:opacity-100">
-                <Img loading="eager" fluid={volume04CoverImage} alt="Volume 4: Software Design" className="hover:opacity-10" />
+                <StaticImage layout={"fullWidth"} src="../assets/images/DevConceptsVolume04Cover3D.png" alt="Volume 4: Software Design" loading="eager" className="hover:opacity-10" />
               </div>
               <br />
               <p>
@@ -848,12 +738,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 Estimated page count:&nbsp;<span className="font-bold">100</span>
               </p>
               <div className="opacity-75 hover:opacity-100">
-                <Img
-                  loading="eager"
-                  fluid={volume05CoverImage}
-                  alt="Volume 5: Computer architecture and Operating systems basics"
-                  className="hover:opacity-10"
-                />
+                <StaticImage layout={"fullWidth"} src="../assets/images/DevConceptsVolume05Cover3D.png" alt="Volume 5: Computer architecture and Operating systems basics" loading="eager" className="hover:opacity-10" />
               </div>
               <br />
               <p>
@@ -919,7 +804,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 Estimated page count:&nbsp;<span className="font-bold">150</span>
               </p>
               <div className="opacity-75 hover:opacity-100">
-                <Img loading="eager" fluid={volume06CoverImage} alt="Volume 6: Coding basics" className="hover:opacity-10" />
+                <StaticImage layout={"fullWidth"} src="../assets/images/DevConceptsVolume06Cover3D.png" alt="Volume 6: Coding basics" loading="eager" className="hover:opacity-10" />
               </div>
               <br />
               <p>
@@ -1051,7 +936,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 Estimated page count:&nbsp;<span className="font-bold">120</span>
               </p>
               <div className="opacity-75 hover:opacity-100">
-                <Img loading="eager" fluid={volume07CoverImage} alt="Volume 7: General concerns" className="hover:opacity-10" />
+                <StaticImage layout={"fullWidth"} src="../assets/images/DevConceptsVolume07Cover3D.png" alt="Volume 7: General concerns" loading="eager" className="hover:opacity-10" />
               </div>
               <br />
               <p>
@@ -1166,7 +1051,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 Estimated page count:&nbsp;<span className="font-bold">100</span>
               </p>
               <div className="opacity-75 hover:opacity-100">
-                <Img loading="eager" fluid={volume08CoverImage} alt="Volume 8: Back-end development" className="hover:opacity-10" />
+                <StaticImage layout={"fullWidth"} src="../assets/images/DevConceptsVolume08Cover3D.png" alt="Volume 8: Back-end development" loading="eager" className="hover:opacity-10" />
               </div>
               <br />
               <p>
@@ -1237,7 +1122,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 Estimated page count:&nbsp;<span className="font-bold">130</span>
               </p>
               <div className="opacity-75 hover:opacity-100">
-                <Img loading="eager" fluid={volume09CoverImage} alt="Volume 9: Front-end development" className="hover:opacity-10" />
+                <StaticImage layout={"fullWidth"} src="../assets/images/DevConceptsVolume09Cover3D.png" alt="Volume 9: Front-end development" loading="eager" className="hover:opacity-10" />
               </div>
               <br />
               <p>
@@ -1354,7 +1239,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 Estimated page count:&nbsp;<span className="font-bold">100</span>
               </p>
               <div className="opacity-75 hover:opacity-100">
-                <Img loading="eager" fluid={volume10CoverImage} alt="Volume 10: IT Infrastructure" className="hover:opacity-10" />
+                <StaticImage layout={"fullWidth"} src="../assets/images/DevConceptsVolume10Cover3D.png" alt="Volume 10: IT Infrastructure" loading="eager" className="hover:opacity-10" />
               </div>
               <br />
               <p>
@@ -1464,7 +1349,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 Estimated page count:&nbsp;<span className="font-bold">180</span>
               </p>
               <div className="opacity-75 hover:opacity-100">
-                <Img loading="eager" fluid={volume11CoverImage} alt="Volume 11: Security" className="hover:opacity-10" />
+                <StaticImage layout={"fullWidth"} src="../assets/images/DevConceptsVolume11Cover3D.png" alt="Volume 11: Security" loading="eager" className="hover:opacity-10" />
               </div>
               <br />
               <p>
@@ -1625,12 +1510,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                 Estimated page count:&nbsp;<span className="font-bold">80</span>
               </p>
               <div className="opacity-75 hover:opacity-100">
-                <Img
-                  loading="eager"
-                  fluid={volume12CoverImage}
-                  alt="Volume 12: Product/Project management and Software development approaches"
-                  className="hover:opacity-10"
-                />
+                <StaticImage layout={"fullWidth"} src="../assets/images/DevConceptsVolume12Cover3D.png" alt="Volume 12: Product/Project management and Software development approaches" loading="eager" className="hover:opacity-10" />
               </div>
               <br />
               <p>
@@ -1728,7 +1608,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
             </div>
             <div className="w-1/2 text-center">
               <h2>
-                <OutboundLink
+                <a
                   href={data.site.siteMetadata.salesPageUrl}
                   title="Pre-order the collection now!"
                   aria-label="Pre-order the collection now!"
@@ -1738,7 +1618,7 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
                   <FontAwesomeIcon className="text-4xl mr-3" icon={faShoppingCart} />
                   <br />
                   Pre-order now!
-                </OutboundLink>
+                </a>
               </h2>
             </div>
           </div>
@@ -1748,4 +1628,4 @@ const AboutPage: React.FC<RouteComponentProps> = () => {
   );
 };
 
-export default AboutPage;
+export default TocPage;

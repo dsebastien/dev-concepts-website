@@ -1,42 +1,31 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
-import Img from "gatsby-image";
-import { OutboundLink } from "gatsby-plugin-google-gtag";
+import {StaticImage} from "gatsby-plugin-image";
 
 const Wrapper = styled.div.attrs({
   className: "relative w-full",
 })``;
 
 const DevConceptsCover: React.FC = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-          salesPageUrl
-        }
-      }
-      devConceptsCoverImage: file(relativePath: { eq: "DevConceptsAllCovers.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1500, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-            ...GatsbyImageSharpFluidLimitPresentationSize
-          }
-        }
-      }
+  const data = useStaticQuery(graphql`{
+  site {
+    siteMetadata {
+      title
+      salesPageUrl
     }
-  `);
+  }
+}
+`);
 
-  const devConceptsCoverImageData = data.devConceptsCoverImage.childImageSharp.fluid;
   const { siteMetadata } = data.site;
   const { title, salesPageUrl } = siteMetadata;
 
   return (
     <Wrapper>
-      <OutboundLink href={salesPageUrl} rel="noopener" aria-label="Pre-order now!" title="Pre-order now!" className="pointer">
-        <Img loading="eager" fluid={devConceptsCoverImageData} alt={title} />
-      </OutboundLink>
+      <a href={salesPageUrl} rel="noopener" aria-label="Pre-order now!" title="Pre-order now!" className="pointer">
+        <StaticImage src="../../assets/images/DevConceptsAllCovers.png" layout={"fullWidth"} loading="eager" alt={title} />
+      </a>
     </Wrapper>
   );
 };

@@ -4,7 +4,6 @@ import styled from "styled-components";
 import metadata from "../../metadata.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 const StyledFooter = styled.footer.attrs({
   className: "ml-0 mr-0 w-full py-2 mt-16 sm:py-6 text-center bg-gray-900 sm:rounded-t-lg",
@@ -35,28 +34,28 @@ const Footer: React.FC = () => {
       <StyledList>
         <StyledListElement>
           &copy; {new Date().getFullYear()}{" "}
-          <OutboundLink
-            href={metadata.social.mediumSebastien}
+          <a
+            href={metadata.social.blogSebastien}
             target="_blank"
             rel="noreferrer noopener"
-            title="Dubois Sébastien @ Medium"
-            aria-label="Dubois Sébastien @ Medium"
+            title="Dubois Sébastien's Website"
+            aria-label="Dubois Sébastien's Website"
           >
             Dubois Sébastien
-          </OutboundLink>
+          </a>
         </StyledListElement>
         <StyledListElement>
-          <OutboundLink
+          <a
             href={metadata.develoPassionSiteUrl}
             target="_blank"
             rel="noreferrer noopener"
             aria-label="DeveloPassion"
           >
             DeveloPassion
-          </OutboundLink>
+          </a>
         </StyledListElement>
         <StyledListElement>
-          <OutboundLink
+          <a
             href={metadata.siteSources}
             target="_blank"
             rel="noreferrer noopener"
@@ -64,10 +63,10 @@ const Footer: React.FC = () => {
             aria-label="Website sources"
           >
             <FontAwesomeIcon icon={faGithub} />
-          </OutboundLink>
+          </a>
         </StyledListElement>
         <StyledListElement>
-          <OutboundLink
+          <a
             href={metadata.social.twitterSebastien}
             target="_blank"
             rel="noreferrer noopener"
@@ -75,7 +74,7 @@ const Footer: React.FC = () => {
             aria-label="Dubois Sébastien @ Twitter"
           >
             <FontAwesomeIcon icon={faTwitter} />
-          </OutboundLink>
+          </a>
         </StyledListElement>
       </StyledList>
     </StyledFooter>

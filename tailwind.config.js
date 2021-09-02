@@ -170,6 +170,7 @@ module.exports = {
       ],
     },
     screens: {
+      // WARNING: Keep aligned with the breakpoints in gatsby-config.js (gatsby-plugin-sharp)
       sm: { min: "600px" },
       md: { min: "960px" },
       lg: { min: "1280px" },

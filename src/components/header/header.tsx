@@ -4,7 +4,6 @@ import { graphql, useStaticQuery } from "gatsby";
 import { Code } from "../code";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 const StyledHeader = styled.div.attrs({
   className: "w-full mx-auto text-left sm:text-center mt-0 pt-4 flex flex-col md:flex-row md:justify-between items-center",
@@ -43,17 +42,17 @@ const Header: React.FC = () => {
     <StyledHeader>
       <h1 className="w-full lg:w-auto text-5xl sm:text-6xl">
         <FontAwesomeIcon className="mr-3" icon={faCode} />
-        <OutboundLink
+        <a
           href={data.site.siteMetadata.salesPageUrl}
           title="Pre-order the collection now!"
           aria-label="Pre-order the collection now!"
           rel="noopener"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           {data.site.siteMetadata.title}
-        </OutboundLink>
+        </a>
       </h1>
-      <OutboundLink
+      <a
         href={data.site.siteMetadata.salesPageUrl}
         title="Pre-order the collection now!"
         aria-label="Pre-order the collection now!"
@@ -63,7 +62,7 @@ const Header: React.FC = () => {
         <Code>{COMMAND}</Code>
       </div>
       <Tagline>{data.site.siteMetadata.tagline}</Tagline>
-      </OutboundLink>
+      </a>
     </StyledHeader>
   );
 };
