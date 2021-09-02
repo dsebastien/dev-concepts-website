@@ -61,11 +61,9 @@ const App = () => {
               {/*<h1 className="text-5xl tracking-wider leading-tight italic">Your guide towards full stack development.</h1>*/}
               <div className="mt-6">
                 <h1 className="text-5xl tracking-wider leading-tight italic">
-                  A{" "}
                   <Link to="/table-of-contents" className="link">
-                    <b>12 volumes</b> e-book collection
-                  </Link>{" "}
-                  explaining every concept of Software Development:
+                    <b>Don't feel overwhelmed by Software Development and IT anymore</b>.
+                  </Link>{" "}This e-book collection clearly explains:
                 </h1>
                 <ul className="mt-6 text-2xl xxl:text-3xl">
                   <li className="flex flex-row items-center">
