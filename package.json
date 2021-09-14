@@ -37,9 +37,9 @@
     "build:storybook": "build-storybook",
     "check-deps": "npx npm-check",
     "clean": "gatsby clean",
-    "clean:slate": "npm run rimraf -- node_modules .tmp .cache public dist",
+    "clean:slate": "npm run rimraf -- node_modules .tmp .cache public dist package-lock.json yarn.lock && npm cache clean --force && yarn cache clean",
     "preclean:install": "npm run clean:slate",
-    "clean:install": "npm install",
+    "clean:install": "yarn install",
     "deploy": "npm run build:prod && npm run gh-pages",
     "develop": "gatsby develop",
     "dev": "npm run develop",
@@ -84,7 +84,7 @@
     "gatsby-plugin-fontawesome-css": "1.1.0",
     "gatsby-plugin-image": "1.13.0",
     "gatsby-plugin-manifest": "3.13.0",
-    "gatsby-plugin-netlify": "3.13.0",
+    "gatsby-plugin-netlify": "4.0.0-alpha-9689ff.24",
     "gatsby-plugin-offline": "4.13.0",
     "gatsby-plugin-plausible": "0.0.7",
     "gatsby-plugin-postcss": "4.13.0",
@@ -166,5 +166,8 @@
     "ts-jest": "27.0.5",
     "tslint-immutable": "6.0.1",
     "typescript": "4.4.2"
+  },
+  "resolutions": {
+    "webpack-assets-manifest": "5.0.1"
   }
 }
