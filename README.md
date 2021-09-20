@@ -2,10 +2,9 @@
 
 Source of the https://dev-concepts.dev website.
 
-# Postinstall workaround
+## Built Using
 
-For the record, the postinstall script is there because of https://github.com/DefinitelyTyped/DefinitelyTyped/issues/33311
-
-Lame but hey.. No time for that stuff ;-)
-
-The alternative is the .yarnclean file, but I'm still using npm most of the time (old habits die hard)
+- [Next.js](https://nextjs.org/)
+- [Vercel](https://vercel.com)
+- [MDX](https://github.com/mdx-js/mdx)
+- [Tailwind CSS](https://tailwindcss.com/)
