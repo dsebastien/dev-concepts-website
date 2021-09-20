@@ -1,0 +1,203 @@
+::selection {
+  background-color: #3c74db; // blue-500
+  color: #fefefe; // gray-100
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* no blue flashes */
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body,
+body > div:first-child,
+#__next {
+  @apply min-w-full h-full min-h-full m-0 p-0 bg-devConceptsGray-100 dark:bg-gray-900 font-devConcepts text-base font-normal;
+  letter-spacing: -0.1px;
+  /* Standard line height */
+  /* Reference for line-height: https://dev.to/lampewebdev/css-line-height-jjp */
+  line-height: 1.5;
+  overflow: auto;
+}
+
+#__next {
+  /* Reference: https://tailwindcss.com/docs/gradient-color-stops */
+  @apply bg-gradient-to-r from-devConceptsWhite to-devConceptsGray-200 dark:from-gray-900 dark:to-gray-800;
+}
+
+.full-page {
+  @apply min-h-full min-w-full;
+}
+
+.site-button {
+  @apply text-center bg-devConceptsBlue-500 dark:bg-devConceptsBlue-400 hover:bg-devConceptsBlue-600 dark:hover:bg-devConceptsBlue-500 px-3 py-1 rounded-md font-medium text-sm text-devConceptsGray-100 dark:text-devConceptsGray-100 hover:text-devConceptsWhite dark:hover:text-devConceptsWhite focus:outline-none focus:ring-2 focus:ring-devConceptsBlue-300 focus:ring-opacity-50 ease-in-out transition-all duration-300 #{!important};
+  /* WARNING: Adjust to match the longest menu item */
+  min-width: 8rem;
+}
+
+.hero-text {
+  @apply text-7xl font-semibold tracking-normal text-gray-900 dark:text-gray-100 #{!important}; /* FIXME avoid forcing important once the GlobalStyles get loaded in the right order) */
+  line-height: 50px;
+  padding: 2px 0;
+}
+
+h1 {
+  @apply text-6xl font-semibold tracking-normal text-gray-900 dark:text-gray-100 #{!important}; /* FIXME avoid forcing important once the GlobalStyles get loaded in the right order) */
+  line-height: 44px;
+  padding: 2px 0;
+}
+
+h2 {
+  @apply text-5xl font-bold tracking-normal text-gray-900 dark:text-gray-100 #{!important}; /* FIXME avoid forcing important once the GlobalStyles get loaded in the right order) */
+  line-height: 30px;
+  padding: 9px 0;
+}
+
+h3 {
+  @apply text-4xl font-semibold text-gray-900 dark:text-gray-100 #{!important}; /* FIXME avoid forcing important once the GlobalStyles get loaded in the right order) */
+  line-height: 30px;
+  padding: 9px 0;
+  letter-spacing: -0.5px;
+}
+
+h4 {
+  @apply text-3xl font-semibold text-gray-900 dark:text-gray-100 #{!important}; /* FIXME avoid forcing important once the GlobalStyles get loaded in the right order) */
+  line-height: 25px;
+  padding: 14px 0;
+  letter-spacing: 0.4px;
+}
+
+h5 {
+  @apply text-2xl font-medium text-gray-900 dark:text-gray-100 #{!important}; /* FIXME avoid forcing important once the GlobalStyles get loaded in the right order) */
+}
+
+.page-heading {
+  @apply font-bold text-3xl md:text-5xl tracking-tight mb-4 text-gray-900 dark:text-gray-100 #{!important};
+}
+
+/**
+  Anchor links
+  Links are generated through mdx.ts
+ */
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover {
+  & > a {
+    @apply outline-none;
+    & > span.anchor-link:after {
+      @apply ml-2 inline-block;
+      content: '#';
+    }
+  }
+}
+
+.article-content-wrapper {
+  @apply prose dark:prose-dark max-w-4xl mx-auto mb-16;
+}
+
+.homepage-content-wrapper {
+  @apply max-w-7xl mx-auto mb-16;
+}
+
+.page-content-wrapper {
+  @apply mx-auto mb-16 max-w-5xl;
+}
+
+.homepage-box {
+  @apply p-8 bg-devConceptsWhite dark:bg-devConceptsBlue-500 rounded-lg border-2 border-devConceptsGray-300 dark:border-devConceptsBlue-300 transform hover:opacity-90 transition-all duration-150 ease-in;
+}
+
+.homepage-elevated-box {
+  @extend .homepage-box;
+  @apply shadow-el-2xl;
+}
+
+.homepage-elevated-box-on-hover {
+  @extend .homepage-box;
+  @apply hover:shadow-el-2xl;
+}
+
+
+.book-card { /*  */
+  @apply flex flex-col justify-between py-4 prose dark:prose-dark prose-xl hover:cursor-pointer;
+
+  min-width: 275px;
+  width: 275px;
+  min-height: 275px;
+  height: 275px;
+
+  & > div {
+    @apply text-8xl flex flex-row flex-grow items-center justify-center dark:text-devConceptsWhite;
+  }
+
+  & > footer {
+    @apply min-w-full text-center text-devConceptsGray-900 dark:text-devConceptsGray-100;
+
+    & > .book-card-title {
+      @apply font-bold text-2xl;
+    }
+
+    & > .book-card-subtitle {
+      @apply text-xl;
+    }
+  }
+}
+
+.book-card-coming-soon {
+  @apply shadow-none opacity-50 hover:cursor-default #{!important};
+}
+
+/*
+  @apply text-center justify-center flex flex-col items-center border-2 rounded-md border-devConceptsGray-300 dark:border-devConceptsGray-800 hover:border-devConceptsBlue-400 dark:hover:border-devConceptsBlue-400 hover:shadow-md transition-all ease-in duration-150; hover:cursor-pointer
+*/
+
+.scroll-to-top {
+  @apply fixed z-10 cursor-pointer rounded-md w-10 h-10 p-2 shadow-lg hover:shadow-2xl border-0 bg-devConceptsBlue-500 dark:hover:bg-devConceptsBlue-400 hover:bg-devConceptsBlue-700 transition-all ease-in-out duration-500;
+  right: 40px;
+  bottom: 40px;
+}
+
+.scroll-to-top:active {
+  transform: matrix(0.95, 0, 0, 0.95, 0, 0);
+}
+
+/**
+  Improve rendering of gists (remove line borders)
+ */
+.gist tr {
+  @apply border-none;
+}
+
+.stylistic-quote-mark {
+  font-size: 0rem;
+  @apply mr-0 text-pink-500 absolute top-0 leading-none;
+}
+
+@screen md {
+  .stylistic-quote-mark {
+    font-size: 5rem;
+    right: 100%;
+    @apply block mr-4;
+  }
+}
+
+.blog-post-summary-container {
+  @apply mt-4 border-2 rounded-md p-2 border-devConceptsGray-300 dark:border-devConceptsGray-800 hover:border-devConceptsBlue-400 dark:hover:border-devConceptsBlue-400 hover:shadow-md transition-all ease-in duration-150 hover:cursor-pointer;
+}
+
+.design-system-box {
+  @apply rounded-sm border-gray-300 border-2 p-5 m-2;
+
+  & > header {
+    @apply text-center font-semibold pb-2 border-b-2 mb-2;
+  }
+
+  & > main {
+    width: 400px;
+  }
+}
