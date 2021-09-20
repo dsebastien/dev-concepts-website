@@ -1,14 +1,101 @@
+'use strict';
+
+const { spacing } = require('tailwindcss/defaultTheme');
+const mdx = require('@mdx-js/mdx');
+
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
+  mode: 'jit',
+  purge: {
+    content: [
+      './apps/**/*.{html,mdx,tsx,ts,jsx,js,scss}',
+      './libs/**/*.{html,mdx,tsx,ts,jsx,js,scss}',
+    ],
+    // PurgeCSS options
+    // Reference: https://purgecss.com/
+    options: {
+      rejected: true,
+      printRejected: true,
+      safelist: ['html', 'body', 'dark'],
+      extractors: [
+        {
+          extensions: ['mdx'],
+          extractor: (content) => {
+            content = mdx.sync(content);
+
+            // Capture as liberally as possible, including things like `h-(screen-1.5)`
+            const broadMatches = content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [];
+
+            // Capture classes within other delimiters like .block(class="w-1/2") in Pug
+            const innerMatches =
+              content.match(/[^<>"'`\s.(){}[\]#=%]*[^<>"'`\s.(){}[\]#=%:]/g) ||
+              [];
+
+            return broadMatches.concat(innerMatches);
+          },
+        },
+      ],
+    },
   },
-  purge: false, // Done through Gatsby
+  /**
+   * Enable dark mode
+   */
+  darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        devConcepts: [
+          "Lato",
+          "Source Sans Pro",
+          'AvenirNext',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Roboto',
+          'Oxygen',
+          'Ubuntu',
+          'Cantarell',
+          'Fira Sans',
+          'Droid Sans',
+          'Helvetica Neue',
+          'sans-serif',
+        ],
+      },
+      screens: {
+        sm: { min: '600px' },
+        md: { min: '960px' },
+        lg: { min: '1280px' },
+        xg: { min: '1600px' },
+        xl: { min: '1920px' },
+        xxl: { min: "2440px" },
+        print: { raw: 'print' },
+        portrait: { raw: '(orientation: portrait)' },
+      },
       colors: {
         devConceptsWhite: "#FFFFFF",
         devConceptsBlack: "#000000",
+        devConceptsBlue: {
+          100: "#C0CEDD",
+          200: "#A0B4CA",
+          300: "#7F9BB8",
+          400: "#5E81A6",
+          500: "#4A6887",
+          600: "#384E66",
+          700: "#263545",
+          800: "#141C24",
+          900: "#020303",
+        },
+        devConceptsGray: {
+          100: "#FEFEFE",
+          200: "#EFEFEF",
+          300: "#D8D9DA",
+          400: "#D9D9D9",
+          500: "#B1B3B6",
+          600: "#B3B5B8",
+          700: "#8A8D91",
+          800: "#63676D",
+          900: "#686868",
+          1000: "#3c4148",
+        },
         devConceptsPink: {
           50: "#FEF3F9",
           100: "#FDE6F2",
@@ -45,29 +132,6 @@ module.exports = {
           700: "#440A64",
           800: "#33084B",
           900: "#220532",
-        },
-        devConceptsGray: {
-          100: "#FEFEFE",
-          200: "#EFEFEF",
-          300: "#D8D9DA",
-          400: "#D9D9D9",
-          500: "#B1B3B6",
-          600: "#B3B5B8",
-          700: "#8A8D91",
-          800: "#63676D",
-          900: "#686868",
-          1000: "#3c4148",
-        },
-        devConceptsBlue: {
-          100: "#C0CEDD",
-          200: "#A0B4CA",
-          300: "#7F9BB8",
-          400: "#5E81A6",
-          500: "#4A6887",
-          600: "#384E66",
-          700: "#263545",
-          800: "#141C24",
-          900: "#020303",
         },
         devConceptsIndigo: {
           100: "#FFFFFF",
@@ -150,42 +214,105 @@ module.exports = {
           800: "#700000",
           900: "#4b0000",
         },
+        gray: {
+          DEFAULT: '#9AA1A6',
+          50: '#FEFEFE',
+          100: '#FAFAFA',
+          200: '#EBEDEE',
+          300: '#D0D3D6',
+          400: '#B5BABE',
+          500: '#9AA1A6',
+          600: '#7F888E',
+          700: '#666E74',
+          800: '#4E5459',
+          900: '#363B3E',
+        },
+      },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.devConceptsGray.900'),
+            a: {
+              color: theme('colors.devConceptsBlue.500'),
+              '&:hover': {
+                color: theme('colors.devConceptsBlue.300'),
+              },
+              '&:visited': {
+                color: theme('colors.devConceptsBlue.500'),
+              },
+              '&:visited:hover': {
+                color: theme('colors.devConceptsBlue.300'),
+              },
+              code: { color: theme('colors.devConceptsBlue.200') },
+            },
+            'h2,h3,h4': {
+              'scroll-margin-top': spacing[32],
+            },
+            code: { color: theme('colors.devConceptsPink.500') },
+            'blockquote p:first-of-type::before': false,
+            'blockquote p:last-of-type::after': false,
+          },
+        },
+        dark: {
+          css: {
+            color: theme('colors.devConceptsGray.400'),
+            a: {
+              color: theme('colors.devConceptsBlue.300'),
+              '&:hover': {
+                color: theme('colors.devConceptsBlue.100'),
+              },
+              '&:visited': {
+                color: theme('colors.devConceptsBlue.300'),
+              },
+              '&:visited:hover': {
+                color: theme('colors.devConceptsBlue.100'),
+              },
+              code: { color: theme('colors.devConceptsBlue.300') },
+            },
+            blockquote: {
+              borderLeftColor: theme('colors.devConceptsGray.400'),
+              color: theme('colors.devConceptsGray.300'),
+            },
+            'h2,h3,h4': {
+              color: theme('colors.devConceptsGray.100'),
+              'scroll-margin-top': spacing[32],
+            },
+            hr: { borderColor: theme('colors.devConceptsGray.200') },
+            strong: { color: theme('colors.devConceptsGray.300') },
+            thead: {
+              color: theme('colors.devConceptsGray.100'),
+            },
+            tbody: {
+              tr: {
+                borderBottomColor: theme('colors.devConceptsGray.700'),
+              },
+            },
+          },
+        },
+      }),
+      boxShadow: {
+        'el-xs': '1.3px 2.6px 2.6px hsl(0deg 0% 0% / 0.46)',
+        'el-sm': '2.0px 4.0px 4.0px hsl(0deg 0% 0% / 0.44)',
+        'el-md': '3.0px 6.1px 6.1px hsl(0deg 0% 0% / 0.41)',
+        'el-lg': '4.5px 9.0px 9.0px hsl(0deg 0% 0% / 0.36)',
+        'el-xl': '6.7px 13.4px 13.4px hsl(0deg 0% 0% / 0.29)',
+        'el-2xl': '8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25)',
       },
     },
-    fontFamily: {
-      devConcepts: [
-        "Lato",
-        "Source Sans Pro",
-        "-apple-system",
-        "BlinkMacSystemFont",
-        "Segoe UI",
-        "Roboto",
-        "Oxygen",
-        "Ubuntu",
-        "Cantarell",
-        "Fira Sans",
-        "Droid Sans",
-        "Helvetica Neue",
-        "sans-serif",
-      ],
-    },
-    screens: {
-      // WARNING: Keep aligned with the breakpoints in gatsby-config.js (gatsby-plugin-sharp)
-      sm: { min: "600px" },
-      md: { min: "960px" },
-      lg: { min: "1280px" },
-      xg: { min: "1600px" },
-      xl: { min: "1920px" },
-      xxl: { min: "2440px" },
-      print: { raw: "print" },
-      portrait: { raw: "(orientation: portrait)" },
+  },
+  variants: {
+    extend: {
+      typography: ['dark'],
     },
   },
-  variants: {},
   plugins: [
     /**
      * Reference: https://tailwindcss-custom-forms.netlify.app/
      */
     require("@tailwindcss/custom-forms"),
+    /**
+     * Typography
+     */
+    require('@tailwindcss/typography')
   ],
 };
