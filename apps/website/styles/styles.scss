@@ -37,6 +37,15 @@ body > div:first-child,
   min-width: 8rem;
 }
 
+.button-no-hover {
+  @apply w-full sm:w-auto bg-devConceptsPink-400 text-devConceptsWhite font-bold py-2 px-4 rounded flex flex-row justify-center items-center;
+}
+
+.button {
+  @extend .button-no-hover;
+  @apply hover:bg-devConceptsBlue-500
+}
+
 .hero-text {
   @apply text-7xl font-semibold tracking-normal text-gray-900 dark:text-gray-100 #{!important}; /* FIXME avoid forcing important once the GlobalStyles get loaded in the right order) */
   line-height: 50px;

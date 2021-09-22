@@ -163,7 +163,7 @@ const NewsletterSubscribe = () => {
                 className="px-4 py-2 border-2 border-devConceptsGray-400 dark:border-devConceptsGray-500 focus:ring-devConceptsBlue-500 focus:border-devConceptsBlue-500 block w-full rounded-md bg-devConceptsGray-100 dark:bg-devConceptsGray-800 text-devConceptsGray-900 dark:text-devConceptsGray-100"
               />
               <button
-                className="w-full sm:w-auto bg-devConceptsPink-400 hover:bg-devConceptsBlue-500 text-devConceptsWhite font-bold py-2 px-4 rounded flex flex-row justify-center items-center"
+                className="button"
               >
                 <span className="text-lg">Subscribe</span><span className="ml-2 text-2xl">📧</span>
               </button>
