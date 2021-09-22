@@ -12,8 +12,8 @@ const StyledDiv = tw.div``;
 const IndexPage = () => {
   return (
     <Layout>
-      <StyledDiv className="homepage-content-wrapper">
-        <div className="mt-32 hero grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+      <StyledDiv className="homepage-content-wrapper space-y-32">
+        <div className="hero grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
           <div className="hero-details">
             <div className="">
               <span className="text-xl">DEV CONCEPTS COLLECTION</span>
@@ -22,8 +22,10 @@ const IndexPage = () => {
               <span className="hero-text">Your guide to the fundamentals of Software Development</span>
             </div>
             <div className="mt-6">
-              <p className="text-lg">A 12-volume collection of digital books that supports junior software developers in building an exceptional career.</p>
-              <p className="mt-2 text-lg">Get a complete understanding of how every concept in software engineering fits together.</p>
+              <p className="text-lg">A 12-volume collection of digital books that supports junior software developers in
+                building an exceptional career.</p>
+              <p className="mt-2 text-lg">Get a complete understanding of how every concept in software engineering fits
+                together.</p>
             </div>
           </div>
           <div className="hero-image">
@@ -37,7 +39,7 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className="mt-32 core-agitation grid grid-cols-1 place-items-center homepage-elevated-box">
+        <div className="core-agitation grid grid-cols-1 place-items-center homepage-elevated-box">
           <div className="max-w-2xl">
             <div>
               <h3 className="max-w-2xl">What happens when someone realizes that you're out of your depth?</h3>
@@ -49,21 +51,25 @@ const IndexPage = () => {
                 <li>"Get it" after annoying them with multiple questions</li>
               </ol>
               <p>Either way, every day you log off with your brain completely fried.</p>
-              <p>Fact is, it's exhausting and demotivating trying to understand what you just don't know. You wind up feeling plain dumb with a growing mindset that it's just impossible</p>
+              <p>Fact is, it's exhausting and demotivating trying to understand what you just don't know. You wind up
+                feeling plain dumb with a growing mindset that it's just impossible</p>
               <p>But if it's impossible, how did others do it? What do they have that you don't?</p>
             </div>
           </div>
         </div>
 
-        <div className="mt-32 solution-intro grid grid-cols-1 md:grid-cols-2 gap-12 justify-between">
+        <div className="solution-intro grid grid-cols-1 md:grid-cols-2 gap-12 justify-between">
           <div className="solution-intro-details">
             <div className="mt-2">
-              <h3>The mentorship you need to build a solid foundation, lead a better professional life, and show your true value</h3>
+              <h3>The mentorship you need to build a solid foundation, lead a better professional life, and show your
+                true value</h3>
             </div>
             <div className="mt-6 prose dark:prose-dark prose-lg">
-              <p>Software development challenges you to constantly learn and grow. You're not some basic coder who churns out line after line of boring code.</p>
+              <p>Software development challenges you to constantly learn and grow. You're not some basic coder who
+                churns out line after line of boring code.</p>
               <p className="mt-2">Developing software demands nothing less than craftsmanship.</p>
-              <p className="mt-2">A lot of domain knowledge exists solely in your senior's head. You need someone to pass down the golden nuggets of experience acquired through countless hours of trial and error.</p>
+              <p className="mt-2">A lot of domain knowledge exists solely in your senior's head. You need someone to
+                pass down the golden nuggets of experience acquired through countless hours of trial and error.</p>
             </div>
           </div>
           <div className="solution-intro-definition justify-center md:min-h-full flex flex-col homepage-elevated-box">
@@ -79,26 +85,33 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className="mt-32 solution-volumes min-w-full w-full solution-overview grid grid-cols-1 place-items-center homepage-elevated-box">
+        <div
+          className="solution-volumes min-w-full w-full solution-overview grid grid-cols-1 place-items-center homepage-elevated-box">
           <div className="min-w-full">
             <div className="flex flex-row justify-center">
-              <h3 className="max-w-2xl text-center">Each volume is packed full of detailed definitions, pros/cons, tips, and real-world lessons</h3>
+              <h3 className="max-w-xl text-center">Each volume is packed full of detailed definitions, pros/cons, tips,
+                and real-world lessons</h3>
             </div>
-            <div className="mt-6 min-w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 place-items-center">
-              <div className="homepage-elevated-box-on-hover book-card">
-                <div><GiStoneCrafting /></div>
-                <footer>
-                  <div className="book-card-title">Volume 1</div>
-                  <div className="book-card-subtitle">Software Craft</div>
-                </footer>
-              </div>
-              <div className="homepage-elevated-box-on-hover book-card">
-                <div><RiUserHeartLine /></div>
-                <footer>
-                  <div className="book-card-title">Volume 2</div>
-                  <div className="book-card-subtitle">What Clients Need</div>
-                </footer>
-              </div>
+            <div
+              className="mt-6 min-w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 place-items-center">
+              <a href="https://gumroad.com/l/lnPaD" rel="noopener">
+                <div className="homepage-elevated-box-on-hover book-card">
+                  <div><GiStoneCrafting/></div>
+                  <footer>
+                    <div className="book-card-title">Volume 1</div>
+                    <div className="book-card-subtitle">Software Craft</div>
+                  </footer>
+                </div>
+              </a>
+              <a href="https://gumroad.com/l/aQRvz" rel="noopener">
+                <div className="homepage-elevated-box-on-hover book-card">
+                  <div><RiUserHeartLine/></div>
+                  <footer>
+                    <div className="book-card-title">Volume 2</div>
+                    <div className="book-card-subtitle">What Clients Need</div>
+                  </footer>
+                </div>
+              </a>
               <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                 <div><span className="text-4xl word-wrap font-semibold text-center">Coming soon</span></div>
                 <footer>
@@ -173,7 +186,7 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className="mt-32 solution-mentorship grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+        <div className="solution-mentorship grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
           <div className="solution-mentorship-details">
             <div className="">
               <span className="text-xl">DIRECT ACCESS TO MENTORS</span>
@@ -182,21 +195,25 @@ const IndexPage = () => {
               <h3>Save days of endless articles and how-to guides with Slack mentorship</h3>
             </div>
             <div className="mt-6 prose dark:prose-dark prose-lg">
-              <p>You wouldn’t expect an electrical engineer to walk into their role without a senior craftsman to guide them. You deserve access to the guidance of experienced mentors.</p>
+              <p>You wouldn’t expect an electrical engineer to walk into their role without a senior craftsman to guide
+                them. You deserve access to the guidance of experienced mentors.</p>
 
               <div className="mt-2 flex flex-row items-center gap-2">
-                <div className="flex flex-row items-center"><AiFillRightCircle className="text-3xl" /></div>
-                <div className="flex flex-row items-center"><span className="">Experienced developers will answer your questions directly.</span></div>
+                <div className="flex flex-row items-center"><AiFillRightCircle className="text-3xl"/></div>
+                <div className="flex flex-row items-center"><span className="">Experienced developers will answer your questions directly.</span>
+                </div>
               </div>
 
               <div className="mt-2 flex flex-row items-center gap-2">
-                <div className="flex flex-row items-center"><AiFillRightCircle className="text-3xl" /></div>
-                <div className="flex flex-row items-center"><span className="">Get career guidance for practical problem solving and soft skills.</span></div>
+                <div className="flex flex-row items-center"><AiFillRightCircle className="text-3xl"/></div>
+                <div className="flex flex-row items-center"><span className="">Get career guidance for practical problem solving and soft skills.</span>
+                </div>
               </div>
 
               <div className="mt-2 flex flex-row items-center gap-2">
-                <div className="flex flex-row items-center"><AiFillRightCircle className="text-3xl" /></div>
-                <div className="flex flex-row items-center"><span className="">Engage with the community to build friendships and connections with like-minded developers.</span></div>
+                <div className="flex flex-row items-center"><AiFillRightCircle className="text-3xl"/></div>
+                <div className="flex flex-row items-center"><span className="">Engage with the community to build friendships and connections with like-minded developers.</span>
+                </div>
               </div>
 
             </div>
@@ -212,7 +229,7 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className="mt-32 solution-confidence grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+        <div className="solution-confidence grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
           <div className="solution-confidence-image">
             <Image
               alt="Picture courtesy of Jonathan Klok: https://unsplash.com/@mostly_brave"
@@ -230,7 +247,8 @@ const IndexPage = () => {
               <h3>Know what’s happening at every step. Proceed with confidence.</h3>
             </div>
             <div className="mt-6 prose dark:prose-dark prose-lg">
-              <p>Instead of trying to collect information from multiple sources and online ‘gurus’, get the correct info the first time around. This collection is your single source roadmap to software development.</p>
+              <p>Instead of trying to collect information from multiple sources and online ‘gurus’, get the correct info
+                the first time around. This collection is your single source roadmap to software development.</p>
 
               <p className="mt-2">Avoid the trap of misinformation and confidently rely on the knowledge you learn.</p>
             </div>
@@ -238,11 +256,54 @@ const IndexPage = () => {
         </div>
 
 
+        <div className="first-cta grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center items-stretch">
+          <div className="first-cta-starter-bundle text-center homepage-elevated-box-on-hover">
+            <a href="https://gumroad.com/l/AwJYP" rel="noopener">
+              <div>
+                <h3>Starter Edition</h3>
+              </div>
+              <div className="mt-2">
+                <h5 className="max-w-sm">Download the first two volumes in the collection</h5>
+              </div>
+              <div className="mt-16 list-none!">
+                <ul className="font-semibold space-y-2">
+                  <li className="prose dark:prose-dark prose-lg">Volume 1: Software Craft</li>
+                  <li className="prose dark:prose-dark prose-lg">Volume 2: What Clients Need</li>
+                  <li className="prose dark:prose-dark prose-lg">Lifetime Slack Community Access</li>
+                </ul>
+              </div>
+              <div className="mt-12"><span className="button-no-hover">Buy for €12.99</span></div>
+              <div className="mt-2"><span>14-day money-back guarantee</span></div>
+            </a>
+          </div>
+          <div className="first-cta-lifetime-collection-access text-center homepage-elevated-box-on-hover">
+            <a href="https://gumroad.com/l/TaEPM" rel="noopener">
+              <div>
+                <h3>Lifetime Collection Access</h3>
+              </div>
+              <div className="mt-2">
+                <h5 className="max-w-sm">Published volumes plus all future releases</h5>
+              </div>
+              <div className="mt-16 list-none!">
+                <ul className="font-semibold space-y-2">
+                  <li className="prose dark:prose-dark prose-lg">All 12 Volumes</li>
+                  <li className="prose dark:prose-dark prose-lg">Lifetime Slack Community Access</li>
+                  <li className="prose dark:prose-dark prose-lg">BONUS: 30-minute live career coaching session</li>
+                </ul>
+              </div>
+              <div className="mt-12"><span className="text-xl">Save €75</span></div>
+              <div className="mt-4"><span className="button-no-hover">Buy for €125</span></div>
+              <div className="mt-2"><span>14-day money-back guarantee</span></div>
+            </a>
+          </div>
+        </div>
 
+
+        {/* https://app.gumroad.com/products/TaEPM/edit */}
 
 
         <div className="mt-16 max-w-7xl flex flex-row justify-center">
-            <NewsletterSubscribe />
+          <NewsletterSubscribe/>
         </div>
       </StyledDiv>
     </Layout>
