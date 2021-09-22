@@ -87,7 +87,7 @@ const Layout = ({ children, customMeta }: LayoutProps) => {
         )}
         <meta name="theme-color" content="#263545" /> {/* devConceptsBlue-700 */}
       </Head>
-      <header className="main-header sticky top-0 z-50 py-4 px-8 flex flex-col sm:flex-row justify-between bg-devConceptsBlue-500 text-devConceptsGray-100 border-b-2 border-devConceptsBlue-700 shadow-lg">
+      <header className="main-header top-0 z-50 py-4 px-8 flex flex-col sm:flex-row justify-between bg-devConceptsBlue-500 text-devConceptsGray-100 border-b-2 border-devConceptsBlue-700 shadow-lg">
         <a
           href="#main"
           aria-label="Skip to the content"
