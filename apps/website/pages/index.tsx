@@ -64,11 +64,11 @@ const IndexPage = () => {
               <h3>The mentorship you need to build a solid foundation, lead a better professional life, and show your
                 true value</h3>
             </div>
-            <div className="mt-6 prose dark:prose-dark prose-lg">
+            <div className="mt-6 prose dark:prose-dark prose-lg space-y-2">
               <p>Software development challenges you to constantly learn and grow. You're not some basic coder who
                 churns out line after line of boring code.</p>
-              <p className="mt-2">Developing software demands nothing less than craftsmanship.</p>
-              <p className="mt-2">A lot of domain knowledge exists solely in your senior's head. You need someone to
+              <p>Developing software demands nothing less than craftsmanship.</p>
+              <p>A lot of domain knowledge exists solely in your senior's head. You need someone to
                 pass down the golden nuggets of experience acquired through countless hours of trial and error.</p>
             </div>
           </div>
@@ -241,7 +241,7 @@ const IndexPage = () => {
           </div>
           <div className="solution-confidence-details">
             <div className="">
-              <span className="text-xl">UNDERSTAND THE INDUSTRY </span>
+              <span className="text-xl">UNDERSTAND THE INDUSTRY</span>
             </div>
             <div className="mt-2">
               <h3>Know what’s happening at every step. Proceed with confidence.</h3>
@@ -295,6 +295,38 @@ const IndexPage = () => {
               <div className="mt-4"><span className="button-no-hover">Buy for €125</span></div>
               <div className="mt-2"><span>14-day money-back guarantee</span></div>
             </a>
+          </div>
+        </div>
+
+        <div className="social-proof-author grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+          <div className="solution-proof-author-picture">
+            <Image
+              alt="Sébastien Dubois, the author"
+              width={528}
+              height={635}
+              src="/static/images/sebastien.png"
+              className="rounded-lg"
+            />
+          </div>
+          <div className="social-proof-author-details">
+            <div className="">
+              <span className="text-xl">A UNIQUE PERSPECTIVE</span>
+            </div>
+            <div className="mt-2">
+              <h3>Practices, strategies, and practical examples that last your entire career</h3>
+            </div>
+            <div className="mt-6 prose dark:prose-dark prose-lg space-y-2">
+              <p>Hi, I’m <a href="https://www.linkedin.com/in/sebastiend/" rel="noopener noreferrer">Sébastien Dubois</a>, an <a href="https://www.dsebastien.net/books" rel="noopener">author</a>, <a href="https://www.dsebastien.net/blog" rel="noopener">blogger</a>, software crafter, coach/mentor, open source contributor, CTO and founder. I've been working for <span className="italic">15 years</span> in the industry, and have explored many areas of IT. I've been a technical leader for both back-end and front-end. I've also worked as solutions architect, led large projects and teams, managed critical IT infrastructure. and founded <a href="https://developassion.be">my own company</a>.</p>
+              <p>Daily, I help guide junior developers who often find themselves overwhelmed with a churn of best practices, new languages, and communication.</p>
+              <p>That’s why I created the Dev Concepts collection; to help even more developers avoid feeling overwhelmed, and show you where to apply your focus for maximum productivity and efficiency. The skills and habits from each volume form the foundation of your long-term success.</p>
+              <p>Join a community of software crafters who, like you, are passionate about software, personal productivity, and career advancement.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="social-proof-quote grid grid-cols-1 place-items-center">
+          <div className="max-w-2xl">
+            <span className="italic text-3xl">“I love this job, I’m doing exactly what I want, my coworkers are smart and helpful, the pay is good, and the work-life balance is fantastic”</span>
           </div>
         </div>
 
