@@ -38,7 +38,7 @@ export default function Updates(input: { entries: FrontMatter[] }) {
         <h1 className="page-heading">Updates</h1>
         <p className="text-gray-900 dark:text-gray-400 mb-4">
           I've published <b>{`${input.entries.length}`}</b> update
-          {input.entries.length > 1 && 's'} here. Use the search below to filter by title.
+          {input.entries.length > 1 && 's'} here. Previous updates are available <a href="https://www.indiehackers.com/product/dev-concepts" rel="noopener">on IndieHackers</a>.
         </p>
         <div className="relative w-full mb-4">
           <input
