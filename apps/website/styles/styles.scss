@@ -47,9 +47,7 @@ body > div:first-child,
 }
 
 .hero-text {
-  @apply text-7xl font-semibold tracking-normal text-gray-900 dark:text-gray-100 #{!important}; /* FIXME avoid forcing important once the GlobalStyles get loaded in the right order) */
-  line-height: 50px;
-  padding: 2px 0;
+  @apply text-7xl font-semibold tracking-wide md:leading-tight text-gray-900 dark:text-gray-100 #{!important}; /* FIXME avoid forcing important once the GlobalStyles get loaded in the right order) */
 }
 
 h1 {

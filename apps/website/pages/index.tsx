@@ -14,8 +14,8 @@ const IndexPage = () => {
   return (
     <Layout>
       <StyledDiv className="homepage-content-wrapper space-y-32">
-        <div id="hero" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
-          <div className="hero-details">
+        <div id="hero" className="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center">
+          <div className="hero-details md:col-span-2">
             <div className="">
               <span className="text-xl">DEV CONCEPTS COLLECTION</span>
             </div>
@@ -32,9 +32,9 @@ const IndexPage = () => {
           <div className="hero-image">
             <Image
               alt="Dev Concepts Collection"
-              width={1076}
-              height={778}
-              src="/static/images/devConcepts/DevConceptsHardCover tinypng.png"
+              width={1196}
+              height={1450}
+              src="/static/images/devConcepts/DevConceptsHardCoverThin tinypng.png"
               className="rounded-lg"
             />
           </div>
@@ -301,7 +301,6 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-
 
         <div id="first-cta" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center items-stretch">
           <div className="first-cta-starter-bundle text-center homepage-elevated-box-on-hover">
