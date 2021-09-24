@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@/layouts/layout';
 import tw from "twin.macro";
 import NewsletterSubscribe from "@/components/newsletter-subscribe";
+import Link from 'next/link';
 import Image from "next/image";
 import {GiStoneCrafting} from "react-icons/gi";
 import {RiUserHeartLine} from "react-icons/ri";
@@ -13,7 +14,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <StyledDiv className="homepage-content-wrapper space-y-32">
-        <div className="hero grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+        <div id="hero" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
           <div className="hero-details">
             <div className="">
               <span className="text-xl">DEV CONCEPTS COLLECTION</span>
@@ -39,7 +40,7 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className="core-agitation grid grid-cols-1 place-items-center homepage-elevated-box">
+        <div id="core-agitation" className="grid grid-cols-1 place-items-center homepage-elevated-box">
           <div className="max-w-2xl">
             <div>
               <h3 className="max-w-2xl">What happens when someone realizes that you're out of your depth?</h3>
@@ -58,7 +59,7 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className="solution-intro grid grid-cols-1 md:grid-cols-2 gap-12 justify-between">
+        <div id="solution-intro" className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-between">
           <div className="solution-intro-details">
             <div className="mt-2">
               <h3>The mentorship you need to build a solid foundation, lead a better professional life, and show your
@@ -86,7 +87,8 @@ const IndexPage = () => {
         </div>
 
         <div
-          className="solution-volumes min-w-full w-full solution-overview grid grid-cols-1 place-items-center homepage-elevated-box">
+          id="solution-volumes"
+          className="min-w-full w-full solution-overview grid grid-cols-1 place-items-center homepage-elevated-box">
           <div className="min-w-full">
             <div className="flex flex-row justify-center">
               <h3 className="max-w-xl text-center">Each volume is packed full of detailed definitions, pros/cons, tips,
@@ -186,7 +188,7 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className="solution-focus grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+        <div id="solution-focus" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
           <div className="solution-focus-image">
             <Image
               alt="Picture courtesy of Nicolás Flor: https://unsplash.com/@nicolasflorr"
@@ -228,7 +230,7 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className="solution-mentorship grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+        <div id="solution-mentorship" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
           <div className="solution-mentorship-details">
             <div className="">
               <span className="text-xl">DIRECT ACCESS TO MENTORS</span>
@@ -237,7 +239,7 @@ const IndexPage = () => {
               <h3>Save days of endless articles and how-to guides with Slack mentorship</h3>
             </div>
             <div className="mt-6 prose dark:prose-dark prose-lg">
-              <p>You wouldn’t expect an electrical engineer to walk into their role without a senior craftsman to guide
+              <p>You wouldn't expect an electrical engineer to walk into their role without a senior craftsman to guide
                 them. You deserve access to the guidance of experienced mentors.</p>
 
               <div className="mt-2 flex flex-row items-center gap-2">
@@ -271,7 +273,7 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className="solution-confidence grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+        <div id="solution-confidence" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
           <div className="solution-confidence-image">
             <Image
               alt="Picture courtesy of Jonathan Klok: https://unsplash.com/@mostly_brave"
@@ -294,13 +296,14 @@ const IndexPage = () => {
 
               <p className="mt-2">Avoid the trap of misinformation and confidently rely on the knowledge you learn.</p>
 
-              <p className="mt-2">Learn about concepts, abstractions, create solid mental models then keep exploring the hundreds of provided resources to fill your knowledge gaps.</p>
+              <p className="mt-2">Learn about concepts, abstractions, create solid mental models then keep exploring the
+                hundreds of provided resources to fill your knowledge gaps.</p>
             </div>
           </div>
         </div>
 
 
-        <div className="first-cta grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center items-stretch">
+        <div id="first-cta" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center items-stretch">
           <div className="first-cta-starter-bundle text-center homepage-elevated-box-on-hover">
             <a href="https://gumroad.com/l/AwJYP" rel="noopener">
               <div>
@@ -342,7 +345,7 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className="social-proof-author grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+        <div id="social-proof" className="author grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
           <div className="solution-proof-author-picture">
             <Image
               alt="Sébastien Dubois, the author"
@@ -360,46 +363,183 @@ const IndexPage = () => {
               <h3>Practices, strategies, and practical examples that last your entire career</h3>
             </div>
             <div className="mt-6 prose dark:prose-dark prose-lg space-y-2">
-              <p>Hi, I’m <a href="https://www.linkedin.com/in/sebastiend/" rel="noopener noreferrer">Sébastien Dubois</a>, an <a href="https://www.dsebastien.net/books" rel="noopener">author</a>, <a href="https://www.dsebastien.net/blog" rel="noopener">blogger</a>, software crafter, coach/mentor, open source contributor, CTO and founder. I've been working for <span className="italic">15 years</span> in the industry, and have explored many areas of IT. I've been a technical leader for both back-end and front-end. I've also worked as solutions architect, led large projects and teams, managed critical IT infrastructure. and founded <a href="https://developassion.be">my own company</a>.</p>
-              <p>Daily, I help junior developers who often find themselves overwhelmed with a churn of programming languages, frameworks, libraries and tools.</p>
-              <p>That’s why I created the Dev Concepts collection; to help even more developers avoid feeling overwhelmed, and show you where to apply your focus for maximum productivity and efficiency. The skills and habits from each volume form the foundation of your long-term success.</p>
-              <p>Join a community of software crafters who, like you, are passionate about software, personal productivity, and career advancement.</p>
+              <p>Hi, I’m <a href="https://www.linkedin.com/in/sebastiend/" rel="noopener noreferrer">Sébastien
+                Dubois</a>, an <a href="https://www.dsebastien.net/books" rel="noopener">author</a>, <a
+                href="https://www.dsebastien.net/blog" rel="noopener">blogger</a>, software crafter, coach/mentor, open
+                source contributor, CTO and founder. I've been working for <span className="italic">15 years</span> in
+                the industry, and have explored many areas of IT. I've been a technical leader for both back-end and
+                front-end. I've also worked as solutions architect, led large projects and teams, managed critical IT
+                infrastructure. and founded <a href="https://developassion.be">my own company</a>.</p>
+              <p>Daily, I help junior developers who often find themselves overwhelmed with a churn of programming
+                languages, frameworks, libraries and tools.</p>
+              <p>That’s why I created the Dev Concepts collection; to help even more developers avoid feeling
+                overwhelmed, and show you where to apply your focus for maximum productivity and efficiency. The skills
+                and habits from each volume form the foundation of your long-term success.</p>
+              <p>Join a community of software crafters who, like you, are passionate about software, personal
+                productivity, and career advancement.</p>
             </div>
           </div>
         </div>
 
-        <div className="social-proof-quote grid grid-cols-1 place-items-center">
+        <div id="social-proof-quote" className="grid grid-cols-1 place-items-center">
           <div className="max-w-2xl">
             <span className="italic text-3xl">“I love this job, I’m doing exactly what I want, my coworkers are smart and helpful, the pay is good, and the work-life balance is fantastic”</span>
           </div>
         </div>
 
-        {/* region solution-long-term-outcomes-vs-short-term-benefits */}
-        <div className="solution-long-term-outcomes-vs-short-term-benefits grid grid-cols-1 place-items-center homepage-elevated-box">
+        <div id="solution-long-term-outcomes-vs-short-term-benefits"
+             className="grid grid-cols-1 place-items-center homepage-elevated-box">
           <div className="">
             <div className="flex flex-row items-center justify-center">
-              <h3 className="max-w-2xl text-center">Yes, it’s possible for you to enjoy a great job, and great life. The skills you need can be learned. </h3>
+              <h3 className="max-w-2xl text-center">Yes, it’s possible for you to enjoy a great job, and great life. The
+                skills you need can be learned.</h3>
             </div>
             <div className="mt-6 flex flex-row items-center justify-center">
-              <h5 className="max-w-2xl itelic">Here’s what the Dev Concepts Collection will help you achieve. </h5>
+              <h5 className="max-w-2xl italic">Here’s what the Dev Concepts Collection will help you achieve.</h5>
             </div>
-            <div className="mt-12 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12"> {/*  prose dark:prose-dark prose-lg */}
+            <div className="mt-12 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
               <div>
                 <div><h3>Get your first job offers</h3></div>
-                <div className="prose dark:prose-dark prose-lg">Maybe you’re just starting out. Maybe you’ve been hunting for months. Wherever you are , the Dev Concepts collection will give you the skills you need to put you ahead of other applicants.</div>
+                <div className="prose dark:prose-dark prose-lg">Maybe you’re just starting out. Maybe you’ve been
+                  hunting for months. Wherever you are , the Dev Concepts collection will give you the skills you need
+                  to put you ahead of other applicants.
+                </div>
               </div>
               <div>
                 <div><h3>Land your dream position</h3></div>
-                <div className="prose dark:prose-dark prose-lg">Being a good developer isn’t just about skill, it’s also about passion and experience. Use a strong foundation to build software that delights end users.</div>
+                <div className="prose dark:prose-dark prose-lg">Being a good developer isn’t just about skill, it’s also
+                  about passion and experience. Use a strong foundation to build software that delights end users.
+                </div>
               </div>
               <div>
                 <div><h3>Start the path to a senior position</h3></div>
-                <div className="prose dark:prose-dark prose-lg">Startup culture often means that you’re thrown out of your depth with no one to guide you in best practices. Dev Concepts puts you on the right path.</div>
+                <div className="prose dark:prose-dark prose-lg">Startup culture often means that you’re thrown out of
+                  your depth with no one to guide you in best practices. Dev Concepts puts you on the right path.
+                </div>
               </div>
             </div>
           </div>
         </div>
-        {/* end region solution-long-term-outcomes-vs-short-term-benefits */}
+
+        <div id="faq" className="grid grid-cols-1 place-items-center"> {/* homepage-elevated-box */}
+          <div className="min-w-full">
+            <div className="flex flex-row items-center justify-center">
+              <h3 className="max-w-2xl text-center">Frequently asked questions</h3>
+            </div>
+            <div className="mt-12 mx-auto grid grid-cols-1 md:grid-cols-1 gap-x-12 gap-y-4">
+              <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
+                <summary className="font-semibold text-lg dark:text-devConceptsWhite">
+                  I’m unmotivated and frustrated because of a lack of progress — not laziness. Is this going to fix
+                  that?
+                </summary>
+
+                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
+                  A book isn’t going to magically fix your career, but it will give you the mindset you need to succeed in software development.
+                </span>
+              </details>
+
+              <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
+                <summary className="font-semibold text-lg dark:text-devConceptsWhite">
+                  I don’t have time to read an entire book... let alone a collection! Can I still learn something here?
+                </summary>
+
+                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
+                  Yes! While it’s recommended that you do a quick read-through, the volumes and chapters are designed to stand alone. Every time you face a particular problem, you can do a quick search and find the chapter that will help you the fastest. Plus each section includes external links and resources that you will help you dive much deeper into the subject matter.
+                </span>
+              </details>
+
+              <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
+                <summary className="font-semibold text-lg dark:text-devConceptsWhite">
+                  Will this collection teach me the technical side of engineering?
+                </summary>
+
+                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
+                  Dev Concept includes many practical examples and code snippets, but it isn't a replacement for hands-on training. Most of the concepts are presented in isolation to facilitate comprehension.
+                </span>
+              </details>
+
+              <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
+                <summary className="font-semibold text-lg dark:text-devConceptsWhite">
+                  How does the Slack group work?
+                </summary>
+
+                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
+                  The Slack community is where you can send questions about all aspects of software engineering and IT. Your questions will always be answered by a senior engineer.  You can ask questions about technical issues, conceptual ones, or even about how to deal with work challenges. We’re a friendly community that’s excited to welcome you!
+                </span>
+              </details>
+
+              <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
+                <summary className="font-semibold text-lg dark:text-devConceptsWhite">
+                  What if I don’t like the collection? How does the money-back guarantee work?
+                </summary>
+
+                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
+                  If you're not satisfied with the content, then contact me within 14 days and you'll get a full refund. The only thing I'll ask is to understand what did not meet your expectations.
+                </span>
+              </details>
+
+              <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
+                <summary className="font-semibold text-lg dark:text-devConceptsWhite">
+                  Why are only some of the volumes available right now?
+                </summary>
+
+                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
+                  Dev Concepts is a <span className="italic">huge</span> project. I will release a new volume every few months. If you purchase the lifetime plan, you will get immediate access as soon as it’s published. In addition, the content will be updated regularly to remain relevant and up to date.
+                </span>
+              </details>
+
+              <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
+                <summary className="font-semibold text-lg dark:text-devConceptsWhite">
+                  I don’t understand what’s in each volume
+                </summary>
+
+                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
+                  Check out <Link href="volumes">the full chapter breakdown for each volume</Link>. You can also free samples volume 1 <a
+                  href="https://dsebastien.net/blog" rel="noopener">here</a>.
+                </span>
+              </details>
+
+              <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
+                <summary className="font-semibold text-lg dark:text-devConceptsWhite">
+                  I’m not so sure about the standard edition... Can I buy just a single volume instead?
+                </summary>
+
+                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
+                  You can <a href="#solution-volumes">buy each volume separately</a>. That being said, I recommend the Lifetime Collection Bundle to save €75.
+                </span>
+              </details>
+
+              <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
+                <summary className="font-semibold text-lg dark:text-devConceptsWhite">
+                  I can't afford to buy this...
+                </summary>
+
+                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
+                  Contact me through <a href="https://twitter.com/dsebastien" rel="noopener">Twitter</a> or by <a
+                  href="mailto:sebastien@developassion.be" rel="noopener">mail</a>, and we'll figure something out.
+                </span>
+              </details>
+
+              <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
+                <summary className="font-semibold text-lg dark:text-devConceptsWhite">
+                  I want to buy Dev Concepts for a group at work
+                </summary>
+
+                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
+                  No problem! You just need to buy a group license. Contact me through <a
+                  href="https://twitter.com/dsebastien" rel="noopener">Twitter</a> or by <a
+                  href="mailto:sebastien@developassion.be" rel="noopener">mail</a> for more information.
+                </span>
+              </details>
+            </div>
+          </div>
+        </div>
+
+        <div id="social-proof-message" className="grid grid-cols-1 place-items-center">
+          <div className="max-w-2xl">
+            <span className="text-3xl font-semibold">Going from studying to the actual real-world environment? Switching to a different role? No problem.</span>
+          </div>
+        </div>
 
         <div className="mt-16 max-w-7xl flex flex-row justify-center">
           <NewsletterSubscribe/>
