@@ -540,6 +540,66 @@ const IndexPage = () => {
           </div>
         </div>
 
+        <div id="main-cta" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center items-stretch">
+          <div className="main-cta-starter-bundle homepage-elevated-box-on-hover">
+            <a href="https://gumroad.com/l/AwJYP" rel="noopener">
+              <div>
+                <h3 className="text-center">Starter Edition</h3>
+              </div>
+              <div className="mt-2 flex flex-row text-center justify-center">
+                <h5 className="">Download the first two volumes in the collection</h5>
+              </div>
+              <div className="mt-12 list-none!">
+                <ul className="space-y-4">
+                  <li className="prose dark:prose-dark prose-lg">
+                    <div className="font-semibold">Volume 1: Software Craft</div>
+                    <div>How to develop a craftsmanship attitude that helps you solve real-world problems.</div>
+                  </li>
+                  <li className="prose dark:prose-dark prose-lg">
+                    <div className="font-semibold">Volume 2: What Clients Need</div>
+                    <div>Understand a client’s functional needs, and how you can decode end-user goals. Make sure your software is always solving the right problems.</div>
+                  </li>
+                  <li className="prose dark:prose-dark prose-lg">
+                    <div className="font-semibold">Lifetime Slack Community Access</div>
+                    <div>Get answers to your development questions, build a network of like-minded software crafters & learn with mentorship from a senior developer.</div>
+                  </li>
+                </ul>
+              </div>
+              <div className="mt-12"><span className="button-no-hover">Buy for €14.99</span></div>
+              <div className="mt-2 text-center"><span className="prose dark:prose-dark">14-day money-back guarantee</span></div>
+            </a>
+          </div>
+          <div className="main-cta-lifetime-collection-access homepage-elevated-box-on-hover">
+            <a href="https://gumroad.com/l/TaEPM" rel="noopener">
+              <div>
+                <h3 className="text-center">Lifetime Collection Access</h3>
+              </div>
+              <div className="mt-2 flex flex-row text-center justify-center">
+                <h5 className="">Published volumes plus all future releases</h5>
+              </div>
+              <div className="mt-12 list-none!">
+                <ul className="space-y-4 ">
+                  <li className="prose dark:prose-dark prose-lg">
+                    <div className="font-semibold">All 12 Volumes</div>
+                    <div>All currently published volumes plus all the future releases covering: IT architecture, Software design, Computer architecture & OS basics, Coding Basics, General concerns & Best practices, Back-end, Front-end, IT Infrastructure, Security, Project management & Software development approaches.</div>
+                  </li>
+                  <li className="prose dark:prose-dark prose-lg">
+                    <div className="font-semibold">Lifetime Slack Community Access</div>
+                    <div>Get answers to your development questions, build a network of like-minded software crafters & learn with mentorship from a senior developer.</div>
+                  </li>
+                  <li className="prose dark:prose-dark prose-lg">
+                    <div className="font-semibold">BONUS: 30-minute live career coaching session</div>
+                    <div>Meet with Sébastien, the author and coach. Get actionable, personalized advice on job seeking, your skill development, and more.</div>
+                  </li>
+                </ul>
+              </div>
+              <div className="mt-12 text-center"><span className="prose dark:prose-dark prose-xl">Save €75</span></div>
+              <div className="mt-4 text-center"><span className="button-no-hover">Buy for €125</span></div>
+              <div className="mt-2 text-center"><span className="prose dark:prose-dark">14-day money-back guarantee</span></div>
+            </a>
+          </div>
+        </div>
+
         <div className="mt-16 max-w-7xl flex flex-row justify-center">
           <NewsletterSubscribe/>
         </div>
