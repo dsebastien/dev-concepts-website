@@ -110,16 +110,15 @@ const Layout = ({ children, customMeta }: LayoutProps) => {
                 <div className="site-button text-base">Home</div>
               </a>
             </Link>
-            <Link href="/updates">
+            <Link href="/volumes">
               <a
                 className="main-menu-link"
-                aria-label="Go to the updates"
-                title="Go to the updates"
+                aria-label="Go to the volume summaries page"
+                title="Go to the volume summaries page"
               >
-                <div className="site-button text-base">Updates</div>
+                <div className="site-button text-base">Volume summaries</div>
               </a>
             </Link>
-
             <Link href="/table-of-contents">
               <a
                 className="main-menu-link"
@@ -129,13 +128,13 @@ const Layout = ({ children, customMeta }: LayoutProps) => {
                 <div className="site-button text-base">Table of contents</div>
               </a>
             </Link>
-            <Link href="/about">
+            <Link href="/updates">
               <a
                 className="main-menu-link"
-                aria-label="Go to the about page"
-                title="Go to the about page"
+                aria-label="Go to the updates"
+                title="Go to the updates"
               >
-                <div className="site-button text-base">About</div>
+                <div className="site-button text-base">Updates</div>
               </a>
             </Link>
           </nav>
