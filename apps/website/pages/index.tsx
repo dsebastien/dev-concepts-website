@@ -19,7 +19,7 @@ const IndexPage = () => {
               <span className="text-xl">DEV CONCEPTS COLLECTION</span>
             </div>
             <div className="mt-2">
-              <span className="hero-text">Your guide to the fundamentals of Software Development</span>
+              <span className="hero-text">Your guide to the fundamentals of software development</span>
             </div>
             <div className="mt-6">
               <p className="text-lg">A 12-volume collection of digital books that supports junior software developers in
@@ -186,6 +186,48 @@ const IndexPage = () => {
           </div>
         </div>
 
+        <div className="solution-focus grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+          <div className="solution-focus-image">
+            <Image
+              alt="Picture courtesy of Nicolás Flor: https://unsplash.com/@nicolasflorr"
+              width={1740}
+              height={1160}
+              src="/static/images/concentration.jpg"
+              className="rounded-lg"
+            />
+          </div>
+          <div className="solution-focus-details">
+            <div className="">
+              <h3>Find out what deserves your concentration with the Dev Concepts Collection</h3>
+            </div>
+            <div className="mt-6 prose dark:prose-dark prose-lg">
+              <div className="flex flex-row items-center gap-2">
+                <div className="flex flex-row items-center"><AiFillRightCircle className="text-3xl"/></div>
+                <div className="flex flex-row items-center"><span className="">Know that you're choosing the best solution even when there are countless approaches.</span>
+                </div>
+              </div>
+
+              <div className="flex flex-row items-center gap-2">
+                <div className="flex flex-row items-center"><AiFillRightCircle className="text-3xl"/></div>
+                <div className="flex flex-row items-center"><span className="">Understand the entire development process so you don't make project-destroying mistakes.</span>
+                </div>
+              </div>
+
+              <div className="mt-2 flex flex-row items-center gap-2">
+                <div className="flex flex-row items-center"><AiFillRightCircle className="text-3xl"/></div>
+                <div className="flex flex-row items-center"><span className="">Level up your game so team members, clients, and managers listen to your ideas.</span>
+                </div>
+              </div>
+
+              <div className="mt-2 flex flex-row items-center gap-2">
+                <div className="flex flex-row items-center"><AiFillRightCircle className="text-3xl"/></div>
+                <div className="flex flex-row items-center"><span className="">Set yourself up for high-paying positions with a rock-solid grasp of all the moving parts and how they connect.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="solution-mentorship grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
           <div className="solution-mentorship-details">
             <div className="">
@@ -248,9 +290,11 @@ const IndexPage = () => {
             </div>
             <div className="mt-6 prose dark:prose-dark prose-lg">
               <p>Instead of trying to collect information from multiple sources and online ‘gurus’, get the correct info
-                the first time around. This collection is your single source roadmap to software development.</p>
+                the first time around. This collection is your single source roadmap to software development and IT.</p>
 
               <p className="mt-2">Avoid the trap of misinformation and confidently rely on the knowledge you learn.</p>
+
+              <p className="mt-2">Learn about concepts, abstractions, create solid mental models then keep exploring the hundreds of provided resources to fill your knowledge gaps.</p>
             </div>
           </div>
         </div>
@@ -272,8 +316,8 @@ const IndexPage = () => {
                   <li className="prose dark:prose-dark prose-lg">Lifetime Slack Community Access</li>
                 </ul>
               </div>
-              <div className="mt-12"><span className="button-no-hover">Buy for €12.99</span></div>
-              <div className="mt-2"><span>14-day money-back guarantee</span></div>
+              <div className="mt-12"><span className="button-no-hover">Buy for €14.99</span></div>
+              <div className="mt-2"><span className="prose dark:prose-dark">14-day money-back guarantee</span></div>
             </a>
           </div>
           <div className="first-cta-lifetime-collection-access text-center homepage-elevated-box-on-hover">
@@ -291,9 +335,9 @@ const IndexPage = () => {
                   <li className="prose dark:prose-dark prose-lg">BONUS: 30-minute live career coaching session</li>
                 </ul>
               </div>
-              <div className="mt-12"><span className="text-xl">Save €75</span></div>
+              <div className="mt-12"><span className="prose dark:prose-dark prose-xl">Save €75</span></div>
               <div className="mt-4"><span className="button-no-hover">Buy for €125</span></div>
-              <div className="mt-2"><span>14-day money-back guarantee</span></div>
+              <div className="mt-2"><span className="prose dark:prose-dark">14-day money-back guarantee</span></div>
             </a>
           </div>
         </div>
@@ -317,7 +361,7 @@ const IndexPage = () => {
             </div>
             <div className="mt-6 prose dark:prose-dark prose-lg space-y-2">
               <p>Hi, I’m <a href="https://www.linkedin.com/in/sebastiend/" rel="noopener noreferrer">Sébastien Dubois</a>, an <a href="https://www.dsebastien.net/books" rel="noopener">author</a>, <a href="https://www.dsebastien.net/blog" rel="noopener">blogger</a>, software crafter, coach/mentor, open source contributor, CTO and founder. I've been working for <span className="italic">15 years</span> in the industry, and have explored many areas of IT. I've been a technical leader for both back-end and front-end. I've also worked as solutions architect, led large projects and teams, managed critical IT infrastructure. and founded <a href="https://developassion.be">my own company</a>.</p>
-              <p>Daily, I help guide junior developers who often find themselves overwhelmed with a churn of best practices, new languages, and communication.</p>
+              <p>Daily, I help junior developers who often find themselves overwhelmed with a churn of programming languages, frameworks, libraries and tools.</p>
               <p>That’s why I created the Dev Concepts collection; to help even more developers avoid feeling overwhelmed, and show you where to apply your focus for maximum productivity and efficiency. The skills and habits from each volume form the foundation of your long-term success.</p>
               <p>Join a community of software crafters who, like you, are passionate about software, personal productivity, and career advancement.</p>
             </div>
@@ -330,9 +374,32 @@ const IndexPage = () => {
           </div>
         </div>
 
-
-        {/* https://app.gumroad.com/products/TaEPM/edit */}
-
+        {/* region solution-long-term-outcomes-vs-short-term-benefits */}
+        <div className="solution-long-term-outcomes-vs-short-term-benefits grid grid-cols-1 place-items-center homepage-elevated-box">
+          <div className="">
+            <div className="flex flex-row items-center justify-center">
+              <h3 className="max-w-2xl text-center">Yes, it’s possible for you to enjoy a great job, and great life. The skills you need can be learned. </h3>
+            </div>
+            <div className="mt-6 flex flex-row items-center justify-center">
+              <h5 className="max-w-2xl itelic">Here’s what the Dev Concepts Collection will help you achieve. </h5>
+            </div>
+            <div className="mt-12 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12"> {/*  prose dark:prose-dark prose-lg */}
+              <div>
+                <div><h3>Get your first job offers</h3></div>
+                <div className="prose dark:prose-dark prose-lg">Maybe you’re just starting out. Maybe you’ve been hunting for months. Wherever you are , the Dev Concepts collection will give you the skills you need to put you ahead of other applicants.</div>
+              </div>
+              <div>
+                <div><h3>Land your dream position</h3></div>
+                <div className="prose dark:prose-dark prose-lg">Being a good developer isn’t just about skill, it’s also about passion and experience. Use a strong foundation to build software that delights end users.</div>
+              </div>
+              <div>
+                <div><h3>Start the path to a senior position</h3></div>
+                <div className="prose dark:prose-dark prose-lg">Startup culture often means that you’re thrown out of your depth with no one to guide you in best practices. Dev Concepts puts you on the right path.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* end region solution-long-term-outcomes-vs-short-term-benefits */}
 
         <div className="mt-16 max-w-7xl flex flex-row justify-center">
           <NewsletterSubscribe/>

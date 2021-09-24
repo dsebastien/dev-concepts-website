@@ -71,7 +71,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="md:w-1/2 flex flex-row items-center justify-center object-center"><span>LOGO GOES HERE</span></div>
+        <div className="md:w-1/2 flex flex-row items-center justify-center object-center">
+          {/* TODO add logo here */}
+        </div>
       </div>
       <div className="text-center mt-10 sm:mt-16">
         <span className="text-gray-200 font-semibold">© Sébastien Dubois. All rights reserved.</span>
