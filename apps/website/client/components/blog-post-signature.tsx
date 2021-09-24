@@ -11,7 +11,7 @@ const StyledDiv = tw.div``;
 const BlogPostSignature = () => {
   return (
     <>
-      <StyledDiv className="mb-2">
+      <StyledDiv className="mt-8 mb-2">
         PS: <a href="https://dsebastien.net" rel="noopener">
           check out my Website</a>, {' '}<a href="https://join.slack.com/t/softwarecrafterstalk/shared_invite/zt-umgx3v06-4rtJ20PXz867GTPzCk1zeQ" rel="noopener">
         join the Software Crafters community</a>, and{' '}
