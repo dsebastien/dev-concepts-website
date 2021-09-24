@@ -13,7 +13,7 @@ const Footer = () => {
         <div>
           <div>
             <div className="font-semibold text-3xl">Dev Concepts</div>
-            <div className="mt-6 w-3/4 wrap">Your guide to the fundamentals of software development.</div>
+            <div className="mt-6 w-3/4 wrap">Your guide to the fundamentals of software development and IT.</div>
           </div>
           <div className="mt-6 flex justify-around sm:justify-start">
             <SocialLinks/>
@@ -36,6 +36,19 @@ const Footer = () => {
               </Link>
             </li>
             <li>
+              <Link href="/volumes">
+                <a
+                  className=""
+                  aria-label="Explore the volume summaries"
+                  title="Explore the volume summaries"
+                >
+                  <div
+                    className="text-devConceptsGray-300 visited:text-devConceptsGray-300 hover:text-devConceptsGray-100">Volume summaries
+                  </div>
+                </a>
+              </Link>
+            </li>
+            <li>
               <Link href="/table-of-contents">
                 <a
                   className=""
@@ -49,22 +62,26 @@ const Footer = () => {
                 </a>
               </Link>
             </li>
-            {/*
-              FIXME add links
-            <li>Volume summaries</li>
-            <li>Lifetime collection</li>
-            <li>What is a software crafter?</li>
-            */}
+            <li>
+              <a
+                href="https://dsebastien.net/blog/2021-08-18-what-is-a-software-crafter"
+                className=""
+                aria-label="What is a software crafter?"
+                title="What is a software crafter?"
+              >
+                <div
+                  className="text-devConceptsGray-300 visited:text-devConceptsGray-300 hover:text-devConceptsGray-100">What is a software crafter?</div>
+              </a>
+            </li>
             <li>
               <Link href="mailto:sebastien@developassion.be">
                 <a
                   className=""
-                  aria-label="Contact me"
-                  title="Contact me"
+                  aria-label="Contact the author"
+                  title="Contact the author"
                 >
                   <div
-                    className="text-devConceptsGray-300 visited:text-devConceptsGray-300 hover:text-devConceptsGray-100">Contact
-                    me
+                    className="text-devConceptsGray-300 visited:text-devConceptsGray-300 hover:text-devConceptsGray-100">Contact the author
                   </div>
                 </a>
               </Link>
