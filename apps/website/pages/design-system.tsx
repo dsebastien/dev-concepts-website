@@ -1,6 +1,8 @@
 import React from 'react';
 import Layout from '@/layouts/layout';
 import tw from "twin.macro";
+import NewsletterSubscribe from "@/components/newsletter-subscribe";
+import Footer from "@/components/footer";
 
 const StyledDiv = tw.div``;
 
@@ -340,6 +342,21 @@ const DesignSystem = () => {
             </StyledDiv>
           </main>
         </div>
+
+        <div className="design-system-box">
+          <header>Newsletter</header>
+          <main>
+            <NewsletterSubscribe />
+          </main>
+        </div>
+
+        <div className="design-system-box">
+          <header>Footer</header>
+          <main>
+            <Footer />
+          </main>
+        </div>
+
       </div>
       <div className="mb-16"></div>
     </Layout>
