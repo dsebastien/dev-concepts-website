@@ -34,7 +34,7 @@ body > div:first-child,
 .site-button {
   @apply text-center bg-devConceptsBlue-500 dark:bg-devConceptsBlue-400 hover:bg-devConceptsBlue-600 dark:hover:bg-devConceptsBlue-500 px-3 py-1 rounded-md font-medium text-sm text-devConceptsGray-100 dark:text-devConceptsGray-100 hover:text-devConceptsWhite dark:hover:text-devConceptsWhite focus:outline-none focus:ring-2 focus:ring-devConceptsBlue-300 focus:ring-opacity-50 ease-in-out transition-all duration-300 #{!important};
   /* WARNING: Adjust to match the longest menu item */
-  min-width: 8rem;
+  min-width: 9rem;
 }
 
 .button-no-hover {
@@ -43,7 +43,12 @@ body > div:first-child,
 
 .button {
   @extend .button-no-hover;
-  @apply hover:bg-devConceptsBlue-500
+  @apply hover:bg-devConceptsBlue-500;
+}
+
+.button-dark-bg {
+  @extend .button;
+  @apply dark:bg-devConceptsGreen-600 dark:hover:bg-devConceptsGreen-700;
 }
 
 .hero-text {
@@ -107,12 +112,12 @@ h6:hover {
   @apply prose dark:prose-dark max-w-4xl mx-auto mb-16;
 }
 
-.homepage-content-wrapper {
-  @apply max-w-7xl mx-auto mb-16;
+.page-content-wrapper {
+  @apply max-w-5xl mx-auto mb-16;
 }
 
-.page-content-wrapper {
-  @apply mx-auto mb-16 max-w-5xl;
+.large-page-content-wrapper {
+  @apply max-w-7xl mx-auto mb-16;
 }
 
 .homepage-box {
@@ -129,14 +134,23 @@ h6:hover {
   @apply hover:shadow-el-2xl;
 }
 
+.book-card-coming-soon {
+  @apply hover:cursor-pointer #{!important}; /* hover:cursor-default opacity-90 */
 
-.book-card { /*  */
+  & > footer {
+    & > .book-card-coming-soon-text {
+      @apply border-2 rounded-md mt-2 prose dark:prose-dark dark:text-white #{!important};
+    }
+  }
+}
+
+.book-card {
   @apply flex flex-col justify-between py-4 prose dark:prose-dark prose-xl hover:cursor-pointer;
 
-  min-width: 275px;
-  width: 275px;
-  min-height: 275px;
-  height: 275px;
+  min-width: 350px;
+  width: 350px;
+  min-height: 350px;
+  height: 350px;
 
   & > div {
     @apply text-8xl flex flex-row flex-grow items-center justify-center dark:text-devConceptsWhite;
@@ -155,13 +169,37 @@ h6:hover {
   }
 }
 
-.book-card-coming-soon {
-  @apply shadow-none opacity-50 hover:cursor-default #{!important};
-}
+.large-book-card {
+  @apply flex flex-col justify-start py-4 prose dark:prose-dark prose-xl hover:cursor-pointer hover:cursor-default;
 
-/*
-  @apply text-center justify-center flex flex-col items-center border-2 rounded-md border-devConceptsGray-300 dark:border-devConceptsGray-800 hover:border-devConceptsBlue-400 dark:hover:border-devConceptsBlue-400 hover:shadow-md transition-all ease-in duration-150; hover:cursor-pointer
-*/
+  min-width: auto;
+  width: 450px;
+  min-height: auto;
+  height: 920px;
+
+  & > div {
+    @apply text-8xl flex flex-row flex-grow-0 flex-shrink-0 items-start justify-center dark:text-devConceptsWhite;
+  }
+
+  & > footer {
+    @apply min-w-full text-devConceptsGray-900 dark:text-devConceptsGray-100;
+
+    & > .book-card-title {
+      @apply font-bold text-2xl text-center;
+    }
+
+    & > .book-card-subtitle {
+      @apply text-3xl font-semibold text-center;
+      min-height: 75px;
+    }
+
+    & > .book-card-description {
+      @apply mt-4 text-center;
+      min-height: 250px;
+      max-height: 250px;
+    }
+  }
+}
 
 .scroll-to-top {
   @apply fixed z-10 cursor-pointer rounded-md w-10 h-10 p-2 shadow-lg hover:shadow-2xl border-0 bg-devConceptsBlue-500 dark:hover:bg-devConceptsBlue-400 hover:bg-devConceptsBlue-700 transition-all ease-in-out duration-500;

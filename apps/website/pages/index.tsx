@@ -13,7 +13,7 @@ const StyledDiv = tw.div``;
 const IndexPage = () => {
   return (
     <Layout>
-      <StyledDiv className="homepage-content-wrapper space-y-32">
+      <StyledDiv className="large-page-content-wrapper space-y-32">
         <div id="hero" className="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center">
           <div className="hero-details md:col-span-2">
             <div className="">
@@ -98,7 +98,13 @@ const IndexPage = () => {
               className="mt-6 min-w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 place-items-center">
               <a href="https://gumroad.com/l/lnPaD" rel="noopener">
                 <div className="homepage-elevated-box-on-hover book-card">
-                  <div><GiStoneCrafting/></div>
+                  <div><Image
+                    alt="Dev Concepts Volume 1"
+                    width={500}
+                    height={334}
+                    src="/static/images/devConcepts/DevConcepts01Cover3D - tinypng.png"
+                    className="rounded-lg"
+                  /></div>
                   <footer>
                     <div className="book-card-title">Volume 1</div>
                     <div className="book-card-subtitle">Software Craft</div>
@@ -107,7 +113,13 @@ const IndexPage = () => {
               </a>
               <a href="https://gumroad.com/l/aQRvz" rel="noopener">
                 <div className="homepage-elevated-box-on-hover book-card">
-                  <div><RiUserHeartLine/></div>
+                  <div><Image
+                    alt="Dev Concepts Volume 2"
+                    width={500}
+                    height={334}
+                    src="/static/images/devConcepts/DevConcepts02Cover3D - tinypng.png"
+                    className="rounded-lg"
+                  /></div>
                   <footer>
                     <div className="book-card-title">Volume 2</div>
                     <div className="book-card-subtitle">What Clients Need</div>
@@ -115,73 +127,144 @@ const IndexPage = () => {
                 </div>
               </a>
               <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><span className="text-4xl word-wrap font-semibold text-center">Coming soon</span></div>
+                <div><Image
+                  alt="Dev Concepts Volume 3"
+                  width={500}
+                  height={334}
+                  src="/static/images/devConcepts/DevConcepts03Cover3D - tinypng.png"
+                  className="rounded-lg"
+                />
+                </div>
                 <footer>
                   <div className="book-card-title">Volume 3</div>
                   <div className="book-card-subtitle">Architecture</div>
+                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                 </footer>
               </div>
               <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><span className="text-4xl word-wrap font-semibold text-center">Coming soon</span></div>
+                <div><Image
+                  alt="Dev Concepts Volume 4"
+                  width={500}
+                  height={334}
+                  src="/static/images/devConcepts/DevConcepts04Cover3D - tinypng.png"
+                  className="rounded-lg"
+                /></div>
                 <footer>
                   <div className="book-card-title">Volume 4</div>
-                  <div className="book-card-subtitle">Software Design</div>
+                  <div className="book-card-subtitle">Software design</div>
+                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                 </footer>
               </div>
               <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><span className="text-4xl word-wrap font-semibold text-center">Coming soon</span></div>
+                <div><Image
+                  alt="Dev Concepts Volume 5"
+                  width={500}
+                  height={334}
+                  src="/static/images/devConcepts/DevConcepts05Cover3D - tinypng.png"
+                  className="rounded-lg"
+                /></div>
                 <footer>
                   <div className="book-card-title">Volume 5</div>
                   <div className="book-card-subtitle">Computer architecture and OS basics</div>
+                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                 </footer>
               </div>
               <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><span className="text-4xl word-wrap font-semibold text-center">Coming soon</span></div>
+                <div><Image
+                  alt="Dev Concepts Volume 6"
+                  width={500}
+                  height={334}
+                  src="/static/images/devConcepts/DevConcepts06Cover3D - tinypng.png"
+                  className="rounded-lg"
+                /></div>
                 <footer>
                   <div className="book-card-title">Volume 6</div>
                   <div className="book-card-subtitle">Coding basics</div>
+                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                 </footer>
               </div>
               <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><span className="text-4xl word-wrap font-semibold text-center">Coming soon</span></div>
+                <div><Image
+                  alt="Dev Concepts Volume 7"
+                  width={500}
+                  height={334}
+                  src="/static/images/devConcepts/DevConcepts07Cover3D - tinypng.png"
+                  className="rounded-lg"
+                /></div>
                 <footer>
                   <div className="book-card-title">Volume 7</div>
                   <div className="book-card-subtitle">Best practices</div>
+                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                 </footer>
               </div>
               <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><span className="text-4xl word-wrap font-semibold text-center">Coming soon</span></div>
+                <div><Image
+                  alt="Dev Concepts Volume 8"
+                  width={500}
+                  height={334}
+                  src="/static/images/devConcepts/DevConcepts08Cover3D - tinypng.png"
+                  className="rounded-lg"
+                /></div>
                 <footer>
                   <div className="book-card-title">Volume 8</div>
                   <div className="book-card-subtitle">Back-end development</div>
+                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                 </footer>
               </div>
               <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><span className="text-4xl word-wrap font-semibold text-center">Coming soon</span></div>
+                <div><Image
+                  alt="Dev Concepts Volume 9"
+                  width={500}
+                  height={334}
+                  src="/static/images/devConcepts/DevConcepts09Cover3D - tinypng.png"
+                  className="rounded-lg"
+                /></div>
                 <footer>
                   <div className="book-card-title">Volume 9</div>
                   <div className="book-card-subtitle">Front-end development</div>
+                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                 </footer>
               </div>
               <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><span className="text-4xl word-wrap font-semibold text-center">Coming soon</span></div>
+                <div><Image
+                  alt="Dev Concepts Volume 10"
+                  width={500}
+                  height={334}
+                  src="/static/images/devConcepts/DevConcepts10Cover3D - tinypng.png"
+                  className="rounded-lg"
+                /></div>
                 <footer>
                   <div className="book-card-title">Volume 10</div>
                   <div className="book-card-subtitle">IT Infrastructure</div>
+                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                 </footer>
               </div>
               <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><span className="text-4xl word-wrap font-semibold text-center">Coming soon</span></div>
+                <div><Image
+                  alt="Dev Concepts Volume 11"
+                  width={500}
+                  height={334}
+                  src="/static/images/devConcepts/DevConcepts11Cover3D - tinypng.png"
+                  className="rounded-lg"
+                /></div>
                 <footer>
                   <div className="book-card-title">Volume 11</div>
                   <div className="book-card-subtitle">Security</div>
+                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                 </footer>
               </div>
               <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><span className="text-4xl word-wrap font-semibold text-center">Coming soon</span></div>
+                <div><Image
+                  alt="Dev Concepts Volume 12"
+                  width={500}
+                  height={334}
+                  src="/static/images/devConcepts/DevConcepts12Cover3D - tinypng.png"
+                  className="rounded-lg"
+                /></div>
                 <footer>
                   <div className="book-card-title">Volume 12</div>
                   <div className="book-card-subtitle">PM and SW. approaches</div>
+                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                 </footer>
               </div>
             </div>
@@ -569,6 +652,7 @@ const IndexPage = () => {
               <div className="mt-2 text-center"><span className="prose dark:prose-dark">14-day money-back guarantee</span></div>
             </a>
           </div>
+
           <div className="main-cta-lifetime-collection-access homepage-elevated-box-on-hover">
             <a href="https://gumroad.com/l/TaEPM" rel="noopener">
               <div>
