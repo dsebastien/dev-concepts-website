@@ -36,6 +36,12 @@ const VolumeSummariesPage = () => {
           </h1>
         </div>
 
+        <div id="volumes-quote" className="grid grid-cols-1 place-items-center">
+          <div className="max-w-2xl">
+            <span className="italic text-3xl">A reference guide for your whole career in IT</span>
+          </div>
+        </div>
+
         <div className="min-w-full">
           <div
             className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-12 place-items-center">
