@@ -5,6 +5,18 @@ import NewsletterSubscribe from "@/components/newsletter-subscribe";
 import Link from 'next/link';
 import Image from "next/image";
 import {AiFillRightCircle} from "react-icons/ai";
+import {
+  volume01, volume02, volume03,
+  volume04,
+  volume05,
+  volume06,
+  volume07,
+  volume08,
+  volume09,
+  volume10,
+  volume11,
+  volume12
+} from "../constants";
 
 const StyledDiv = tw.div``;
 
@@ -105,7 +117,7 @@ const IndexPage = () => {
                   /></div>
                   <footer>
                     <div className="book-card-title">Volume 1</div>
-                    <div className="book-card-subtitle">Software craft</div>
+                    <div className="book-card-subtitle">{volume01.shortName}</div>
                   </footer>
                 </div>
               </a>
@@ -120,7 +132,7 @@ const IndexPage = () => {
                   /></div>
                   <footer>
                     <div className="book-card-title">Volume 2</div>
-                    <div className="book-card-subtitle">What clients need</div>
+                    <div className="book-card-subtitle">{volume02.shortName}</div>
                   </footer>
                 </div>
               </a>
@@ -136,7 +148,7 @@ const IndexPage = () => {
                   </div>
                   <footer>
                     <div className="book-card-title">Volume 3</div>
-                    <div className="book-card-subtitle">Architecture</div>
+                    <div className="book-card-subtitle">{volume03.shortName}</div>
                     <div className="book-card-coming-soon-text"><span
                       className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                   </footer>
@@ -153,7 +165,7 @@ const IndexPage = () => {
                   /></div>
                   <footer>
                     <div className="book-card-title">Volume 4</div>
-                    <div className="book-card-subtitle">Software design</div>
+                    <div className="book-card-subtitle">{volume04.shortName}</div>
                     <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                   </footer>
                 </div>
@@ -169,7 +181,7 @@ const IndexPage = () => {
                   /></div>
                   <footer>
                     <div className="book-card-title">Volume 5</div>
-                    <div className="book-card-subtitle">Computer architecture and OS basics</div>
+                    <div className="book-card-subtitle">{volume05.shortName}</div>
                     <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                   </footer>
                 </div>
@@ -185,7 +197,7 @@ const IndexPage = () => {
                   /></div>
                   <footer>
                     <div className="book-card-title">Volume 6</div>
-                    <div className="book-card-subtitle">Coding basics</div>
+                    <div className="book-card-subtitle">{volume06.shortName}</div>
                     <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                   </footer>
                 </div>
@@ -201,7 +213,7 @@ const IndexPage = () => {
                   /></div>
                   <footer>
                     <div className="book-card-title">Volume 7</div>
-                    <div className="book-card-subtitle">Best practices</div>
+                    <div className="book-card-subtitle">{volume07.shortName}</div>
                     <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                   </footer>
                 </div>
@@ -217,7 +229,7 @@ const IndexPage = () => {
                   /></div>
                   <footer>
                     <div className="book-card-title">Volume 8</div>
-                    <div className="book-card-subtitle">Back-end development</div>
+                    <div className="book-card-subtitle">{volume08.shortName}</div>
                     <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                   </footer>
                 </div>
@@ -233,7 +245,7 @@ const IndexPage = () => {
                   /></div>
                   <footer>
                     <div className="book-card-title">Volume 9</div>
-                    <div className="book-card-subtitle">Front-end development</div>
+                    <div className="book-card-subtitle">{volume09.shortName}</div>
                     <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                   </footer>
                 </div>
@@ -249,7 +261,7 @@ const IndexPage = () => {
                   /></div>
                   <footer>
                     <div className="book-card-title">Volume 10</div>
-                    <div className="book-card-subtitle">IT Infrastructure</div>
+                    <div className="book-card-subtitle">{volume10.shortName}</div>
                     <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                   </footer>
                 </div>
@@ -265,7 +277,7 @@ const IndexPage = () => {
                   /></div>
                   <footer>
                     <div className="book-card-title">Volume 11</div>
-                    <div className="book-card-subtitle">Security</div>
+                    <div className="book-card-subtitle">{volume11.shortName}</div>
                     <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                   </footer>
                 </div>
@@ -281,7 +293,7 @@ const IndexPage = () => {
                   /></div>
                   <footer>
                     <div className="book-card-title">Volume 12</div>
-                    <div className="book-card-subtitle">PM and SW. approaches</div>
+                    <div className="book-card-subtitle">{volume12.shortName}</div>
                     <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
                   </footer>
                 </div>

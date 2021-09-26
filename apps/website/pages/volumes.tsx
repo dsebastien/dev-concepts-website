@@ -6,6 +6,18 @@ import {BsCollection} from "react-icons/bs";
 import Link from 'next/link';
 import Image from "next/image";
 import {AiFillRightCircle} from "react-icons/ai";
+import {
+  volume01,
+  volume02, volume03, volume04,
+  volume05,
+  volume06,
+  volume07,
+  volume08,
+  volume09,
+  volume10,
+  volume11,
+  volume12
+} from "../constants";
 
 const StyledArticle = tw.article``;
 
@@ -39,7 +51,7 @@ const VolumeSummariesPage = () => {
               /></div>
               <footer>
                 <div className="book-card-title">Volume 1</div>
-                <div className="book-card-subtitle">Software craft</div>
+                <div className="book-card-subtitle">{volume01.name}</div>
                 <div className="book-card-description">
                   Explains the skills you need to acquire and improve to solve real-world problems. Find out how to
                   shape your mentality towards software development for maximum productivity.
@@ -66,7 +78,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/lnPaD"
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: €9.99</span></a></div>
+                  className="button-dark-bg">Buy now: {volume01.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href="/table-of-contents/#software-craft"><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -84,7 +96,7 @@ const VolumeSummariesPage = () => {
               /></div>
               <footer>
                 <div className="book-card-title">Volume 2</div>
-                <div className="book-card-subtitle">What clients need</div>
+                <div className="book-card-subtitle">{volume02.name}</div>
                 <div className="book-card-description">
                   If you can manage clients effectively, you’ll be in hot demand. Learn how to understand a client’s functional needs, and how you can decode their end-user goals. Make sure your software is always solving the right problems.
                 </div>
@@ -110,7 +122,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/aQRvz"
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: €5.99</span></a></div>
+                  className="button-dark-bg">Buy now: {volume02.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href="/table-of-contents/#software-craft"><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -128,7 +140,7 @@ const VolumeSummariesPage = () => {
               /></div>
               <footer>
                 <div className="book-card-title">Volume 3</div>
-                <div className="book-card-subtitle">Architecture</div>
+                <div className="book-card-subtitle">{volume03.name}</div>
                 <div className="book-card-description">
                   To avoid time-consuming disasters in project planning and execution, you need a good understanding of key concepts in IT & software architecture. Use this volume to learn how to devise simple but brilliant solutions to complex problems.
                 </div>
@@ -154,7 +166,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/xLGAzK"
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: €19.99</span></a></div>
+                  className="button-dark-bg">Buy now: {volume03.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href="/table-of-contents/#architecture"><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -172,7 +184,7 @@ const VolumeSummariesPage = () => {
               /></div>
               <footer>
                 <div className="book-card-title">Volume 4</div>
-                <div className="book-card-subtitle">Software design</div>
+                <div className="book-card-subtitle">{volume04.name}</div>
                 <div className="book-card-description">
                   Dive into the details of software design so you can avoid costly mistakes and ongoing issues. You’ll use these key concepts in your daily life to speed up your workflow and keep your mental health stable.
                 </div>
@@ -198,7 +210,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/hxoEh"
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: €19.99</span></a></div>
+                  className="button-dark-bg">Buy now: {volume04.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href="/table-of-contents/#software-design"><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -216,7 +228,7 @@ const VolumeSummariesPage = () => {
               /></div>
               <footer>
                 <div className="book-card-title">Volume 5</div>
-                <div className="book-card-subtitle">Computer architecture and OS basics</div>
+                <div className="book-card-subtitle">{volume05.name}</div>
                 <div className="book-card-description">
                   An introduction to how computers and Operating Systems (OSes) work. Discover what CPUs, memory, file systems, files, processes, scheduling, and more, are all about.
                 </div>
@@ -242,7 +254,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/iMIzmo"
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: €14.99</span></a></div>
+                  className="button-dark-bg">Buy now: {volume05.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href="/table-of-contents/#computers-and-operating-systems"><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -260,7 +272,7 @@ const VolumeSummariesPage = () => {
               /></div>
               <footer>
                 <div className="book-card-title">Volume 6</div>
-                <div className="book-card-subtitle">Coding basics</div>
+                <div className="book-card-subtitle">{volume06.name}</div>
                 <div className="book-card-description">
                   Get a clear overview of the coding concepts that you will use in almost every piece of software you touch. Fundamentals, while they sound boring, can save you hundreds of hours debugging or finding workarounds.
                 </div>
@@ -286,7 +298,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/CJmZo"
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: €19.99</span></a></div>
+                  className="button-dark-bg">Buy now: {volume06.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href="/table-of-contents/#coding-basics"><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -304,7 +316,7 @@ const VolumeSummariesPage = () => {
               /></div>
               <footer>
                 <div className="book-card-title">Volume 7</div>
-                <div className="book-card-subtitle">Best practices</div>
+                <div className="book-card-subtitle">{volume07.name}</div>
                 <div className="book-card-description">
                   A rock-solid understanding of what truly needs to get done to keep everything running smoothly. Learn how to write world-class code, discover source code management workflows and how to manage applications in production like a professional.
                 </div>
@@ -330,7 +342,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/MNDDTl"
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: €19.99</span></a></div>
+                  className="button-dark-bg">Buy now: {volume07.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href="/table-of-contents/#general-concerns"><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -348,7 +360,7 @@ const VolumeSummariesPage = () => {
               /></div>
               <footer>
                 <div className="book-card-title">Volume 8</div>
-                <div className="book-card-subtitle">Back-end development</div>
+                <div className="book-card-subtitle">{volume08.name}</div>
                 <div className="book-card-description">
                   Know exactly what happens in back-end development, how the layers and responsibilities fit together, security and performance concerns, and how to craft software that can scale.
                 </div>
@@ -374,7 +386,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/aNDsn"
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: €19.99</span></a></div>
+                  className="button-dark-bg">Buy now: {volume08.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href="/table-of-contents/#back-end"><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -392,7 +404,7 @@ const VolumeSummariesPage = () => {
               /></div>
               <footer>
                 <div className="book-card-title">Volume 9</div>
-                <div className="book-card-subtitle">Front-end development</div>
+                <div className="book-card-subtitle">{volume09.name}</div>
                 <div className="book-card-description">
                   Understand the basics of front-end development, how their projects operate, components, UI design, and web design. Introduces you to HTML & CSS basics for the creation of web apps and mobile apps.
                 </div>
@@ -418,7 +430,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/Kzzoi"
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: €19.99</span></a></div>
+                  className="button-dark-bg">Buy now: {volume09.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href="/table-of-contents/#front-end"><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -436,7 +448,7 @@ const VolumeSummariesPage = () => {
               /></div>
               <footer>
                 <div className="book-card-title">Volume 10</div>
-                <div className="book-card-subtitle">IT Infrastructure</div>
+                <div className="book-card-subtitle">{volume10.name}</div>
                 <div className="book-card-description">
                   Having a good understanding of where our applications are hosted, how the environment is configured, secured, monitored, etc is super valuable and makes the difference between someone who “just” writes code and someone who contributes to developing end-to-end solutions.
                 </div>
@@ -462,7 +474,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/gbTeQ"
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: €14.99</span></a></div>
+                  className="button-dark-bg">Buy now: {volume10.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href="/table-of-contents/#infrastructure"><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -480,7 +492,7 @@ const VolumeSummariesPage = () => {
               /></div>
               <footer>
                 <div className="book-card-title">Volume 11</div>
-                <div className="book-card-subtitle">Security</div>
+                <div className="book-card-subtitle">{volume11.name}</div>
                 <div className="book-card-description">
                   20 years ago, things were less complicated, but now, if an insecure system goes online for just a few seconds; it can get hacked. Learn about the most important IT security concepts and make sure you understand enough to cover the basics in any system you work on.
                 </div>
@@ -506,7 +518,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/ROims"
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: €19.99</span></a></div>
+                  className="button-dark-bg">Buy now: {volume11.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href="/table-of-contents/#security"><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -524,7 +536,7 @@ const VolumeSummariesPage = () => {
               /></div>
               <footer>
                 <div className="book-card-title">Volume 12</div>
-                <div className="book-card-subtitle">Project management and development approaches</div>
+                <div className="book-card-subtitle">{volume12.name}</div>
                 <div className="book-card-description">
                   Get the skills you need to lead projects, teams, and manage products. Explore product management, discover how to maintain a product backlog. Discover modern project management and how to become a great team leader.
                 </div>
@@ -550,63 +562,12 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/yzRHE"
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: €14.99</span></a></div>
+                  className="button-dark-bg">Buy now: {volume12.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href="/table-of-contents/#product-project-software"><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
             </div>
             {/* ------------------------------ VOLUME 12 END ------------------------------ */}
-
-            {/*
-            Volume 1: Software craft
-              https://developassion.gumroad.com/l/DevConcepts-Volume-01-SoftwareCraft
-              https://gumroad.com/l/lnPaD
-              https://www.dev-concepts.dev/table-of-contents/#software-craft
-            Volume 2: What clients
-              https://developassion.gumroad.com/l/DevConcepts-Volume-02-WhatClientsNeed
-              https://gumroad.com/l/aQRvz
-              https://www.dev-concepts.dev/table-of-contents/#what-clients-need
-            Volume 3: Architecture
-              https://developassion.gumroad.com/l/DevConcepts-Volume-03-Architecture
-              https://gumroad.com/l/xLGAzK
-              https://www.dev-concepts.dev/table-of-contents/#architecture
-            Volume 4: Software design
-              https://developassion.gumroad.com/l/DevConcepts-Volume-04-SoftwareDesign
-              https://gumroad.com/l/hxoEh
-              https://www.dev-concepts.dev/table-of-contents/#software-design
-            Volume 5: Computer architecture and OS basics
-              https://developassion.gumroad.com/l/DevConcepts-Volume-05-ComputerArchitectureAndOSBasics
-              https://gumroad.com/l/iMIzmo
-              https://www.dev-concepts.dev/table-of-contents/#computers-and-operating-systems
-            Volume 6: Coding basics
-              https://developassion.gumroad.com/l/DevConcepts-Volume-06-CodingBasics
-              https://gumroad.com/l/CJmZo
-              https://www.dev-concepts.dev/table-of-contents/#coding-basics
-            Volume 7: Best practices
-              https://developassion.gumroad.com/l/DevConcepts-Volume-07-BestPractices
-              https://gumroad.com/l/MNDDTl
-              https://www.dev-concepts.dev/table-of-contents/#general-concerns
-            Volume 8: Back-end development
-              https://developassion.gumroad.com/l/DevConcepts-Volume-08-BackEndDev
-              https://gumroad.com/l/aNDsn
-              https://www.dev-concepts.dev/table-of-contents/#back-end
-            Volume 9: Front-end development
-              https://developassion.gumroad.com/l/DevConcepts-Volume-09-FrontEndDev
-              https://gumroad.com/l/Kzzoi
-              https://www.dev-concepts.dev/table-of-contents/#front-end
-            Volume 10: IT Infrastructure
-              https://developassion.gumroad.com/l/DevConcepts-Volume-10-ITInfrastructure
-              https://gumroad.com/l/gbTeQ
-              https://www.dev-concepts.dev/table-of-contents/#infrastructure
-            Volume 11: Security
-              https://developassion.gumroad.com/l/DevConcepts-Volume-11-Security
-              https://gumroad.com/l/ROims
-              https://www.dev-concepts.dev/table-of-contents/#security
-            Volume 12: Project management and development approaches
-              https://developassion.gumroad.com/l/DevConcepts-Volume-12-PMAndSWApproachesSecurity
-              https://gumroad.com/l/yzRHE
-              https://www.dev-concepts.dev/table-of-contents/#product-project-software
-            */}
 
           </div>
         </div>
