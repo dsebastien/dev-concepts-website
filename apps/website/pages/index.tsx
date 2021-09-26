@@ -595,7 +595,7 @@ const IndexPage = () => {
                 </summary>
 
                 <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
-                  Check out <Link href="volumes">the full chapter breakdown for each volume</Link>. You can also free samples volume 1 <a
+                  Check out <Link href="volumes">the description of each volume</Link>, and <Link href="table-of-contents">the full chapter breakdown for each volume</Link>. You can also free samples volume 1 <a
                   href="https://dsebastien.net/blog" rel="noopener">here</a>.
                 </span>
               </details>
