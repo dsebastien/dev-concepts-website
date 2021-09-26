@@ -124,147 +124,168 @@ const IndexPage = () => {
                   </footer>
                 </div>
               </a>
-              <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><Image
-                  alt="Dev Concepts Volume 3"
-                  width={500}
-                  height={334}
-                  src="/static/images/devConcepts/DevConcepts03Cover3D - tinypng.png"
-                  className="rounded-lg"
-                />
+              <a href="https://gumroad.com/l/xLGAzK" rel="noopener">
+                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
+                  <div><Image
+                    alt="Dev Concepts Volume 3"
+                    width={500}
+                    height={334}
+                    src="/static/images/devConcepts/DevConcepts03Cover3D - tinypng.png"
+                    className="rounded-lg"
+                  />
+                  </div>
+                  <footer>
+                    <div className="book-card-title">Volume 3</div>
+                    <div className="book-card-subtitle">Architecture</div>
+                    <div className="book-card-coming-soon-text"><span
+                      className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
+                  </footer>
                 </div>
-                <footer>
-                  <div className="book-card-title">Volume 3</div>
-                  <div className="book-card-subtitle">Architecture</div>
-                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
-                </footer>
-              </div>
-              <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><Image
-                  alt="Dev Concepts Volume 4"
-                  width={500}
-                  height={334}
-                  src="/static/images/devConcepts/DevConcepts04Cover3D - tinypng.png"
-                  className="rounded-lg"
-                /></div>
-                <footer>
-                  <div className="book-card-title">Volume 4</div>
-                  <div className="book-card-subtitle">Software design</div>
-                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
-                </footer>
-              </div>
-              <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><Image
-                  alt="Dev Concepts Volume 5"
-                  width={500}
-                  height={334}
-                  src="/static/images/devConcepts/DevConcepts05Cover3D - tinypng.png"
-                  className="rounded-lg"
-                /></div>
-                <footer>
-                  <div className="book-card-title">Volume 5</div>
-                  <div className="book-card-subtitle">Computer architecture and OS basics</div>
-                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
-                </footer>
-              </div>
-              <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><Image
-                  alt="Dev Concepts Volume 6"
-                  width={500}
-                  height={334}
-                  src="/static/images/devConcepts/DevConcepts06Cover3D - tinypng.png"
-                  className="rounded-lg"
-                /></div>
-                <footer>
-                  <div className="book-card-title">Volume 6</div>
-                  <div className="book-card-subtitle">Coding basics</div>
-                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
-                </footer>
-              </div>
-              <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><Image
-                  alt="Dev Concepts Volume 7"
-                  width={500}
-                  height={334}
-                  src="/static/images/devConcepts/DevConcepts07Cover3D - tinypng.png"
-                  className="rounded-lg"
-                /></div>
-                <footer>
-                  <div className="book-card-title">Volume 7</div>
-                  <div className="book-card-subtitle">Best practices</div>
-                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
-                </footer>
-              </div>
-              <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><Image
-                  alt="Dev Concepts Volume 8"
-                  width={500}
-                  height={334}
-                  src="/static/images/devConcepts/DevConcepts08Cover3D - tinypng.png"
-                  className="rounded-lg"
-                /></div>
-                <footer>
-                  <div className="book-card-title">Volume 8</div>
-                  <div className="book-card-subtitle">Back-end development</div>
-                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
-                </footer>
-              </div>
-              <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><Image
-                  alt="Dev Concepts Volume 9"
-                  width={500}
-                  height={334}
-                  src="/static/images/devConcepts/DevConcepts09Cover3D - tinypng.png"
-                  className="rounded-lg"
-                /></div>
-                <footer>
-                  <div className="book-card-title">Volume 9</div>
-                  <div className="book-card-subtitle">Front-end development</div>
-                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
-                </footer>
-              </div>
-              <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><Image
-                  alt="Dev Concepts Volume 10"
-                  width={500}
-                  height={334}
-                  src="/static/images/devConcepts/DevConcepts10Cover3D - tinypng.png"
-                  className="rounded-lg"
-                /></div>
-                <footer>
-                  <div className="book-card-title">Volume 10</div>
-                  <div className="book-card-subtitle">IT Infrastructure</div>
-                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
-                </footer>
-              </div>
-              <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><Image
-                  alt="Dev Concepts Volume 11"
-                  width={500}
-                  height={334}
-                  src="/static/images/devConcepts/DevConcepts11Cover3D - tinypng.png"
-                  className="rounded-lg"
-                /></div>
-                <footer>
-                  <div className="book-card-title">Volume 11</div>
-                  <div className="book-card-subtitle">Security</div>
-                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
-                </footer>
-              </div>
-              <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                <div><Image
-                  alt="Dev Concepts Volume 12"
-                  width={500}
-                  height={334}
-                  src="/static/images/devConcepts/DevConcepts12Cover3D - tinypng.png"
-                  className="rounded-lg"
-                /></div>
-                <footer>
-                  <div className="book-card-title">Volume 12</div>
-                  <div className="book-card-subtitle">PM and SW. approaches</div>
-                  <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
-                </footer>
-              </div>
+              </a>
+              <a href="https://gumroad.com/l/hxoEh" rel="noopener">
+                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
+                  <div><Image
+                    alt="Dev Concepts Volume 4"
+                    width={500}
+                    height={334}
+                    src="/static/images/devConcepts/DevConcepts04Cover3D - tinypng.png"
+                    className="rounded-lg"
+                  /></div>
+                  <footer>
+                    <div className="book-card-title">Volume 4</div>
+                    <div className="book-card-subtitle">Software design</div>
+                    <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
+                  </footer>
+                </div>
+              </a>
+              <a href="https://gumroad.com/l/iMIzmo" rel="noopener">
+                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
+                  <div><Image
+                    alt="Dev Concepts Volume 5"
+                    width={500}
+                    height={334}
+                    src="/static/images/devConcepts/DevConcepts05Cover3D - tinypng.png"
+                    className="rounded-lg"
+                  /></div>
+                  <footer>
+                    <div className="book-card-title">Volume 5</div>
+                    <div className="book-card-subtitle">Computer architecture and OS basics</div>
+                    <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
+                  </footer>
+                </div>
+              </a>
+              <a href="https://gumroad.com/l/CJmZo" rel="noopener">
+                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
+                  <div><Image
+                    alt="Dev Concepts Volume 6"
+                    width={500}
+                    height={334}
+                    src="/static/images/devConcepts/DevConcepts06Cover3D - tinypng.png"
+                    className="rounded-lg"
+                  /></div>
+                  <footer>
+                    <div className="book-card-title">Volume 6</div>
+                    <div className="book-card-subtitle">Coding basics</div>
+                    <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
+                  </footer>
+                </div>
+              </a>
+              <a href="https://gumroad.com/l/MNDDTl" rel="noopener">
+                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
+                  <div><Image
+                    alt="Dev Concepts Volume 7"
+                    width={500}
+                    height={334}
+                    src="/static/images/devConcepts/DevConcepts07Cover3D - tinypng.png"
+                    className="rounded-lg"
+                  /></div>
+                  <footer>
+                    <div className="book-card-title">Volume 7</div>
+                    <div className="book-card-subtitle">Best practices</div>
+                    <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
+                  </footer>
+                </div>
+              </a>
+              <a href="https://gumroad.com/l/aNDsn" rel="noopener">
+                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
+                  <div><Image
+                    alt="Dev Concepts Volume 8"
+                    width={500}
+                    height={334}
+                    src="/static/images/devConcepts/DevConcepts08Cover3D - tinypng.png"
+                    className="rounded-lg"
+                  /></div>
+                  <footer>
+                    <div className="book-card-title">Volume 8</div>
+                    <div className="book-card-subtitle">Back-end development</div>
+                    <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
+                  </footer>
+                </div>
+              </a>
+              <a href="https://gumroad.com/l/Kzzoi" rel="noopener">
+                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
+                  <div><Image
+                    alt="Dev Concepts Volume 9"
+                    width={500}
+                    height={334}
+                    src="/static/images/devConcepts/DevConcepts09Cover3D - tinypng.png"
+                    className="rounded-lg"
+                  /></div>
+                  <footer>
+                    <div className="book-card-title">Volume 9</div>
+                    <div className="book-card-subtitle">Front-end development</div>
+                    <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
+                  </footer>
+                </div>
+              </a>
+              <a href="https://gumroad.com/l/gbTeQ" rel="noopener">
+                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
+                  <div><Image
+                    alt="Dev Concepts Volume 10"
+                    width={500}
+                    height={334}
+                    src="/static/images/devConcepts/DevConcepts10Cover3D - tinypng.png"
+                    className="rounded-lg"
+                  /></div>
+                  <footer>
+                    <div className="book-card-title">Volume 10</div>
+                    <div className="book-card-subtitle">IT Infrastructure</div>
+                    <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
+                  </footer>
+                </div>
+              </a>
+              <a href="https://gumroad.com/l/ROims" rel="noopener">
+                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
+                  <div><Image
+                    alt="Dev Concepts Volume 11"
+                    width={500}
+                    height={334}
+                    src="/static/images/devConcepts/DevConcepts11Cover3D - tinypng.png"
+                    className="rounded-lg"
+                  /></div>
+                  <footer>
+                    <div className="book-card-title">Volume 11</div>
+                    <div className="book-card-subtitle">Security</div>
+                    <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
+                  </footer>
+                </div>
+              </a>
+              <a href="https://gumroad.com/l/yzRHE" rel="noopener">
+                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
+                  <div><Image
+                    alt="Dev Concepts Volume 12"
+                    width={500}
+                    height={334}
+                    src="/static/images/devConcepts/DevConcepts12Cover3D - tinypng.png"
+                    className="rounded-lg"
+                  /></div>
+                  <footer>
+                    <div className="book-card-title">Volume 12</div>
+                    <div className="book-card-subtitle">PM and SW. approaches</div>
+                    <div className="book-card-coming-soon-text"><span className="text-xl word-wrap font-semibold text-center">Coming soon</span></div>
+                  </footer>
+                </div>
+              </a>
             </div>
           </div>
         </div>
