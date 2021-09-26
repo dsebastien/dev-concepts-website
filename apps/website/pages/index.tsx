@@ -105,7 +105,7 @@ const IndexPage = () => {
                   /></div>
                   <footer>
                     <div className="book-card-title">Volume 1</div>
-                    <div className="book-card-subtitle">Software Craft</div>
+                    <div className="book-card-subtitle">Software craft</div>
                   </footer>
                 </div>
               </a>
@@ -120,7 +120,7 @@ const IndexPage = () => {
                   /></div>
                   <footer>
                     <div className="book-card-title">Volume 2</div>
-                    <div className="book-card-subtitle">What Clients Need</div>
+                    <div className="book-card-subtitle">What clients need</div>
                   </footer>
                 </div>
               </a>
@@ -394,9 +394,9 @@ const IndexPage = () => {
               </div>
               <div className="mt-16 list-none!">
                 <ul className="font-semibold space-y-2">
-                  <li className="prose dark:prose-dark prose-lg">Volume 1: Software Craft</li>
-                  <li className="prose dark:prose-dark prose-lg">Volume 2: What Clients Need</li>
-                  <li className="prose dark:prose-dark prose-lg">Lifetime Slack Community Access</li>
+                  <li className="prose dark:prose-dark prose-lg">Volume 1: Software craft</li>
+                  <li className="prose dark:prose-dark prose-lg">Volume 2: What clients need</li>
+                  <li className="prose dark:prose-dark prose-lg">Lifetime Slack community access</li>
                 </ul>
               </div>
               <div className="mt-12"><span className="button-no-hover">Buy for €14.99</span></div>
@@ -414,7 +414,7 @@ const IndexPage = () => {
               <div className="mt-16 list-none!">
                 <ul className="font-semibold space-y-2">
                   <li className="prose dark:prose-dark prose-lg">All 12 Volumes</li>
-                  <li className="prose dark:prose-dark prose-lg">Lifetime Slack Community Access</li>
+                  <li className="prose dark:prose-dark prose-lg">Lifetime Slack community access</li>
                   <li className="prose dark:prose-dark prose-lg">BONUS: 30-minute live career coaching session</li>
                 </ul>
               </div>
@@ -633,15 +633,15 @@ const IndexPage = () => {
               <div className="mt-12 list-none!">
                 <ul className="space-y-4">
                   <li className="prose dark:prose-dark prose-lg">
-                    <div className="font-semibold">Volume 1: Software Craft</div>
+                    <div className="font-semibold">Volume 1: Software craft</div>
                     <div>How to develop a craftsmanship attitude that helps you solve real-world problems.</div>
                   </li>
                   <li className="prose dark:prose-dark prose-lg">
-                    <div className="font-semibold">Volume 2: What Clients Need</div>
+                    <div className="font-semibold">Volume 2: What clients need</div>
                     <div>Understand a client’s functional needs, and how you can decode end-user goals. Make sure your software is always solving the right problems.</div>
                   </li>
                   <li className="prose dark:prose-dark prose-lg">
-                    <div className="font-semibold">Lifetime Slack Community Access</div>
+                    <div className="font-semibold">Lifetime Slack community access</div>
                     <div>Get answers to your development questions, build a network of like-minded software crafters & learn with mentorship from a senior developer.</div>
                   </li>
                 </ul>
