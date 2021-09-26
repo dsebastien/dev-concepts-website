@@ -4,8 +4,6 @@ import tw from "twin.macro";
 import NewsletterSubscribe from "@/components/newsletter-subscribe";
 import Link from 'next/link';
 import Image from "next/image";
-import {GiStoneCrafting} from "react-icons/gi";
-import {RiUserHeartLine} from "react-icons/ri";
 import {AiFillRightCircle} from "react-icons/ai";
 
 const StyledDiv = tw.div``;
