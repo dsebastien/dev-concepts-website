@@ -5,10 +5,20 @@
  */
 
 import React from 'react';
-import { GlobalStyles } from 'twin.macro';
+import tw, {GlobalStyles as BaseStyles} from 'twin.macro';
+import {createGlobalStyle} from "styled-components";
 
-const GlobalStylesComponent = () => {
-  return <GlobalStyles />;
-};
+const CustomStyles = createGlobalStyle`
+  body {
+    ${tw`antialiased`}
+  }
+`;
 
-export default GlobalStylesComponent;
+const GlobalStyles = () => (
+  <>
+    <BaseStyles />
+    <CustomStyles />
+  </>
+)
+
+export default GlobalStyles;
