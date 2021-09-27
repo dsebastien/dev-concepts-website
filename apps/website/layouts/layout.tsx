@@ -42,7 +42,7 @@ const Layout = ({ children, customMeta }: LayoutProps) => {
     siteName: metadata.title,
     title: metadata.title,
     description: metadata.description,
-    image: 'https://dev-concepts.net/static/images/banner-2560.jpg',
+    image: 'https://dev-concepts.dev/static/images/banner-2560.jpg',
     type: 'website',
     keywords:
       'software, programming, software development, coding, it security, it architecture, code quality, books',
@@ -74,6 +74,8 @@ const Layout = ({ children, customMeta }: LayoutProps) => {
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
+        <meta property="og:locale" content="en_US" />
+        <meta property="image" content={meta.image} />
         <meta name="author" content="Sébastien Dubois" />
         <meta property="article:author" content="https://dev-concepts.dev" />
         <meta name="twitter:creator" content="@dSebastien" />
