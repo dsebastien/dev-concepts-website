@@ -96,6 +96,48 @@ const IndexPage = () => {
           </div>
         </div>
 
+        <div id="solution-focus" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+          <div className="solution-focus-image">
+            <Image
+              alt="Picture courtesy of Nicolás Flor: https://unsplash.com/@nicolasflorr"
+              width={1740}
+              height={1160}
+              src="/static/images/concentration - tinypng.jpg"
+              className="rounded-lg"
+            />
+          </div>
+          <div className="solution-focus-details">
+            <div className="">
+              <h3>Find out what deserves your concentration with the Dev Concepts Collection</h3>
+            </div>
+            <div className="mt-6 prose dark:prose-dark prose-lg">
+              <div className="flex flex-row items-center gap-2">
+                <div className="flex flex-row items-center"><AiFillRightCircle className="text-3xl"/></div>
+                <div className="flex flex-row items-center"><span className="">Know that you're choosing the best solution even when there are countless approaches.</span>
+                </div>
+              </div>
+
+              <div className="flex flex-row items-center gap-2">
+                <div className="flex flex-row items-center"><AiFillRightCircle className="text-3xl"/></div>
+                <div className="flex flex-row items-center"><span className="">Understand the entire development process so you don't make project-destroying mistakes.</span>
+                </div>
+              </div>
+
+              <div className="mt-2 flex flex-row items-center gap-2">
+                <div className="flex flex-row items-center"><AiFillRightCircle className="text-3xl"/></div>
+                <div className="flex flex-row items-center"><span className="">Level up your game so team members, clients, and managers listen to your ideas.</span>
+                </div>
+              </div>
+
+              <div className="mt-2 flex flex-row items-center gap-2">
+                <div className="flex flex-row items-center"><AiFillRightCircle className="text-3xl"/></div>
+                <div className="flex flex-row items-center"><span className="">Set yourself up for high-paying positions with a rock-solid grasp of all the moving parts and how they connect.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div
           id="solution-volumes"
           className="min-w-full w-full solution-overview grid grid-cols-1 place-items-center homepage-elevated-box">
@@ -298,48 +340,6 @@ const IndexPage = () => {
                   </footer>
                 </div>
               </a>
-            </div>
-          </div>
-        </div>
-
-        <div id="solution-focus" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
-          <div className="solution-focus-image">
-            <Image
-              alt="Picture courtesy of Nicolás Flor: https://unsplash.com/@nicolasflorr"
-              width={1740}
-              height={1160}
-              src="/static/images/concentration - tinypng.jpg"
-              className="rounded-lg"
-            />
-          </div>
-          <div className="solution-focus-details">
-            <div className="">
-              <h3>Find out what deserves your concentration with the Dev Concepts Collection</h3>
-            </div>
-            <div className="mt-6 prose dark:prose-dark prose-lg">
-              <div className="flex flex-row items-center gap-2">
-                <div className="flex flex-row items-center"><AiFillRightCircle className="text-3xl"/></div>
-                <div className="flex flex-row items-center"><span className="">Know that you're choosing the best solution even when there are countless approaches.</span>
-                </div>
-              </div>
-
-              <div className="flex flex-row items-center gap-2">
-                <div className="flex flex-row items-center"><AiFillRightCircle className="text-3xl"/></div>
-                <div className="flex flex-row items-center"><span className="">Understand the entire development process so you don't make project-destroying mistakes.</span>
-                </div>
-              </div>
-
-              <div className="mt-2 flex flex-row items-center gap-2">
-                <div className="flex flex-row items-center"><AiFillRightCircle className="text-3xl"/></div>
-                <div className="flex flex-row items-center"><span className="">Level up your game so team members, clients, and managers listen to your ideas.</span>
-                </div>
-              </div>
-
-              <div className="mt-2 flex flex-row items-center gap-2">
-                <div className="flex flex-row items-center"><AiFillRightCircle className="text-3xl"/></div>
-                <div className="flex flex-row items-center"><span className="">Set yourself up for high-paying positions with a rock-solid grasp of all the moving parts and how they connect.</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
