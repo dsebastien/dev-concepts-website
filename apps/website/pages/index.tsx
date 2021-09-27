@@ -427,8 +427,8 @@ const IndexPage = () => {
               </div>
               <div className="mt-16 list-none!">
                 <ul className="font-semibold space-y-2">
-                  <li className="prose dark:prose-dark prose-lg">Volume 1: ${volume01.name}</li>
-                  <li className="prose dark:prose-dark prose-lg">Volume 2: ${volume02.name}</li>
+                  <li className="prose dark:prose-dark prose-lg">Volume 1: {volume01.name}</li>
+                  <li className="prose dark:prose-dark prose-lg">Volume 2: {volume02.name}</li>
                   <li className="prose dark:prose-dark prose-lg">Lifetime Slack community access</li>
                 </ul>
               </div>
@@ -666,11 +666,11 @@ const IndexPage = () => {
               <div className="mt-12 list-none!">
                 <ul className="space-y-4">
                   <li className="prose dark:prose-dark prose-lg">
-                    <div className="font-semibold">Volume 1: ${volume01.name}</div>
+                    <div className="font-semibold">Volume 1: {volume01.name}</div>
                     <div>How to develop a craftsmanship attitude that helps you solve real-world problems.</div>
                   </li>
                   <li className="prose dark:prose-dark prose-lg">
-                    <div className="font-semibold">Volume 2: ${volume02.name}</div>
+                    <div className="font-semibold">Volume 2: {volume02.name}</div>
                     <div>Understand a client’s functional needs, and how you can decode end-user goals. Make sure your software is always solving the right problems.</div>
                   </li>
                   <li className="prose dark:prose-dark prose-lg">
