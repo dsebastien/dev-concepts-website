@@ -106,7 +106,7 @@ const IndexPage = () => {
             </div>
             <div
               className="mt-6 min-w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 place-items-center">
-              <a href="https://gumroad.com/l/lnPaD" rel="noopener">
+              <a href={volume01.gumroadShortUrl} rel="noopener">
                 <div className="homepage-elevated-box-on-hover book-card">
                   <div><Image
                     alt="Dev Concepts Volume 1"
@@ -121,7 +121,7 @@ const IndexPage = () => {
                   </footer>
                 </div>
               </a>
-              <a href="https://gumroad.com/l/aQRvz" rel="noopener">
+              <a href={volume02.gumroadShortUrl} rel="noopener">
                 <div className="homepage-elevated-box-on-hover book-card">
                   <div><Image
                     alt="Dev Concepts Volume 2"
@@ -136,7 +136,7 @@ const IndexPage = () => {
                   </footer>
                 </div>
               </a>
-              <a href="https://gumroad.com/l/xLGAzK" rel="noopener">
+              <a href={volume03.gumroadShortUrl} rel="noopener">
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div><Image
                     alt="Dev Concepts Volume 3"
@@ -154,7 +154,7 @@ const IndexPage = () => {
                   </footer>
                 </div>
               </a>
-              <a href="https://gumroad.com/l/hxoEh" rel="noopener">
+              <a href={volume04.gumroadShortUrl} rel="noopener">
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div><Image
                     alt="Dev Concepts Volume 4"
@@ -170,7 +170,7 @@ const IndexPage = () => {
                   </footer>
                 </div>
               </a>
-              <a href="https://gumroad.com/l/iMIzmo" rel="noopener">
+              <a href={volume05.gumroadShortUrl} rel="noopener">
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div><Image
                     alt="Dev Concepts Volume 5"
@@ -186,7 +186,7 @@ const IndexPage = () => {
                   </footer>
                 </div>
               </a>
-              <a href="https://gumroad.com/l/CJmZo" rel="noopener">
+              <a href={volume06.gumroadShortUrl} rel="noopener">
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div><Image
                     alt="Dev Concepts Volume 6"
@@ -202,7 +202,7 @@ const IndexPage = () => {
                   </footer>
                 </div>
               </a>
-              <a href="https://gumroad.com/l/MNDDTl" rel="noopener">
+              <a href={volume07.gumroadShortUrl} rel="noopener">
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div><Image
                     alt="Dev Concepts Volume 7"
@@ -218,7 +218,7 @@ const IndexPage = () => {
                   </footer>
                 </div>
               </a>
-              <a href="https://gumroad.com/l/aNDsn" rel="noopener">
+              <a href={volume08.gumroadShortUrl} rel="noopener">
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div><Image
                     alt="Dev Concepts Volume 8"
@@ -234,7 +234,7 @@ const IndexPage = () => {
                   </footer>
                 </div>
               </a>
-              <a href="https://gumroad.com/l/Kzzoi" rel="noopener">
+              <a href={volume09.gumroadShortUrl} rel="noopener">
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div><Image
                     alt="Dev Concepts Volume 9"
@@ -250,7 +250,7 @@ const IndexPage = () => {
                   </footer>
                 </div>
               </a>
-              <a href="https://gumroad.com/l/gbTeQ" rel="noopener">
+              <a href={volume10.gumroadShortUrl} rel="noopener">
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div><Image
                     alt="Dev Concepts Volume 10"
@@ -266,7 +266,7 @@ const IndexPage = () => {
                   </footer>
                 </div>
               </a>
-              <a href="https://gumroad.com/l/ROims" rel="noopener">
+              <a href={volume11.gumroadShortUrl} rel="noopener">
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div><Image
                     alt="Dev Concepts Volume 11"
@@ -282,7 +282,7 @@ const IndexPage = () => {
                   </footer>
                 </div>
               </a>
-              <a href="https://gumroad.com/l/yzRHE" rel="noopener">
+              <a href={volume12.gumroadShortUrl} rel="noopener">
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div><Image
                     alt="Dev Concepts Volume 12"
@@ -427,8 +427,8 @@ const IndexPage = () => {
               </div>
               <div className="mt-16 list-none!">
                 <ul className="font-semibold space-y-2">
-                  <li className="prose dark:prose-dark prose-lg">Volume 1: Software craft</li>
-                  <li className="prose dark:prose-dark prose-lg">Volume 2: What clients need</li>
+                  <li className="prose dark:prose-dark prose-lg">Volume 1: ${volume01.name}</li>
+                  <li className="prose dark:prose-dark prose-lg">Volume 2: ${volume02.name}</li>
                   <li className="prose dark:prose-dark prose-lg">Lifetime Slack community access</li>
                 </ul>
               </div>
@@ -666,11 +666,11 @@ const IndexPage = () => {
               <div className="mt-12 list-none!">
                 <ul className="space-y-4">
                   <li className="prose dark:prose-dark prose-lg">
-                    <div className="font-semibold">Volume 1: Software craft</div>
+                    <div className="font-semibold">Volume 1: ${volume01.name}</div>
                     <div>How to develop a craftsmanship attitude that helps you solve real-world problems.</div>
                   </li>
                   <li className="prose dark:prose-dark prose-lg">
-                    <div className="font-semibold">Volume 2: What clients need</div>
+                    <div className="font-semibold">Volume 2: ${volume02.name}</div>
                     <div>Understand a client’s functional needs, and how you can decode end-user goals. Make sure your software is always solving the right problems.</div>
                   </li>
                   <li className="prose dark:prose-dark prose-lg">

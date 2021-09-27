@@ -82,10 +82,10 @@ const VolumeSummariesPage = () => {
                   </div>
                 </div>
 
-                <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/lnPaD"
+                <div className="mt-6 text-center"><a className="no-underline!" href={volume01.gumroadShortUrl}
                                                      rel="noopener"><span
                   className="button-dark-bg">Buy now: {volume01.price}</span></a></div>
-                <div className="mt-2 text-center"><Link href="/table-of-contents/#software-craft"><span
+                <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume01.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
             </div>
@@ -126,10 +126,10 @@ const VolumeSummariesPage = () => {
                   </div>
                 </div>
 
-                <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/aQRvz"
+                <div className="mt-6 text-center"><a className="no-underline!" href={volume02.gumroadShortUrl}
                                                      rel="noopener"><span
                   className="button-dark-bg">Buy now: {volume02.price}</span></a></div>
-                <div className="mt-2 text-center"><Link href="/table-of-contents/#software-craft"><span
+                <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume02.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
             </div>
@@ -170,10 +170,10 @@ const VolumeSummariesPage = () => {
                   </div>
                 </div>
 
-                <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/xLGAzK"
+                <div className="mt-6 text-center"><a className="no-underline!" href={volume03.gumroadShortUrl}
                                                      rel="noopener"><span
                   className="button-dark-bg">Buy now: {volume03.price}</span></a></div>
-                <div className="mt-2 text-center"><Link href="/table-of-contents/#architecture"><span
+                <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume03.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
             </div>
@@ -214,10 +214,10 @@ const VolumeSummariesPage = () => {
                   </div>
                 </div>
 
-                <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/hxoEh"
+                <div className="mt-6 text-center"><a className="no-underline!" href={volume04.gumroadShortUrl}
                                                      rel="noopener"><span
                   className="button-dark-bg">Buy now: {volume04.price}</span></a></div>
-                <div className="mt-2 text-center"><Link href="/table-of-contents/#software-design"><span
+                <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume04.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
             </div>
@@ -258,10 +258,10 @@ const VolumeSummariesPage = () => {
                   </div>
                 </div>
 
-                <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/iMIzmo"
+                <div className="mt-6 text-center"><a className="no-underline!" href={volume05.gumroadShortUrl}
                                                      rel="noopener"><span
                   className="button-dark-bg">Buy now: {volume05.price}</span></a></div>
-                <div className="mt-2 text-center"><Link href="/table-of-contents/#computers-and-operating-systems"><span
+                <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume05.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
             </div>
@@ -302,10 +302,10 @@ const VolumeSummariesPage = () => {
                   </div>
                 </div>
 
-                <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/CJmZo"
+                <div className="mt-6 text-center"><a className="no-underline!" href={volume06.gumroadShortUrl}
                                                      rel="noopener"><span
                   className="button-dark-bg">Buy now: {volume06.price}</span></a></div>
-                <div className="mt-2 text-center"><Link href="/table-of-contents/#coding-basics"><span
+                <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume06.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
             </div>
@@ -346,10 +346,10 @@ const VolumeSummariesPage = () => {
                   </div>
                 </div>
 
-                <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/MNDDTl"
+                <div className="mt-6 text-center"><a className="no-underline!" href={volume07.gumroadShortUrl}
                                                      rel="noopener"><span
                   className="button-dark-bg">Buy now: {volume07.price}</span></a></div>
-                <div className="mt-2 text-center"><Link href="/table-of-contents/#general-concerns"><span
+                <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume07.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
             </div>
@@ -390,10 +390,10 @@ const VolumeSummariesPage = () => {
                   </div>
                 </div>
 
-                <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/aNDsn"
+                <div className="mt-6 text-center"><a className="no-underline!" href={volume08.gumroadShortUrl}
                                                      rel="noopener"><span
                   className="button-dark-bg">Buy now: {volume08.price}</span></a></div>
-                <div className="mt-2 text-center"><Link href="/table-of-contents/#back-end"><span
+                <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume08.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
             </div>
@@ -434,10 +434,10 @@ const VolumeSummariesPage = () => {
                   </div>
                 </div>
 
-                <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/Kzzoi"
+                <div className="mt-6 text-center"><a className="no-underline!" href={volume09.gumroadShortUrl}
                                                      rel="noopener"><span
                   className="button-dark-bg">Buy now: {volume09.price}</span></a></div>
-                <div className="mt-2 text-center"><Link href="/table-of-contents/#front-end"><span
+                <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume09.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
             </div>
@@ -478,10 +478,10 @@ const VolumeSummariesPage = () => {
                   </div>
                 </div>
 
-                <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/gbTeQ"
+                <div className="mt-6 text-center"><a className="no-underline!" href={volume10.gumroadShortUrl}
                                                      rel="noopener"><span
                   className="button-dark-bg">Buy now: {volume10.price}</span></a></div>
-                <div className="mt-2 text-center"><Link href="/table-of-contents/#infrastructure"><span
+                <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume10.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
             </div>
@@ -522,10 +522,10 @@ const VolumeSummariesPage = () => {
                   </div>
                 </div>
 
-                <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/ROims"
+                <div className="mt-6 text-center"><a className="no-underline!" href={volume11.gumroadShortUrl}
                                                      rel="noopener"><span
                   className="button-dark-bg">Buy now: {volume11.price}</span></a></div>
-                <div className="mt-2 text-center"><Link href="/table-of-contents/#security"><span
+                <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume11.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
             </div>
@@ -566,10 +566,10 @@ const VolumeSummariesPage = () => {
                   </div>
                 </div>
 
-                <div className="mt-6 text-center"><a className="no-underline!" href="https://gumroad.com/l/yzRHE"
+                <div className="mt-6 text-center"><a className="no-underline!" href={volume12.gumroadShortUrl}
                                                      rel="noopener"><span
                   className="button-dark-bg">Buy now: {volume12.price}</span></a></div>
-                <div className="mt-2 text-center"><Link href="/table-of-contents/#product-project-software"><span
+                <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume12.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
             </div>

@@ -28,6 +28,7 @@ export interface Product {
   gumroadUrl: string;
   tocUrl: string;
   price: string;
+  tocAnchor: string;
   // shortDescription: string;
   // longDescription: string;
   // keyFeature1: string;
@@ -42,6 +43,7 @@ export const volume01: Product = {
   gumroadUrl: "https://developassion.gumroad.com/l/DevConcepts-Volume-01-SoftwareCraft",
   gumroadShortUrl: "https://gumroad.com/l/lnPaD",
   tocUrl: "https://www.dev-concepts.dev/table-of-contents/#software-craft",
+  tocAnchor: "software-craft",
   price: "€9.99",
 };
 
@@ -52,6 +54,7 @@ export const volume02: Product = {
   gumroadUrl: "https://developassion.gumroad.com/l/DevConcepts-Volume-02-WhatClientsNeed",
   gumroadShortUrl: "https://gumroad.com/l/aQRvz",
   tocUrl: "https://www.dev-concepts.dev/table-of-contents/#what-clients-need",
+  tocAnchor: "what-clients-need",
   price: "€5.99",
 };
 
@@ -62,6 +65,7 @@ export const volume03: Product = {
   gumroadUrl: "https://developassion.gumroad.com/l/DevConcepts-Volume-03-Architecture",
   gumroadShortUrl: "https://gumroad.com/l/xLGAzK",
   tocUrl: "https://www.dev-concepts.dev/table-of-contents/#architecture",
+  tocAnchor: "architecture",
   price: "€19.99",
 };
 
@@ -72,6 +76,7 @@ export const volume04: Product = {
   gumroadUrl: "https://developassion.gumroad.com/l/DevConcepts-Volume-04-SoftwareDesign",
   gumroadShortUrl: "https://gumroad.com/l/hxoEh",
   tocUrl: "https://www.dev-concepts.dev/table-of-contents/#software-design",
+  tocAnchor: "software-design",
   price: "€19.99",
 };
 
@@ -82,6 +87,7 @@ export const volume05: Product = {
   gumroadUrl: "https://developassion.gumroad.com/l/DevConcepts-Volume-05-ComputerArchitectureAndOSBasics",
   gumroadShortUrl: "https://gumroad.com/l/iMIzmo",
   tocUrl: "https://www.dev-concepts.dev/table-of-contents/#computers-and-operating-systems",
+  tocAnchor: "computers-and-operating-systems",
   price: "€14.99",
 };
 
@@ -92,6 +98,7 @@ export const volume06: Product = {
   gumroadUrl: "https://developassion.gumroad.com/l/DevConcepts-Volume-06-CodingBasics",
   gumroadShortUrl: "https://gumroad.com/l/CJmZo",
   tocUrl: "https://www.dev-concepts.dev/table-of-contents/#coding-basics",
+  tocAnchor: "coding-basics",
   price: "€19.99",
 };
 
@@ -101,7 +108,8 @@ export const volume07: Product = {
   shortName: "Best practices",
   gumroadUrl: "https://developassion.gumroad.com/l/DevConcepts-Volume-07-BestPractices",
   gumroadShortUrl: "https://gumroad.com/l/MNDDTl",
-  tocUrl: "https://www.dev-concepts.dev/table-of-contents/#general-concerns",
+  tocUrl: "https://www.dev-concepts.dev/table-of-contents/#best-practices",
+  tocAnchor: "best-practices",
   price: "€19.99",
 };
 
@@ -112,6 +120,7 @@ export const volume08: Product = {
   gumroadUrl: "https://developassion.gumroad.com/l/DevConcepts-Volume-08-BackEndDev",
   gumroadShortUrl: "https://gumroad.com/l/aNDsn",
   tocUrl: "https://www.dev-concepts.dev/table-of-contents/#back-end",
+  tocAnchor: "back-end",
   price: "€19.99",
 };
 
@@ -122,6 +131,7 @@ export const volume09: Product = {
   gumroadUrl: "https://developassion.gumroad.com/l/DevConcepts-Volume-09-FrontEndDev",
   gumroadShortUrl: "https://gumroad.com/l/Kzzoi",
   tocUrl: "https://www.dev-concepts.dev/table-of-contents/#front-end",
+  tocAnchor: "front-end",
   price: "€19.99",
 };
 
@@ -132,6 +142,7 @@ export const volume10: Product = {
   gumroadUrl: "https://developassion.gumroad.com/l/DevConcepts-Volume-10-ITInfrastructure",
   gumroadShortUrl: "https://gumroad.com/l/gbTeQ",
   tocUrl: "https://www.dev-concepts.dev/table-of-contents/#infrastructure",
+  tocAnchor: "infrastructure",
   price: "€14.99",
 };
 
@@ -142,6 +153,7 @@ export const volume11: Product = {
   gumroadUrl: "https://developassion.gumroad.com/l/DevConcepts-Volume-11-Security",
   gumroadShortUrl: "https://gumroad.com/l/ROims",
   tocUrl: "https://www.dev-concepts.dev/table-of-contents/#security",
+  tocAnchor: "security",
   price: "€19.99",
 };
 
@@ -152,5 +164,6 @@ export const volume12: Product = {
   gumroadUrl: "https://developassion.gumroad.com/l/DevConcepts-Volume-12-PMAndSWApproachesSecurity",
   gumroadShortUrl: "https://gumroad.com/l/yzRHE",
   tocUrl: "https://www.dev-concepts.dev/table-of-contents/#product-project-software",
+  tocAnchor: "product-project-software",
   price: "€14.99",
 };
