@@ -44,7 +44,7 @@ const IndexPage = () => {
               alt="Dev Concepts Collection"
               width={1196}
               height={1450}
-              src="/static/images/devConcepts/DevConceptsHardCoverThin tinypng.png"
+              src="/static/images/devConcepts/DevConceptsHardCoverThin - small - tinypng.png"
               className="rounded-lg"
             />
           </div>
@@ -112,7 +112,7 @@ const IndexPage = () => {
                     alt="Dev Concepts Volume 1"
                     width={500}
                     height={334}
-                    src="/static/images/devConcepts/DevConcepts01Cover3D - tinypng.png"
+                    src="/static/images/devConcepts/DevConcepts01Cover3D - small - tinypng.png"
                     className="rounded-lg"
                   /></div>
                   <footer>
@@ -127,7 +127,7 @@ const IndexPage = () => {
                     alt="Dev Concepts Volume 2"
                     width={500}
                     height={334}
-                    src="/static/images/devConcepts/DevConcepts02Cover3D - tinypng.png"
+                    src="/static/images/devConcepts/DevConcepts02Cover3D - small - tinypng.png"
                     className="rounded-lg"
                   /></div>
                   <footer>
@@ -142,7 +142,7 @@ const IndexPage = () => {
                     alt="Dev Concepts Volume 3"
                     width={500}
                     height={334}
-                    src="/static/images/devConcepts/DevConcepts03Cover3D - tinypng.png"
+                    src="/static/images/devConcepts/DevConcepts03Cover3D - small - tinypng.png"
                     className="rounded-lg"
                   />
                   </div>
@@ -160,7 +160,7 @@ const IndexPage = () => {
                     alt="Dev Concepts Volume 4"
                     width={500}
                     height={334}
-                    src="/static/images/devConcepts/DevConcepts04Cover3D - tinypng.png"
+                    src="/static/images/devConcepts/DevConcepts04Cover3D - small - tinypng.png"
                     className="rounded-lg"
                   /></div>
                   <footer>
@@ -176,7 +176,7 @@ const IndexPage = () => {
                     alt="Dev Concepts Volume 5"
                     width={500}
                     height={334}
-                    src="/static/images/devConcepts/DevConcepts05Cover3D - tinypng.png"
+                    src="/static/images/devConcepts/DevConcepts05Cover3D - small - tinypng.png"
                     className="rounded-lg"
                   /></div>
                   <footer>
@@ -192,7 +192,7 @@ const IndexPage = () => {
                     alt="Dev Concepts Volume 6"
                     width={500}
                     height={334}
-                    src="/static/images/devConcepts/DevConcepts06Cover3D - tinypng.png"
+                    src="/static/images/devConcepts/DevConcepts06Cover3D - small - tinypng.png"
                     className="rounded-lg"
                   /></div>
                   <footer>
@@ -208,7 +208,7 @@ const IndexPage = () => {
                     alt="Dev Concepts Volume 7"
                     width={500}
                     height={334}
-                    src="/static/images/devConcepts/DevConcepts07Cover3D - tinypng.png"
+                    src="/static/images/devConcepts/DevConcepts07Cover3D - small - tinypng.png"
                     className="rounded-lg"
                   /></div>
                   <footer>
@@ -224,7 +224,7 @@ const IndexPage = () => {
                     alt="Dev Concepts Volume 8"
                     width={500}
                     height={334}
-                    src="/static/images/devConcepts/DevConcepts08Cover3D - tinypng.png"
+                    src="/static/images/devConcepts/DevConcepts08Cover3D - small - tinypng.png"
                     className="rounded-lg"
                   /></div>
                   <footer>
@@ -240,7 +240,7 @@ const IndexPage = () => {
                     alt="Dev Concepts Volume 9"
                     width={500}
                     height={334}
-                    src="/static/images/devConcepts/DevConcepts09Cover3D - tinypng.png"
+                    src="/static/images/devConcepts/DevConcepts09Cover3D - small - tinypng.png"
                     className="rounded-lg"
                   /></div>
                   <footer>
@@ -256,7 +256,7 @@ const IndexPage = () => {
                     alt="Dev Concepts Volume 10"
                     width={500}
                     height={334}
-                    src="/static/images/devConcepts/DevConcepts10Cover3D - tinypng.png"
+                    src="/static/images/devConcepts/DevConcepts10Cover3D - small - tinypng.png"
                     className="rounded-lg"
                   /></div>
                   <footer>
@@ -272,7 +272,7 @@ const IndexPage = () => {
                     alt="Dev Concepts Volume 11"
                     width={500}
                     height={334}
-                    src="/static/images/devConcepts/DevConcepts11Cover3D - tinypng.png"
+                    src="/static/images/devConcepts/DevConcepts11Cover3D - small - tinypng.png"
                     className="rounded-lg"
                   /></div>
                   <footer>
@@ -288,7 +288,7 @@ const IndexPage = () => {
                     alt="Dev Concepts Volume 12"
                     width={500}
                     height={334}
-                    src="/static/images/devConcepts/DevConcepts12Cover3D - tinypng.png"
+                    src="/static/images/devConcepts/DevConcepts12Cover3D - small - tinypng.png"
                     className="rounded-lg"
                   /></div>
                   <footer>
@@ -308,7 +308,7 @@ const IndexPage = () => {
               alt="Picture courtesy of Nicolás Flor: https://unsplash.com/@nicolasflorr"
               width={1740}
               height={1160}
-              src="/static/images/concentration.jpg"
+              src="/static/images/concentration - tinypng.jpg"
               className="rounded-lg"
             />
           </div>
@@ -381,7 +381,7 @@ const IndexPage = () => {
               alt="Picture courtesy of Chang Duong: https://unsplash.com/@iamchang"
               width={1700}
               height={1133}
-              src="/static/images/community.png"
+              src="/static/images/community - tinypng.png"
               className="rounded-lg"
             />
           </div>
@@ -393,7 +393,7 @@ const IndexPage = () => {
               alt="Picture courtesy of Jonathan Klok: https://unsplash.com/@mostly_brave"
               width={1700}
               height={1133}
-              src="/static/images/confidence.jpg"
+              src="/static/images/confidence - tinypng.jpg"
               className="rounded-lg"
             />
           </div>
@@ -464,7 +464,7 @@ const IndexPage = () => {
               alt="Sébastien Dubois, the author"
               width={528}
               height={635}
-              src="/static/images/sebastien.png"
+              src="/static/images/sebastien - small - tinypng.png"
               className="rounded-lg"
             />
           </div>

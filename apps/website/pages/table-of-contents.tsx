@@ -342,7 +342,7 @@ const TocPage = () => {
                       alt="Dev Concepts Volume 1"
                       width={500}
                       height={334}
-                      src="/static/images/devConcepts/DevConcepts01Cover3D - tinypng.png"
+                      src="/static/images/devConcepts/DevConcepts01Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
                       loading={"eager"}
                     />
@@ -439,7 +439,7 @@ const TocPage = () => {
                       alt="Dev Concepts Volume 2"
                       width={500}
                       height={334}
-                      src="/static/images/devConcepts/DevConcepts02Cover3D - tinypng.png"
+                      src="/static/images/devConcepts/DevConcepts02Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
                       loading={"eager"}
                     />
@@ -562,7 +562,7 @@ const TocPage = () => {
                       alt="Dev Concepts Volume 3"
                       width={500}
                       height={334}
-                      src="/static/images/devConcepts/DevConcepts03Cover3D - tinypng.png"
+                      src="/static/images/devConcepts/DevConcepts03Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
                       loading={"eager"}
                     />
@@ -688,7 +688,7 @@ const TocPage = () => {
                       alt="Dev Concepts Volume 4"
                       width={500}
                       height={334}
-                      src="/static/images/devConcepts/DevConcepts04Cover3D - tinypng.png"
+                      src="/static/images/devConcepts/DevConcepts04Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
                       loading={"eager"}
                     />
@@ -795,7 +795,7 @@ const TocPage = () => {
                       alt="Dev Concepts Volume 5"
                       width={500}
                       height={334}
-                      src="/static/images/devConcepts/DevConcepts05Cover3D - tinypng.png"
+                      src="/static/images/devConcepts/DevConcepts05Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
                       loading={"eager"}
                     />
@@ -889,7 +889,7 @@ const TocPage = () => {
                       alt="Dev Concepts Volume 6"
                       width={500}
                       height={334}
-                      src="/static/images/devConcepts/DevConcepts06Cover3D - tinypng.png"
+                      src="/static/images/devConcepts/DevConcepts06Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
                       loading={"eager"}
                     />
@@ -1046,7 +1046,7 @@ const TocPage = () => {
                       alt="Dev Concepts Volume 7"
                       width={500}
                       height={334}
-                      src="/static/images/devConcepts/DevConcepts07Cover3D - tinypng.png"
+                      src="/static/images/devConcepts/DevConcepts07Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
                       loading={"eager"}
                     />
@@ -1191,7 +1191,7 @@ const TocPage = () => {
                       alt="Dev Concepts Volume 8"
                       width={500}
                       height={334}
-                      src="/static/images/devConcepts/DevConcepts08Cover3D - tinypng.png"
+                      src="/static/images/devConcepts/DevConcepts08Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
                       loading={"eager"}
                     />
@@ -1288,7 +1288,7 @@ const TocPage = () => {
                       alt="Dev Concepts Volume 9"
                       width={500}
                       height={334}
-                      src="/static/images/devConcepts/DevConcepts09Cover3D - tinypng.png"
+                      src="/static/images/devConcepts/DevConcepts09Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
                       loading={"eager"}
                     />
@@ -1432,7 +1432,7 @@ const TocPage = () => {
                       alt="Dev Concepts Volume 10"
                       width={500}
                       height={334}
-                      src="/static/images/devConcepts/DevConcepts10Cover3D - tinypng.png"
+                      src="/static/images/devConcepts/DevConcepts10Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
                       loading={"eager"}
                     />
@@ -1568,7 +1568,7 @@ const TocPage = () => {
                       alt="Dev Concepts Volume 11"
                       width={500}
                       height={334}
-                      src="/static/images/devConcepts/DevConcepts11Cover3D - tinypng.png"
+                      src="/static/images/devConcepts/DevConcepts11Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
                       loading={"eager"}
                     />
@@ -1767,7 +1767,7 @@ const TocPage = () => {
                       alt="Dev Concepts Volume 12"
                       width={500}
                       height={334}
-                      src="/static/images/devConcepts/DevConcepts12Cover3D - tinypng.png"
+                      src="/static/images/devConcepts/DevConcepts12Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
                       loading={"eager"}
                     />
