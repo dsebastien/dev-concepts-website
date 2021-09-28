@@ -42,8 +42,8 @@ const IndexPage = () => {
           <div className="hero-image">
             <Image
               alt="Dev Concepts Collection"
-              width={1196}
-              height={1450}
+              width={598}
+              height={725}
               src="/static/images/devConcepts/DevConceptsHardCoverThin - small - tinypng.png"
               className="rounded-lg"
             />

@@ -52,7 +52,7 @@ body > div:first-child,
 }
 
 .hero-text {
-  @apply text-7xl font-semibold tracking-wide md:leading-tight text-gray-900 dark:text-gray-100 #{!important}; /* FIXME avoid forcing important once the GlobalStyles get loaded in the right order) */
+  @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-wide md:leading-tight text-gray-900 dark:text-gray-100 #{!important}; /* FIXME avoid forcing important once the GlobalStyles get loaded in the right order) */
 }
 
 h1 {
