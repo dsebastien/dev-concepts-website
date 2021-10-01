@@ -33,10 +33,13 @@ const IndexPage = () => {
               <span className="hero-text">Your guide to the fundamentals of software development</span>
             </div>
             <div className="mt-6">
-              <p className="text-lg">A 12-volume collection of digital books that supports junior software developers in
+              <p className="text-lg max-w-xl">A 12-volume collection of digital books that supports junior software developers in
                 building an exceptional career.</p>
-              <p className="mt-2 text-lg">Get a complete understanding of how every concept in software engineering fits
+              <p className="mt-2 text-lg max-w-xl">Get a complete understanding of how every concept in software engineering fits
                 together.</p>
+            </div>
+            <div className="mt-6">
+              <span className="button sm:max-w-xs"><Link href="volumes">Discover the books</Link></span>
             </div>
           </div>
           <div className="hero-image">
@@ -50,8 +53,8 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div id="core-agitation" className="grid grid-cols-1 place-items-center homepage-elevated-box">
-          <div className="max-w-2xl">
+        <div id="core-agitation" className="grid grid-cols-1 place-items-center flex flow-col items-center justify-around">
+          <div className="homepage-elevated-box px-24">
             <div>
               <h3 className="max-w-2xl">What happens when someone realizes that you're out of your depth?</h3>
             </div>
@@ -146,6 +149,9 @@ const IndexPage = () => {
               <h3 className="max-w-xl text-center">Each volume is packed full of detailed definitions, pros/cons, tips,
                 and real-world lessons</h3>
             </div>
+            <div className="text-center mt-6">
+                    <span className="text-2xl">Click on each volume to see what's inside</span>
+                  </div>
             <div
               className="mt-6 min-w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 place-items-center">
               <a href={volume01.gumroadShortUrl} rel="noopener">
@@ -160,6 +166,7 @@ const IndexPage = () => {
                   <footer>
                     <div className="book-card-title">Volume 1</div>
                     <div className="book-card-subtitle">{volume01.shortName}</div>
+                    <div className="book-card-buy-now-text"><span className="text-xl word-wrap font-semibold text-center">Buy: {volume01.price}</span></div>
                   </footer>
                 </div>
               </a>
@@ -175,6 +182,7 @@ const IndexPage = () => {
                   <footer>
                     <div className="book-card-title">Volume 2</div>
                     <div className="book-card-subtitle">{volume02.shortName}</div>
+                    <div className="book-card-buy-now-text"><span className="text-xl word-wrap font-semibold text-center">Buy: {volume02.price}</span></div>
                   </footer>
                 </div>
               </a>
@@ -419,41 +427,46 @@ const IndexPage = () => {
         <div id="first-cta" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center items-stretch">
           <div className="first-cta-starter-bundle text-center homepage-elevated-box-on-hover">
             <a href="https://gumroad.com/l/AwJYP" rel="noopener">
-              <div>
-                <h3>Starter Edition</h3>
+              <div className="flex flex-col h-full min-h-full">
+                <div>
+                  <h3>Starter Edition</h3>
+                </div>
+                <div className="mt-2">
+                  <h5 className="max-w-sm">Download the first two volumes in the collection</h5>
+                </div>
+                <div className="mt-16 list-none! flex-grow">
+                  <ul className="font-semibold space-y-2">
+                    <li className="prose dark:prose-dark prose-lg">Volume 1: {volume01.name}</li>
+                    <li className="prose dark:prose-dark prose-lg">Volume 2: {volume02.name}</li>
+                    <li className="prose dark:prose-dark prose-lg">Lifetime Slack community access</li>
+                  </ul>
+                </div>
+                <div className="mt-12"><span className="prose dark:prose-dark prose-xl">Save €1</span></div>
+                <div className="mt-4"><span className="button-no-hover">Buy for €14.99</span></div>
+                <div className="mt-2"><span className="prose dark:prose-dark">14-day money-back guarantee</span></div>
               </div>
-              <div className="mt-2">
-                <h5 className="max-w-sm">Download the first two volumes in the collection</h5>
-              </div>
-              <div className="mt-16 list-none!">
-                <ul className="font-semibold space-y-2">
-                  <li className="prose dark:prose-dark prose-lg">Volume 1: {volume01.name}</li>
-                  <li className="prose dark:prose-dark prose-lg">Volume 2: {volume02.name}</li>
-                  <li className="prose dark:prose-dark prose-lg">Lifetime Slack community access</li>
-                </ul>
-              </div>
-              <div className="mt-12"><span className="button-no-hover">Buy for €14.99</span></div>
-              <div className="mt-2"><span className="prose dark:prose-dark">14-day money-back guarantee</span></div>
             </a>
           </div>
           <div className="first-cta-lifetime-collection-access text-center homepage-elevated-box-on-hover">
             <a href="https://gumroad.com/l/TaEPM" rel="noopener">
-              <div>
-                <h3>Lifetime Collection Access</h3>
+              <div className="flex flex-col h-full min-h-full">
+                <div>
+                  <h3>Lifetime Collection Access</h3>
+                </div>
+                <div className="mt-2">
+                  <h5 className="max-w-sm">Published volumes plus all future releases</h5>
+                </div>
+                <div className="mt-16 list-none! flex-grow">
+                  <ul className="font-semibold space-y-2">
+                    <li className="prose dark:prose-dark prose-lg">All 12 Volumes</li>
+                    <li className="prose dark:prose-dark prose-lg">Lifetime Slack community access</li>
+                    <li className="prose dark:prose-dark prose-lg">BONUS: 30-minute live career coaching session</li>
+                  </ul>
+                </div>
+                <div className="mt-12"><span className="prose dark:prose-dark prose-xl">Save €75</span></div>
+                <div className="mt-4"><span className="button-no-hover">Buy for €125</span></div>
+                <div className="mt-2"><span className="prose dark:prose-dark">14-day money-back guarantee</span></div>
               </div>
-              <div className="mt-2">
-                <h5 className="max-w-sm">Published volumes plus all future releases</h5>
-              </div>
-              <div className="mt-16 list-none!">
-                <ul className="font-semibold space-y-2">
-                  <li className="prose dark:prose-dark prose-lg">All 12 Volumes</li>
-                  <li className="prose dark:prose-dark prose-lg">Lifetime Slack community access</li>
-                  <li className="prose dark:prose-dark prose-lg">BONUS: 30-minute live career coaching session</li>
-                </ul>
-              </div>
-              <div className="mt-12"><span className="prose dark:prose-dark prose-xl">Save €75</span></div>
-              <div className="mt-4"><span className="button-no-hover">Buy for €125</span></div>
-              <div className="mt-2"><span className="prose dark:prose-dark">14-day money-back guarantee</span></div>
             </a>
           </div>
         </div>
@@ -539,7 +552,7 @@ const IndexPage = () => {
             <div className="flex flex-row items-center justify-center">
               <h3 className="max-w-2xl text-center">Frequently asked questions</h3>
             </div>
-            <div className="mt-12 mx-auto grid grid-cols-1 md:grid-cols-1 gap-x-12 gap-y-4">
+            <div className="mt-12 mx-auto grid grid-cols-1 md:grid-cols-1 gap-x-12 gap-y-4 max-w-4xl">
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
                 <summary className="font-semibold text-lg dark:text-devConceptsWhite">
                   I’m unmotivated and frustrated because of a lack of progress — not laziness. Is this going to fix
@@ -657,60 +670,78 @@ const IndexPage = () => {
         <div id="main-cta" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center items-stretch">
           <div className="main-cta-starter-bundle homepage-elevated-box-on-hover">
             <a href="https://gumroad.com/l/AwJYP" rel="noopener">
-              <div>
-                <h3 className="text-center">Starter Edition</h3>
+              <div className="flex flex-col h-full min-h-full">
+                <div>
+                  <h3 className="text-center">Starter Edition</h3>
+                </div>
+                <div className="mt-2 flex flex-row text-center justify-center">
+                  <h5 className="">Download the first two volumes in the collection</h5>
+                </div>
+                <div className="mt-12 list-none! flex-grow">
+                  <ul className="space-y-4">
+                    <li className="prose dark:prose-dark prose-lg">
+                      <div className="font-semibold">Volume 1: {volume01.name}</div>
+                      <div>How to develop a craftsmanship attitude that helps you solve real-world problems.</div>
+                    </li>
+                    <li className="prose dark:prose-dark prose-lg">
+                      <div className="font-semibold">Volume 2: {volume02.name}</div>
+                      <div>Understand a client’s functional needs, and how you can decode end-user goals. Make sure your
+                        software is always solving the right problems.
+                      </div>
+                    </li>
+                    <li className="prose dark:prose-dark prose-lg">
+                      <div className="font-semibold">Lifetime Slack community access</div>
+                      <div>Get answers to your development questions, build a network of like-minded software crafters &
+                        learn with mentorship from a senior developer.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div className="mt-12"><span className="button-no-hover">Buy for €14.99</span></div>
+                <div className="mt-2 text-center"><span
+                  className="prose dark:prose-dark">14-day money-back guarantee</span></div>
               </div>
-              <div className="mt-2 flex flex-row text-center justify-center">
-                <h5 className="">Download the first two volumes in the collection</h5>
-              </div>
-              <div className="mt-12 list-none!">
-                <ul className="space-y-4">
-                  <li className="prose dark:prose-dark prose-lg">
-                    <div className="font-semibold">Volume 1: {volume01.name}</div>
-                    <div>How to develop a craftsmanship attitude that helps you solve real-world problems.</div>
-                  </li>
-                  <li className="prose dark:prose-dark prose-lg">
-                    <div className="font-semibold">Volume 2: {volume02.name}</div>
-                    <div>Understand a client’s functional needs, and how you can decode end-user goals. Make sure your software is always solving the right problems.</div>
-                  </li>
-                  <li className="prose dark:prose-dark prose-lg">
-                    <div className="font-semibold">Lifetime Slack community access</div>
-                    <div>Get answers to your development questions, build a network of like-minded software crafters & learn with mentorship from a senior developer.</div>
-                  </li>
-                </ul>
-              </div>
-              <div className="mt-12"><span className="button-no-hover">Buy for €14.99</span></div>
-              <div className="mt-2 text-center"><span className="prose dark:prose-dark">14-day money-back guarantee</span></div>
             </a>
           </div>
 
           <div className="main-cta-lifetime-collection-access homepage-elevated-box-on-hover">
             <a href="https://gumroad.com/l/TaEPM" rel="noopener">
+              <div className="flex flex-col h-full min-h-full">
               <div>
                 <h3 className="text-center">Lifetime Collection Access</h3>
               </div>
               <div className="mt-2 flex flex-row text-center justify-center">
                 <h5 className="">Published volumes plus all future releases</h5>
               </div>
-              <div className="mt-12 list-none!">
+              <div className="mt-12 list-none! flex-grow">
                 <ul className="space-y-4 ">
                   <li className="prose dark:prose-dark prose-lg">
                     <div className="font-semibold">All 12 Volumes</div>
-                    <div>All currently published volumes plus all the future releases covering: IT architecture, Software design, Computer architecture & OS basics, Coding Basics, General concerns & Best practices, Back-end, Front-end, IT Infrastructure, Security, Project management & Software development approaches.</div>
+                    <div>All currently published volumes plus all the future releases covering: IT architecture,
+                      Software design, Computer architecture & OS basics, Coding Basics, General concerns & Best
+                      practices, Back-end, Front-end, IT Infrastructure, Security, Project management & Software
+                      development approaches.
+                    </div>
                   </li>
                   <li className="prose dark:prose-dark prose-lg">
                     <div className="font-semibold">Lifetime Slack Community Access</div>
-                    <div>Get answers to your development questions, build a network of like-minded software crafters & learn with mentorship from a senior developer.</div>
+                    <div>Get answers to your development questions, build a network of like-minded software crafters &
+                      learn with mentorship from a senior developer.
+                    </div>
                   </li>
                   <li className="prose dark:prose-dark prose-lg">
                     <div className="font-semibold">BONUS: 30-minute live career coaching session</div>
-                    <div>Meet with Sébastien, the author and coach. Get actionable, personalized advice on job seeking, your skill development, and more.</div>
+                    <div>Meet with Sébastien, the author and coach. Get actionable, personalized advice on job seeking,
+                      your skill development, and more.
+                    </div>
                   </li>
                 </ul>
               </div>
               <div className="mt-12 text-center"><span className="prose dark:prose-dark prose-xl">Save €75</span></div>
               <div className="mt-4 text-center"><span className="button-no-hover">Buy for €125</span></div>
-              <div className="mt-2 text-center"><span className="prose dark:prose-dark">14-day money-back guarantee</span></div>
+              <div className="mt-2 text-center"><span
+                className="prose dark:prose-dark">14-day money-back guarantee</span></div>
+              </div>
             </a>
           </div>
         </div>

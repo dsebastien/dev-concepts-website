@@ -121,7 +121,7 @@ h6:hover {
 }
 
 .homepage-box {
-  @apply p-8 bg-devConceptsWhite dark:bg-devConceptsBlue-500 rounded-lg border-2 border-devConceptsGray-300 dark:border-devConceptsBlue-300 transform hover:opacity-90 transition-all duration-150 ease-in;
+  @apply p-12 bg-devConceptsWhite dark:bg-devConceptsBlue-500 rounded-lg border-2 border-devConceptsGray-300 dark:border-devConceptsBlue-300 transform hover:opacity-90 transition-all duration-150 ease-in;
 }
 
 .homepage-elevated-box {
@@ -165,6 +165,10 @@ h6:hover {
 
     & > .book-card-subtitle {
       @apply text-xl;
+    }
+
+    & > .book-card-buy-now-text {
+      @apply border-2 rounded-md mt-2 prose dark:prose-dark text-white dark:text-white bg-devConceptsGreen-600 hover:bg-devConceptsGreen-700 #{!important};
     }
   }
 }

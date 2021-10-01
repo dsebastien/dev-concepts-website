@@ -1,7 +1,6 @@
 {
   "title": "Dev Concepts",
-  "description": "A series of e-books explaining all of the core software development concepts. Discover and understand architecture, analysis, back-end, front-end, tooling, code quality, and much more!",
-  "tagline": "Go Full Stack Ahead!",
+  "description": "Your guide to the fundamentals of software development",
   "author": "Sébastien Dubois",
   "siteUrl": "https://dev-concepts.dev",
   "develoPassionSiteUrl": "https://developassion.be",
@@ -11,10 +10,6 @@
     "mail": "sebastien@developassion.be"
   },
   "siteSources": "https://github.com/DeveloPassion/dev-concepts-website",
-  "salesPageUrl": "https://gumroad.com/l/DevConcepts",
-  "salesPageUrlVolume01": "https://gum.co/DevConcepts-Part-01-SoftwareCraft",
-  "salesPageUrlVolume02": "https://gum.co/DevConcepts-Tome-02-WhatClientsNeed",
-  "salesPageUrlVolume03": "https://gum.co/DevConcepts-Volume-03-Architecture",
   "social": {
     "blogSebastien": "https://www.dsebastien.net",
     "facebook": "https://fb.me/DeveloPassion",
