@@ -44,7 +44,7 @@ const IndexPage = () => {
             </div>
             <div className="mt-6">
               <span className="button sm:max-w-xs">
-                <Link href="volumes">Discover the books</Link>
+                <Link href="#solution-volumes">Discover the books</Link>
               </span>
             </div>
           </div>
