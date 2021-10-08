@@ -41,7 +41,7 @@ const TocPage = () => {
     <Layout
       customMeta={{
         title: 'Table of Contents – Dev Concepts',
-        description: 'The table of contents of the Dev Concepts collection',
+        description: 'The table of contents of the Dev Concepts e-book collection',
       }}
     >
       <StyledArticle className="large-page-content-wrapper space-y-12">
