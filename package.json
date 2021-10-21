@@ -11,7 +11,7 @@
     "url": "https://github.com/DeveloPassion/dev-concepts-website/issues"
   },
   "homepage": "https://github.com/DeveloPassion/dev-concepts-website#readme",
-  "author": "dSebastien <sebastien@developassion.be> (https://www.dsebastien.net)",
+  "author": "dSebastien <sebastien@developassion.be> (https://dsebastien.net)",
   "engines": {
     "node": ">=12.10.0"
   },
