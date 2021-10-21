@@ -34,7 +34,7 @@ const supportedMetaProperties = propertiesOf<SupportedMeta>();
 
 interface LayoutProps {
   children: React.ReactNode;
-  customMeta: Partial<SupportedMeta>;
+  customMeta?: Partial<SupportedMeta>;
 }
 
 const Layout = ({children, customMeta}: LayoutProps) => {
@@ -54,67 +54,69 @@ const Layout = ({children, customMeta}: LayoutProps) => {
       'software, programming, software development, coding, it security, it architecture, code quality, books',
   };
 
-  for (const customMetaKey of Object.keys(customMeta ? customMeta : [])) {
-    let propertyHandled = false;
+  if(customMeta) {
+    for (const customMetaKey of Object.keys(customMeta ? customMeta : [])) {
+      let propertyHandled = false;
 
-    if (supportedMetaProperties("title") === customMetaKey) {
-      if (customMeta.title && customMeta.title.trim().length > 0) {
-        meta.title = customMeta.title;
+      if (supportedMetaProperties("title") === customMetaKey) {
+        if (customMeta.title && customMeta.title.trim().length > 0) {
+          meta.title = customMeta.title;
+        }
+        propertyHandled = true;
       }
-      propertyHandled = true;
-    }
 
-    if (supportedMetaProperties("date") === customMetaKey) {
-      if (customMeta.date && customMeta.date.trim().length > 0) {
-        meta.date = customMeta.date;
+      if (supportedMetaProperties("date") === customMetaKey) {
+        if (customMeta.date && customMeta.date.trim().length > 0) {
+          meta.date = customMeta.date;
+        }
+        propertyHandled = true;
       }
-      propertyHandled = true;
-    }
 
-    if (supportedMetaProperties("description") === customMetaKey) {
-      if (customMeta.description && customMeta.description.trim().length > 0) {
-        meta.description = customMeta.description;
+      if (supportedMetaProperties("description") === customMetaKey) {
+        if (customMeta.description && customMeta.description.trim().length > 0) {
+          meta.description = customMeta.description;
+        }
+        propertyHandled = true;
       }
-      propertyHandled = true;
-    }
 
-    if (supportedMetaProperties("type") === customMetaKey) {
-      if (customMeta.type && customMeta.type.trim().length > 0) {
-        meta.type = customMeta.type;
+      if (supportedMetaProperties("type") === customMetaKey) {
+        if (customMeta.type && customMeta.type.trim().length > 0) {
+          meta.type = customMeta.type;
+        }
+        propertyHandled = true;
       }
-      propertyHandled = true;
-    }
 
-    if (supportedMetaProperties("image") === customMetaKey) {
-      if (customMeta.image && customMeta.image.trim().length > 0) {
-        meta.image = customMeta.image;
+      if (supportedMetaProperties("image") === customMetaKey) {
+        if (customMeta.image && customMeta.image.trim().length > 0) {
+          meta.image = customMeta.image;
+        }
+        propertyHandled = true;
       }
-      propertyHandled = true;
-    }
 
-    if (supportedMetaProperties("keywords") === customMetaKey) {
-      if (customMeta.keywords && customMeta.keywords.trim().length > 0) {
-        meta.keywords = customMeta.keywords;
+      if (supportedMetaProperties("keywords") === customMetaKey) {
+        if (customMeta.keywords && customMeta.keywords.trim().length > 0) {
+          meta.keywords = customMeta.keywords;
+        }
+        propertyHandled = true;
       }
-      propertyHandled = true;
-    }
 
-    if (supportedMetaProperties("canonicalUrl") === customMetaKey) {
-      if (customMeta.canonicalUrl && customMeta.canonicalUrl.trim().length > 0) {
-        meta.canonicalUrl = customMeta.canonicalUrl;
+      if (supportedMetaProperties("canonicalUrl") === customMetaKey) {
+        if (customMeta.canonicalUrl && customMeta.canonicalUrl.trim().length > 0) {
+          meta.canonicalUrl = customMeta.canonicalUrl;
+        }
+        propertyHandled = true;
       }
-      propertyHandled = true;
-    }
 
-    if (supportedMetaProperties("siteName") === customMetaKey) {
-      if (customMeta.siteName && customMeta.siteName.trim().length > 0) {
-        meta.siteName = customMeta.siteName;
+      if (supportedMetaProperties("siteName") === customMetaKey) {
+        if (customMeta.siteName && customMeta.siteName.trim().length > 0) {
+          meta.siteName = customMeta.siteName;
+        }
+        propertyHandled = true;
       }
-      propertyHandled = true;
-    }
 
-    if (!propertyHandled) {
-      throw new Error(`Unhandled meta property: ${customMetaKey}`);
+      if (!propertyHandled) {
+        throw new Error(`Unhandled meta property: ${customMetaKey}`);
+      }
     }
   }
 

@@ -593,11 +593,11 @@ const IndexPage = () => {
                   Sébastien Dubois
                 </a>
                 , an{' '}
-                <a href="https://www.dsebastien.net/books" rel="noopener">
+                <a href="https://dsebastien.net/books" rel="noopener">
                   author
                 </a>
                 ,{' '}
-                <a href="https://www.dsebastien.net/blog" rel="noopener">
+                <a href="https://dsebastien.net/blog" rel="noopener">
                   blogger
                 </a>
                 , software crafter, coach/mentor, open source contributor, CTO and founder. I've been working for{' '}
