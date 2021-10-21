@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import {useRouter} from 'next/router';
 import tw from 'twin.macro';
 import ThemeSwitcher from '@/components/theme-switcher';
 import {FaArrowUp} from 'react-icons/fa';
@@ -10,14 +10,16 @@ import ScrollToTop from '@/components/scroll-to-top';
 import {IS_BROWSER} from '../constants';
 import * as metadata from "../utils/metadata.json";
 import ShellCode from "../client/components/shell-code"
+import {propertiesOf} from "../utils/type.utils";
 
 const StyledPage = tw.div``;
 
 /**
  * Page metadata that pages can customize
+ * WARNING: Whenever this changes, the for loop below processing custom meta MUST be adapted
  * Reference: https://github.com/leerob/leerob.io/blob/main/components/Container.js
  */
-interface SupportedMeta {
+export interface SupportedMeta {
   siteName: string;
   image: string;
   title: string;
@@ -25,41 +27,105 @@ interface SupportedMeta {
   type: string;
   date?: string;
   keywords?: string;
+  canonicalUrl?: string;
 }
+
+const supportedMetaProperties = propertiesOf<SupportedMeta>();
 
 interface LayoutProps {
   children: React.ReactNode;
-  customMeta?: Partial<SupportedMeta>;
+  customMeta: Partial<SupportedMeta>;
 }
 
-const Layout = ({ children, customMeta }: LayoutProps) => {
+const Layout = ({children, customMeta}: LayoutProps) => {
   const router = useRouter();
 
   /**
    * Default metadata
    */
-  const meta: SupportedMeta = {
+  let meta: SupportedMeta = {
     siteName: metadata.title,
     title: metadata.title,
     description: metadata.description,
     image: 'https://dev-concepts.dev/static/images/banner-2560.jpg',
     type: 'website',
+    canonicalUrl: `https://dev-concepts.dev${router.asPath}`,
     keywords:
       'software, programming, software development, coding, it security, it architecture, code quality, books',
-    /**
-     * Replace by custom values if any were defined
-     */
-    ...(customMeta ? customMeta : []),
   };
+
+  for (const customMetaKey of Object.keys(customMeta ? customMeta : [])) {
+    let propertyHandled = false;
+
+    if (supportedMetaProperties("title") === customMetaKey) {
+      if (customMeta.title && customMeta.title.trim().length > 0) {
+        meta.title = customMeta.title;
+      }
+      propertyHandled = true;
+    }
+
+    if (supportedMetaProperties("date") === customMetaKey) {
+      if (customMeta.date && customMeta.date.trim().length > 0) {
+        meta.date = customMeta.date;
+      }
+      propertyHandled = true;
+    }
+
+    if (supportedMetaProperties("description") === customMetaKey) {
+      if (customMeta.description && customMeta.description.trim().length > 0) {
+        meta.description = customMeta.description;
+      }
+      propertyHandled = true;
+    }
+
+    if (supportedMetaProperties("type") === customMetaKey) {
+      if (customMeta.type && customMeta.type.trim().length > 0) {
+        meta.type = customMeta.type;
+      }
+      propertyHandled = true;
+    }
+
+    if (supportedMetaProperties("image") === customMetaKey) {
+      if (customMeta.image && customMeta.image.trim().length > 0) {
+        meta.image = customMeta.image;
+      }
+      propertyHandled = true;
+    }
+
+    if (supportedMetaProperties("keywords") === customMetaKey) {
+      if (customMeta.keywords && customMeta.keywords.trim().length > 0) {
+        meta.keywords = customMeta.keywords;
+      }
+      propertyHandled = true;
+    }
+
+    if (supportedMetaProperties("canonicalUrl") === customMetaKey) {
+      if (customMeta.canonicalUrl && customMeta.canonicalUrl.trim().length > 0) {
+        meta.canonicalUrl = customMeta.canonicalUrl;
+      }
+      propertyHandled = true;
+    }
+
+    if (supportedMetaProperties("siteName") === customMetaKey) {
+      if (customMeta.siteName && customMeta.siteName.trim().length > 0) {
+        meta.siteName = customMeta.siteName;
+      }
+      propertyHandled = true;
+    }
+
+    if (!propertyHandled) {
+      throw new Error(`Unhandled meta property: ${customMetaKey}`);
+    }
+  }
 
   return (
     <StyledPage className="full-page flex flex-col flex-grow dark:prose-dark">
       <Head>
-        <meta charSet="utf-8" />
+        <meta charSet="utf-8"/>
         <title>{meta.title}</title>
-        <meta name="description" content={meta.description} />
-        <meta name="keywords" content={meta.keywords} />
-        <meta name="robots" content="index,follow,max-image-preview:large" />
+        <meta name="description" content={meta.description}/>
+        <meta name="keywords" content={meta.keywords}/>
+        <meta name="robots" content="index,follow,max-image-preview:large"/>
         <meta
           name="viewport"
           content="width=device-width,minimum-scale=1,initial-scale=1"
@@ -68,28 +134,30 @@ const Layout = ({ children, customMeta }: LayoutProps) => {
           property="og:url"
           content={`https://dev-concepts.dev${router.asPath}`}
         />
-        <link rel="canonical" href={`https://dev-concepts.dev${router.asPath}`} />
-        <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content={meta.siteName} />
-        <meta property="og:description" content={meta.description} />
-        <meta property="og:title" content={meta.title} />
-        <meta property="og:image" content={meta.image} />
-        <meta property="og:locale" content="en_US" />
-        <meta property="image" content={meta.image} />
-        <meta name="author" content="Sébastien Dubois" />
-        <meta property="article:author" content="https://dev-concepts.dev" />
-        <meta name="twitter:creator" content="@dSebastien" />
-        <meta name="twitter:site" content="@dSebastien" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={meta.title} />
-        <meta name="twitter:description" content={meta.description} />
-        <meta name="twitter:image" content={meta.image} />
+        <link rel="canonical" href={meta.canonicalUrl}/>
+        <meta property="og:type" content={meta.type}/>
+        <meta property="og:site_name" content={meta.siteName}/>
+        <meta property="og:description" content={meta.description}/>
+        <meta property="og:title" content={meta.title}/>
+        <meta property="og:image" content={meta.image}/>
+        <meta property="og:locale" content="en_US"/>
+        <meta property="image" content={meta.image}/>
+        <meta name="author" content="Sébastien Dubois"/>
+        <meta property="article:author" content="https://dev-concepts.dev"/>
+        <meta name="twitter:creator" content="@dSebastien"/>
+        <meta name="twitter:site" content="@dSebastien"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content={meta.title}/>
+        <meta name="twitter:description" content={meta.description}/>
+        <meta name="twitter:image" content={meta.image}/>
         {meta.date && (
-          <meta property="article:published_time" content={meta.date} />
+          <meta property="article:published_time" content={meta.date}/>
         )}
-        <meta name="theme-color" content="#263545" /> {/* devConceptsBlue-700 */}
+        <meta name="theme-color" content="#263545"/>
+        {/* devConceptsBlue-700 */}
       </Head>
-      <header className="main-header top-0 z-50 py-4 px-8 flex flex-col sm:flex-row justify-between bg-devConceptsBlue-500 text-devConceptsGray-100 border-b-2 border-devConceptsBlue-700 shadow-lg">
+      <header
+        className="main-header top-0 z-50 py-4 px-8 flex flex-col sm:flex-row justify-between bg-devConceptsBlue-500 text-devConceptsGray-100 border-b-2 border-devConceptsBlue-700 shadow-lg">
         <a
           href="#main"
           aria-label="Skip to the content"
@@ -98,11 +166,12 @@ const Layout = ({ children, customMeta }: LayoutProps) => {
           Skip to content
         </a>
         <div className="flex flex-col sm:flex-row flex-wrap items-center object-center">
-          <ThemeSwitcher />
+          <ThemeSwitcher/>
           <div className="header-title">
             <span className="sm:ml-2 text-5xl font-semibold tracking-normal text-gray-100">Dev Concepts</span>
           </div>
-          <nav className="header-menu mt-4 lg:mt-0 sm:ml-10 flex flex-col sm:flex-row flex-wrap items-center object-center gap-2 sm:gap-4 font-semibold">
+          <nav
+            className="header-menu mt-4 lg:mt-0 sm:ml-10 flex flex-col sm:flex-row flex-wrap items-center object-center gap-2 sm:gap-4 font-semibold">
             <Link href="/">
               <a
                 className="main-menu-link"
@@ -151,13 +220,13 @@ const Layout = ({ children, customMeta }: LayoutProps) => {
           IS_BROWSER ? document.getElementById('__next')! : undefined
         }
         className="scroll-to-top"
-        icon={<FaArrowUp className="w-full h-full text-devConceptsWhite" />}
+        icon={<FaArrowUp className="w-full h-full text-devConceptsWhite"/>}
       />
       <main id="main" className="relative mt-12 px-4 sm:px-8 flex-grow">
         {children}
       </main>
       <footer className="mx-0 sm:mx-8 md:mx-24 lg:mx-32 xl:mx-48">
-        <Footer />
+        <Footer/>
       </footer>
     </StyledPage>
   );

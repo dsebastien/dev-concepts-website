@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { parseISO, format } from 'date-fns';
 
 import { FrontMatter } from '@/lib/front-matter.intf';
-import Layout from './layout';
+import Layout, {SupportedMeta} from './layout';
 import tw from 'twin.macro';
 
 const StyledArticle = tw.article``;
@@ -19,16 +19,19 @@ type BlogLayoutProps = PropsWithChildren<{
  * @constructor
  */
 const BlogArticleLayout = ({ children, frontMatter }: BlogLayoutProps) => {
+  let customMeta: Partial<SupportedMeta> = {
+    title: `${frontMatter.title} – Dev Concepts`,
+    description: frontMatter.summary,
+    image: `https://dev-concepts.dev${frontMatter.image}`,
+    date: new Date(frontMatter.publishedAt).toISOString(),
+    type: 'article',
+    keywords: frontMatter.keywords.join(', '),
+    canonicalUrl: frontMatter.canonicalUrl,
+  }
+
   return (
     <Layout
-      customMeta={{
-        title: `${frontMatter.title} – Dev Concepts`,
-        description: frontMatter.summary,
-        image: `https://dev-concepts.dev${frontMatter.image}`,
-        date: new Date(frontMatter.publishedAt).toISOString(),
-        type: 'article',
-        keywords: frontMatter.keywords.join(', '),
-      }}
+      customMeta={customMeta}
     >
       <StyledArticle className="article-content-wrapper">
         <h1 className="page-heading">{frontMatter.title}</h1>
