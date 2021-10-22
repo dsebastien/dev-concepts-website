@@ -170,7 +170,7 @@ const Layout = ({children, customMeta}: LayoutProps) => {
         <div className="flex flex-col sm:flex-row flex-wrap items-center object-center">
           <ThemeSwitcher/>
           <div className="header-title">
-            <span className="sm:ml-2 text-5xl font-semibold tracking-normal text-gray-100">Dev Concepts</span>
+            <span className="sm:ml-2 text-5xl font-semibold tracking-normal text-gray-100"><Link href="/">Dev Concepts</Link></span>
           </div>
           <nav
             className="header-menu mt-4 lg:mt-0 sm:ml-10 flex flex-col sm:flex-row flex-wrap items-center object-center gap-2 sm:gap-4 font-semibold">
