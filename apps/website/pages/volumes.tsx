@@ -172,7 +172,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href={volume03.gumroadShortUrl}
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: {volume03.price}</span></a></div>
+                  className="button-dark-bg">Pre-order: {volume03.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume03.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -216,7 +216,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href={volume04.gumroadShortUrl}
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: {volume04.price}</span></a></div>
+                  className="button-dark-bg">Pre-order: {volume04.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume04.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -260,7 +260,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href={volume05.gumroadShortUrl}
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: {volume05.price}</span></a></div>
+                  className="button-dark-bg">Pre-order: {volume05.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume05.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -304,7 +304,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href={volume06.gumroadShortUrl}
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: {volume06.price}</span></a></div>
+                  className="button-dark-bg">Pre-order: {volume06.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume06.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -348,7 +348,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href={volume07.gumroadShortUrl}
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: {volume07.price}</span></a></div>
+                  className="button-dark-bg">Pre-order: {volume07.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume07.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -392,7 +392,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href={volume08.gumroadShortUrl}
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: {volume08.price}</span></a></div>
+                  className="button-dark-bg">Pre-order: {volume08.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume08.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -436,7 +436,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href={volume09.gumroadShortUrl}
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: {volume09.price}</span></a></div>
+                  className="button-dark-bg">Pre-order: {volume09.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume09.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -480,7 +480,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href={volume10.gumroadShortUrl}
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: {volume10.price}</span></a></div>
+                  className="button-dark-bg">Pre-order: {volume10.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume10.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -524,7 +524,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href={volume11.gumroadShortUrl}
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: {volume11.price}</span></a></div>
+                  className="button-dark-bg">Pre-order: {volume11.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume11.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
@@ -568,7 +568,7 @@ const VolumeSummariesPage = () => {
 
                 <div className="mt-6 text-center"><a className="no-underline!" href={volume12.gumroadShortUrl}
                                                      rel="noopener"><span
-                  className="button-dark-bg">Buy now: {volume12.price}</span></a></div>
+                  className="button-dark-bg">Pre-order: {volume12.price}</span></a></div>
                 <div className="mt-2 text-center"><Link href={`/table-of-contents/#${volume12.tocAnchor}`}><span
                   className="prose dark:prose-dark underline hover:cursor-pointer">Chapter breakdown</span></Link></div>
               </footer>
