@@ -68,7 +68,7 @@ const BlogArticleLayout = ({ children, frontMatter }: BlogLayoutProps) => {
             </a>
             <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
 
-              {`${frontMatter.author} / `}
+              {`${frontMatter.author? frontMatter.author: AUTHOR.name} / `}
               <time dateTime={format(parseISO(frontMatter.publishedAt), 'yyyy-MM-dd')}>{format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}</time>
             </p>
           </div>
