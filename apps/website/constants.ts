@@ -186,14 +186,14 @@ export const volume12: Product = {
  * Reference: https://schema.org/Person
  */
 export const AUTHOR = {
-  "@context": "http://schema.org/",
+  "@context": "https://schema.org/",
   "@type": "Person",
-  "name": "Sébastien Dubois",
-  "familyName": "Dubois",
-  "givenName": "Sébastien",
-  "image": "https://dsebastien.net/static/images/sebastien.png",
-  "url": "https://twitter.com/dSebastien",
-  "sameAs": [
+  name: "Sébastien Dubois",
+  familyName: "Dubois",
+  givenName: "Sébastien",
+  image: "https://dsebastien.net/static/images/sebastien.png",
+  url: "https://twitter.com/dSebastien",
+  sameAs: [
     "https://www.linkedin.com/in/sebastiend/",
     "https://github.com/dsebastien",
     "https://dsebastien.medium.com/",
@@ -206,10 +206,10 @@ export const AUTHOR = {
     "https://updates.dsebastien.net/",
     "https://www.reddit.com/user/lechtitseb/"
   ],
-  "jobTitle": "Founder",
-  "worksFor": {
+  jobTitle: "Founder",
+  worksFor: {
     "@type": "Organization",
-    "name": "DeveloPassion",
-    "url": "https://developassion.be"
+    name: "DeveloPassion",
+    url: "https://developassion.be"
   }
 };
