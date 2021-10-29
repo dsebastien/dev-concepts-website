@@ -26,7 +26,7 @@ const VolumeSummariesPage = () => {
     <Layout
       customMeta={{
         title: 'Volumes – Dev Concepts',
-        description: 'The Dev Concepts Collection',
+        description: 'Software Development books',
       }}
     >
       <StyledArticle className="large-page-content-wrapper space-y-12">

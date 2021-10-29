@@ -51,7 +51,7 @@ const Layout = ({children, customMeta}: LayoutProps) => {
     type: 'website',
     canonicalUrl: `https://dev-concepts.dev${router.asPath}`,
     keywords:
-      'software, programming, software development, coding, it security, it architecture, code quality, books',
+      'dev books, dev book, software development concepts, software concepts, programming, software development, coding, it security, it architecture, code quality, books',
   };
 
   if(customMeta) {

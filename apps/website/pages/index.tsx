@@ -32,15 +32,15 @@ const IndexPage = () => {
               <span className="text-xl">DEV CONCEPTS COLLECTION</span>
             </div>
             <div className="mt-2">
-              <span className="hero-text">Your guide to the fundamentals of software development</span>
+              <h1 className="hero-text">Your guide to the fundamentals of software development</h1>
             </div>
             <div className="mt-6">
-              <p className="text-lg max-w-xl">
-                A 12-volume collection of digital books that supports junior software developers in building an exceptional career.
-              </p>
-              <p className="mt-2 text-lg max-w-xl">
+              <h2 className="text-xl! font-normal! leading-tight! max-w-lg">
+                A 12-volume collection of digital books to help junior software developers build an exceptional career.
+              </h2>
+              <h2 className="mt-2 text-xl! font-normal! leading-tight! max-w-lg">
                 Get a complete understanding of how every concept in software engineering fits together.
-              </p>
+              </h2>
             </div>
             <div className="mt-6">
               <span className="button sm:max-w-xs">
@@ -517,8 +517,8 @@ const IndexPage = () => {
                 <div>
                   <h3>Starter Edition</h3>
                 </div>
-                <div className="mt-2">
-                  <h5 className="max-w-sm">Download the first two volumes in the collection</h5>
+                <div className="mt-2 flex-row text-center justify-center">
+                  <h4 className="max-w-sm text-2xl! font-normal!">Download the first two volumes in the collection</h4>
                 </div>
                 <div className="mt-16 list-none! flex-grow">
                   <ul className="font-semibold space-y-2">
@@ -545,8 +545,8 @@ const IndexPage = () => {
                 <div>
                   <h3>Lifetime Collection Access</h3>
                 </div>
-                <div className="mt-2">
-                  <h5 className="max-w-sm">Published volumes plus all future releases</h5>
+                <div className="mt-2 flex flex-row text-center justify-center">
+                  <h5 className="max-w-sm text-2xl! font-normal!">Published volumes plus all future releases</h5>
                 </div>
                 <div className="mt-16 list-none! flex-grow">
                   <ul className="font-semibold space-y-2">
@@ -600,7 +600,7 @@ const IndexPage = () => {
                 <a href="https://dsebastien.net/blog" rel="noopener">
                   blogger
                 </a>
-                , software crafter, coach/mentor, open source contributor, CTO and founder. I've been working for{' '}
+                , freelance software crafter, coach/mentor, open source contributor, CTO and founder. I've been working for{' '}
                 <span className="italic">15 years</span> in the industry, and have explored many areas of IT. I've been a technical leader
                 for both back-end and front-end. I've also worked as solutions architect, led large projects and teams, managed critical IT
                 infrastructure. and founded <a href="https://developassion.be">my own company</a>.
@@ -639,7 +639,7 @@ const IndexPage = () => {
               </h3>
             </div>
             <div className="mt-6 flex flex-row items-center justify-center">
-              <h5 className="max-w-2xl italic">Here’s what the Dev Concepts Collection will help you achieve.</h5>
+              <h4 className="max-w-2xl italic text-2xl! font-normal!">Here’s what the Dev Concepts Collection will help you achieve.</h4>
             </div>
             <div className="mt-12 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
               <div>
@@ -825,7 +825,7 @@ const IndexPage = () => {
                   <h3 className="text-center">Starter Edition</h3>
                 </div>
                 <div className="mt-2 flex flex-row text-center justify-center">
-                  <h5 className="">Download the first two volumes in the collection</h5>
+                  <h4 className="max-w-sm text-2xl! font-normal!">Download the first two volumes in the collection</h4>
                 </div>
                 <div className="mt-12 list-none! flex-grow">
                   <ul className="space-y-4">
@@ -866,7 +866,7 @@ const IndexPage = () => {
                   <h3 className="text-center">Lifetime Collection Access</h3>
                 </div>
                 <div className="mt-2 flex flex-row text-center justify-center">
-                  <h5 className="">Published volumes plus all future releases</h5>
+                  <h4 className="max-w-sm text-2xl! font-normal!">Published volumes plus all future releases</h4>
                 </div>
                 <div className="mt-12 list-none! flex-grow">
                   <ul className="space-y-4 ">
