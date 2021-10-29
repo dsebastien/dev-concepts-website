@@ -49,7 +49,7 @@ const VolumeSummariesPage = () => {
             {/* ------------------------------ VOLUME 01 START ------------------------------ */}
             <div id="volume-01" className="homepage-elevated-box large-book-card">
               <div className="flex-grow-0 flex-shrink-0"><Image
-                alt="Dev Concepts Volume 1"
+                alt={volume01.coverDescription}
                 width={500}
                 height={334}
                 src="/static/images/devConcepts/DevConcepts01Cover3D - small - tinypng.png"
@@ -94,7 +94,7 @@ const VolumeSummariesPage = () => {
             {/* ------------------------------ VOLUME 02 START ------------------------------ */}
             <div id="volume-02" className="homepage-elevated-box large-book-card">
               <div className="flex-grow-0 flex-shrink-0"><Image
-                alt="Dev Concepts Volume 2"
+                alt={volume02.coverDescription}
                 width={500}
                 height={334}
                 src="/static/images/devConcepts/DevConcepts02Cover3D - small - tinypng.png"
@@ -138,7 +138,7 @@ const VolumeSummariesPage = () => {
             {/* ------------------------------ VOLUME 03 START ------------------------------ */}
             <div id="volume-03" className="homepage-elevated-box large-book-card">
               <div className="flex-grow-0 flex-shrink-0"><Image
-                alt="Dev Concepts Volume 3"
+                alt={volume03.coverDescription}
                 width={500}
                 height={334}
                 src="/static/images/devConcepts/DevConcepts03Cover3D - small - tinypng.png"
@@ -182,7 +182,7 @@ const VolumeSummariesPage = () => {
             {/* ------------------------------ VOLUME 04 START ------------------------------ */}
             <div id="volume-04" className="homepage-elevated-box large-book-card">
               <div className="flex-grow-0 flex-shrink-0"><Image
-                alt="Dev Concepts Volume 4"
+                alt={volume04.coverDescription}
                 width={500}
                 height={334}
                 src="/static/images/devConcepts/DevConcepts04Cover3D - small - tinypng.png"
@@ -226,7 +226,7 @@ const VolumeSummariesPage = () => {
             {/* ------------------------------ VOLUME 05 START ------------------------------ */}
             <div id="volume-05" className="homepage-elevated-box large-book-card">
               <div className="flex-grow-0 flex-shrink-0"><Image
-                alt="Dev Concepts Volume 5"
+                alt={volume05.coverDescription}
                 width={500}
                 height={334}
                 src="/static/images/devConcepts/DevConcepts05Cover3D - small - tinypng.png"
@@ -270,7 +270,7 @@ const VolumeSummariesPage = () => {
             {/* ------------------------------ VOLUME 06 START ------------------------------ */}
             <div id="volume-06" className="homepage-elevated-box large-book-card">
               <div className="flex-grow-0 flex-shrink-0"><Image
-                alt="Dev Concepts Volume 6"
+                alt={volume06.coverDescription}
                 width={500}
                 height={334}
                 src="/static/images/devConcepts/DevConcepts06Cover3D - small - tinypng.png"
@@ -314,7 +314,7 @@ const VolumeSummariesPage = () => {
             {/* ------------------------------ VOLUME 07 START ------------------------------ */}
             <div id="volume-07" className="homepage-elevated-box large-book-card">
               <div className="flex-grow-0 flex-shrink-0"><Image
-                alt="Dev Concepts Volume 7"
+                alt={volume07.coverDescription}
                 width={500}
                 height={334}
                 src="/static/images/devConcepts/DevConcepts07Cover3D - small - tinypng.png"
@@ -358,7 +358,7 @@ const VolumeSummariesPage = () => {
             {/* ------------------------------ VOLUME 08 START ------------------------------ */}
             <div id="volume-08" className="homepage-elevated-box large-book-card">
               <div className="flex-grow-0 flex-shrink-0"><Image
-                alt="Dev Concepts Volume 8"
+                alt={volume08.coverDescription}
                 width={500}
                 height={334}
                 src="/static/images/devConcepts/DevConcepts08Cover3D - small - tinypng.png"
@@ -402,7 +402,7 @@ const VolumeSummariesPage = () => {
             {/* ------------------------------ VOLUME 09 START ------------------------------ */}
             <div id="volume-09" className="homepage-elevated-box large-book-card">
               <div className="flex-grow-0 flex-shrink-0"><Image
-                alt="Dev Concepts Volume 9"
+                alt={volume09.coverDescription}
                 width={500}
                 height={334}
                 src="/static/images/devConcepts/DevConcepts09Cover3D - small - tinypng.png"
@@ -446,7 +446,7 @@ const VolumeSummariesPage = () => {
             {/* ------------------------------ VOLUME 10 START ------------------------------ */}
             <div id="volume-10" className="homepage-elevated-box large-book-card">
               <div className="flex-grow-0 flex-shrink-0"><Image
-                alt="Dev Concepts Volume 10"
+                alt={volume10.coverDescription}
                 width={500}
                 height={334}
                 src="/static/images/devConcepts/DevConcepts10Cover3D - small - tinypng.png"
@@ -490,7 +490,7 @@ const VolumeSummariesPage = () => {
             {/* ------------------------------ VOLUME 11 START ------------------------------ */}
             <div id="volume-11" className="homepage-elevated-box large-book-card">
               <div className="flex-grow-0 flex-shrink-0"><Image
-                alt="Dev Concepts Volume 11"
+                alt={volume11.coverDescription}
                 width={500}
                 height={334}
                 src="/static/images/devConcepts/DevConcepts11Cover3D - small - tinypng.png"
@@ -534,7 +534,7 @@ const VolumeSummariesPage = () => {
             {/* ------------------------------ VOLUME 12 START ------------------------------ */}
             <div id="volume-12" className="homepage-elevated-box large-book-card">
               <div className="flex-grow-0 flex-shrink-0"><Image
-                alt="Dev Concepts Volume 12"
+                alt={volume12.coverDescription}
                 width={500}
                 height={334}
                 src="/static/images/devConcepts/DevConcepts12Cover3D - small - tinypng.png"

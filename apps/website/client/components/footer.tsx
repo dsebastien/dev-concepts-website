@@ -39,11 +39,11 @@ const Footer = () => {
               <Link href="/volumes">
                 <a
                   className=""
-                  aria-label="Explore the volume summaries"
-                  title="Explore the volume summaries"
+                  aria-label="Explore the contents of the collection"
+                  title="Explore the contents of the collection"
                 >
                   <div
-                    className="text-devConceptsGray-300 visited:text-devConceptsGray-300 hover:text-devConceptsGray-100">Volume summaries
+                    className="text-devConceptsGray-300 visited:text-devConceptsGray-300 hover:text-devConceptsGray-100">Collection contents
                   </div>
                 </a>
               </Link>

@@ -50,7 +50,7 @@ const IndexPage = () => {
           </div>
           <div className="hero-image">
             <Image
-              alt="Dev Concepts Collection"
+              alt="Dev Concepts Collection: A collection of books to learn everything about software development"
               width={598}
               height={725}
               src="/static/images/devConcepts/DevConceptsHardCoverThin - small - tinypng.png"
@@ -184,7 +184,7 @@ const IndexPage = () => {
                 <div className="homepage-elevated-box-on-hover book-card">
                   <div>
                     <Image
-                      alt="Dev Concepts Volume 1"
+                      alt={volume01.coverDescription}
                       width={500}
                       height={334}
                       src="/static/images/devConcepts/DevConcepts01Cover3D - small - tinypng.png"
@@ -204,7 +204,7 @@ const IndexPage = () => {
                 <div className="homepage-elevated-box-on-hover book-card">
                   <div>
                     <Image
-                      alt="Dev Concepts Volume 2"
+                      alt={volume02.coverDescription}
                       width={500}
                       height={334}
                       src="/static/images/devConcepts/DevConcepts02Cover3D - small - tinypng.png"
@@ -224,7 +224,7 @@ const IndexPage = () => {
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div>
                     <Image
-                      alt="Dev Concepts Volume 3"
+                      alt={volume03.coverDescription}
                       width={500}
                       height={334}
                       src="/static/images/devConcepts/DevConcepts03Cover3D - small - tinypng.png"
@@ -244,7 +244,7 @@ const IndexPage = () => {
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div>
                     <Image
-                      alt="Dev Concepts Volume 4"
+                      alt={volume04.coverDescription}
                       width={500}
                       height={334}
                       src="/static/images/devConcepts/DevConcepts04Cover3D - small - tinypng.png"
@@ -264,7 +264,7 @@ const IndexPage = () => {
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div>
                     <Image
-                      alt="Dev Concepts Volume 5"
+                      alt={volume05.coverDescription}
                       width={500}
                       height={334}
                       src="/static/images/devConcepts/DevConcepts05Cover3D - small - tinypng.png"
@@ -284,7 +284,7 @@ const IndexPage = () => {
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div>
                     <Image
-                      alt="Dev Concepts Volume 6"
+                      alt={volume06.coverDescription}
                       width={500}
                       height={334}
                       src="/static/images/devConcepts/DevConcepts06Cover3D - small - tinypng.png"
@@ -304,7 +304,7 @@ const IndexPage = () => {
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div>
                     <Image
-                      alt="Dev Concepts Volume 7"
+                      alt={volume07.coverDescription}
                       width={500}
                       height={334}
                       src="/static/images/devConcepts/DevConcepts07Cover3D - small - tinypng.png"
@@ -324,7 +324,7 @@ const IndexPage = () => {
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div>
                     <Image
-                      alt="Dev Concepts Volume 8"
+                      alt={volume08.coverDescription}
                       width={500}
                       height={334}
                       src="/static/images/devConcepts/DevConcepts08Cover3D - small - tinypng.png"
@@ -344,7 +344,7 @@ const IndexPage = () => {
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div>
                     <Image
-                      alt="Dev Concepts Volume 9"
+                      alt={volume09.coverDescription}
                       width={500}
                       height={334}
                       src="/static/images/devConcepts/DevConcepts09Cover3D - small - tinypng.png"
@@ -364,7 +364,7 @@ const IndexPage = () => {
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div>
                     <Image
-                      alt="Dev Concepts Volume 10"
+                      alt={volume10.coverDescription}
                       width={500}
                       height={334}
                       src="/static/images/devConcepts/DevConcepts10Cover3D - small - tinypng.png"
@@ -384,7 +384,7 @@ const IndexPage = () => {
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div>
                     <Image
-                      alt="Dev Concepts Volume 11"
+                      alt={volume11.coverDescription}
                       width={500}
                       height={334}
                       src="/static/images/devConcepts/DevConcepts11Cover3D - small - tinypng.png"
@@ -404,7 +404,7 @@ const IndexPage = () => {
                 <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
                   <div>
                     <Image
-                      alt="Dev Concepts Volume 12"
+                      alt={volume12.coverDescription}
                       width={500}
                       height={334}
                       src="/static/images/devConcepts/DevConcepts12Cover3D - small - tinypng.png"
@@ -468,7 +468,7 @@ const IndexPage = () => {
           </div>
           <div className="solution-mentorship-image">
             <Image
-              alt="Picture courtesy of Chang Duong: https://unsplash.com/@iamchang"
+              alt="A community of software crafters to support you. Picture courtesy of Chang Duong: https://unsplash.com/@iamchang"
               width={1700}
               height={1133}
               src="/static/images/community - tinypng.png"
@@ -480,7 +480,7 @@ const IndexPage = () => {
         <div id="solution-confidence" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
           <div className="solution-confidence-image">
             <Image
-              alt="Picture courtesy of Jonathan Klok: https://unsplash.com/@mostly_brave"
+              alt="Grow your software development skills with confidence thanks to the Dev Concepts collection. Picture courtesy of Jonathan Klok: https://unsplash.com/@mostly_brave"
               width={1700}
               height={1133}
               src="/static/images/confidence - tinypng.jpg"

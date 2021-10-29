@@ -189,7 +189,7 @@ const Layout = ({children, customMeta}: LayoutProps) => {
                 aria-label="Go to the volume summaries page"
                 title="Go to the volume summaries page"
               >
-                <div className="site-button text-base">Volume summaries</div>
+                <div className="site-button text-base">Collection contents</div>
               </a>
             </Link>
             <Link href="/table-of-contents">
