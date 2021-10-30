@@ -7,6 +7,13 @@ import Image from 'next/image';
 import { AiFillRightCircle } from 'react-icons/ai';
 import {
   COLLECTION_DESCRIPTION,
+  FAQ_ANSWER_1,
+  FAQ_ANSWER_2,
+  FAQ_ANSWER_3, FAQ_ANSWER_4, FAQ_ANSWER_5, FAQ_ANSWER_6,
+  FAQ_QUESTION_1,
+  FAQ_QUESTION_2,
+  FAQ_QUESTION_3,
+  FAQ_QUESTION_4, FAQ_QUESTION_5, FAQ_QUESTION_6,
   volume01,
   volume02,
   volume03,
@@ -682,68 +689,59 @@ const IndexPage = () => {
             <div className="mt-12 mx-auto grid grid-cols-1 md:grid-cols-1 gap-x-12 gap-y-4 max-w-4xl">
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
                 <summary className="font-semibold text-lg dark:text-devConceptsWhite">
-                  I’m unmotivated and frustrated because of a lack of progress — not laziness. Is this going to fix that?
+                  {FAQ_QUESTION_1}
                 </summary>
 
                 <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
-                  A book isn’t going to magically fix your career, but it will give you the mindset you need to succeed in software
-                  development.
+                  {FAQ_ANSWER_1}
                 </span>
               </details>
 
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
                 <summary className="font-semibold text-lg dark:text-devConceptsWhite">
-                  I don’t have time to read an entire book... let alone a collection! Can I still learn something here?
+                  {FAQ_QUESTION_2}
                 </summary>
 
                 <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
-                  Yes! While it’s recommended that you do a quick read-through, the volumes and chapters are designed to stand alone. Every
-                  time you face a particular problem, you can do a quick search and find the chapter that will help you the fastest. Plus
-                  each section includes external links and resources that you will help you dive much deeper into the subject matter.
+                  {FAQ_ANSWER_2}
                 </span>
               </details>
 
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
                 <summary className="font-semibold text-lg dark:text-devConceptsWhite">
-                  Will this collection teach me the technical side of engineering?
+                  {FAQ_QUESTION_3}
                 </summary>
 
                 <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
-                  Dev Concept includes many practical examples and code snippets, but it isn't a replacement for hands-on training. Most of
-                  the concepts are presented in isolation to facilitate comprehension.
+                  {FAQ_ANSWER_3}
                 </span>
               </details>
 
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
-                <summary className="font-semibold text-lg dark:text-devConceptsWhite">How does the Slack group work?</summary>
+                <summary className="font-semibold text-lg dark:text-devConceptsWhite">{FAQ_QUESTION_4}</summary>
 
                 <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
-                  The Slack community is where you can send questions about all aspects of software engineering and IT. Your questions will
-                  always be answered by a senior engineer. You can ask questions about technical issues, conceptual ones, or even about how
-                  to deal with work challenges. We’re a friendly community that’s excited to welcome you!
-                </span>
-              </details>
-
-              <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
-                <summary className="font-semibold text-lg dark:text-devConceptsWhite">
-                  What if I don’t like the collection? How does the money-back guarantee work?
-                </summary>
-
-                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
-                  If you're not satisfied with the content, then contact me within 14 days and you'll get a full refund. The only thing I'll
-                  ask is to understand what did not meet your expectations.
+                  {FAQ_ANSWER_4}
                 </span>
               </details>
 
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
                 <summary className="font-semibold text-lg dark:text-devConceptsWhite">
-                  Why are only some of the volumes available right now?
+                  {FAQ_QUESTION_5}
                 </summary>
 
                 <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
-                  Dev Concepts is a <span className="italic">huge</span> project. I will release a new volume every few months. If you
-                  purchase the lifetime plan, you will get immediate access as soon as it’s published. In addition, the content will be
-                  updated regularly to remain relevant and up to date.
+                  {FAQ_ANSWER_5}
+                </span>
+              </details>
+
+              <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
+                <summary className="font-semibold text-lg dark:text-devConceptsWhite">
+                  {FAQ_QUESTION_6}
+                </summary>
+
+                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
+                  {FAQ_ANSWER_6}
                 </span>
               </details>
 
@@ -753,10 +751,9 @@ const IndexPage = () => {
                 <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
                   Check out <Link href="volumes">the description of each volume</Link>, and{' '}
                   <Link href="table-of-contents">the full chapter breakdown for each volume</Link>. You can also free samples volume 1{' '}
-                  <a href="https://dsebastien.net/blog" rel="noopener">
+                  <a href="https://dev-concepts.dev/updates" rel="noopener">
                     here
-                  </a>
-                  .
+                  </a>.
                 </span>
               </details>
 

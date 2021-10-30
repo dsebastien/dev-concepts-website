@@ -1054,3 +1054,71 @@ export const BOOKS_FEED_MICRODATA = {
   ],
   dateModified: new Date().toISOString()
 };
+
+export const FAQ_QUESTION_1 = "I’m unmotivated and frustrated because of a lack of progress — not laziness. Is this going to fix that?";
+export const FAQ_ANSWER_1 = "A book isn’t going to magically fix your career, but it will give you the mindset you need to succeed in software development.";
+export const FAQ_QUESTION_2 = "I don’t have time to read an entire book... let alone a collection! Can I still learn something here?";
+export const FAQ_ANSWER_2 = "Yes! While it’s recommended that you do a quick read-through, the volumes and chapters are designed to stand alone. Every time you face a particular problem, you can do a quick search and find the chapter that will help you the fastest. Plus each section includes external links and resources that you will help you dive much deeper into the subject matter.";
+export const FAQ_QUESTION_3 = "Will this collection teach me the technical side of engineering?"
+export const FAQ_ANSWER_3 = "Dev Concept includes many practical examples and code snippets, but it isn't a replacement for hands-on training. Most of the concepts are presented in isolation to facilitate comprehension.";
+export const FAQ_QUESTION_4 = "How does the Slack group work?";
+export const FAQ_ANSWER_4 = "The Slack community is where you can send questions about all aspects of software engineering and IT. Your questions will always be answered by a senior engineer. You can ask questions about technical issues, conceptual ones, or even about how to deal with work challenges. We’re a friendly community that’s excited to welcome you!";
+export const FAQ_QUESTION_5 = "What if I don’t like the collection? How does the money-back guarantee work?";
+export const FAQ_ANSWER_5 = "If you're not satisfied with the content, then contact me within 14 days and you'll get a full refund. The only thing I'll ask is to understand what did not meet your expectations.";
+export const FAQ_QUESTION_6 = "Why are only some of the volumes available right now?";
+export const FAQ_ANSWER_6 = "Dev Concepts is a huge project. I will release a new volume every few months. If you purchase the lifetime plan, you will get immediate access as soon as it’s published. In addition, the content will be updated regularly to remain relevant and up to date.";
+
+export const FAQ_MICRODATA = {
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  mainEntity:[
+    {
+      "@type": "Question",
+      name: FAQ_QUESTION_1,
+      acceptedAnswer:{
+        "@type": "Answer",
+        text: FAQ_ANSWER_1
+      }
+    },
+    {
+      "@type": "Question",
+      name: FAQ_QUESTION_2,
+      acceptedAnswer:{
+        "@type": "Answer",
+        text: FAQ_ANSWER_2
+      }
+    },
+    {
+      "@type": "Question",
+      name: FAQ_QUESTION_3,
+      acceptedAnswer:{
+        "@type": "Answer",
+        text: FAQ_ANSWER_3
+      }
+    },
+    {
+      "@type": "Question",
+      name: FAQ_QUESTION_4,
+      acceptedAnswer:{
+        "@type": "Answer",
+        text: FAQ_ANSWER_4
+      }
+    },
+    {
+      "@type": "Question",
+      name: FAQ_QUESTION_5,
+      acceptedAnswer:{
+        "@type": "Answer",
+        text: FAQ_ANSWER_5
+      }
+    },
+    {
+      "@type": "Question",
+      name: FAQ_QUESTION_6,
+      acceptedAnswer:{
+        "@type": "Answer",
+        text: FAQ_ANSWER_6
+      }
+    }
+  ]
+};

@@ -23,7 +23,7 @@ import {
   BOOK_VOLUME_11_MICRODATA,
   BOOK_VOLUME_12_MICRODATA,
   BOOKS_FEED_MICRODATA,
-  COLLECTION_KEYWORDS,
+  COLLECTION_KEYWORDS, FAQ_MICRODATA,
   IS_BROWSER
 } from '../constants';
 import * as metadata from "../utils/metadata.json";
@@ -202,6 +202,9 @@ const Layout = ({children, customMeta}: LayoutProps) => {
       </script>
       <script type="application/ld+json">
         {JSON.stringify(BOOKS_FEED_MICRODATA)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(FAQ_MICRODATA)}
       </script>
       <StyledPage className="full-page flex flex-col flex-grow dark:prose-dark">
         <Head>
