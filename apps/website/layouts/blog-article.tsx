@@ -5,7 +5,7 @@ import { parseISO, format } from 'date-fns';
 import { FrontMatter } from '@/lib/front-matter.intf';
 import Layout, {SupportedMeta} from './layout';
 import tw from 'twin.macro';
-import {AUTHOR} from "../constants";
+import {AUTHOR_MICRODATA} from "../constants";
 
 const StyledArticle = tw.article``;
 
@@ -33,7 +33,7 @@ const BlogArticleLayout = ({ children, frontMatter }: BlogLayoutProps) => {
     description: frontMatter.summary,
     image: coverImageUrl,
     datePublished,
-    author: AUTHOR,
+    author: AUTHOR_MICRODATA,
   };
 
   const customMeta: Partial<SupportedMeta> = {
@@ -68,7 +68,7 @@ const BlogArticleLayout = ({ children, frontMatter }: BlogLayoutProps) => {
             </a>
             <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
 
-              {`${frontMatter.author? frontMatter.author: AUTHOR.name} / `}
+              {`${frontMatter.author? frontMatter.author: AUTHOR_MICRODATA.name} / `}
               <time dateTime={format(parseISO(frontMatter.publishedAt), 'yyyy-MM-dd')}>{format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}</time>
             </p>
           </div>

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { AiFillRightCircle } from 'react-icons/ai';
 import {
+  COLLECTION_DESCRIPTION,
   volume01,
   volume02,
   volume03,
@@ -35,9 +36,7 @@ const IndexPage = () => {
               <h1 className="hero-text">Your guide to the fundamentals of software development</h1>
             </div>
             <div className="mt-6">
-              <h2 className="text-xl! font-normal! leading-tight! max-w-lg">
-                A 12-volume collection of digital books to help junior software developers build an exceptional career.
-              </h2>
+              <h2 className="text-xl! font-normal! leading-tight! max-w-lg">{COLLECTION_DESCRIPTION}</h2>
               <h2 className="mt-2 text-xl! font-normal! leading-tight! max-w-lg">
                 Get a complete understanding of how every concept in software engineering fits together.
               </h2>

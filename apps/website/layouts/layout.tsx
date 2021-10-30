@@ -7,7 +7,25 @@ import ThemeSwitcher from '@/components/theme-switcher';
 import {FaArrowUp} from 'react-icons/fa';
 import Footer from '@/components/footer';
 import ScrollToTop from '@/components/scroll-to-top';
-import {AUTHOR, IS_BROWSER} from '../constants';
+import {
+  AUTHOR_MICRODATA,
+  BOOK_SERIES_MICRODATA,
+  BOOK_VOLUME_01_MICRODATA,
+  BOOK_VOLUME_02_MICRODATA,
+  BOOK_VOLUME_03_MICRODATA,
+  BOOK_VOLUME_04_MICRODATA,
+  BOOK_VOLUME_05_MICRODATA,
+  BOOK_VOLUME_06_MICRODATA,
+  BOOK_VOLUME_07_MICRODATA,
+  BOOK_VOLUME_08_MICRODATA,
+  BOOK_VOLUME_09_MICRODATA,
+  BOOK_VOLUME_10_MICRODATA,
+  BOOK_VOLUME_11_MICRODATA,
+  BOOK_VOLUME_12_MICRODATA,
+  BOOKS_FEED_MICRODATA,
+  COLLECTION_KEYWORDS,
+  IS_BROWSER
+} from '../constants';
 import * as metadata from "../utils/metadata.json";
 import ShellCode from "../client/components/shell-code"
 import {propertiesOf} from "../utils/type.utils";
@@ -47,7 +65,7 @@ const Layout = ({children, customMeta}: LayoutProps) => {
     name: metadata.title,
     alternateName: "Dev Concepts collection official Website",
     description: metadata.description,
-    publisher: AUTHOR,
+    publisher: AUTHOR_MICRODATA,
     url: IS_BROWSER ? window.location.origin : '',
   };
 
@@ -62,8 +80,7 @@ const Layout = ({children, customMeta}: LayoutProps) => {
     image: 'https://dev-concepts.dev/static/images/banner-2560.jpg',
     type: 'website',
     canonicalUrl: `https://dev-concepts.dev${router.asPath}`,
-    keywords:
-      'dev books, dev book, software development concepts, software concepts, programming, software development, coding, it security, it architecture, code quality, books',
+    keywords: COLLECTION_KEYWORDS,
   };
 
   if(customMeta) {
@@ -143,6 +160,48 @@ const Layout = ({children, customMeta}: LayoutProps) => {
     <>
       <script type="application/ld+json">
         {JSON.stringify(siteMicrodata)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(BOOK_SERIES_MICRODATA)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(BOOK_VOLUME_01_MICRODATA)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(BOOK_VOLUME_02_MICRODATA)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(BOOK_VOLUME_03_MICRODATA)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(BOOK_VOLUME_04_MICRODATA)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(BOOK_VOLUME_05_MICRODATA)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(BOOK_VOLUME_06_MICRODATA)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(BOOK_VOLUME_07_MICRODATA)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(BOOK_VOLUME_08_MICRODATA)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(BOOK_VOLUME_09_MICRODATA)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(BOOK_VOLUME_10_MICRODATA)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(BOOK_VOLUME_11_MICRODATA)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(BOOK_VOLUME_12_MICRODATA)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(BOOKS_FEED_MICRODATA)}
       </script>
       <StyledPage className="full-page flex flex-col flex-grow dark:prose-dark">
         <Head>
