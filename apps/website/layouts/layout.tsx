@@ -73,7 +73,7 @@ const Layout = ({children, customMeta}: LayoutProps) => {
    * Default metadata
    */
   let meta: SupportedMeta = {
-    siteName: metadata.title,
+    siteName: metadata.siteName,
     author: "Sébastien Dubois",
     title: metadata.title,
     description: metadata.description,
