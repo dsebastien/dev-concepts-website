@@ -86,35 +86,35 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div id="solution-intro" className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-between">
-          <div className="solution-intro-details">
-            <div className="mt-2">
-              <h3>The mentorship you need to build a solid foundation, lead a better professional life, and show your true value</h3>
-            </div>
-            <div className="mt-6 prose dark:prose-dark prose-lg space-y-2">
-              <p>
-                Software development challenges you to constantly learn and grow. You're not some basic coder who churns out line after line
-                of boring code.
-              </p>
-              <p>Developing software demands nothing less than craftsmanship.</p>
-              <p>
-                A lot of domain knowledge exists solely in your senior's head. You need someone to pass down the golden nuggets of
-                experience acquired through countless hours of trial and error.
-              </p>
-            </div>
-          </div>
-          <div className="solution-intro-definition justify-center md:min-h-full flex flex-col homepage-elevated-box">
-            <div className="text-devConceptsWhite">
-              <h4>The definition of craftsmanship:</h4>
-            </div>
-            <div className="prose dark:prose-dark prose-xl">
-              <ul>
-                <li className="italic">Skill in planning, making, or executing</li>
-                <li className="italic">Make or produce with care, skill, or ingenuity</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        {/*<div id="solution-intro" className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-between">*/}
+        {/*  <div className="solution-intro-details">*/}
+        {/*    <div className="mt-2">*/}
+        {/*      <h3>The mentorship you need to build a solid foundation, lead a better professional life, and show your true value</h3>*/}
+        {/*    </div>*/}
+        {/*    <div className="mt-6 prose dark:prose-dark prose-lg space-y-2">*/}
+        {/*      <p>*/}
+        {/*        Software development challenges you to constantly learn and grow. You're not some basic coder who churns out line after line*/}
+        {/*        of boring code.*/}
+        {/*      </p>*/}
+        {/*      <p>Developing software demands nothing less than craftsmanship.</p>*/}
+        {/*      <p>*/}
+        {/*        A lot of domain knowledge exists solely in your senior's head. You need someone to pass down the golden nuggets of*/}
+        {/*        experience acquired through countless hours of trial and error.*/}
+        {/*      </p>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*  <div className="solution-intro-definition justify-center md:min-h-full flex flex-col homepage-elevated-box">*/}
+        {/*    <div className="text-devConceptsWhite">*/}
+        {/*      <h4>The definition of craftsmanship:</h4>*/}
+        {/*    </div>*/}
+        {/*    <div className="prose dark:prose-dark prose-xl">*/}
+        {/*      <ul>*/}
+        {/*        <li className="italic">Skill in planning, making, or executing</li>*/}
+        {/*        <li className="italic">Make or produce with care, skill, or ingenuity</li>*/}
+        {/*      </ul>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
 
         <div id="solution-focus" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
           <div className="solution-focus-image">
@@ -128,7 +128,7 @@ const IndexPage = () => {
           </div>
           <div className="solution-focus-details">
             <div className="">
-              <h3>Find out what deserves your concentration with the Dev Concepts Collection</h3>
+              <h3>Find out what deserves your attention</h3>
             </div>
             <div className="mt-6 prose dark:prose-dark prose-lg">
               <div className="flex flex-row items-center gap-2">
@@ -185,7 +185,7 @@ const IndexPage = () => {
             <div className="text-center mt-6">
               <span className="text-2xl">Click on each volume to see what's inside</span>
             </div>
-            <div className="mt-6 min-w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 place-items-center">
+            <div className="mt-6 min-w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 place-items-center">
               <a href={volume01.gumroadShortUrl} rel="noopener">
                 <div className="homepage-elevated-box-on-hover book-card">
                   <div>
@@ -246,197 +246,197 @@ const IndexPage = () => {
                   </footer>
                 </div>
               </a>
-              <a href={volume04.gumroadShortUrl} rel="noopener">
-                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                  <div>
-                    <Image
-                      alt={volume04.coverDescription}
-                      width={500}
-                      height={334}
-                      src="/static/images/devConcepts/DevConcepts04Cover3D - small - tinypng.png"
-                      className="rounded-lg"
-                    />
-                  </div>
-                  <footer>
-                    <div className="book-card-title">Volume 4</div>
-                    <div className="book-card-subtitle">{volume04.shortName}</div>
-                    <div className="book-card-coming-soon-text">
-                      <span className="text-xl word-wrap font-semibold text-center">Coming soon</span>
-                    </div>
-                  </footer>
-                </div>
-              </a>
-              <a href={volume05.gumroadShortUrl} rel="noopener">
-                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                  <div>
-                    <Image
-                      alt={volume05.coverDescription}
-                      width={500}
-                      height={334}
-                      src="/static/images/devConcepts/DevConcepts05Cover3D - small - tinypng.png"
-                      className="rounded-lg"
-                    />
-                  </div>
-                  <footer>
-                    <div className="book-card-title">Volume 5</div>
-                    <div className="book-card-subtitle">{volume05.shortName}</div>
-                    <div className="book-card-coming-soon-text">
-                      <span className="text-xl word-wrap font-semibold text-center">Coming soon</span>
-                    </div>
-                  </footer>
-                </div>
-              </a>
-              <a href={volume06.gumroadShortUrl} rel="noopener">
-                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                  <div>
-                    <Image
-                      alt={volume06.coverDescription}
-                      width={500}
-                      height={334}
-                      src="/static/images/devConcepts/DevConcepts06Cover3D - small - tinypng.png"
-                      className="rounded-lg"
-                    />
-                  </div>
-                  <footer>
-                    <div className="book-card-title">Volume 6</div>
-                    <div className="book-card-subtitle">{volume06.shortName}</div>
-                    <div className="book-card-coming-soon-text">
-                      <span className="text-xl word-wrap font-semibold text-center">Coming soon</span>
-                    </div>
-                  </footer>
-                </div>
-              </a>
-              <a href={volume07.gumroadShortUrl} rel="noopener">
-                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                  <div>
-                    <Image
-                      alt={volume07.coverDescription}
-                      width={500}
-                      height={334}
-                      src="/static/images/devConcepts/DevConcepts07Cover3D - small - tinypng.png"
-                      className="rounded-lg"
-                    />
-                  </div>
-                  <footer>
-                    <div className="book-card-title">Volume 7</div>
-                    <div className="book-card-subtitle">{volume07.shortName}</div>
-                    <div className="book-card-coming-soon-text">
-                      <span className="text-xl word-wrap font-semibold text-center">Coming soon</span>
-                    </div>
-                  </footer>
-                </div>
-              </a>
-              <a href={volume08.gumroadShortUrl} rel="noopener">
-                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                  <div>
-                    <Image
-                      alt={volume08.coverDescription}
-                      width={500}
-                      height={334}
-                      src="/static/images/devConcepts/DevConcepts08Cover3D - small - tinypng.png"
-                      className="rounded-lg"
-                    />
-                  </div>
-                  <footer>
-                    <div className="book-card-title">Volume 8</div>
-                    <div className="book-card-subtitle">{volume08.shortName}</div>
-                    <div className="book-card-coming-soon-text">
-                      <span className="text-xl word-wrap font-semibold text-center">Coming soon</span>
-                    </div>
-                  </footer>
-                </div>
-              </a>
-              <a href={volume09.gumroadShortUrl} rel="noopener">
-                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                  <div>
-                    <Image
-                      alt={volume09.coverDescription}
-                      width={500}
-                      height={334}
-                      src="/static/images/devConcepts/DevConcepts09Cover3D - small - tinypng.png"
-                      className="rounded-lg"
-                    />
-                  </div>
-                  <footer>
-                    <div className="book-card-title">Volume 9</div>
-                    <div className="book-card-subtitle">{volume09.shortName}</div>
-                    <div className="book-card-coming-soon-text">
-                      <span className="text-xl word-wrap font-semibold text-center">Coming soon</span>
-                    </div>
-                  </footer>
-                </div>
-              </a>
-              <a href={volume10.gumroadShortUrl} rel="noopener">
-                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                  <div>
-                    <Image
-                      alt={volume10.coverDescription}
-                      width={500}
-                      height={334}
-                      src="/static/images/devConcepts/DevConcepts10Cover3D - small - tinypng.png"
-                      className="rounded-lg"
-                    />
-                  </div>
-                  <footer>
-                    <div className="book-card-title">Volume 10</div>
-                    <div className="book-card-subtitle">{volume10.shortName}</div>
-                    <div className="book-card-coming-soon-text">
-                      <span className="text-xl word-wrap font-semibold text-center">Coming soon</span>
-                    </div>
-                  </footer>
-                </div>
-              </a>
-              <a href={volume11.gumroadShortUrl} rel="noopener">
-                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                  <div>
-                    <Image
-                      alt={volume11.coverDescription}
-                      width={500}
-                      height={334}
-                      src="/static/images/devConcepts/DevConcepts11Cover3D - small - tinypng.png"
-                      className="rounded-lg"
-                    />
-                  </div>
-                  <footer>
-                    <div className="book-card-title">Volume 11</div>
-                    <div className="book-card-subtitle">{volume11.shortName}</div>
-                    <div className="book-card-coming-soon-text">
-                      <span className="text-xl word-wrap font-semibold text-center">Coming soon</span>
-                    </div>
-                  </footer>
-                </div>
-              </a>
-              <a href={volume12.gumroadShortUrl} rel="noopener">
-                <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">
-                  <div>
-                    <Image
-                      alt={volume12.coverDescription}
-                      width={500}
-                      height={334}
-                      src="/static/images/devConcepts/DevConcepts12Cover3D - small - tinypng.png"
-                      className="rounded-lg"
-                    />
-                  </div>
-                  <footer>
-                    <div className="book-card-title">Volume 12</div>
-                    <div className="book-card-subtitle">{volume12.shortName}</div>
-                    <div className="book-card-coming-soon-text">
-                      <span className="text-xl word-wrap font-semibold text-center">Coming soon</span>
-                    </div>
-                  </footer>
-                </div>
-              </a>
+              {/*<a href={volume04.gumroadShortUrl} rel="noopener">*/}
+              {/*  <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">*/}
+              {/*    <div>*/}
+              {/*      <Image*/}
+              {/*        alt={volume04.coverDescription}*/}
+              {/*        width={500}*/}
+              {/*        height={334}*/}
+              {/*        src="/static/images/devConcepts/DevConcepts04Cover3D - small - tinypng.png"*/}
+              {/*        className="rounded-lg"*/}
+              {/*      />*/}
+              {/*    </div>*/}
+              {/*    <footer>*/}
+              {/*      <div className="book-card-title">Volume 4</div>*/}
+              {/*      <div className="book-card-subtitle">{volume04.shortName}</div>*/}
+              {/*      <div className="book-card-coming-soon-text">*/}
+              {/*        <span className="text-xl word-wrap font-semibold text-center">Coming soon</span>*/}
+              {/*      </div>*/}
+              {/*    </footer>*/}
+              {/*  </div>*/}
+              {/*</a>*/}
+              {/*<a href={volume05.gumroadShortUrl} rel="noopener">*/}
+              {/*  <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">*/}
+              {/*    <div>*/}
+              {/*      <Image*/}
+              {/*        alt={volume05.coverDescription}*/}
+              {/*        width={500}*/}
+              {/*        height={334}*/}
+              {/*        src="/static/images/devConcepts/DevConcepts05Cover3D - small - tinypng.png"*/}
+              {/*        className="rounded-lg"*/}
+              {/*      />*/}
+              {/*    </div>*/}
+              {/*    <footer>*/}
+              {/*      <div className="book-card-title">Volume 5</div>*/}
+              {/*      <div className="book-card-subtitle">{volume05.shortName}</div>*/}
+              {/*      <div className="book-card-coming-soon-text">*/}
+              {/*        <span className="text-xl word-wrap font-semibold text-center">Coming soon</span>*/}
+              {/*      </div>*/}
+              {/*    </footer>*/}
+              {/*  </div>*/}
+              {/*</a>*/}
+              {/*<a href={volume06.gumroadShortUrl} rel="noopener">*/}
+              {/*  <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">*/}
+              {/*    <div>*/}
+              {/*      <Image*/}
+              {/*        alt={volume06.coverDescription}*/}
+              {/*        width={500}*/}
+              {/*        height={334}*/}
+              {/*        src="/static/images/devConcepts/DevConcepts06Cover3D - small - tinypng.png"*/}
+              {/*        className="rounded-lg"*/}
+              {/*      />*/}
+              {/*    </div>*/}
+              {/*    <footer>*/}
+              {/*      <div className="book-card-title">Volume 6</div>*/}
+              {/*      <div className="book-card-subtitle">{volume06.shortName}</div>*/}
+              {/*      <div className="book-card-coming-soon-text">*/}
+              {/*        <span className="text-xl word-wrap font-semibold text-center">Coming soon</span>*/}
+              {/*      </div>*/}
+              {/*    </footer>*/}
+              {/*  </div>*/}
+              {/*</a>*/}
+              {/*<a href={volume07.gumroadShortUrl} rel="noopener">*/}
+              {/*  <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">*/}
+              {/*    <div>*/}
+              {/*      <Image*/}
+              {/*        alt={volume07.coverDescription}*/}
+              {/*        width={500}*/}
+              {/*        height={334}*/}
+              {/*        src="/static/images/devConcepts/DevConcepts07Cover3D - small - tinypng.png"*/}
+              {/*        className="rounded-lg"*/}
+              {/*      />*/}
+              {/*    </div>*/}
+              {/*    <footer>*/}
+              {/*      <div className="book-card-title">Volume 7</div>*/}
+              {/*      <div className="book-card-subtitle">{volume07.shortName}</div>*/}
+              {/*      <div className="book-card-coming-soon-text">*/}
+              {/*        <span className="text-xl word-wrap font-semibold text-center">Coming soon</span>*/}
+              {/*      </div>*/}
+              {/*    </footer>*/}
+              {/*  </div>*/}
+              {/*</a>*/}
+              {/*<a href={volume08.gumroadShortUrl} rel="noopener">*/}
+              {/*  <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">*/}
+              {/*    <div>*/}
+              {/*      <Image*/}
+              {/*        alt={volume08.coverDescription}*/}
+              {/*        width={500}*/}
+              {/*        height={334}*/}
+              {/*        src="/static/images/devConcepts/DevConcepts08Cover3D - small - tinypng.png"*/}
+              {/*        className="rounded-lg"*/}
+              {/*      />*/}
+              {/*    </div>*/}
+              {/*    <footer>*/}
+              {/*      <div className="book-card-title">Volume 8</div>*/}
+              {/*      <div className="book-card-subtitle">{volume08.shortName}</div>*/}
+              {/*      <div className="book-card-coming-soon-text">*/}
+              {/*        <span className="text-xl word-wrap font-semibold text-center">Coming soon</span>*/}
+              {/*      </div>*/}
+              {/*    </footer>*/}
+              {/*  </div>*/}
+              {/*</a>*/}
+              {/*<a href={volume09.gumroadShortUrl} rel="noopener">*/}
+              {/*  <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">*/}
+              {/*    <div>*/}
+              {/*      <Image*/}
+              {/*        alt={volume09.coverDescription}*/}
+              {/*        width={500}*/}
+              {/*        height={334}*/}
+              {/*        src="/static/images/devConcepts/DevConcepts09Cover3D - small - tinypng.png"*/}
+              {/*        className="rounded-lg"*/}
+              {/*      />*/}
+              {/*    </div>*/}
+              {/*    <footer>*/}
+              {/*      <div className="book-card-title">Volume 9</div>*/}
+              {/*      <div className="book-card-subtitle">{volume09.shortName}</div>*/}
+              {/*      <div className="book-card-coming-soon-text">*/}
+              {/*        <span className="text-xl word-wrap font-semibold text-center">Coming soon</span>*/}
+              {/*      </div>*/}
+              {/*    </footer>*/}
+              {/*  </div>*/}
+              {/*</a>*/}
+              {/*<a href={volume10.gumroadShortUrl} rel="noopener">*/}
+              {/*  <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">*/}
+              {/*    <div>*/}
+              {/*      <Image*/}
+              {/*        alt={volume10.coverDescription}*/}
+              {/*        width={500}*/}
+              {/*        height={334}*/}
+              {/*        src="/static/images/devConcepts/DevConcepts10Cover3D - small - tinypng.png"*/}
+              {/*        className="rounded-lg"*/}
+              {/*      />*/}
+              {/*    </div>*/}
+              {/*    <footer>*/}
+              {/*      <div className="book-card-title">Volume 10</div>*/}
+              {/*      <div className="book-card-subtitle">{volume10.shortName}</div>*/}
+              {/*      <div className="book-card-coming-soon-text">*/}
+              {/*        <span className="text-xl word-wrap font-semibold text-center">Coming soon</span>*/}
+              {/*      </div>*/}
+              {/*    </footer>*/}
+              {/*  </div>*/}
+              {/*</a>*/}
+              {/*<a href={volume11.gumroadShortUrl} rel="noopener">*/}
+              {/*  <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">*/}
+              {/*    <div>*/}
+              {/*      <Image*/}
+              {/*        alt={volume11.coverDescription}*/}
+              {/*        width={500}*/}
+              {/*        height={334}*/}
+              {/*        src="/static/images/devConcepts/DevConcepts11Cover3D - small - tinypng.png"*/}
+              {/*        className="rounded-lg"*/}
+              {/*      />*/}
+              {/*    </div>*/}
+              {/*    <footer>*/}
+              {/*      <div className="book-card-title">Volume 11</div>*/}
+              {/*      <div className="book-card-subtitle">{volume11.shortName}</div>*/}
+              {/*      <div className="book-card-coming-soon-text">*/}
+              {/*        <span className="text-xl word-wrap font-semibold text-center">Coming soon</span>*/}
+              {/*      </div>*/}
+              {/*    </footer>*/}
+              {/*  </div>*/}
+              {/*</a>*/}
+              {/*<a href={volume12.gumroadShortUrl} rel="noopener">*/}
+              {/*  <div className="homepage-elevated-box-on-hover book-card book-card-coming-soon">*/}
+              {/*    <div>*/}
+              {/*      <Image*/}
+              {/*        alt={volume12.coverDescription}*/}
+              {/*        width={500}*/}
+              {/*        height={334}*/}
+              {/*        src="/static/images/devConcepts/DevConcepts12Cover3D - small - tinypng.png"*/}
+              {/*        className="rounded-lg"*/}
+              {/*      />*/}
+              {/*    </div>*/}
+              {/*    <footer>*/}
+              {/*      <div className="book-card-title">Volume 12</div>*/}
+              {/*      <div className="book-card-subtitle">{volume12.shortName}</div>*/}
+              {/*      <div className="book-card-coming-soon-text">*/}
+              {/*        <span className="text-xl word-wrap font-semibold text-center">Coming soon</span>*/}
+              {/*      </div>*/}
+              {/*    </footer>*/}
+              {/*  </div>*/}
+              {/*</a>*/}
             </div>
           </div>
         </div>
 
-        <div id="solution-mentorship" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+        <div id="solution-mentorship" className="grid grid-cols-1 gap-8 place-items-center">
           <div className="solution-mentorship-details">
             <div className="">
               <span className="text-xl">DIRECT ACCESS TO MENTORS</span>
             </div>
             <div className="mt-2">
-              <h3>Save days of endless articles and how-to guides with Slack mentorship</h3>
+              <h3>Work and grow faster with Slack mentorship</h3>
             </div>
             <div className="mt-6 prose dark:prose-dark prose-lg">
               <p>
@@ -472,108 +472,99 @@ const IndexPage = () => {
               </div>
             </div>
           </div>
-          <div className="solution-mentorship-image">
-            <Image
-              alt="A community of software crafters to support you. Picture courtesy of Chang Duong: https://unsplash.com/@iamchang"
-              width={1700}
-              height={1133}
-              src="/static/images/community - tinypng.png"
-              className="rounded-lg"
-            />
-          </div>
         </div>
 
-        <div id="solution-confidence" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
-          <div className="solution-confidence-image">
-            <Image
-              alt="Grow your software development skills with confidence thanks to the Dev Concepts collection. Picture courtesy of Jonathan Klok: https://unsplash.com/@mostly_brave"
-              width={1700}
-              height={1133}
-              src="/static/images/confidence - tinypng.jpg"
-              className="rounded-lg"
-            />
-          </div>
-          <div className="solution-confidence-details">
-            <div className="">
-              <span className="text-xl">UNDERSTAND THE INDUSTRY</span>
-            </div>
-            <div className="mt-2">
-              <h3>Know what’s happening at every step. Proceed with confidence.</h3>
-            </div>
-            <div className="mt-6 prose dark:prose-dark prose-lg">
-              <p>
-                Instead of trying to collect information from multiple sources and online ‘gurus’, get the correct info the first time
-                around. This collection is your single source roadmap to software development and IT.
-              </p>
+        {/*<div id="solution-confidence" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">*/}
+        {/*  <div className="solution-confidence-image">*/}
+        {/*    <Image*/}
+        {/*      alt="Grow your software development skills with confidence thanks to the Dev Concepts collection. Picture courtesy of Jonathan Klok: https://unsplash.com/@mostly_brave"*/}
+        {/*      width={1700}*/}
+        {/*      height={1133}*/}
+        {/*      src="/static/images/confidence - tinypng.jpg"*/}
+        {/*      className="rounded-lg"*/}
+        {/*    />*/}
+        {/*  </div>*/}
+        {/*  <div className="solution-confidence-details">*/}
+        {/*    <div className="">*/}
+        {/*      <span className="text-xl">UNDERSTAND THE INDUSTRY</span>*/}
+        {/*    </div>*/}
+        {/*    <div className="mt-2">*/}
+        {/*      <h3>Know what’s happening at every step. Proceed with confidence.</h3>*/}
+        {/*    </div>*/}
+        {/*    <div className="mt-6 prose dark:prose-dark prose-lg">*/}
+        {/*      <p>*/}
+        {/*        Instead of trying to collect information from multiple sources and online ‘gurus’, get the correct info the first time*/}
+        {/*        around. This collection is your single source roadmap to software development and IT.*/}
+        {/*      </p>*/}
 
-              <p className="mt-2">Avoid the trap of misinformation and confidently rely on the knowledge you learn.</p>
+        {/*      <p className="mt-2">Avoid the trap of misinformation and confidently rely on the knowledge you learn.</p>*/}
 
-              <p className="mt-2">
-                Learn about concepts, abstractions, create solid mental models then keep exploring the hundreds of provided resources to
-                fill your knowledge gaps.
-              </p>
-            </div>
-          </div>
-        </div>
+        {/*      <p className="mt-2">*/}
+        {/*        Learn about concepts, abstractions, create solid mental models then keep exploring the hundreds of provided resources to*/}
+        {/*        fill your knowledge gaps.*/}
+        {/*      </p>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
 
-        <div id="first-cta" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center items-stretch">
-          <div className="first-cta-starter-bundle text-center homepage-elevated-box-on-hover">
-            <a href="https://gumroad.com/l/AwJYP" rel="noopener">
-              <div className="flex flex-col h-full min-h-full">
-                <div>
-                  <h3>Starter Edition</h3>
-                </div>
-                <div className="mt-2 flex-row text-center justify-center">
-                  <h4 className="max-w-sm text-2xl! font-normal!">Download the first two volumes in the collection</h4>
-                </div>
-                <div className="mt-16 list-none! flex-grow">
-                  <ul className="font-semibold space-y-2">
-                    <li className="prose dark:prose-dark prose-lg">Volume 1: {volume01.name}</li>
-                    <li className="prose dark:prose-dark prose-lg">Volume 2: {volume02.name}</li>
-                    <li className="prose dark:prose-dark prose-lg">Lifetime Slack community access</li>
-                  </ul>
-                </div>
-                <div className="mt-12">
-                  <span className="prose dark:prose-dark prose-xl">Save €1</span>
-                </div>
-                <div className="mt-4">
-                  <span className="button-no-hover">Buy for €14.99</span>
-                </div>
-                <div className="mt-2">
-                  <span className="prose dark:prose-dark">14-day money-back guarantee</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div className="first-cta-lifetime-collection-access text-center homepage-elevated-box-on-hover">
-            <a href="https://gumroad.com/l/TaEPM" rel="noopener">
-              <div className="flex flex-col h-full min-h-full">
-                <div>
-                  <h3>Lifetime Collection Access</h3>
-                </div>
-                <div className="mt-2 flex flex-row text-center justify-center">
-                  <h5 className="max-w-sm text-2xl! font-normal!">Published volumes plus all future releases</h5>
-                </div>
-                <div className="mt-16 list-none! flex-grow">
-                  <ul className="font-semibold space-y-2">
-                    <li className="prose dark:prose-dark prose-lg">All 12 Volumes</li>
-                    <li className="prose dark:prose-dark prose-lg">Lifetime Slack community access</li>
-                    <li className="prose dark:prose-dark prose-lg">BONUS: 30-minute live career coaching session</li>
-                  </ul>
-                </div>
-                <div className="mt-12">
-                  <span className="prose dark:prose-dark prose-xl">Save €75</span>
-                </div>
-                <div className="mt-4">
-                  <span className="button-no-hover">Buy for €125</span>
-                </div>
-                <div className="mt-2">
-                  <span className="prose dark:prose-dark">14-day money-back guarantee</span>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
+        {/*<div id="first-cta" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center items-stretch">*/}
+        {/*  <div className="first-cta-starter-bundle text-center homepage-elevated-box-on-hover">*/}
+        {/*    <a href="https://gumroad.com/l/AwJYP" rel="noopener">*/}
+        {/*      <div className="flex flex-col h-full min-h-full">*/}
+        {/*        <div>*/}
+        {/*          <h3>Starter Edition</h3>*/}
+        {/*        </div>*/}
+        {/*        <div className="mt-2 flex-row text-center justify-center">*/}
+        {/*          <h4 className="max-w-sm text-2xl! font-normal!">Download the first two volumes in the collection</h4>*/}
+        {/*        </div>*/}
+        {/*        <div className="mt-16 list-none! flex-grow">*/}
+        {/*          <ul className="font-semibold space-y-2">*/}
+        {/*            <li className="prose dark:prose-dark prose-lg">Volume 1: {volume01.name}</li>*/}
+        {/*            <li className="prose dark:prose-dark prose-lg">Volume 2: {volume02.name}</li>*/}
+        {/*            <li className="prose dark:prose-dark prose-lg">Lifetime Slack community access</li>*/}
+        {/*          </ul>*/}
+        {/*        </div>*/}
+        {/*        <div className="mt-12">*/}
+        {/*          <span className="prose dark:prose-dark prose-xl">Save €1</span>*/}
+        {/*        </div>*/}
+        {/*        <div className="mt-4">*/}
+        {/*          <span className="button-no-hover">Buy for €14.99</span>*/}
+        {/*        </div>*/}
+        {/*        <div className="mt-2">*/}
+        {/*          <span className="prose dark:prose-dark">14-day money-back guarantee</span>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*    </a>*/}
+        {/*  </div>*/}
+        {/*  <div className="first-cta-lifetime-collection-access text-center homepage-elevated-box-on-hover">*/}
+        {/*    <a href="https://gumroad.com/l/TaEPM" rel="noopener">*/}
+        {/*      <div className="flex flex-col h-full min-h-full">*/}
+        {/*        <div>*/}
+        {/*          <h3>Lifetime Collection Access</h3>*/}
+        {/*        </div>*/}
+        {/*        <div className="mt-2 flex flex-row text-center justify-center">*/}
+        {/*          <h5 className="max-w-sm text-2xl! font-normal!">Published volumes plus all future releases</h5>*/}
+        {/*        </div>*/}
+        {/*        <div className="mt-16 list-none! flex-grow">*/}
+        {/*          <ul className="font-semibold space-y-2">*/}
+        {/*            <li className="prose dark:prose-dark prose-lg">All 12 Volumes</li>*/}
+        {/*            <li className="prose dark:prose-dark prose-lg">Lifetime Slack community access</li>*/}
+        {/*            <li className="prose dark:prose-dark prose-lg">BONUS: 30-minute live career coaching session</li>*/}
+        {/*          </ul>*/}
+        {/*        </div>*/}
+        {/*        <div className="mt-12">*/}
+        {/*          <span className="prose dark:prose-dark prose-xl">Save €75</span>*/}
+        {/*        </div>*/}
+        {/*        <div className="mt-4">*/}
+        {/*          <span className="button-no-hover">Buy for €125</span>*/}
+        {/*        </div>*/}
+        {/*        <div className="mt-2">*/}
+        {/*          <span className="prose dark:prose-dark">14-day money-back guarantee</span>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*    </a>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
 
         <div id="social-proof" className="author grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
           <div className="solution-proof-author-picture">
@@ -641,7 +632,7 @@ const IndexPage = () => {
           <div className="">
             <div className="flex flex-row items-center justify-center">
               <h3 className="max-w-2xl text-center">
-                Yes, it’s possible for you to enjoy a great job, and great life. The skills you need can be learned.
+                Enjoy a great job, and great life .
               </h3>
             </div>
             <div className="mt-6 flex flex-row items-center justify-center">
