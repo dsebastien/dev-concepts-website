@@ -1,5 +1,6 @@
 import React from 'react';
 import tw from 'twin.macro';
+import { TwitterFollowButton } from 'mdx-embed';
 import NewsletterSubscribe from "@/components/newsletter-subscribe";
 
 const StyledDiv = tw.div``;
