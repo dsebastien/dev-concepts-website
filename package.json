@@ -13,7 +13,7 @@
   "homepage": "https://github.com/DeveloPassion/dev-concepts-website#readme",
   "author": "dSebastien <sebastien@developassion.be> (https://dsebastien.net)",
   "engines": {
-    "node": ">=12.10.0"
+    "node": ">=16.9.0"
   },
   "scripts": {
     "nx": "nx",
