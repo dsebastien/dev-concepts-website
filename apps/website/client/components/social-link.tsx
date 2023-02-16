@@ -1,7 +1,4 @@
 import React from 'react';
-import tw from 'twin.macro';
-
-const StyledLink = tw.a``;
 
 interface SocialLinkProps {
   url: string;
@@ -12,23 +9,12 @@ interface SocialLinkProps {
   hideText?: boolean;
 }
 
-const SocialLink = ({
-  url,
-  icon,
-  name,
-  ariaLabelText,
-  titleText = '',
-  hideText,
-}: SocialLinkProps) => {
+const SocialLink = ({ url, icon, name, ariaLabelText, titleText = '', hideText }: SocialLinkProps) => {
   return (
-    <StyledLink href={url} aria-label={ariaLabelText} title={titleText}>
+    <a href={url} aria-label={ariaLabelText} title={titleText}>
       {icon}
-      {!hideText && (
-        <span className="ml-1 hover:text-devConceptsBlue-400 hover:dark:text-devConceptsBlue-100">
-          {name}
-        </span>
-      )}
-    </StyledLink>
+      {!hideText && <span className="ml-1 hover:text-devConceptsBlue-400 hover:dark:text-devConceptsBlue-100">{name}</span>}
+    </a>
   );
 };
 

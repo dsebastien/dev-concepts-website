@@ -4,21 +4,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import Step from '@/components/step';
-import {
-  CodePen,
-  Gist,
-  Spotify,
-  Tweet,
-  Twitch,
-  TwitterFollowButton,
-  YouTube,
-} from 'mdx-embed';
+import { CodePen, Gist, Spotify, Tweet, Twitch, TwitterFollowButton, YouTube } from 'mdx-embed';
 import BlogPostSignature from './blog-post-signature';
 import BlogPostWarning from './blog-post-warning';
 import BlogPostCenteredContent from './blog-post-centered-content';
 import BlogPostTip from './blog-post-tip';
-import BlogPostQuote from "./blog-post-quote";
-import BlogPostNote from "@/components/blog-post-note";
+import BlogPostQuote from './blog-post-quote';
+import BlogPostNote from '@/components/blog-post-note';
 
 type CustomLinkProps = { href: string } & any;
 
@@ -27,11 +19,7 @@ const CustomLink = (props: CustomLinkProps) => {
   const isInternalLink = href && (href.startsWith('/') || href.startsWith('#'));
 
   if (isInternalLink) {
-    return (
-      <Link href={href}>
-        <a {...props} />
-      </Link>
-    );
+    return <Link href={href} {...props}></Link>;
   }
 
   return <a target="_blank" rel="noopener noreferrer" {...props} />;

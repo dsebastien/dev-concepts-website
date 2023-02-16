@@ -1,10 +1,7 @@
 import React from 'react';
 import Layout from '@/layouts/layout';
-import tw from "twin.macro";
-import NewsletterSubscribe from "@/components/newsletter-subscribe";
-import Footer from "@/components/footer";
-
-const StyledDiv = tw.div``;
+import NewsletterSubscribe from '@/components/newsletter-subscribe';
+import Footer from '@/components/footer';
 
 const DesignSystem = () => {
   return (
@@ -24,7 +21,10 @@ const DesignSystem = () => {
         <div className="design-system-box">
           <header>Text - XS</header>
           <main className="text-xs">
-            <span>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh</span>
+            <span>
+              Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a
+              tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh
+            </span>
             <div className="mt-2 font-bold">This is bold text</div>
           </main>
         </div>
@@ -32,7 +32,10 @@ const DesignSystem = () => {
         <div className="design-system-box">
           <header>Text - Small</header>
           <main className="text-sm">
-            <span>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh</span>
+            <span>
+              Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a
+              tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh
+            </span>
             <div className="mt-2 font-bold">This is bold text</div>
           </main>
         </div>
@@ -40,7 +43,10 @@ const DesignSystem = () => {
         <div className="design-system-box">
           <header>Text - Base</header>
           <main className="text-base">
-            <span>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh</span>
+            <span>
+              Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a
+              tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh
+            </span>
             <div className="mt-2 font-bold">This is bold text</div>
           </main>
         </div>
@@ -48,7 +54,10 @@ const DesignSystem = () => {
         <div className="design-system-box">
           <header>Text - Large</header>
           <main className="text-lg">
-            <span>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh</span>
+            <span>
+              Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a
+              tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh
+            </span>
             <div className="mt-2 font-bold">This is bold text</div>
           </main>
         </div>
@@ -56,7 +65,10 @@ const DesignSystem = () => {
         <div className="design-system-box">
           <header>Text - XL</header>
           <main className="text-xl">
-            <span>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh</span>
+            <span>
+              Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a
+              tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh
+            </span>
             <div className="mt-2 font-bold">This is bold text</div>
           </main>
         </div>
@@ -64,7 +76,10 @@ const DesignSystem = () => {
         <div className="design-system-box">
           <header>Text - 2XL</header>
           <main className="text-2xl">
-            <span>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh</span>
+            <span>
+              Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a
+              tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh
+            </span>
             <div className="mt-2 font-bold">This is bold text</div>
           </main>
         </div>
@@ -72,7 +87,10 @@ const DesignSystem = () => {
         <div className="design-system-box">
           <header>Text - 3XL</header>
           <main className="text-3xl">
-            <span>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh</span>
+            <span>
+              Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a
+              tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh
+            </span>
             <div className="mt-2 font-bold">This is bold text</div>
           </main>
         </div>
@@ -80,7 +98,10 @@ const DesignSystem = () => {
         <div className="design-system-box">
           <header>Text - 4XL</header>
           <main className="text-4xl">
-            <span>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh</span>
+            <span>
+              Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a
+              tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh
+            </span>
             <div className="mt-2 font-bold">This is bold text</div>
           </main>
         </div>
@@ -88,7 +109,10 @@ const DesignSystem = () => {
         <div className="design-system-box">
           <header>Text - 5XL</header>
           <main className="text-5xl">
-            <span>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh</span>
+            <span>
+              Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a
+              tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh
+            </span>
             <div className="mt-2 font-bold">This is bold text</div>
           </main>
         </div>
@@ -96,7 +120,10 @@ const DesignSystem = () => {
         <div className="design-system-box">
           <header>Text - 6XL</header>
           <main className="text-6xl">
-            <span>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh</span>
+            <span>
+              Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a
+              tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh
+            </span>
             <div className="mt-2 font-bold">This is bold text</div>
           </main>
         </div>
@@ -319,27 +346,21 @@ const DesignSystem = () => {
         <div className="design-system-box">
           <header>Page content wrapper</header>
           <main>
-            <StyledDiv className="page-content-wrapper">
-              Content goes here
-            </StyledDiv>
+            <div className="page-content-wrapper">Content goes here</div>
           </main>
         </div>
 
         <div className="design-system-box">
           <header>Article content wrapper</header>
           <main>
-            <StyledDiv className="article-content-wrapper">
-              Content goes here
-            </StyledDiv>
+            <div className="article-content-wrapper">Content goes here</div>
           </main>
         </div>
 
         <div className="design-system-box">
           <header>Homepage elevated box</header>
           <main>
-            <StyledDiv className="homepage-elevated-box">
-              Content goes here
-            </StyledDiv>
+            <div className="homepage-elevated-box">Content goes here</div>
           </main>
         </div>
 
@@ -356,7 +377,6 @@ const DesignSystem = () => {
             <Footer />
           </main>
         </div>
-
       </div>
       <div className="mb-16"></div>
     </Layout>

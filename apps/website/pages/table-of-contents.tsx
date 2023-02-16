@@ -14,11 +14,10 @@ import {
   FaShoppingCart,
   FaSitemap,
 } from 'react-icons/fa';
-import tw from 'twin.macro';
-import NewsletterSubscribe from "@/components/newsletter-subscribe";
-import {AiOutlineTeam} from "react-icons/ai";
-import {GiStoneCrafting} from "react-icons/gi";
-import {RiUserHeartLine} from "react-icons/ri";
+import NewsletterSubscribe from '@/components/newsletter-subscribe';
+import { AiOutlineTeam } from 'react-icons/ai';
+import { GiStoneCrafting } from 'react-icons/gi';
+import { RiUserHeartLine } from 'react-icons/ri';
 import Link from 'next/link';
 import {
   volume01,
@@ -30,11 +29,11 @@ import {
   volume07,
   volume08,
   volume09,
-  volume10, volume11, volume12
-} from "../constants";
-import Image from "next/image";
-
-const StyledArticle = tw.article``;
+  volume10,
+  volume11,
+  volume12,
+} from '../constants';
+import Image from 'next/image';
 
 const TocPage = () => {
   return (
@@ -44,17 +43,17 @@ const TocPage = () => {
         description: 'A comprehensive roadmap to learn software development and IT.',
       }}
     >
-      <StyledArticle className="large-page-content-wrapper space-y-12">
+      <article className="large-page-content-wrapper space-y-12">
         <div className="min-w-full text-center">
           <h1 className="page-heading">
-            Table of contents <FaBook className="ml-2 inline"/>
+            Table of contents <FaBook className="ml-2 inline" />
           </h1>
         </div>
 
         <div className="w-full flex flex-row justify-around">
           <div className="max-w-4xl prose leading-6 text-gray-900 dark:text-gray-400">
-            This is the outline of the whole Dev Concepts collection. The table of contents will continue to evolve over
-            time. Note that this version is intentionally kept "short". The actual outline is much longer.
+            This is the outline of the whole Dev Concepts collection. The table of contents will continue to evolve over time. Note that
+            this version is intentionally kept "short". The actual outline is much longer.
           </div>
         </div>
 
@@ -64,241 +63,205 @@ const TocPage = () => {
               <div>
                 <h3 className="w-full text-center text-xl lg:text-3xl">Dev Concepts Volumes</h3>
                 <section className="grid object-center grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-2 text-devConceptsWhite">
-                  <Link
-                    href={`/table-of-contents/#${volume01.tocAnchor}`}
-                    aria-label={`Volume 1: ${volume01.name}`}
-                  >
+                  <Link href={`/table-of-contents/#${volume01.tocAnchor}`} aria-label={`Volume 1: ${volume01.name}`}>
                     <div
                       className="no-underline h-full rounded bg-devConceptsBlue-500 hover:bg-devConceptsBlue-400 hover:no-underline hover:cursor-pointer shadow-lg flex flex-row object-center py-2 px-2"
                       onClick={() =>
                         history.pushState(null, `Dev Concepts - Table of contents - ${volume01.name}`, `#${volume01.tocAnchor}`)
-                      }>
+                      }
+                    >
                       <div className="text-xl flex items-center">01</div>
-                      <div
-                        className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
-                        <GiStoneCrafting/>
-                      </span>
+                      <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                        <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                          <GiStoneCrafting />
+                        </span>
                         <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">{volume01.shortName}</div>
                       </div>
                     </div>
                   </Link>
 
-                  <Link
-                    href={`/table-of-contents/#${volume02.tocAnchor}`}
-                    aria-label={`Volume 2: ${volume02.name}`}
-                  >
+                  <Link href={`/table-of-contents/#${volume02.tocAnchor}`} aria-label={`Volume 2: ${volume02.name}`}>
                     <div
                       className="no-underline h-full rounded bg-devConceptsGreen-700 hover:bg-devConceptsGreen-600 hover:no-underline hover:cursor-pointer shadow-lg flex flex-row object-center py-2 px-2"
                       onClick={() =>
                         history.pushState(null, `Dev Concepts - Table of contents - ${volume02.name}`, `#${volume02.tocAnchor}`)
-                      }>
+                      }
+                    >
                       <div className="text-xl flex items-center">02</div>
-                      <div
-                        className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
-                        <RiUserHeartLine/>
-                      </span>
+                      <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                        <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                          <RiUserHeartLine />
+                        </span>
                         <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">{volume02.shortName}</div>
                       </div>
                     </div>
                   </Link>
 
-                  <Link
-                    href={`/table-of-contents/#${volume03.tocAnchor}`}
-                    aria-label={`Volume 3: ${volume03.name}`}
-                  >
+                  <Link href={`/table-of-contents/#${volume03.tocAnchor}`} aria-label={`Volume 3: ${volume03.name}`}>
                     <div
                       className="no-underline h-full rounded bg-devConceptsTeal-800 hover:bg-devConceptsTeal-700 hover:no-underline hover:cursor-pointer shadow-lg flex flex-row object-center py-2 px-2"
                       onClick={() =>
                         history.pushState(null, `Dev Concepts - Table of contents - ${volume03.name}`, `#${volume03.tocAnchor}`)
-                      }>
+                      }
+                    >
                       <div className="text-xl flex items-center">03</div>
-                      <div
-                        className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
-                        <FaGopuram/>
-                      </span>
+                      <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                        <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                          <FaGopuram />
+                        </span>
                         <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">{volume03.shortName}</div>
                       </div>
                     </div>
                   </Link>
 
-                  <Link
-                    href={`/table-of-contents/#${volume04.tocAnchor}`}
-                    aria-label={`Volume 4: ${volume04.name}`}
-                  >
+                  <Link href={`/table-of-contents/#${volume04.tocAnchor}`} aria-label={`Volume 4: ${volume04.name}`}>
                     <div
                       className="no-underline h-full rounded bg-devConceptsPink-600 hover:bg-devConceptsPink-500 hover:no-underline hover:cursor-pointer shadow-lg flex flex-row object-center py-2 px-2"
                       onClick={() =>
                         history.pushState(null, `Dev Concepts - Table of contents - ${volume04.name}`, `#${volume04.tocAnchor}`)
-                      }>
+                      }
+                    >
                       <div className="text-xl flex items-center">04</div>
-                      <div
-                        className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
-                        <FaGem/>
-                      </span>
+                      <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                        <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                          <FaGem />
+                        </span>
                         <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">{volume04.shortName}</div>
                       </div>
                     </div>
                   </Link>
 
-                  <Link
-                    href={`/table-of-contents/#${volume05.tocAnchor}`}
-                    aria-label={`Volume 5: ${volume05.name}`}
-                  >
+                  <Link href={`/table-of-contents/#${volume05.tocAnchor}`} aria-label={`Volume 5: ${volume05.name}`}>
                     <div
                       className="no-underline h-full rounded bg-devConceptsOrange-700 hover:bg-devConceptsOrange-600 hover:no-underline hover:cursor-pointer shadow-lg flex flex-row object-center py-2 px-2"
                       onClick={() =>
                         history.pushState(null, `Dev Concepts - Table of contents - ${volume05.name}`, `#${volume05.tocAnchor}`)
-                      }>
+                      }
+                    >
                       <div className="text-xl flex items-center">05</div>
-                      <div
-                        className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
-                        <FaServer/>
-                      </span>
+                      <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                        <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                          <FaServer />
+                        </span>
                         <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">{volume05.shortName}</div>
                       </div>
                     </div>
                   </Link>
 
-                  <Link
-                    href={`/table-of-contents/#${volume06.tocAnchor}`}
-                    aria-label={`Volume 6: ${volume06.name}`}
-                  >
+                  <Link href={`/table-of-contents/#${volume06.tocAnchor}`} aria-label={`Volume 6: ${volume06.name}`}>
                     <div
                       className="no-underline h-full rounded bg-devConceptsIndigo-800 hover:bg-devConceptsIndigo-700 hover:no-underline hover:cursor-pointer shadow-lg flex flex-row object-center py-2 px-2"
                       onClick={() =>
                         history.pushState(null, `Dev Concepts - Table of contents - ${volume06.name}`, `#${volume06.tocAnchor}`)
-                      }>
+                      }
+                    >
                       <div className="text-xl flex items-center">06</div>
-                      <div
-                        className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
-                        <FaSeedling/>
-                      </span>
+                      <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                        <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                          <FaSeedling />
+                        </span>
                         <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">{volume06.shortName}</div>
                       </div>
                     </div>
                   </Link>
 
-                  <Link
-                    href={`/table-of-contents/#${volume07.tocAnchor}`}
-                    aria-label={`Volume 7: ${volume07.name}`}
-                  >
+                  <Link href={`/table-of-contents/#${volume07.tocAnchor}`} aria-label={`Volume 7: ${volume07.name}`}>
                     <div
                       className="no-underline h-full rounded bg-devConceptsCerise-700 hover:bg-devConceptsCerise-600 hover:no-underline hover:cursor-pointer shadow-lg flex flex-row object-center py-2 px-2"
                       onClick={() =>
                         history.pushState(null, `Dev Concepts - Table of contents - ${volume07.name}`, `#${volume07.tocAnchor}`)
-                      }>
+                      }
+                    >
                       <div className="text-xl flex items-center">07</div>
-                      <div
-                        className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
-                        <FaSitemap/>
-                      </span>
+                      <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                        <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                          <FaSitemap />
+                        </span>
                         <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">{volume07.shortName}</div>
                       </div>
                     </div>
                   </Link>
 
-                  <Link
-                    href={`/table-of-contents/#${volume08.tocAnchor}`}
-                    aria-label={`Volume 8: ${volume08.name}`}
-                  >
+                  <Link href={`/table-of-contents/#${volume08.tocAnchor}`} aria-label={`Volume 8: ${volume08.name}`}>
                     <div
                       className="no-underline h-full rounded bg-devConceptsOrange-900 hover:bg-devConceptsOrange-800 hover:no-underline hover:cursor-pointer shadow-lg flex flex-row object-center py-2 px-2"
                       onClick={() =>
                         history.pushState(null, `Dev Concepts - Table of contents - ${volume08.name}`, `#${volume08.tocAnchor}`)
-                      }>
+                      }
+                    >
                       <div className="text-xl flex items-center">08</div>
-                      <div
-                        className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
-                        <FaLayerGroup/>
-                      </span>
+                      <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                        <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                          <FaLayerGroup />
+                        </span>
                         <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">{volume08.shortName}</div>
                       </div>
                     </div>
                   </Link>
 
-                  <Link
-                    href={`/table-of-contents/#${volume09.tocAnchor}`}
-                    aria-label={`Volume 9: ${volume09.name}`}
-                  >
+                  <Link href={`/table-of-contents/#${volume09.tocAnchor}`} aria-label={`Volume 9: ${volume09.name}`}>
                     <div
                       className="no-underline h-full rounded bg-devConceptsTeal-800 hover:bg-devConceptsTeal-700 hover:no-underline hover:cursor-pointer shadow-lg flex flex-row object-center py-2 px-2"
                       onClick={() =>
                         history.pushState(null, `Dev Concepts - Table of contents - ${volume09.name}`, `#${volume09.tocAnchor}`)
-                      }>
+                      }
+                    >
                       <div className="text-xl flex items-center">09</div>
-                      <div
-                        className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
-                        <FaMagic/>
-                      </span>
+                      <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                        <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                          <FaMagic />
+                        </span>
                         <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">{volume09.shortName}</div>
                       </div>
                     </div>
                   </Link>
 
-                  <Link
-                    href={`/table-of-contents/#${volume10.tocAnchor}`}
-                    aria-label={`Volume 10: ${volume10.name}`}
-                  >
+                  <Link href={`/table-of-contents/#${volume10.tocAnchor}`} aria-label={`Volume 10: ${volume10.name}`}>
                     <div
                       className="no-underline h-full rounded bg-devConceptsPurple-700 hover:bg-devConceptsPurple-600 hover:no-underline hover:cursor-pointer shadow-lg flex flex-row object-center py-2 px-2"
                       onClick={() =>
                         history.pushState(null, `Dev Concepts - Table of contents - ${volume10.name}`, `#${volume10.tocAnchor}`)
-                      }>
+                      }
+                    >
                       <div className="text-xl flex items-center">10</div>
-                      <div
-                        className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
-                        <FaNetworkWired/>
-                      </span>
+                      <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                        <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                          <FaNetworkWired />
+                        </span>
                         <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">{volume10.shortName}</div>
                       </div>
                     </div>
                   </Link>
 
-                  <Link
-                    href={`/table-of-contents/#${volume11.tocAnchor}`}
-                    aria-label={`Volume 11: ${volume11.name}`}
-                  >
+                  <Link href={`/table-of-contents/#${volume11.tocAnchor}`} aria-label={`Volume 11: ${volume11.name}`}>
                     <div
                       className="no-underline h-full rounded bg-devConceptsAmber-600 hover:bg-devConceptsAmber-500 hover:no-underline hover:cursor-pointer shadow-lg flex flex-row object-center py-2 px-2"
                       onClick={() =>
                         history.pushState(null, `Dev Concepts - Table of contents - ${volume11.name}`, `#${volume11.tocAnchor}`)
-                      }>
+                      }
+                    >
                       <div className="text-xl flex items-center">11</div>
-                      <div
-                        className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
-                        <FaLock/>
-                      </span>
+                      <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                        <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                          <FaLock />
+                        </span>
                         <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">{volume11.shortName}</div>
                       </div>
                     </div>
                   </Link>
 
-                  <Link
-                    href={`/table-of-contents/#${volume12.tocAnchor}`}
-                    aria-label={`Volume 12: ${volume12.name}`}
-                  >
+                  <Link href={`/table-of-contents/#${volume12.tocAnchor}`} aria-label={`Volume 12: ${volume12.name}`}>
                     <div
                       className="no-underline h-full rounded bg-devConceptsGray-800 hover:bg-devConceptsGray-700 hover:no-underline hover:cursor-pointer shadow-lg flex flex-row object-center py-2 px-2"
                       onClick={() =>
                         history.pushState(null, `Dev Concepts - Table of contents - ${volume12.name}`, `#${volume12.tocAnchor}`)
-                      }>
+                      }
+                    >
                       <div className="text-xl flex items-center">12</div>
-                      <div
-                        className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
-                      <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
-                        <AiOutlineTeam/>
-                      </span>
+                      <div className="text-center w-full md:flex md:flex-row md:object-center md:items-center lg:flex-col lg:justify-center">
+                        <span className="text-xl sm:text-2xl md:ml-4 lg:ml-0 lg:text-2xl xg:text-3xl">
+                          <AiOutlineTeam />
+                        </span>
                         <div className="md:ml-4 lg:ml-0 xg:px-2 xl:mt-2">{volume12.shortName}</div>
                       </div>
                     </div>
@@ -313,8 +276,8 @@ const TocPage = () => {
                   <h3>
                     Volume 1: {volume01.name}
                     <span className="anchor-icon">
-                    <FaLink/>
-                  </span>
+                      <FaLink />
+                    </span>
                   </h3>
                 </a>
                 <div className="sm:flex sm:justify-end">
@@ -325,7 +288,7 @@ const TocPage = () => {
                       aria-label="Buy volume 1"
                       className="bg-devConceptsBlue-500 hover:bg-devConceptsBlue-400 hover:no-underline shadow-lg p-2 rounded-md text-white!"
                     >
-                      <FaShoppingCart className="text-xl mr-2"/>
+                      <FaShoppingCart className="text-xl mr-2" />
                       Buy volume 1: {volume01.price}
                     </a>
                   </div>
@@ -344,23 +307,20 @@ const TocPage = () => {
                       height={334}
                       src="/static/images/devConcepts/DevConcepts01Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
-                      loading={"eager"}
+                      loading={'eager'}
                     />
                   </a>
                 </div>
-                <br/>
+                <br />
                 <p>
-                  This volume explains the different skills that you’ll need to acquire and improve
-                  over the course of your career to become a software crafter. There are no secrets and no magic to
-                  become one. It’s mostly a
-                  question of work, dedication, passion, and <span className="italic">fun</span>.
+                  This volume explains the different skills that you’ll need to acquire and improve over the course of your career to become
+                  a software crafter. There are no secrets and no magic to become one. It’s mostly a question of work, dedication, passion,
+                  and <span className="italic">fun</span>.
                 </p>
-                <br/>
+                <br />
                 <p>
-                  This volume is much less about technology than about personality traits and psychology. Even if we all
-                  start with our own
-                  background, strengths and weaknesses, there are things to know, tips and tricks that will guide you on
-                  the path towards
+                  This volume is much less about technology than about personality traits and psychology. Even if we all start with our own
+                  background, strengths and weaknesses, there are things to know, tips and tricks that will guide you on the path towards
                   becoming a software crafter.
                 </p>
                 <h3 className="mt-2">In this volume:</h3>
@@ -411,8 +371,8 @@ const TocPage = () => {
                   <h3>
                     Volume 2: {volume02.name}
                     <span className="anchor-icon">
-                    <FaLink/>
-                  </span>
+                      <FaLink />
+                    </span>
                   </h3>
                 </a>
                 <div className="sm:flex sm:justify-end">
@@ -422,7 +382,7 @@ const TocPage = () => {
                       aria-label="Buy volume 2"
                       className="bg-devConceptsGreen-700 hover:bg-devConceptsGreen-600 hover:no-underline shadow-lg p-2 rounded-md text-white!"
                     >
-                      <FaShoppingCart className="text-xl mr-2"/>
+                      <FaShoppingCart className="text-xl mr-2" />
                       Buy volume 2: {volume02.price}
                     </a>
                   </div>
@@ -441,30 +401,28 @@ const TocPage = () => {
                       height={334}
                       src="/static/images/devConcepts/DevConcepts02Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
-                      loading={"eager"}
+                      loading={'eager'}
                     />
                   </a>
                 </div>
-                <br/>
+                <br />
                 <p>
-                  All software development endeavors have one thing in common: they aim to solve real-world{" "}
+                  All software development endeavors have one thing in common: they aim to solve real-world{' '}
                   <span className="font-bold">problems</span>.
                 </p>
-                <br/>
+                <br />
                 <p>
-                  This volume focuses on how to understand what clients truly need. It covers concepts such as
-                  functional & non-functional
-                  requirements, techniques that you can use to understand business problems and end user goals. It also
-                  covers what
+                  This volume focuses on how to understand what clients truly need. It covers concepts such as functional & non-functional
+                  requirements, techniques that you can use to understand business problems and end user goals. It also covers what
                   specifications are and why they matter.
                 </p>
-                <br/>
+                <br />
                 <p>
-                  These ideas are important because,{" "}
+                  These ideas are important because,{' '}
                   <span className="font-bold">
-                  no matter how good a software developer you are, it doesn’t matter at all if you end up building something that solves the
-                  wrong problems.
-                </span>
+                    no matter how good a software developer you are, it doesn’t matter at all if you end up building something that solves
+                    the wrong problems.
+                  </span>
                 </p>
                 <h3 className="mt-2">In this volume:</h3>
                 <ol>
@@ -533,8 +491,8 @@ const TocPage = () => {
                   <h3>
                     Volume 3: {volume03.name}
                     <span className="anchor-icon">
-                    <FaLink/>
-                  </span>
+                      <FaLink />
+                    </span>
                   </h3>
                 </a>
 
@@ -545,7 +503,7 @@ const TocPage = () => {
                       aria-label="Pre-order volume 3"
                       className="bg-devConceptsTeal-800 hover:bg-devConceptsTeal-700 hover:no-underline shadow-lg p-2 rounded-md text-white!"
                     >
-                      <FaShoppingCart className="text-xl mr-2"/>
+                      <FaShoppingCart className="text-xl mr-2" />
                       Pre-order volume 3: {volume03.price}
                     </a>
                   </div>
@@ -564,30 +522,26 @@ const TocPage = () => {
                       height={334}
                       src="/static/images/devConcepts/DevConcepts03Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
-                      loading={"eager"}
+                      loading={'eager'}
                     />
                   </a>
                 </div>
 
-                <br/>
+                <br />
                 <p>
-                  Once you have accumulated enough understanding about the requirements, you need to create IT solutions
-                  that efficiently
+                  Once you have accumulated enough understanding about the requirements, you need to create IT solutions that efficiently
                   solve the problems.
                 </p>
-                <br/>
+                <br />
                 <p>
-                  Before diving into design and code, you need to get in the shoes of an architect and devise{" "}
-                  <span className="italic">solutions</span>. Software crafters are not necessarily architects, but they
-                  should at least
+                  Before diving into design and code, you need to get in the shoes of an architect and devise{' '}
+                  <span className="italic">solutions</span>. Software crafters are not necessarily architects, but they should at least
                   understand what architects do and should be able to provide useful input to them.
                 </p>
-                <br/>
+                <br />
                 <p>
-                  Sometimes, you’ll also have to play the role of the architect (e.g., in small startups) and when that
-                  happens, you need to
-                  know what needs to be done to avoid disasters. Here, we'll explore some key ideas about IT
-                  architecture in general and
+                  Sometimes, you’ll also have to play the role of the architect (e.g., in small startups) and when that happens, you need to
+                  know what needs to be done to avoid disasters. Here, we'll explore some key ideas about IT architecture in general and
                   software architecture in particular.
                 </p>
                 <h3 className="mt-2">In this volume:</h3>
@@ -616,8 +570,7 @@ const TocPage = () => {
                           <li>Command Query Responsibility Segregation (CQRS)</li>
                           <li>Event-Driven Architecture (EDA)</li>
                           <li>Event Sourcing (ES)</li>
-                          <li>Communications (protocols, HTTP, WebSockets, Message Queues, REST, GraphQL, SOAP, etc)
-                          </li>
+                          <li>Communications (protocols, HTTP, WebSockets, Message Queues, REST, GraphQL, SOAP, etc)</li>
                         </ol>
                       </li>
                       <li>Architecture and scalability</li>
@@ -660,8 +613,8 @@ const TocPage = () => {
                   <h3>
                     Volume 4: {volume04.name}
                     <span className="anchor-icon">
-                    <FaLink/>
-                  </span>
+                      <FaLink />
+                    </span>
                   </h3>
                 </a>
                 <div className="sm:flex sm:justify-end">
@@ -671,7 +624,7 @@ const TocPage = () => {
                       aria-label="Pre-order volume 4"
                       className="bg-devConceptsPink-600 hover:bg-devConceptsPink-500 hover:no-underline shadow-lg p-2 rounded-md text-white!"
                     >
-                      <FaShoppingCart className="text-xl mr-2"/>
+                      <FaShoppingCart className="text-xl mr-2" />
                       Pre-order volume 4: {volume04.price}
                     </a>
                   </div>
@@ -690,19 +643,16 @@ const TocPage = () => {
                       height={334}
                       src="/static/images/devConcepts/DevConcepts04Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
-                      loading={"eager"}
+                      loading={'eager'}
                     />
                   </a>
                 </div>
-                <br/>
+                <br />
                 <p>
-                  Software design is where the real action begins. Previous volumes covered much higher level concepts.
-                  Solving the wrong
-                  problem means game over, a bad architecture means tons of waste, and bad software design means costly
-                  maintenance. Here, we
-                  explore software design, explain why it is critical for mental health (seriously!) and key concepts
-                  that you’ll use on a
-                  daily basis during your software crafter’s career.
+                  Software design is where the real action begins. Previous volumes covered much higher level concepts. Solving the wrong
+                  problem means game over, a bad architecture means tons of waste, and bad software design means costly maintenance. Here,
+                  we explore software design, explain why it is critical for mental health (seriously!) and key concepts that you’ll use on
+                  a daily basis during your software crafter’s career.
                 </p>
                 <h3 className="mt-2">In this volume:</h3>
                 <ol>
@@ -767,8 +717,8 @@ const TocPage = () => {
                   <h3>
                     Volume 5: {volume05.name}
                     <span className="anchor-icon">
-                    <FaLink/>
-                  </span>
+                      <FaLink />
+                    </span>
                   </h3>
                 </a>
                 <div className="sm:flex sm:justify-end">
@@ -778,7 +728,7 @@ const TocPage = () => {
                       aria-label="Pre-order volume 5"
                       className="bg-devConceptsOrange-700 hover:bg-devConceptsOrange-600 hover:no-underline shadow-lg p-2 rounded-md text-white!"
                     >
-                      <FaShoppingCart className="text-xl mr-2"/>
+                      <FaShoppingCart className="text-xl mr-2" />
                       Pre-order volume 5: {volume05.price}
                     </a>
                   </div>
@@ -797,24 +747,20 @@ const TocPage = () => {
                       height={334}
                       src="/static/images/devConcepts/DevConcepts05Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
-                      loading={"eager"}
+                      loading={'eager'}
                     />
                   </a>
                 </div>
-                <br/>
+                <br />
                 <p>
-                  This volume is dedicated to real beginners who first want to understand computers and operating
-                  systems. We all need to
-                  start somewhere, and this is an excellent introduction to basic principles underlying everything that
-                  we do as software
-                  crafters. Whether our code runs locally on our computer or somewhere in the cloud, it is always
-                  executed by a CPU (physical
-                  or virtual), accesses memory, reads/writes files, etc.
+                  This volume is dedicated to real beginners who first want to understand computers and operating systems. We all need to
+                  start somewhere, and this is an excellent introduction to basic principles underlying everything that we do as software
+                  crafters. Whether our code runs locally on our computer or somewhere in the cloud, it is always executed by a CPU
+                  (physical or virtual), accesses memory, reads/writes files, etc.
                 </p>
-                <br/>
+                <br />
                 <p>
-                  If you want to learn about CPUs, memory, file systems, files, processes, scheduling and whatnot, then
-                  this volume is for
+                  If you want to learn about CPUs, memory, file systems, files, processes, scheduling and whatnot, then this volume is for
                   you.
                 </p>
                 <h3 className="mt-2">In this volume:</h3>
@@ -861,8 +807,8 @@ const TocPage = () => {
                   <h3>
                     Volume 6: {volume06.name}
                     <span className="anchor-icon">
-                    <FaLink/>
-                  </span>
+                      <FaLink />
+                    </span>
                   </h3>
                 </a>
                 <div className="sm:flex sm:justify-end">
@@ -872,7 +818,7 @@ const TocPage = () => {
                       aria-label="Pre-order volume 6"
                       className="bg-devConceptsIndigo-800 hover:bg-devConceptsIndigo-700 hover:no-underline shadow-lg p-2 rounded-md text-white!"
                     >
-                      <FaShoppingCart className="text-xl mr-2"/>
+                      <FaShoppingCart className="text-xl mr-2" />
                       Pre-order volume 6: {volume06.price}
                     </a>
                   </div>
@@ -891,18 +837,17 @@ const TocPage = () => {
                       height={334}
                       src="/static/images/devConcepts/DevConcepts06Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
-                      loading={"eager"}
+                      loading={'eager'}
                     />
                   </a>
                 </div>
-                <br/>
+                <br />
                 <p>
-                  This volume is dedicated to real beginners who’d like to learn how to C-O-D-E. We will only scratch
-                  the surface but this
-                  volume is a great and practical introduction to{" "}
+                  This volume is dedicated to real beginners who’d like to learn how to C-O-D-E. We will only scratch the surface but this
+                  volume is a great and practical introduction to{' '}
                   <span className="font-bold">
-                  coding concepts that all software crafters <span className="italic">must</span> know
-                </span>{" "}
+                    coding concepts that all software crafters <span className="italic">must</span> know
+                  </span>{' '}
                   and use literally all the time.
                 </p>
                 <h3 className="mt-2">In this volume:</h3>
@@ -1018,8 +963,8 @@ const TocPage = () => {
                   <h3>
                     Volume 7: {volume07.name}
                     <span className="anchor-icon">
-                    <FaLink/>
-                  </span>
+                      <FaLink />
+                    </span>
                   </h3>
                 </a>
                 <div className="sm:flex sm:justify-end">
@@ -1029,7 +974,7 @@ const TocPage = () => {
                       aria-label="Pre-order volume 7"
                       className="bg-devConceptsCerise-700 hover:bg-devConceptsCerise-600 hover:no-underline shadow-lg p-2 rounded-md text-white!"
                     >
-                      <FaShoppingCart className="text-xl mr-2"/>
+                      <FaShoppingCart className="text-xl mr-2" />
                       Pre-order volume 7: {volume07.price}
                     </a>
                   </div>
@@ -1048,28 +993,22 @@ const TocPage = () => {
                       height={334}
                       src="/static/images/devConcepts/DevConcepts07Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
-                      loading={"eager"}
+                      loading={'eager'}
                     />
                   </a>
                 </div>
-                <br/>
+                <br />
                 <p>
-                  This volume is dedicated to elements that must be taken care of <span
-                  className="font-bold italic">everywhere</span>;
-                  whether you’re doing back-end or front-end software development. Note that I also consider those
-                  necessary for
-                  infrastructure scripting (but it’s always hard to make IT operations personnel realize that they are
-                  also software
+                  This volume is dedicated to elements that must be taken care of <span className="font-bold italic">everywhere</span>;
+                  whether you’re doing back-end or front-end software development. Note that I also consider those necessary for
+                  infrastructure scripting (but it’s always hard to make IT operations personnel realize that they are also software
                   developers ;-)
                 </p>
-                <br/>
+                <br />
                 <p>
-                  This is a critical volume for true software crafters because many of these points are unfortunately
-                  often overlooked for
-                  various reasons (mostly bad ones). If you want to become a <span
-                  className="italic">true</span> software crafter, then
-                  you’ll make sure to always pay attention to those and to convince everyone else to do the same; even
-                  if it means going
+                  This is a critical volume for true software crafters because many of these points are unfortunately often overlooked for
+                  various reasons (mostly bad ones). If you want to become a <span className="italic">true</span> software crafter, then
+                  you’ll make sure to always pay attention to those and to convince everyone else to do the same; even if it means going
                   against some pointy-haired manager ;-)
                 </p>
                 <h3 className="mt-2">In this volume:</h3>
@@ -1163,8 +1102,8 @@ const TocPage = () => {
                   <h3>
                     Volume 8: {volume08.name}
                     <span className="anchor-icon">
-                    <FaLink/>
-                  </span>
+                      <FaLink />
+                    </span>
                   </h3>
                 </a>
                 <div className="sm:flex sm:justify-end">
@@ -1174,7 +1113,7 @@ const TocPage = () => {
                       aria-label="Pre-order volume 8"
                       className="bg-devConceptsOrange-900 hover:bg-devConceptsOrange-800 hover:no-underline shadow-lg p-2 rounded-md text-white!"
                     >
-                      <FaShoppingCart className="text-xl mr-2"/>
+                      <FaShoppingCart className="text-xl mr-2" />
                       Pre-order volume 8: {volume08.price}
                     </a>
                   </div>
@@ -1193,17 +1132,15 @@ const TocPage = () => {
                       height={334}
                       src="/static/images/devConcepts/DevConcepts08Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
-                      loading={"eager"}
+                      loading={'eager'}
                     />
                   </a>
                 </div>
-                <br/>
+                <br />
                 <p>
-                  This volume is all about back-end software, where most of the action occurs under the hood… without
-                  anyone knowing. Back-end
-                  developers have to focus on very different aspects of IT systems, compared to front-end developers.
-                  Software crafters need
-                  to understand those differences.
+                  This volume is all about back-end software, where most of the action occurs under the hood… without anyone knowing.
+                  Back-end developers have to focus on very different aspects of IT systems, compared to front-end developers. Software
+                  crafters need to understand those differences.
                 </p>
                 <h3 className="mt-2">In this volume:</h3>
                 <ol>
@@ -1260,8 +1197,8 @@ const TocPage = () => {
                   <h3>
                     Volume 9: {volume09.name}
                     <span className="anchor-icon">
-                    <FaLink/>
-                  </span>
+                      <FaLink />
+                    </span>
                   </h3>
                 </a>
                 <div className="sm:flex sm:justify-end">
@@ -1271,7 +1208,7 @@ const TocPage = () => {
                       aria-label="Pre-order volume 9"
                       className="bg-devConceptsTeal-800 hover:bg-devConceptsTeal-700 hover:no-underline shadow-lg p-2 rounded-md text-white!"
                     >
-                      <FaShoppingCart className="text-xl mr-2"/>
+                      <FaShoppingCart className="text-xl mr-2" />
                       Pre-order volume 9: {volume09.price}
                     </a>
                   </div>
@@ -1290,19 +1227,16 @@ const TocPage = () => {
                       height={334}
                       src="/static/images/devConcepts/DevConcepts09Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
-                      loading={"eager"}
+                      loading={'eager'}
                     />
                   </a>
                 </div>
-                <br/>
+                <br />
                 <p>
-                  This volume is all about front-end systems, which are the tip of the iceberg; the one concrete part
-                  that end users see and
-                  can feel. Given the visual nature of front-end applications, front-end developers have to focus on
-                  very different aspects,
-                  compared to back-end developers. Software crafters must not necessarily be artists, but they still
-                  have to pay attention to
-                  the aesthetics… among many other things.
+                  This volume is all about front-end systems, which are the tip of the iceberg; the one concrete part that end users see and
+                  can feel. Given the visual nature of front-end applications, front-end developers have to focus on very different aspects,
+                  compared to back-end developers. Software crafters must not necessarily be artists, but they still have to pay attention
+                  to the aesthetics… among many other things.
                 </p>
                 <h3 className="mt-2">In this volume:</h3>
                 <ol>
@@ -1404,8 +1338,8 @@ const TocPage = () => {
                   <h3>
                     Volume 10: {volume10.name}
                     <span className="anchor-icon">
-                    <FaLink/>
-                  </span>
+                      <FaLink />
+                    </span>
                   </h3>
                 </a>
                 <div className="sm:flex sm:justify-end">
@@ -1415,7 +1349,7 @@ const TocPage = () => {
                       aria-label="Pre-order volume 10"
                       className="bg-devConceptsPurple-700 hover:bg-devConceptsPurple-600 hover:no-underline shadow-lg p-2 rounded-md text-white!"
                     >
-                      <FaShoppingCart className="text-xl mr-2"/>
+                      <FaShoppingCart className="text-xl mr-2" />
                       Pre-order volume 10: {volume10.price}
                     </a>
                   </div>
@@ -1434,23 +1368,21 @@ const TocPage = () => {
                       height={334}
                       src="/static/images/devConcepts/DevConcepts10Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
-                      loading={"eager"}
+                      loading={'eager'}
                     />
                   </a>
                 </div>
-                <br/>
+                <br />
                 <p>
-                  Back-end software is conceptually below the front-end in terms of visibility, but IT infrastructure
-                  goes way further down,
+                  Back-end software is conceptually below the front-end in terms of visibility, but IT infrastructure goes way further down,
                   from services, servers and networks down to cable and electrical signals; phew! ;-)
                 </p>
-                <br/>
+                <br />
                 <p>
-                  Having a good understanding of where our applications are hosted, how the environment is
-                  configured/secured/monitored, etc is super valuable and makes the difference between someone who
-                  “just” writes code and someone who contributes to developing end-to-end solutions. This volume
-                  explains some important concepts about IT infrastructure. All DevSecOps engineers (and thus software
-                  crafters) should be aware of at least a part of those ideas.
+                  Having a good understanding of where our applications are hosted, how the environment is configured/secured/monitored, etc
+                  is super valuable and makes the difference between someone who “just” writes code and someone who contributes to
+                  developing end-to-end solutions. This volume explains some important concepts about IT infrastructure. All DevSecOps
+                  engineers (and thus software crafters) should be aware of at least a part of those ideas.
                 </p>
                 <h3 className="mt-2">In this volume:</h3>
                 <ol>
@@ -1540,8 +1472,8 @@ const TocPage = () => {
                   <h3>
                     Volume 11: {volume11.name}
                     <span className="anchor-icon">
-                    <FaLink/>
-                  </span>
+                      <FaLink />
+                    </span>
                   </h3>
                 </a>
                 <div className="sm:flex sm:justify-end">
@@ -1551,7 +1483,7 @@ const TocPage = () => {
                       aria-label="Pre-order volume 11"
                       className="bg-devConceptsAmber-600 hover:bg-devConceptsAmber-500 hover:no-underline shadow-lg p-2 rounded-md text-white!"
                     >
-                      <FaShoppingCart className="text-xl mr-2"/>
+                      <FaShoppingCart className="text-xl mr-2" />
                       Pre-order volume 11: {volume11.price}
                     </a>
                   </div>
@@ -1570,31 +1502,25 @@ const TocPage = () => {
                       height={334}
                       src="/static/images/devConcepts/DevConcepts11Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
-                      loading={"eager"}
+                      loading={'eager'}
                     />
                   </a>
                 </div>
-                <br/>
+                <br />
                 <p>
-                  Once you understand what your clients need (or at least, what they need right now), you can think
-                  about the “product”. Product management is a specific job, but as a software crafter, it is important
-                  to at least understand what it is and what it entails because, sometimes, you might have to take the
-                  lead for some parts of product management.
+                  Once you understand what your clients need (or at least, what they need right now), you can think about the “product”.
+                  Product management is a specific job, but as a software crafter, it is important to at least understand what it is and
+                  what it entails because, sometimes, you might have to take the lead for some parts of product management.
                 </p>
-                <br/>
+                <br />
                 <p>
-                  How are products and their features defined, prioritized, and organized? Dive into this volume to
-                  learn about technical product management, product backlogs, product roadmaps as well as how to create,
-                  structure, and maintain those.
+                  How are products and their features defined, prioritized, and organized? Dive into this volume to learn about technical
+                  product management, product backlogs, product roadmaps as well as how to create, structure, and maintain those.
                 </p>
-                <br/>
-                <p>
-                  Explore software development approaches, methodologies, and discover modern project management.
-                </p>
-                <br/>
-                <p>
-                  Learn how to become a great team leader and help your team succeed.
-                </p>
+                <br />
+                <p>Explore software development approaches, methodologies, and discover modern project management.</p>
+                <br />
+                <p>Learn how to become a great team leader and help your team succeed.</p>
                 <h3 className="mt-2">In this volume:</h3>
                 <ol>
                   <li>Attackers</li>
@@ -1739,8 +1665,8 @@ const TocPage = () => {
                   <h3>
                     Volume 12: {volume12.name}
                     <span className="anchor-icon">
-                    <FaLink/>
-                  </span>
+                      <FaLink />
+                    </span>
                   </h3>
                 </a>
                 <div className="sm:flex sm:justify-end">
@@ -1750,7 +1676,7 @@ const TocPage = () => {
                       aria-label="Pre-order volume 12"
                       className="bg-devConceptsGray-800 hover:bg-devConceptsGray-700 hover:no-underline shadow-lg p-2 rounded-md text-white!"
                     >
-                      <FaShoppingCart className="text-xl mr-2"/>
+                      <FaShoppingCart className="text-xl mr-2" />
                       Pre-order volume 12: {volume12.price}
                     </a>
                   </div>
@@ -1769,24 +1695,20 @@ const TocPage = () => {
                       height={334}
                       src="/static/images/devConcepts/DevConcepts12Cover3D - small - tinypng.png"
                       className="rounded-lg opacity-80 hover:opacity-100"
-                      loading={"eager"}
+                      loading={'eager'}
                     />
                   </a>
                 </div>
-                <br/>
+                <br />
                 <p>
-                  Once you understand what your clients need (or at least, what they need right now), you can think
-                  about the “product”.
-                  Product management is a specific job, but as a software crafter, it is important to at least
-                  understand what it is and what
-                  it entails because, sometimes, you might have to take the lead for some parts of product management.
+                  Once you understand what your clients need (or at least, what they need right now), you can think about the “product”.
+                  Product management is a specific job, but as a software crafter, it is important to at least understand what it is and
+                  what it entails because, sometimes, you might have to take the lead for some parts of product management.
                 </p>
-                <br/>
+                <br />
                 <p>
-                  How are products and their features defined, prioritized and organized? Dive into this volume to learn
-                  about technical
-                  product management, product backlogs, product roadmaps as well as how to create, structure and
-                  maintain those.
+                  How are products and their features defined, prioritized and organized? Dive into this volume to learn about technical
+                  product management, product backlogs, product roadmaps as well as how to create, structure and maintain those.
                 </p>
                 <h3 className="mt-2">In this volume:</h3>
                 <ol>
@@ -1861,9 +1783,9 @@ const TocPage = () => {
         </div>
 
         <section className="min-w-full flex flex-row justify-center">
-          <NewsletterSubscribe/>
+          <NewsletterSubscribe />
         </section>
-      </StyledArticle>
+      </article>
     </Layout>
   );
 };

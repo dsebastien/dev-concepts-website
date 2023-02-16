@@ -1,6 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const helpers = require('../../helpers');
-
 console.debug(`> Building on NODE_ENV="${process.env.NODE_ENV}"`);
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -20,22 +17,11 @@ module.exports = withNx(
         'pbs.twimg.com', // Twitter Profile Picture
       ],
     },
-    webpack: (
-      config,
-      { _buildId, dev, isServer, _defaultLoaders, _webpack }
-    ) => {
+    webpack: (config, { _buildId, dev, isServer, _defaultLoaders, _webpack }) => {
       // Uncomment to display the Webpack config
       //console.log(config);
 
       if (!isServer) {
-        config.node = {
-          /**
-           * fs is a server-side dependency which we don't want added client-side
-           */
-          fs: 'empty',
-          module: 'empty',
-        };
-      } else {
         require('./generate-sitemap');
         require('./generate-rss');
       }
@@ -54,11 +40,8 @@ module.exports = withNx(
      * Disable powered by header
      */
     poweredByHeader: false,
-    /**
-     * Configure Sass
-     */
-    sassOptions: {
-      includePaths: [helpers.root('apps/website/styles')],
-    },
-  }
+    trailingSlash: false,
+    reactStrictMode: true,
+    swcMinify: true,
+  },
 );

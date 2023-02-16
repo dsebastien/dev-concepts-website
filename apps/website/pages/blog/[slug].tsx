@@ -1,11 +1,12 @@
 import React from 'react';
 import hydrate from 'next-mdx-remote/hydrate';
-import MDXComponents from '@/components/mdx-components';
 import { FrontMatter } from '@/lib/front-matter.intf';
 import { getFileBySlug, getFiles } from '@/lib/mdx';
 import { WebsiteDataType } from '@/lib/website-data-types.intf';
 import { MdxRemote } from 'next-mdx-remote/types';
 import BlogArticleLayout from '../../layouts/blog-article';
+import { GetStaticProps } from 'next';
+import MDXComponents from '@/components/mdx-components';
 
 interface BlogProps {
   mdxSource: MdxRemote.Source;
@@ -18,15 +19,10 @@ interface BlogProps {
  * @constructor
  */
 const BlogPost = (input: BlogProps) => {
-  const content = hydrate(input.mdxSource, {
-    components: MDXComponents,
-  });
+  // @ts-expect-error
+  const content = hydrate(input.mdxSource, { components: MDXComponents });
 
-  return (
-    <BlogArticleLayout frontMatter={input.frontMatter}>
-      {content}
-    </BlogArticleLayout>
-  );
+  return <BlogArticleLayout frontMatter={input.frontMatter}>{content}</BlogArticleLayout>;
 };
 
 export async function getStaticPaths() {
@@ -44,14 +40,16 @@ export async function getStaticPaths() {
 
 /**
  * The 'slug' property name comes from the pages/blog/[slug].tsx page!
- * @param input
  */
-export async function getStaticProps(input: { params: { slug: string } }) {
+export const getStaticProps: GetStaticProps<BlogProps> = async (context) => {
   const post = await getFileBySlug({
     type: WebsiteDataType.BLOG,
-    slug: input.params.slug,
+    slug: context?.params?.slug ? `${context.params.slug}` : '',
   });
-  return { props: post };
-}
+
+  return {
+    props: post,
+  };
+};
 
 export default BlogPost;

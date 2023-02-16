@@ -19,7 +19,7 @@
   Next.js
   next-themes
   Tailwind
-  Tailwind Custom Forms
+  Tailwind Typography
   MDX
   CSP
   Webpack

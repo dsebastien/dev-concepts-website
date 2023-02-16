@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '@/layouts/layout';
-import tw from 'twin.macro';
 import NewsletterSubscribe from '@/components/newsletter-subscribe';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -9,31 +8,34 @@ import {
   COLLECTION_DESCRIPTION,
   FAQ_ANSWER_1,
   FAQ_ANSWER_2,
-  FAQ_ANSWER_3, FAQ_ANSWER_4, FAQ_ANSWER_5, FAQ_ANSWER_6,
+  FAQ_ANSWER_3,
+  FAQ_ANSWER_4,
+  FAQ_ANSWER_5,
+  FAQ_ANSWER_6,
   FAQ_QUESTION_1,
   FAQ_QUESTION_2,
   FAQ_QUESTION_3,
-  FAQ_QUESTION_4, FAQ_QUESTION_5, FAQ_QUESTION_6,
+  FAQ_QUESTION_4,
+  FAQ_QUESTION_5,
+  FAQ_QUESTION_6,
   volume01,
   volume02,
   volume03,
-  volume04,
-  volume05,
-  volume06,
-  volume07,
-  volume08,
-  volume09,
-  volume10,
-  volume11,
-  volume12,
+  // volume04,
+  // volume05,
+  // volume06,
+  // volume07,
+  // volume08,
+  // volume09,
+  // volume10,
+  // volume11,
+  // volume12,
 } from '../constants';
-
-const StyledDiv = tw.div``;
 
 const IndexPage = () => {
   return (
     <Layout>
-      <StyledDiv className="large-page-content-wrapper space-y-32">
+      <div className="large-page-content-wrapper space-y-32">
         <div id="hero" className="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center">
           <div className="hero-details md:col-span-2">
             <div className="">
@@ -85,36 +87,6 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-
-        {/*<div id="solution-intro" className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-between">*/}
-        {/*  <div className="solution-intro-details">*/}
-        {/*    <div className="mt-2">*/}
-        {/*      <h3>The mentorship you need to build a solid foundation, lead a better professional life, and show your true value</h3>*/}
-        {/*    </div>*/}
-        {/*    <div className="mt-6 prose dark:prose-dark prose-lg space-y-2">*/}
-        {/*      <p>*/}
-        {/*        Software development challenges you to constantly learn and grow. You're not some basic coder who churns out line after line*/}
-        {/*        of boring code.*/}
-        {/*      </p>*/}
-        {/*      <p>Developing software demands nothing less than craftsmanship.</p>*/}
-        {/*      <p>*/}
-        {/*        A lot of domain knowledge exists solely in your senior's head. You need someone to pass down the golden nuggets of*/}
-        {/*        experience acquired through countless hours of trial and error.*/}
-        {/*      </p>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*  <div className="solution-intro-definition justify-center md:min-h-full flex flex-col homepage-elevated-box">*/}
-        {/*    <div className="text-devConceptsWhite">*/}
-        {/*      <h4>The definition of craftsmanship:</h4>*/}
-        {/*    </div>*/}
-        {/*    <div className="prose dark:prose-dark prose-xl">*/}
-        {/*      <ul>*/}
-        {/*        <li className="italic">Skill in planning, making, or executing</li>*/}
-        {/*        <li className="italic">Make or produce with care, skill, or ingenuity</li>*/}
-        {/*      </ul>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
 
         <div id="solution-focus" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
           <div className="solution-focus-image">
@@ -474,98 +446,6 @@ const IndexPage = () => {
           </div>
         </div>
 
-        {/*<div id="solution-confidence" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">*/}
-        {/*  <div className="solution-confidence-image">*/}
-        {/*    <Image*/}
-        {/*      alt="Grow your software development skills with confidence thanks to the Dev Concepts collection. Picture courtesy of Jonathan Klok: https://unsplash.com/@mostly_brave"*/}
-        {/*      width={1700}*/}
-        {/*      height={1133}*/}
-        {/*      src="/static/images/confidence - tinypng.jpg"*/}
-        {/*      className="rounded-lg"*/}
-        {/*    />*/}
-        {/*  </div>*/}
-        {/*  <div className="solution-confidence-details">*/}
-        {/*    <div className="">*/}
-        {/*      <span className="text-xl">UNDERSTAND THE INDUSTRY</span>*/}
-        {/*    </div>*/}
-        {/*    <div className="mt-2">*/}
-        {/*      <h3>Know what’s happening at every step. Proceed with confidence.</h3>*/}
-        {/*    </div>*/}
-        {/*    <div className="mt-6 prose dark:prose-dark prose-lg">*/}
-        {/*      <p>*/}
-        {/*        Instead of trying to collect information from multiple sources and online ‘gurus’, get the correct info the first time*/}
-        {/*        around. This collection is your single source roadmap to software development and IT.*/}
-        {/*      </p>*/}
-
-        {/*      <p className="mt-2">Avoid the trap of misinformation and confidently rely on the knowledge you learn.</p>*/}
-
-        {/*      <p className="mt-2">*/}
-        {/*        Learn about concepts, abstractions, create solid mental models then keep exploring the hundreds of provided resources to*/}
-        {/*        fill your knowledge gaps.*/}
-        {/*      </p>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
-
-        {/*<div id="first-cta" className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center items-stretch">*/}
-        {/*  <div className="first-cta-starter-bundle text-center homepage-elevated-box-on-hover">*/}
-        {/*    <a href="https://gumroad.com/l/AwJYP" rel="noopener">*/}
-        {/*      <div className="flex flex-col h-full min-h-full">*/}
-        {/*        <div>*/}
-        {/*          <h3>Starter Edition</h3>*/}
-        {/*        </div>*/}
-        {/*        <div className="mt-2 flex-row text-center justify-center">*/}
-        {/*          <h4 className="max-w-sm text-2xl! font-normal!">Download the first two volumes in the collection</h4>*/}
-        {/*        </div>*/}
-        {/*        <div className="mt-16 list-none! flex-grow">*/}
-        {/*          <ul className="font-semibold space-y-2">*/}
-        {/*            <li className="prose dark:prose-dark prose-lg">Volume 1: {volume01.name}</li>*/}
-        {/*            <li className="prose dark:prose-dark prose-lg">Volume 2: {volume02.name}</li>*/}
-        {/*            <li className="prose dark:prose-dark prose-lg">Lifetime Slack community access</li>*/}
-        {/*          </ul>*/}
-        {/*        </div>*/}
-        {/*        <div className="mt-12">*/}
-        {/*          <span className="prose dark:prose-dark prose-xl">Save €1</span>*/}
-        {/*        </div>*/}
-        {/*        <div className="mt-4">*/}
-        {/*          <span className="button-no-hover">Buy for €14.99</span>*/}
-        {/*        </div>*/}
-        {/*        <div className="mt-2">*/}
-        {/*          <span className="prose dark:prose-dark">14-day money-back guarantee</span>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        {/*    </a>*/}
-        {/*  </div>*/}
-        {/*  <div className="first-cta-lifetime-collection-access text-center homepage-elevated-box-on-hover">*/}
-        {/*    <a href="https://gumroad.com/l/TaEPM" rel="noopener">*/}
-        {/*      <div className="flex flex-col h-full min-h-full">*/}
-        {/*        <div>*/}
-        {/*          <h3>Lifetime Collection Access</h3>*/}
-        {/*        </div>*/}
-        {/*        <div className="mt-2 flex flex-row text-center justify-center">*/}
-        {/*          <h5 className="max-w-sm text-2xl! font-normal!">Published volumes plus all future releases</h5>*/}
-        {/*        </div>*/}
-        {/*        <div className="mt-16 list-none! flex-grow">*/}
-        {/*          <ul className="font-semibold space-y-2">*/}
-        {/*            <li className="prose dark:prose-dark prose-lg">All 12 Volumes</li>*/}
-        {/*            <li className="prose dark:prose-dark prose-lg">Lifetime Slack community access</li>*/}
-        {/*            <li className="prose dark:prose-dark prose-lg">BONUS: 30-minute live career coaching session</li>*/}
-        {/*          </ul>*/}
-        {/*        </div>*/}
-        {/*        <div className="mt-12">*/}
-        {/*          <span className="prose dark:prose-dark prose-xl">Save €75</span>*/}
-        {/*        </div>*/}
-        {/*        <div className="mt-4">*/}
-        {/*          <span className="button-no-hover">Buy for €125</span>*/}
-        {/*        </div>*/}
-        {/*        <div className="mt-2">*/}
-        {/*          <span className="prose dark:prose-dark">14-day money-back guarantee</span>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        {/*    </a>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
-
         <div id="social-proof" className="author grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
           <div className="solution-proof-author-picture">
             <Image
@@ -631,9 +511,7 @@ const IndexPage = () => {
         <div id="solution-long-term-outcomes-vs-short-term-benefits" className="grid grid-cols-1 place-items-center homepage-elevated-box">
           <div className="">
             <div className="flex flex-row items-center justify-center">
-              <h3 className="max-w-2xl text-center">
-                Enjoy a great job, and great life .
-              </h3>
+              <h3 className="max-w-2xl text-center">Enjoy a great job, and great life .</h3>
             </div>
             <div className="mt-6 flex flex-row items-center justify-center">
               <h4 className="max-w-2xl italic text-2xl! font-normal!">Here’s what the Dev Concepts Collection will help you achieve.</h4>
@@ -679,61 +557,39 @@ const IndexPage = () => {
             </div>
             <div className="mt-12 mx-auto grid grid-cols-1 md:grid-cols-1 gap-x-12 gap-y-4 max-w-4xl">
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
-                <summary className="font-semibold text-lg dark:text-devConceptsWhite">
-                  {FAQ_QUESTION_1}
-                </summary>
+                <summary className="font-semibold text-lg dark:text-devConceptsWhite">{FAQ_QUESTION_1}</summary>
 
-                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
-                  {FAQ_ANSWER_1}
-                </span>
+                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">{FAQ_ANSWER_1}</span>
               </details>
 
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
-                <summary className="font-semibold text-lg dark:text-devConceptsWhite">
-                  {FAQ_QUESTION_2}
-                </summary>
+                <summary className="font-semibold text-lg dark:text-devConceptsWhite">{FAQ_QUESTION_2}</summary>
 
-                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
-                  {FAQ_ANSWER_2}
-                </span>
+                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">{FAQ_ANSWER_2}</span>
               </details>
 
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
-                <summary className="font-semibold text-lg dark:text-devConceptsWhite">
-                  {FAQ_QUESTION_3}
-                </summary>
+                <summary className="font-semibold text-lg dark:text-devConceptsWhite">{FAQ_QUESTION_3}</summary>
 
-                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
-                  {FAQ_ANSWER_3}
-                </span>
+                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">{FAQ_ANSWER_3}</span>
               </details>
 
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
                 <summary className="font-semibold text-lg dark:text-devConceptsWhite">{FAQ_QUESTION_4}</summary>
 
-                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
-                  {FAQ_ANSWER_4}
-                </span>
+                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">{FAQ_ANSWER_4}</span>
               </details>
 
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
-                <summary className="font-semibold text-lg dark:text-devConceptsWhite">
-                  {FAQ_QUESTION_5}
-                </summary>
+                <summary className="font-semibold text-lg dark:text-devConceptsWhite">{FAQ_QUESTION_5}</summary>
 
-                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
-                  {FAQ_ANSWER_5}
-                </span>
+                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">{FAQ_ANSWER_5}</span>
               </details>
 
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
-                <summary className="font-semibold text-lg dark:text-devConceptsWhite">
-                  {FAQ_QUESTION_6}
-                </summary>
+                <summary className="font-semibold text-lg dark:text-devConceptsWhite">{FAQ_QUESTION_6}</summary>
 
-                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
-                  {FAQ_ANSWER_6}
-                </span>
+                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">{FAQ_ANSWER_6}</span>
               </details>
 
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
@@ -744,7 +600,8 @@ const IndexPage = () => {
                   <Link href="table-of-contents">the full chapter breakdown for each volume</Link>. You can also free samples volume 1{' '}
                   <a href="https://dev-concepts.dev/updates" rel="noopener">
                     here
-                  </a>.
+                  </a>
+                  .
                 </span>
               </details>
 
@@ -898,7 +755,7 @@ const IndexPage = () => {
         <div className="mt-16 max-w-7xl flex flex-row justify-center">
           <NewsletterSubscribe />
         </div>
-      </StyledDiv>
+      </div>
     </Layout>
   );
 };

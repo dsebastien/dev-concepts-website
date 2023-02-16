@@ -2,7 +2,6 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import * as mdxPrism from 'mdx-prism';
 import * as rehypeSlug from 'rehype-slug';
-//import * as rehypeAutoLinkHeadings from 'rehype-autolink-headings';
 
 import path from 'path';
 import readingTime from 'reading-time';
@@ -37,14 +36,12 @@ export async function getFileBySlug({
   slug?: string;
 }): Promise<{ mdxSource: MdxRemote.Source; frontMatter: FrontMatter }> {
   const source = slug
-    ? fs.readFileSync(
-        path.join(root, DATA_FOLDER_PATH, type, `${slug}.mdx`),
-        'utf8'
-      )
+    ? fs.readFileSync(path.join(root, DATA_FOLDER_PATH, type, `${slug}.mdx`), 'utf8')
     : fs.readFileSync(path.join(root, DATA_FOLDER_PATH, `${type}.mdx`), 'utf8');
 
   const { data, content } = matter(source);
   const mdxSource = await renderToString(content, {
+    // @ts-expect-error
     components: MDXComponents,
     mdxOptions: {
       remarkPlugins: [require('remark-code-titles')],
@@ -108,10 +105,7 @@ export async function getAllFilesFrontMatter(type: WebsiteDataType) {
   type AllEntries = { slug: string }[];
 
   return files.reduce<AllEntries>((allEntries: AllEntries, entrySlug) => {
-    const source = fs.readFileSync(
-      path.join(root, DATA_FOLDER_PATH, type, entrySlug),
-      'utf8'
-    );
+    const source = fs.readFileSync(path.join(root, DATA_FOLDER_PATH, type, entrySlug), 'utf8');
 
     const { data } = matter(source);
 

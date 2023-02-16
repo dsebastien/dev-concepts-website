@@ -1,14 +1,10 @@
-import SocialLink from "@/components/social-link";
-import {FaGithub, FaLinkedin, FaNewspaper, FaTwitter} from "react-icons/fa";
-import React from "react";
-
-import tw from "twin.macro";
-
-const StyledList = tw.ul``;
+import SocialLink from '@/components/social-link';
+import { FaGithub, FaLinkedin, FaNewspaper, FaTwitter } from 'react-icons/fa';
+import React from 'react';
 
 const SocialLinks = () => {
   return (
-    <StyledList tw="flex justify-around space-x-8 text-xl">
+    <ul className="flex justify-around space-x-8 text-xl">
       <li>
         <SocialLink
           url="https://twitter.com/dsebastien"
@@ -26,9 +22,7 @@ const SocialLinks = () => {
           hideText={true}
           ariaLabelText="Go to my LinkedIn profile"
           titleText="Go to my LinkedIn profile"
-          icon={
-            <FaLinkedin className="inline hover:text-devConceptsBlue-500 hover:bg-devConceptsWhite text-devConceptsGray-100" />
-          }
+          icon={<FaLinkedin className="inline hover:text-devConceptsBlue-500 hover:bg-devConceptsWhite text-devConceptsGray-100" />}
         />
       </li>
       <li>
@@ -51,7 +45,7 @@ const SocialLinks = () => {
           icon={<FaNewspaper className="inline dark:hover:text-devConceptsWhite hover:text-devConceptsBlue-400 text-devConceptsGray-100" />}
         />
       </li>
-    </StyledList>
+    </ul>
   );
 };
 

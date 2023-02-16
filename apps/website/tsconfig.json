@@ -3,7 +3,8 @@
   "compilerOptions": {
     "baseUrl": "../../",
     "noEmit": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "incremental": true
   },
   "files": [],
   "include": ["**/*.ts", "**/*.tsx", "**/*.d.ts", "**/*.js", "**/*.jsx"],

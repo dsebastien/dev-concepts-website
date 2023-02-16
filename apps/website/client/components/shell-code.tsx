@@ -1,15 +1,11 @@
-import tw, { styled } from "twin.macro";
+import React, { PropsWithChildren } from 'react';
 
-const ShellCode = styled.code`
-    ${tw`text-xl! font-normal! text-devConceptsBlue-500! bg-devConceptsWhite! h-full! rounded! p-2! h-auto!`};
+type ShellCodeProps = PropsWithChildren<{}>;
 
-    &:before {
-      content: "$ " !important;
-    }
-
-    &:after {
-      content: "" !important;
-    }
-`;
+const ShellCode = ({ children }: ShellCodeProps) => {
+  return (
+    <code className="text-xl! font-normal! text-devConceptsBlue-500! bg-devConceptsWhite! h-full! rounded! p-2! h-auto!">{children}</code>
+  );
+};
 
 export default ShellCode;

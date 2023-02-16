@@ -1,13 +1,10 @@
-import React, {useState} from 'react';
-import {getAllFilesFrontMatter} from '@/lib/mdx';
-import {FrontMatter} from '@/lib/front-matter.intf';
+import React, { useState } from 'react';
+import { getAllFilesFrontMatter } from '@/lib/mdx';
+import { FrontMatter } from '@/lib/front-matter.intf';
 import BlogPostSummary from '@/components/blog-post-summary';
 import Layout from '@/layouts/layout';
-import tw from 'twin.macro';
-import {WebsiteDataType} from "@/lib/website-data-types.intf";
-import NewsletterSubscribe from "@/components/newsletter-subscribe";
-
-const StyledArticle = tw.article``;
+import { WebsiteDataType } from '@/lib/website-data-types.intf';
+import NewsletterSubscribe from '@/components/newsletter-subscribe';
 
 /**
  * Updates homepage
@@ -17,10 +14,7 @@ const StyledArticle = tw.article``;
 export default function Updates(input: { entries: FrontMatter[] }) {
   const [searchValue, setSearchValue] = useState('');
   const filteredBlogPosts = input.entries
-    .sort(
-      (a, b) =>
-        Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
-    )
+    .sort((a, b) => Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt)))
     .filter((post) => {
       if (!post.title) {
         throw new Error(`Invalid post title: ${JSON.stringify(post, null, 2)}`);
@@ -34,11 +28,15 @@ export default function Updates(input: { entries: FrontMatter[] }) {
         title: 'Updates – Dev Concepts',
       }}
     >
-      <StyledArticle className="page-content-wrapper max-w-4xl">
+      <article className="page-content-wrapper max-w-4xl">
         <h1 className="page-heading">Updates</h1>
         <p className="text-gray-900 dark:text-gray-400 mb-4">
           I've published <b>{`${input.entries.length}`}</b> update
-          {input.entries.length > 1 && 's'} here. Previous updates are available <a href="https://www.indiehackers.com/product/dev-concepts" rel="noopener">on IndieHackers</a>.
+          {input.entries.length > 1 && 's'} here. Previous updates are available{' '}
+          <a href="https://www.indiehackers.com/product/dev-concepts" rel="noopener">
+            on IndieHackers
+          </a>
+          .
         </p>
         <div className="relative w-full mb-4">
           <input
@@ -55,27 +53,17 @@ export default function Updates(input: { entries: FrontMatter[] }) {
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
         </div>
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-devConceptsBlack dark:text-devConceptsWhite">
           All Posts
         </h3>
         {!filteredBlogPosts.length && (
-          <p className="text-gray-900 dark:text-gray-400 mb-4">
-            No match found. Please refine your search criteria.
-          </p>
+          <p className="text-gray-900 dark:text-gray-400 mb-4">No match found. Please refine your search criteria.</p>
         )}
         {filteredBlogPosts.map((post) => (
-          <div
-            className="blog-post-summary-container"
-            key={post.title}
-          >
+          <div className="blog-post-summary-container" key={post.title}>
             <BlogPostSummary {...post} />
           </div>
         ))}
@@ -83,8 +71,7 @@ export default function Updates(input: { entries: FrontMatter[] }) {
         <div className="mt-16 flex flex-row justify-center">
           <NewsletterSubscribe />
         </div>
-
-      </StyledArticle>
+      </article>
     </Layout>
   );
 }
