@@ -149,8 +149,7 @@ h6:hover {
 }
 
 .book-card {
-  @apply flex flex-col justify-between py-4 prose dark:prose-dark prose-xl hover:cursor-pointer;
-
+  @apply flex flex-col justify-between py-4 hover:cursor-pointer;
   min-width: 300px;
   width: 300px;
   min-height: 350px;
@@ -178,7 +177,7 @@ h6:hover {
 }
 
 .large-book-card {
-  @apply flex flex-col justify-start py-4 prose dark:prose-dark prose-xl hover:cursor-pointer hover:cursor-default;
+  @apply flex flex-col justify-start py-4 text-xl hover:cursor-pointer hover:cursor-default;
 
   min-width: auto;
   width: 450px;
