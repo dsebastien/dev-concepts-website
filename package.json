@@ -94,7 +94,7 @@
     "@nrwl/react": "11.6.2",
     "@nrwl/tao": "11.4.0",
     "@nrwl/web": "11.6.2",
-    "@nrwl/workspace": "11.6.2",
+    "@nrwl/workspace": "11.6.3",
     "@tailwindcss/custom-forms": "0.2.1",
     "@testing-library/react": "11.2.3",
     "@types/jest": "26.0.20",
