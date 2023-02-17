@@ -304,3 +304,13 @@ ol li::before {
     width: 400px;
   }
 }
+
+.shellCode {
+  &:before {
+    content: '$ ' !important;
+  }
+
+  &:after {
+    content: '' !important;
+  }
+}

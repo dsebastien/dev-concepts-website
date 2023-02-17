@@ -271,7 +271,7 @@ const Layout = ({ children, customMeta }: LayoutProps) => {
             </nav>
           </div>
           <div className="hidden md:flex mt-2 md:mt-0 md:flex-row items-center object-center">
-            <ShellCode>$ Teach me how to code</ShellCode>
+            <ShellCode>sudo teach me how to code</ShellCode>
           </div>
         </header>
         <ScrollToTop

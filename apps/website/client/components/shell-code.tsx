@@ -4,7 +4,9 @@ type ShellCodeProps = PropsWithChildren<{}>;
 
 const ShellCode = ({ children }: ShellCodeProps) => {
   return (
-    <code className="text-xl! font-normal! text-devConceptsBlue-500! bg-devConceptsWhite! h-full! rounded! p-2! h-auto!">{children}</code>
+    <code className="text-xl! font-normal! text-devConceptsBlue-500! bg-devConceptsWhite! h-full! rounded! p-2! h-auto! shellCode">
+      {children}
+    </code>
   );
 };
 
