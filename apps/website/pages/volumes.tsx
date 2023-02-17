@@ -61,7 +61,7 @@ const VolumeSummariesPage = () => {
                   Explains the skills you need to acquire and improve to solve real-world problems. Find out how to shape your mentality
                   towards software development for maximum productivity.
                 </div>
-                <div className="mt-6 prose dark:prose-dark prose-lg space-y-2 dark:text-devConceptsWhite">
+                <div className="mt-6 dark:prose-invert prose-lg space-y-2 dark:text-devConceptsWhite">
                   <div className="flex flex-row items-center gap-2">
                     <div className="flex flex-row items-center">
                       <AiFillRightCircle className="text-3xl" />
@@ -120,7 +120,7 @@ const VolumeSummariesPage = () => {
                   If you can manage clients effectively, you’ll be in hot demand. Learn how to understand a client’s functional needs, and
                   how you can decode their end-user goals. Make sure your software is always solving the right problems.
                 </div>
-                <div className="mt-6 prose dark:prose-dark prose-lg space-y-2 dark:text-devConceptsWhite">
+                <div className="mt-6 dark:prose-invert prose-lg space-y-2 dark:text-devConceptsWhite">
                   <div className="flex flex-row items-center gap-2">
                     <div className="flex flex-row items-center">
                       <AiFillRightCircle className="text-3xl" />
@@ -179,7 +179,7 @@ const VolumeSummariesPage = () => {
                   To avoid time-consuming disasters in project planning and execution, you need a good understanding of key concepts in IT &
                   software architecture. Use this volume to learn how to devise simple but brilliant solutions to complex problems.
                 </div>
-                <div className="mt-6 prose dark:prose-dark prose-lg space-y-2 dark:text-devConceptsWhite">
+                <div className="mt-6 dark:prose-invert prose-lg space-y-2 dark:text-devConceptsWhite">
                   <div className="flex flex-row items-center gap-2">
                     <div className="flex flex-row items-center">
                       <AiFillRightCircle className="text-3xl" />
@@ -238,7 +238,7 @@ const VolumeSummariesPage = () => {
                   Dive into the details of software design so you can avoid costly mistakes and ongoing issues. You’ll use these key
                   concepts in your daily life to speed up your workflow and keep your mental health stable.
                 </div>
-                <div className="mt-6 prose dark:prose-dark prose-lg space-y-2 dark:text-devConceptsWhite">
+                <div className="mt-6 dark:prose-invert prose-lg space-y-2 dark:text-devConceptsWhite">
                   <div className="flex flex-row items-center gap-2">
                     <div className="flex flex-row items-center">
                       <AiFillRightCircle className="text-3xl" />
@@ -297,7 +297,7 @@ const VolumeSummariesPage = () => {
                   An introduction to how computers and Operating Systems (OSes) work. Discover what CPUs, memory, file systems, files,
                   processes, scheduling, and more, are all about.
                 </div>
-                <div className="mt-6 prose dark:prose-dark prose-lg space-y-2 dark:text-devConceptsWhite">
+                <div className="mt-6 dark:prose-invert prose-lg space-y-2 dark:text-devConceptsWhite">
                   <div className="flex flex-row items-center gap-2">
                     <div className="flex flex-row items-center">
                       <AiFillRightCircle className="text-3xl" />
@@ -356,7 +356,7 @@ const VolumeSummariesPage = () => {
                   Get a clear overview of the coding concepts that you will use in almost every piece of software you touch. Fundamentals,
                   while they sound boring, can save you hundreds of hours debugging or finding workarounds.
                 </div>
-                <div className="mt-6 prose dark:prose-dark prose-lg space-y-2 dark:text-devConceptsWhite">
+                <div className="mt-6 dark:prose-invert prose-lg space-y-2 dark:text-devConceptsWhite">
                   <div className="flex flex-row items-center gap-2">
                     <div className="flex flex-row items-center">
                       <AiFillRightCircle className="text-3xl" />
@@ -416,7 +416,7 @@ const VolumeSummariesPage = () => {
                   world-class code, discover source code management workflows and how to manage applications in production like a
                   professional.
                 </div>
-                <div className="mt-6 prose dark:prose-dark prose-lg space-y-2 dark:text-devConceptsWhite">
+                <div className="mt-6 dark:prose-invert prose-lg space-y-2 dark:text-devConceptsWhite">
                   <div className="flex flex-row items-center gap-2">
                     <div className="flex flex-row items-center">
                       <AiFillRightCircle className="text-3xl" />
@@ -475,7 +475,7 @@ const VolumeSummariesPage = () => {
                   Know exactly what happens in back-end development, how the layers and responsibilities fit together, security and
                   performance concerns, and how to craft software that can scale.
                 </div>
-                <div className="mt-6 prose dark:prose-dark prose-lg space-y-2 dark:text-devConceptsWhite">
+                <div className="mt-6 dark:prose-invert prose-lg space-y-2 dark:text-devConceptsWhite">
                   <div className="flex flex-row items-center gap-2">
                     <div className="flex flex-row items-center">
                       <AiFillRightCircle className="text-3xl" />
@@ -534,7 +534,7 @@ const VolumeSummariesPage = () => {
                   Understand the basics of front-end development, how their projects operate, components, UI design, and web design.
                   Introduces you to HTML & CSS basics for the creation of web apps and mobile apps.
                 </div>
-                <div className="mt-6 prose dark:prose-dark prose-lg space-y-2 dark:text-devConceptsWhite">
+                <div className="mt-6 dark:prose-invert prose-lg space-y-2 dark:text-devConceptsWhite">
                   <div className="flex flex-row items-center gap-2">
                     <div className="flex flex-row items-center">
                       <AiFillRightCircle className="text-3xl" />
@@ -594,7 +594,7 @@ const VolumeSummariesPage = () => {
                   etc is super valuable and makes the difference between someone who “just” writes code and someone who contributes to
                   developing end-to-end solutions.
                 </div>
-                <div className="mt-6 prose dark:prose-dark prose-lg space-y-2 dark:text-devConceptsWhite">
+                <div className="mt-6 dark:prose-invert prose-lg space-y-2 dark:text-devConceptsWhite">
                   <div className="flex flex-row items-center gap-2">
                     <div className="flex flex-row items-center">
                       <AiFillRightCircle className="text-3xl" />
@@ -654,7 +654,7 @@ const VolumeSummariesPage = () => {
                   hacked. Learn about the most important IT security concepts and make sure you understand enough to cover the basics in any
                   system you work on.
                 </div>
-                <div className="mt-6 prose dark:prose-dark prose-lg space-y-2 dark:text-devConceptsWhite">
+                <div className="mt-6 dark:prose-invert prose-lg space-y-2 dark:text-devConceptsWhite">
                   <div className="flex flex-row items-center gap-2">
                     <div className="flex flex-row items-center">
                       <AiFillRightCircle className="text-3xl" />
@@ -713,7 +713,7 @@ const VolumeSummariesPage = () => {
                   Get the skills you need to lead projects, teams, and manage products. Explore product management, discover how to maintain
                   a product backlog. Discover modern project management and how to become a great team leader.
                 </div>
-                <div className="mt-6 prose dark:prose-dark prose-lg space-y-2 dark:text-devConceptsWhite">
+                <div className="mt-6 dark:prose-invert prose-lg space-y-2 dark:text-devConceptsWhite">
                   <div className="flex flex-row items-center gap-2">
                     <div className="flex flex-row items-center">
                       <AiFillRightCircle className="text-3xl" />

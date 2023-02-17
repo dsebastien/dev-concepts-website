@@ -72,7 +72,7 @@ const IndexPage = () => {
             <div>
               <h3 className="max-w-2xl">What happens when someone realizes that you're out of your depth?</h3>
             </div>
-            <div className="mt-6 max-w-4xl mx-auto prose dark:prose-dark prose-lg">
+            <div className="mt-6 max-w-4xl mx-auto dark:prose-invert prose-lg">
               <span>Your only option is to ask for help and:</span>
               <ol>
                 <li>Sit blank-eyed, not understanding how their complex solution works</li>
@@ -102,7 +102,7 @@ const IndexPage = () => {
             <div className="">
               <h3>Find out what deserves your attention</h3>
             </div>
-            <div className="mt-6 prose dark:prose-dark prose-lg">
+            <div className="mt-6 dark:prose-invert prose-lg">
               <div className="flex flex-row items-center gap-2">
                 <div className="flex flex-row items-center">
                   <AiFillRightCircle className="text-3xl" />
@@ -410,7 +410,7 @@ const IndexPage = () => {
             <div className="mt-2">
               <h3>Work and grow faster with Slack mentorship</h3>
             </div>
-            <div className="mt-6 prose dark:prose-dark prose-lg">
+            <div className="mt-6 dark:prose-invert prose-lg">
               <p>
                 You wouldn't expect an electrical engineer to walk into their role without a senior craftsman to guide them. You deserve
                 access to the guidance of experienced mentors.
@@ -463,7 +463,7 @@ const IndexPage = () => {
             <div className="mt-2">
               <h3>Practices, strategies, and practical examples that last your entire career</h3>
             </div>
-            <div className="mt-6 prose dark:prose-dark prose-lg space-y-2">
+            <div className="mt-6 dark:prose-invert prose-lg space-y-2">
               <p>
                 Hi, I’m{' '}
                 <a href="https://www.linkedin.com/in/sebastiend/" rel="noopener noreferrer">
@@ -521,7 +521,7 @@ const IndexPage = () => {
                 <div>
                   <h3>Get your first job offers</h3>
                 </div>
-                <div className="prose dark:prose-dark prose-lg">
+                <div className="dark:prose-invert prose-lg">
                   Maybe you’re just starting out. Maybe you’ve been hunting for months. Wherever you are , the Dev Concepts collection will
                   give you the skills you need to put you ahead of other applicants.
                 </div>
@@ -530,7 +530,7 @@ const IndexPage = () => {
                 <div>
                   <h3>Land your dream position</h3>
                 </div>
-                <div className="prose dark:prose-dark prose-lg">
+                <div className="dark:prose-invert prose-lg">
                   Being a good developer isn’t just about skill, it’s also about passion and experience. Use a strong foundation to build
                   software that delights end users.
                 </div>
@@ -539,7 +539,7 @@ const IndexPage = () => {
                 <div>
                   <h3>Start the path to a senior position</h3>
                 </div>
-                <div className="prose dark:prose-dark prose-lg">
+                <div className="dark:prose-invert prose-lg">
                   Startup culture often means that you’re thrown out of your depth with no one to guide you in best practices. Dev Concepts
                   puts you on the right path.
                 </div>
@@ -559,43 +559,43 @@ const IndexPage = () => {
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
                 <summary className="font-semibold text-lg dark:text-devConceptsWhite">{FAQ_QUESTION_1}</summary>
 
-                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">{FAQ_ANSWER_1}</span>
+                <span className="dark:prose-invert prose-lg dark:text-devConceptsWhite">{FAQ_ANSWER_1}</span>
               </details>
 
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
                 <summary className="font-semibold text-lg dark:text-devConceptsWhite">{FAQ_QUESTION_2}</summary>
 
-                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">{FAQ_ANSWER_2}</span>
+                <span className="dark:prose-invert prose-lg dark:text-devConceptsWhite">{FAQ_ANSWER_2}</span>
               </details>
 
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
                 <summary className="font-semibold text-lg dark:text-devConceptsWhite">{FAQ_QUESTION_3}</summary>
 
-                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">{FAQ_ANSWER_3}</span>
+                <span className="dark:prose-invert prose-lg dark:text-devConceptsWhite">{FAQ_ANSWER_3}</span>
               </details>
 
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
                 <summary className="font-semibold text-lg dark:text-devConceptsWhite">{FAQ_QUESTION_4}</summary>
 
-                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">{FAQ_ANSWER_4}</span>
+                <span className="dark:prose-invert prose-lg dark:text-devConceptsWhite">{FAQ_ANSWER_4}</span>
               </details>
 
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
                 <summary className="font-semibold text-lg dark:text-devConceptsWhite">{FAQ_QUESTION_5}</summary>
 
-                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">{FAQ_ANSWER_5}</span>
+                <span className="dark:prose-invert prose-lg dark:text-devConceptsWhite">{FAQ_ANSWER_5}</span>
               </details>
 
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
                 <summary className="font-semibold text-lg dark:text-devConceptsWhite">{FAQ_QUESTION_6}</summary>
 
-                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">{FAQ_ANSWER_6}</span>
+                <span className="dark:prose-invert prose-lg dark:text-devConceptsWhite">{FAQ_ANSWER_6}</span>
               </details>
 
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
                 <summary className="font-semibold text-lg dark:text-devConceptsWhite">I don’t understand what’s in each volume</summary>
 
-                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
+                <span className="dark:prose-invert prose-lg dark:text-devConceptsWhite">
                   Check out <Link href="volumes">the description of each volume</Link>, and{' '}
                   <Link href="table-of-contents">the full chapter breakdown for each volume</Link>. You can also free samples volume 1{' '}
                   <a href="https://dev-concepts.dev/updates" rel="noopener">
@@ -610,7 +610,7 @@ const IndexPage = () => {
                   I’m not so sure about the standard edition... Can I buy just a single volume instead?
                 </summary>
 
-                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
+                <span className="dark:prose-invert prose-lg dark:text-devConceptsWhite">
                   You can <a href="#solution-volumes">buy each volume separately</a>. That being said, I recommend the Lifetime Collection
                   Bundle to save €75.
                 </span>
@@ -619,7 +619,7 @@ const IndexPage = () => {
               <details className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 cursor-pointer">
                 <summary className="font-semibold text-lg dark:text-devConceptsWhite">I can't afford to buy this...</summary>
 
-                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
+                <span className="dark:prose-invert prose-lg dark:text-devConceptsWhite">
                   Contact me through{' '}
                   <a href="https://twitter.com/dsebastien" rel="noopener">
                     Twitter
@@ -637,7 +637,7 @@ const IndexPage = () => {
                   I want to buy Dev Concepts for a group at work
                 </summary>
 
-                <span className="prose dark:prose-dark prose-lg dark:text-devConceptsWhite">
+                <span className="dark:prose-invert prose-lg dark:text-devConceptsWhite">
                   No problem! You just need to buy a group license. Contact me through{' '}
                   <a href="https://twitter.com/dsebastien" rel="noopener">
                     Twitter
@@ -673,18 +673,18 @@ const IndexPage = () => {
                 </div>
                 <div className="mt-12 list-none! flex-grow">
                   <ul className="space-y-4">
-                    <li className="prose dark:prose-dark prose-lg">
+                    <li className="dark:prose-invert prose-lg">
                       <div className="font-semibold">Volume 1: {volume01.name}</div>
                       <div>How to develop a craftsmanship attitude that helps you solve real-world problems.</div>
                     </li>
-                    <li className="prose dark:prose-dark prose-lg">
+                    <li className="dark:prose-invert prose-lg">
                       <div className="font-semibold">Volume 2: {volume02.name}</div>
                       <div>
                         Understand a client’s functional needs, and how you can decode end-user goals. Make sure your software is always
                         solving the right problems.
                       </div>
                     </li>
-                    <li className="prose dark:prose-dark prose-lg">
+                    <li className="dark:prose-invert prose-lg">
                       <div className="font-semibold">Lifetime Slack community access</div>
                       <div>
                         Get answers to your development questions, build a network of like-minded software crafters & learn with mentorship
@@ -714,7 +714,7 @@ const IndexPage = () => {
                 </div>
                 <div className="mt-12 list-none! flex-grow">
                   <ul className="space-y-4 ">
-                    <li className="prose dark:prose-dark prose-lg">
+                    <li className="dark:prose-invert prose-lg">
                       <div className="font-semibold">All 12 Volumes</div>
                       <div>
                         All currently published volumes plus all the future releases covering: IT architecture, Software design, Computer
@@ -722,14 +722,14 @@ const IndexPage = () => {
                         Security, Project management & Software development approaches.
                       </div>
                     </li>
-                    <li className="prose dark:prose-dark prose-lg">
+                    <li className="dark:prose-invert prose-lg">
                       <div className="font-semibold">Lifetime Slack Community Access</div>
                       <div>
                         Get answers to your development questions, build a network of like-minded software crafters & learn with mentorship
                         from a senior developer.
                       </div>
                     </li>
-                    <li className="prose dark:prose-dark prose-lg">
+                    <li className="dark:prose-invert prose-lg">
                       <div className="font-semibold">BONUS: 30-minute live career coaching session</div>
                       <div>
                         Meet with Sébastien, the author and coach. Get actionable, personalized advice on job seeking, your skill

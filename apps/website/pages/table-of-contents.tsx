@@ -62,7 +62,7 @@ const TocPage = () => {
             <div className="md:h-full md:min-h-full md:sticky md:top-0 md:w-5/12 lg:w-4/12">
               <div>
                 <h3 className="w-full text-center text-xl lg:text-3xl">Dev Concepts Volumes</h3>
-                <section className="grid object-center grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-2 text-devConceptsWhite">
+                <section className="grid object-center grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-2 not-prose text-devConceptsWhite">
                   <Link href={`/table-of-contents/#${volume01.tocAnchor}`} aria-label={`Volume 1: ${volume01.name}`}>
                     <div
                       className="no-underline h-full rounded bg-devConceptsBlue-500 hover:bg-devConceptsBlue-400 hover:no-underline hover:cursor-pointer shadow-lg flex flex-row object-center py-2 px-2"
@@ -280,7 +280,7 @@ const TocPage = () => {
                     </span>
                   </h3>
                 </a>
-                <div className="sm:flex sm:justify-end">
+                <div className="sm:flex sm:justify-end not-prose text-devConceptsWhite">
                   <div className="mt-4 flex justify-center sm:mt-0">
                     <a
                       href={volume01.gumroadShortUrl}
@@ -375,7 +375,7 @@ const TocPage = () => {
                     </span>
                   </h3>
                 </a>
-                <div className="sm:flex sm:justify-end">
+                <div className="sm:flex sm:justify-end not-prose text-devConceptsWhite">
                   <div className="mt-4 flex justify-center sm:mt-0">
                     <a
                       href={volume02.gumroadShortUrl}
@@ -496,7 +496,7 @@ const TocPage = () => {
                   </h3>
                 </a>
 
-                <div className="sm:flex sm:justify-end">
+                <div className="sm:flex sm:justify-end not-prose text-devConceptsWhite">
                   <div className="mt-4 flex justify-center sm:mt-0">
                     <a
                       href={volume03.gumroadShortUrl}
@@ -617,7 +617,7 @@ const TocPage = () => {
                     </span>
                   </h3>
                 </a>
-                <div className="sm:flex sm:justify-end">
+                <div className="sm:flex sm:justify-end not-prose text-devConceptsWhite">
                   <div className="mt-4 flex justify-center sm:mt-0">
                     <a
                       href={volume04.gumroadShortUrl}
@@ -721,7 +721,7 @@ const TocPage = () => {
                     </span>
                   </h3>
                 </a>
-                <div className="sm:flex sm:justify-end">
+                <div className="sm:flex sm:justify-end not-prose text-devConceptsWhite">
                   <div className="mt-4 flex justify-center sm:mt-0">
                     <a
                       href={volume05.gumroadShortUrl}
@@ -811,7 +811,7 @@ const TocPage = () => {
                     </span>
                   </h3>
                 </a>
-                <div className="sm:flex sm:justify-end">
+                <div className="sm:flex sm:justify-end not-prose text-devConceptsWhite">
                   <div className="mt-4 flex justify-center sm:mt-0">
                     <a
                       href={volume06.gumroadShortUrl}
@@ -967,7 +967,7 @@ const TocPage = () => {
                     </span>
                   </h3>
                 </a>
-                <div className="sm:flex sm:justify-end">
+                <div className="sm:flex sm:justify-end not-prose text-devConceptsWhite">
                   <div className="mt-4 flex justify-center sm:mt-0">
                     <a
                       href={volume07.gumroadShortUrl}
@@ -1106,7 +1106,7 @@ const TocPage = () => {
                     </span>
                   </h3>
                 </a>
-                <div className="sm:flex sm:justify-end">
+                <div className="sm:flex sm:justify-end not-prose text-devConceptsWhite">
                   <div className="mt-4 flex justify-center sm:mt-0">
                     <a
                       href={volume08.gumroadShortUrl}
@@ -1201,7 +1201,7 @@ const TocPage = () => {
                     </span>
                   </h3>
                 </a>
-                <div className="sm:flex sm:justify-end">
+                <div className="sm:flex sm:justify-end not-prose text-devConceptsWhite">
                   <div className="mt-4 flex justify-center sm:mt-0">
                     <a
                       href={volume09.gumroadShortUrl}
@@ -1342,7 +1342,7 @@ const TocPage = () => {
                     </span>
                   </h3>
                 </a>
-                <div className="sm:flex sm:justify-end">
+                <div className="sm:flex sm:justify-end not-prose text-devConceptsWhite">
                   <div className="mt-4 flex justify-center sm:mt-0">
                     <a
                       href={volume10.gumroadShortUrl}
@@ -1476,7 +1476,7 @@ const TocPage = () => {
                     </span>
                   </h3>
                 </a>
-                <div className="sm:flex sm:justify-end">
+                <div className="sm:flex sm:justify-end not-prose text-devConceptsWhite">
                   <div className="mt-4 flex justify-center sm:mt-0">
                     <a
                       href={volume11.gumroadShortUrl}
@@ -1669,7 +1669,7 @@ const TocPage = () => {
                     </span>
                   </h3>
                 </a>
-                <div className="sm:flex sm:justify-end">
+                <div className="sm:flex sm:justify-end not-prose text-devConceptsWhite">
                   <div className="mt-4 flex justify-center sm:mt-0">
                     <a
                       href={volume12.gumroadShortUrl}
